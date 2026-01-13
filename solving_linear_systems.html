@@ -5,16 +5,22 @@
 <!--*         https://pretextbook.org          *-->
 <!--*                                          *-->
 <!--********************************************-->
-<html lang="en-US" dir="ltr" data-legacy-colorscheme="blue_red">
+<html lang="en-US" dir="ltr">
+<!--******************************************-->
+<!--*  Authored with PreTeXt                 *-->
+<!--*  pretextbook.org                       *-->
+<!--*  Theme: default-modern                 *-->
+<!--*  Palette:                              *-->
+<!--******************************************-->
 <head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Solving Linear Systems</title>
-<meta name="Keywords" content="Authored in PreTeXt">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta property="og:type" content="book">
-<meta property="book:title" content="Computational Linear Algebra">
-<meta property="book:author" content="Nicholas Long">
-<script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script><script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+<link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/ol-markers.css" rel="stylesheet" type="text/css">
+<script>
 var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
 window.MathJax = {
   "tex": {
@@ -86,17 +92,12 @@ window.MathJax = {
     )}
   }
 };
-</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/lib/jquery.min.js"></script><script src="_static/pretext/js/lib/jquery.sticky.js"></script><script src="_static/pretext/js/lib/jquery.espy.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><script src="_static/pretext/js/user_preferences.js"></script><script src="_static/pretext/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
-</script><link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
-<link href="https://fonts.cdnfonts.com/css/dejavu-serif" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wdth,wght@75..100,300..800&amp;display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&amp;" rel="stylesheet">
-<link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
-<link href="_static/pretext/css/ol-markers.css" rel="stylesheet" type="text/css">
-<!--** eBookCongig is necessary to configure interactive       **-->
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="book:title" content="Computational Linear Algebra">
+<meta property="book:author" content="Nicholas Long">
+<script src="_static/pretext/js/lib/jquery.min.js"></script><script src="_static/pretext/js/lib/jquery.sticky.js"></script><script src="_static/pretext/js/lib/jquery.espy.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><script src="_static/pretext/js/user_preferences.js"></script><!--** eBookCongig is necessary to configure interactive       **-->
 <!--** Runestone components to run locally in reader's browser **-->
 <!--** No external communication:                              **-->
 <!--**     log level is 0, Runestone Services are disabled     **-->
@@ -118,19 +119,21 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '7.5.11';
+eBookConfig.runestone_version = '7.11.9';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script src="_static/prefix-runtime.ee5a0b116b7d0991.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.f6bda0c0ccce4835.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
-<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.e0c6d4592e23c667.css">
+<script src="_static/prefix-runtime.991c135ccf182bf5.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.1c010553c35c544c.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.677a75a9120449ff.css">
+<script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script><script src="_static/pretext/js/pretext-webwork/2.20/pretext-webwork.js"></script><script src="https://webwork-ptx.aimath.org/webwork2_files/node_modules/iframe-resizer/js/iframeResizer.min.js"></script><script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script>
 </head>
 <body class="pretext book ignore-math">
 <a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner"><div class="title-container">
-<h1 class="heading"><a href="my-great-book.html"><span class="title">Computational Linear Algebra:</span> <span class="subtitle">Notes and Questions for MATH 3325</span></a></h1>
+<h1 class="heading"><a href="my-great-book.html"><span class="title">Computational Linear Algebra</span> <span class="subtitle">Notes and Questions for MATH 3325</span></a></h1>
 <p class="byline">Nicholas Long</p>
 </div></div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><div class="ptx-navbar-contents">
 <button class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><div class="searchbox">
@@ -144,7 +147,7 @@ eBookConfig.enable_chatcodes =  false;
 <ol id="searchresults" class="searchresults"></ol>
 </div>
 </div>
-<span class="nav-other-controls"></span><span class="treebuttons"><a class="previous-button button" href="intro_activity.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="C1.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="Conunique.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
+<span class="nav-other-controls"><button id="light-dark-button" class="light-dark-button button" title="Dark Mode"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span class="name">Dark Mode</span></button></span><span class="treebuttons"><a class="previous-button button" href="intro_activity.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="C1.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="Conunique.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
 </div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\R}{\mathbb R}
 \newcommand\colvec[1]{\begin{bmatrix}#1\end{bmatrix}}
 \newcommand{\lt}{&lt;}
@@ -154,7 +157,7 @@ eBookConfig.enable_chatcodes =  false;
 \newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
 \)</span></div>
 <div class="ptx-page">
-<div id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth2"><ul class="structural toc-item-list contains-active">
+<div id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth2 focused" data-preexpanded-levels="0" data-max-levels="2"><ul class="structural toc-item-list contains-active">
 <li class="toc-item toc-frontmatter"><div class="toc-title-box"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div></li>
 <li class="toc-item toc-chapter contains-active">
 <div class="toc-title-box"><a href="C1.html" class="internal"><span class="codenumber">1</span> <span class="title">Solving Linear Systems</span></a></div>
@@ -185,7 +188,10 @@ eBookConfig.enable_chatcodes =  false;
 <div class="toc-title-box"><a href="sec_vector_calc.html" class="internal"><span class="codenumber">1.5</span> <span class="title">Vectors and Vector Calculations</span></a></div>
 <ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_vector_calc.html#sec_vector_calc-3" class="internal"><span class="codenumber">1.5.1</span> <span class="title">The Dot Product</span></a></div></li></ul>
 </li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_vector_eqns.html" class="internal"><span class="codenumber">1.6</span> <span class="title">Vector Equations</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec_vector_eqns.html" class="internal"><span class="codenumber">1.6</span> <span class="title">Vector Equations</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec_vector_eqns.html#sec_vector_eqns-9" class="internal"><span class="codenumber">1.6</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="span.html" class="internal"><span class="codenumber">1.7</span> <span class="title">Span (both a noun and a verb)</span></a></div>
 <ul class="structural toc-item-list">
@@ -270,20 +276,34 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-backmatter"><div class="toc-title-box"><a href="backmatter.html" class="internal"><span class="title">Backmatter</span></a></div></li>
 </ul></nav></div>
 <main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="solving_linear_systems"><h2 class="heading hide-type">
-<span class="type">Section</span><span class="space"> </span><span class="codenumber">1.2</span><span class="space"> </span><span class="title">Solving Linear Systems</span>
+<span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.2</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Solving Linear Systems</span>
 </h2>
 <section class="subsection" id="solving_linear_systems-2"><h3 class="heading hide-type">
-<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">1.2.1</span><span class="space"> </span><span class="title">Elementary Operations</span>
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.2.1</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Elementary Operations</span>
 </h3>
 <article class="objectives goal-like" id="solving_linear_systems-2-2"><h4 class="heading"><span class="type">Objectives</span></h4>
 <ul class="disc" id="solving_linear_systems-2-2-1">
-<li id="solving_linear_systems-2-2-1-1"><div class="para" id="solving_linear_systems-2-2-1-1-1">To understand the language and tools of efficently solving linear systems of equations</div></li>
-<li id="solving_linear_systems-2-2-1-2"><div class="para" id="solving_linear_systems-2-2-1-2-1">To understand how to use matrices to store information about and solve linear systems</div></li>
-<li id="solving_linear_systems-2-2-1-3"><div class="para" id="solving_linear_systems-2-2-1-3-1">To understand how echelon forms will give a form for equivalent systems of equations that will allow us to characterize the types of solutions to the system</div></li>
-</ul></article><div class="para" id="solving_linear_systems-2-3">Our first discussion of linear algebra will cover the ideas of efficiently solving a system of linear equations and matrix operations.</div>
+<li id="solving_linear_systems-2-2-1-1">
+<div class="para" id="solving_linear_systems-2-2-1-1-1">To understand the language and tools of efficently solving linear systems of equations<div class="autopermalink" data-description="Paragraph"><a href="#solving_linear_systems-2-2-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Objective"><a href="#solving_linear_systems-2-2-1-1" title="Copy heading and permalink for Objective" aria-label="Copy heading and permalink for Objective">🔗</a></div>
+</li>
+<li id="solving_linear_systems-2-2-1-2">
+<div class="para" id="solving_linear_systems-2-2-1-2-1">To understand how to use matrices to store information about and solve linear systems<div class="autopermalink" data-description="Paragraph"><a href="#solving_linear_systems-2-2-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Objective"><a href="#solving_linear_systems-2-2-1-2" title="Copy heading and permalink for Objective" aria-label="Copy heading and permalink for Objective">🔗</a></div>
+</li>
+<li id="solving_linear_systems-2-2-1-3">
+<div class="para" id="solving_linear_systems-2-2-1-3-1">To understand how echelon forms will give a form for equivalent systems of equations that will allow us to characterize the types of solutions to the system<div class="autopermalink" data-description="Paragraph"><a href="#solving_linear_systems-2-2-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Objective"><a href="#solving_linear_systems-2-2-1-3" title="Copy heading and permalink for Objective" aria-label="Copy heading and permalink for Objective">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Objectives 1.2.1"><a href="#solving_linear_systems-2-2" title="Copy heading and permalink for Objectives 1.2.1" aria-label="Copy heading and permalink for Objectives 1.2.1">🔗</a></div></article><div class="para" id="solving_linear_systems-2-3">Our first discussion of linear algebra will cover the ideas of efficiently solving a system of linear equations and matrix operations.<div class="autopermalink" data-description="Paragraph"><a href="#solving_linear_systems-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
 <div class="para logical" id="solving_linear_systems-2-4">
 <div class="para">A system of <span class="process-math">\(m\)</span> linear equations in <span class="process-math">\(n\)</span> variables can be written:</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="solving_linear_systems-2-4-3">
 \begin{equation*}
 \begin{array}{rcrcrcrcr}
 a_{11} x_1  \amp +\amp  a_{12} x_2 \amp +\amp  ... \amp +\amp   a_{1n}x_n \amp =\amp  b_1 \\
@@ -294,13 +314,14 @@ a_{m1} x_1  \amp +\amp  a_{m2} x_2 \amp +\amp  ... \amp +\amp   a_{mn}x_n \amp =
 \end{equation*}
 </div>
 <div class="para">The term <span class="process-math">\(a_{ij}\)</span> is the <dfn class="terminology">coefficient</dfn> of the <span class="process-math">\(j\)</span>-th variable (denoted <span class="process-math">\(x_j\)</span>) in the <span class="process-math">\(i\)</span>-th equation. In these notes, we will only consider real values for the coefficients of our linear systems, i.e. <span class="process-math">\(a_{ij} \in \mathbb{R}\text{.}\)</span> A <dfn class="terminology">solution</dfn> is a choice of variable values that satisfies <em class="emphasis">all</em> equations in the system. A solution is <em class="emphasis">not</em> a particular variable value but must include a choice for <em class="emphasis">all</em> variables in the system. The <dfn class="terminology">solution set</dfn> for a system of equations is the set of all possible solutions. We will have many ways to describe solutions to a system this semester but they all specify the values of <span class="process-math">\(x_1\text{,}\)</span> <span class="process-math">\(x_2\text{,}\)</span> ..., and <span class="process-math">\(x_n\text{,}\)</span> typically as an ordered <span class="process-math">\(n\)</span>-tuple (<span class="process-math">\(x_1\text{,}\)</span><span class="process-math">\(x_2\text{,}\)</span> …, <span class="process-math">\(x_n\)</span>).</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#solving_linear_systems-2-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <article class="activity project-like" id="solving_linear_systems-2-5"><h4 class="heading">
-<span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.2.1</span><span class="period">.</span>
+<span class="type">Activity</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.2.1</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h4>
 <div class="para logical" id="solving_linear_systems-2-5-1">
 <div class="para">Is <span class="process-math">\((1,2,3)\)</span> a solution to the following system?</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="solving_linear_systems-2-5-1-2">
 \begin{equation*}
 \begin{array}{rcrcrcrcr}
 1 x_1  \amp +\amp  2 x_2 \amp +\amp  3 x_3 \amp =\amp  14 \\ % -1  3
@@ -309,34 +330,52 @@ x_1   \amp  \amp        \amp +\amp  7 x_3 \amp =\amp  22
 \end{array}
 \end{equation*}
 </div>
-</div></article><div class="para" id="solving_linear_systems-2-6">The previous problem shows how easy it is to check if a set of variable values is a solution. However, <em class="emphasis">finding</em> a solution or the set of all solutions is harder but very important to many problems. Generally speaking, the process of finding the solution set for a system of equations is to trade the system of equations you have for an <dfn class="terminology">equivalent</dfn> system (a system with the same solution set).</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#solving_linear_systems-2-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Activity 1.2.1"><a href="#solving_linear_systems-2-5" title="Copy heading and permalink for Activity 1.2.1" aria-label="Copy heading and permalink for Activity 1.2.1">🔗</a></div></article><div class="para" id="solving_linear_systems-2-6">The previous problem shows how easy it is to check if a set of variable values is a solution. However, <em class="emphasis">finding</em> a solution or the set of all solutions is harder but very important to many problems. Generally speaking, the process of finding the solution set for a system of equations is to trade the system of equations you have for an <dfn class="terminology">equivalent</dfn> system (a system with the same solution set).<div class="autopermalink" data-description="Paragraph"><a href="#solving_linear_systems-2-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
 <article class="activity project-like" id="solving_linear_systems-2-7"><h4 class="heading">
-<span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.2.2</span><span class="period">.</span>
+<span class="type">Activity</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.2.2</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h4>
-<div class="introduction" id="solving_linear_systems-2-7-1"><div class="para" id="solving_linear_systems-2-7-1-1">For each pair of equations given, state whether <span class="process-math">\(E_1\)</span> is equivalent to <span class="process-math">\(E_2\text{.}\)</span>
+<div class="introduction" id="solving_linear_systems-2-7-1"><div class="para" id="solving_linear_systems-2-7-1-1">For each pair of equations given, state whether <span class="process-math">\(E_1\)</span> is equivalent to <span class="process-math">\(E_2\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#solving_linear_systems-2-7-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></div>
 <article class="task exercise-like" id="solving_linear_systems-2-7-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
 <div class="para" id="solving_linear_systems-2-7-2-1">
-<span class="process-math">\(E_1: x^2-1=0\)</span> and <span class="process-math">\(E_2: x-1=0\)</span>
-</div></article><article class="task exercise-like" id="solving_linear_systems-2-7-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<span class="process-math">\(E_1: x^2-1=0\)</span> and <span class="process-math">\(E_2: x-1=0\)</span><div class="autopermalink" data-description="Paragraph"><a href="#solving_linear_systems-2-7-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 1.2.2.a"><a href="#solving_linear_systems-2-7-2" title="Copy heading and permalink for Task 1.2.2.a" aria-label="Copy heading and permalink for Task 1.2.2.a">🔗</a></div></article><article class="task exercise-like" id="solving_linear_systems-2-7-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
 <div class="para" id="solving_linear_systems-2-7-3-1">
-<span class="process-math">\(E_1: x^2-2x+1=0\)</span> and <span class="process-math">\(E_2: x-1=0\)</span>
-</div></article><article class="task exercise-like" id="solving_linear_systems-2-7-4"><h5 class="heading"><span class="codenumber">(c)</span></h5>
+<span class="process-math">\(E_1: x^2-2x+1=0\)</span> and <span class="process-math">\(E_2: x-1=0\)</span><div class="autopermalink" data-description="Paragraph"><a href="#solving_linear_systems-2-7-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 1.2.2.b"><a href="#solving_linear_systems-2-7-3" title="Copy heading and permalink for Task 1.2.2.b" aria-label="Copy heading and permalink for Task 1.2.2.b">🔗</a></div></article><article class="task exercise-like" id="solving_linear_systems-2-7-4"><h5 class="heading"><span class="codenumber">(c)</span></h5>
 <div class="para" id="solving_linear_systems-2-7-4-1">
-<span class="process-math">\(E_1: e^x=1\)</span> and <span class="process-math">\(E_2: x^3+x^2+x=0\)</span>
-</div></article></article><div class="para" id="solving_linear_systems-2-8">Hopefully it will be easier to explicitly write the solution set of the new equivalent system.</div>
+<span class="process-math">\(E_1: e^x=1\)</span> and <span class="process-math">\(E_2: x^3+x^2+x=0\)</span><div class="autopermalink" data-description="Paragraph"><a href="#solving_linear_systems-2-7-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 1.2.2.c"><a href="#solving_linear_systems-2-7-4" title="Copy heading and permalink for Task 1.2.2.c" aria-label="Copy heading and permalink for Task 1.2.2.c">🔗</a></div></article><div class="autopermalink" data-description="Activity 1.2.2"><a href="#solving_linear_systems-2-7" title="Copy heading and permalink for Activity 1.2.2" aria-label="Copy heading and permalink for Activity 1.2.2">🔗</a></div></article><div class="para" id="solving_linear_systems-2-8">Hopefully it will be easier to explicitly write the solution set of the new equivalent system.<div class="autopermalink" data-description="Paragraph"><a href="#solving_linear_systems-2-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
 <article class="definition definition-like" id="solving_linear_systems-2-9"><h4 class="heading">
-<span class="type">Definition</span><span class="space"> </span><span class="codenumber">1.2.1</span><span class="period">.</span>
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.2.1</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h4>
 <div class="para logical" id="solving_linear_systems-2-9-1-1">
 <div class="para">An <dfn class="terminology">elementary operation</dfn> on a system of equations is an operation of the form:</div>
 <ol class="decimal" id="solving_linear_systems-2-9-1-1-2">
-<li id="solving_linear_systems-2-9-1-1-2-1"><div class="para" id="p-derived-solving_linear_systems-2-9-1-1-2-1">multiplying an equation by a non-zero scalar</div></li>
-<li id="solving_linear_systems-2-9-1-1-2-2"><div class="para" id="p-derived-solving_linear_systems-2-9-1-1-2-2">switching two equations</div></li>
-<li id="solving_linear_systems-2-9-1-1-2-3"><div class="para" id="p-derived-solving_linear_systems-2-9-1-1-2-3">adding a multiple of one equation to another equation</div></li>
+<li id="solving_linear_systems-2-9-1-1-2-1">
+<div class="para" id="p-derived-solving_linear_systems-2-9-1-1-2-1">multiplying an equation by a non-zero scalar</div>
+<div class="autopermalink" data-description="Item 1"><a href="#solving_linear_systems-2-9-1-1-2-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+</li>
+<li id="solving_linear_systems-2-9-1-1-2-2">
+<div class="para" id="p-derived-solving_linear_systems-2-9-1-1-2-2">switching two equations</div>
+<div class="autopermalink" data-description="Item 2"><a href="#solving_linear_systems-2-9-1-1-2-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+</li>
+<li id="solving_linear_systems-2-9-1-1-2-3">
+<div class="para" id="p-derived-solving_linear_systems-2-9-1-1-2-3">adding a multiple of one equation to another equation</div>
+<div class="autopermalink" data-description="Item 3"><a href="#solving_linear_systems-2-9-1-1-2-3" title="Copy heading and permalink for Item 3" aria-label="Copy heading and permalink for Item 3">🔗</a></div>
+</li>
 </ol>
-</div></article><article class="activity project-like" id="solving_linear_systems-2-10"><h4 class="heading">
-<span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.2.3</span><span class="period">.</span>
+<div class="autopermalink" data-description="Paragraph"><a href="#solving_linear_systems-2-9-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Definition 1.2.1"><a href="#solving_linear_systems-2-9" title="Copy heading and permalink for Definition 1.2.1" aria-label="Copy heading and permalink for Definition 1.2.1">🔗</a></div></article><article class="activity project-like" id="solving_linear_systems-2-10"><h4 class="heading">
+<span class="type">Activity</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.2.3</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h4>
 <div class="introduction" id="solving_linear_systems-2-10-1"><div class="para logical" id="solving_linear_systems-2-10-1-1">
 <div class="para">For this question, we will consider the following system of linear equations:</div>
@@ -346,11 +385,18 @@ a_1 x_1+a_2x_2+a_3x_3\amp =a_4\\
 b_1 x_1+b_2x_2+b_3x_3\amp =b_4
 \end{align*}
 </div>
+<div class="autopermalink" data-description="Paragraph"><a href="#solving_linear_systems-2-10-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></div>
 <article class="task exercise-like" id="solving_linear_systems-2-10-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
-<div class="para" id="solving_linear_systems-2-10-2-1">Multiply the second equation in our system by negative three and state the <em class="emphasis">new</em> system of equations.</div></article><article class="task exercise-like" id="solving_linear_systems-2-10-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
-<div class="para" id="solving_linear_systems-2-10-3-1">Write a few sentences about why the new system of equations given in the previous part is equivalent to the original system.</div></article><article class="task exercise-like" id="solving_linear_systems-2-10-4"><h5 class="heading"><span class="codenumber">(c)</span></h5>
-<div class="para" id="solving_linear_systems-2-10-4-1">Write out the equation obtained by multiplying the second equation in the original system by a non-zero scalar (which we will call <span class="process-math">\(k\)</span>) and adding to the first equation.</div></article><article class="task exercise-like" id="solving_linear_systems-2-10-5"><h5 class="heading"><span class="codenumber">(d)</span></h5>
+<div class="para" id="solving_linear_systems-2-10-2-1">Multiply the second equation in our system by negative three and state the <em class="emphasis">new</em> system of equations.<div class="autopermalink" data-description="Paragraph"><a href="#solving_linear_systems-2-10-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 1.2.3.a"><a href="#solving_linear_systems-2-10-2" title="Copy heading and permalink for Task 1.2.3.a" aria-label="Copy heading and permalink for Task 1.2.3.a">🔗</a></div></article><article class="task exercise-like" id="solving_linear_systems-2-10-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="solving_linear_systems-2-10-3-1">Write a few sentences about why the new system of equations given in the previous part is equivalent to the original system.<div class="autopermalink" data-description="Paragraph"><a href="#solving_linear_systems-2-10-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 1.2.3.b"><a href="#solving_linear_systems-2-10-3" title="Copy heading and permalink for Task 1.2.3.b" aria-label="Copy heading and permalink for Task 1.2.3.b">🔗</a></div></article><article class="task exercise-like" id="solving_linear_systems-2-10-4"><h5 class="heading"><span class="codenumber">(c)</span></h5>
+<div class="para" id="solving_linear_systems-2-10-4-1">Write out the equation obtained by multiplying the second equation in the original system by a non-zero scalar (which we will call <span class="process-math">\(k\)</span>) and adding to the first equation.<div class="autopermalink" data-description="Paragraph"><a href="#solving_linear_systems-2-10-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 1.2.3.c"><a href="#solving_linear_systems-2-10-4" title="Copy heading and permalink for Task 1.2.3.c" aria-label="Copy heading and permalink for Task 1.2.3.c">🔗</a></div></article><article class="task exercise-like" id="solving_linear_systems-2-10-5"><h5 class="heading"><span class="codenumber">(d)</span></h5>
 <div class="para logical" id="solving_linear_systems-2-10-5-1">
 <div class="para">Replace the second equation in the original system with your answer to the previous part, which we will call System 2. Prove that System 2 is equivalent to the original system. In other words, you need to show that <span class="process-math">\((c_1,c_2,c_3)\)</span> is a solution of the equations <span class="process-math">\(S_1\text{:}\)</span>
 </div>
@@ -362,49 +408,68 @@ b_1 x_1+b_2x_2+b_3x_3\amp =b_4
 </div>
 <div class="para">
 <em class="emphasis">if and only if</em> <span class="process-math">\((c_1,c_2,c_3)\)</span> is a solution to System 2.</div>
-</div></article></article><article class="activity project-like" id="ex_solve_sys_prac"><h4 class="heading">
-<span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.2.4</span><span class="period">.</span>
+<div class="autopermalink" data-description="Paragraph"><a href="#solving_linear_systems-2-10-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 1.2.3.d"><a href="#solving_linear_systems-2-10-5" title="Copy heading and permalink for Task 1.2.3.d" aria-label="Copy heading and permalink for Task 1.2.3.d">🔗</a></div></article><div class="autopermalink" data-description="Activity 1.2.3"><a href="#solving_linear_systems-2-10" title="Copy heading and permalink for Activity 1.2.3" aria-label="Copy heading and permalink for Activity 1.2.3">🔗</a></div></article><article class="activity project-like" id="ex_solve_sys_prac"><h4 class="heading">
+<span class="type">Activity</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.2.4</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h4>
-<div class="introduction" id="ex_solve_sys_prac-1"><div class="para" id="ex_solve_sys_prac-1-1">Solve the following systems just using elementary operations. Remember to show your work.</div></div>
+<div class="introduction" id="ex_solve_sys_prac-1"><div class="para" id="ex_solve_sys_prac-1-1">Solve the following systems just using elementary operations. Remember to show your work.<div class="autopermalink" data-description="Paragraph"><a href="#ex_solve_sys_prac-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></div>
 <article class="task exercise-like" id="ex_solve_sys_prac-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
-<div class="para logical" id="ex_solve_sys_prac-2-1"><div class="displaymath process-math" id="ex_solve_sys_prac-2-1-1">
+<div class="para logical" id="ex_solve_sys_prac-2-1">
+<div class="displaymath process-math" id="ex_solve_sys_prac-2-1-1">
 \begin{align*}
 2y+z\amp =4\\
 x-3y+2z\amp =5\\
 2x+y \amp =-2
 \end{align*}
-</div></div></article><article class="task exercise-like" id="task_system"><h5 class="heading"><span class="codenumber">(b)</span></h5>
-<div class="para logical" id="task_system-1"><div class="displaymath process-math" id="task_system-1-1">
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ex_solve_sys_prac-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 1.2.4.a"><a href="#ex_solve_sys_prac-2" title="Copy heading and permalink for Task 1.2.4.a" aria-label="Copy heading and permalink for Task 1.2.4.a">🔗</a></div></article><article class="task exercise-like" id="task_system"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para logical" id="task_system-1">
+<div class="displaymath process-math" id="task_system-1-1">
 \begin{align*}
 3x-2y-z\amp =0\\
 2x+y+z\amp =10\\
 x+4y+3z\amp =20
 \end{align*}
-</div></div></article><article class="task exercise-like" id="ex_solve_sys_prac-4"><h5 class="heading"><span class="codenumber">(c)</span></h5>
-<div class="para logical" id="ex_solve_sys_prac-4-1"><div class="displaymath process-math" id="ex_solve_sys_prac-4-1-1">
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#task_system-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 1.2.4.b"><a href="#task_system" title="Copy heading and permalink for Task 1.2.4.b" aria-label="Copy heading and permalink for Task 1.2.4.b">🔗</a></div></article><article class="task exercise-like" id="ex_solve_sys_prac-4"><h5 class="heading"><span class="codenumber">(c)</span></h5>
+<div class="para logical" id="ex_solve_sys_prac-4-1">
+<div class="displaymath process-math" id="ex_solve_sys_prac-4-1-1">
 \begin{align*}
 3x-2y-z\amp =0\\
 2x+y+z\amp =10\\
 x+4y+3z\amp=10
 \end{align*}
-</div></div></article></article><div class="para" id="solving_linear_systems-2-12">A system of equations is <dfn class="terminology">consistent</dfn> if there exists at least one solution to the system. In other words, a consistent system of equations has a nonempty solution set. A system that is not consistent is said to be <dfn class="terminology">inconsistent</dfn>.</div>
-<div class="para" id="solving_linear_systems-2-13">In <a href="solving_linear_systems.html#ex_solve_sys_prac" class="xref" data-knowl="./knowl/xref/ex_solve_sys_prac.html" data-reveal-label="Reveal" data-close-label="Close" title="Activity 1.2.4">Activity 1.2.4</a>, note that you didn’t change anything but the <em class="emphasis">coefficients</em> in the system of equations as you traded one system for another. Some of the coefficients probably became zero, but you didn’t really eliminate any variables or consider a totally different problem. We will use matrices to efficiently store, and manipulate the coefficients in a system of linear equations, since they are all that matter for now. Matrices will have <em class="emphasis">many</em> uses in this and other courses, and we will use capital letters like <span class="process-math">\(A\)</span> and <span class="process-math">\(B\)</span> to denote matrices. Matrices will be rectangular arrays with the same number of entries in each row and the same number of entries in each column. The size of a matrix is given (in order) as the number of rows by the number of columns, so a <span class="process-math">\(3\)</span> by <span class="process-math">\(2\)</span> matrix has <span class="process-math">\(3\)</span> rows and <span class="process-math">\(2\)</span> columns.</div>
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ex_solve_sys_prac-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 1.2.4.c"><a href="#ex_solve_sys_prac-4" title="Copy heading and permalink for Task 1.2.4.c" aria-label="Copy heading and permalink for Task 1.2.4.c">🔗</a></div></article><div class="autopermalink" data-description="Activity 1.2.4"><a href="#ex_solve_sys_prac" title="Copy heading and permalink for Activity 1.2.4" aria-label="Copy heading and permalink for Activity 1.2.4">🔗</a></div></article><div class="para" id="solving_linear_systems-2-12">A system of equations is <dfn class="terminology">consistent</dfn> if there exists at least one solution to the system. In other words, a consistent system of equations has a nonempty solution set. A system that is not consistent is said to be <dfn class="terminology">inconsistent</dfn>.<div class="autopermalink" data-description="Paragraph"><a href="#solving_linear_systems-2-12" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="solving_linear_systems-2-13">In <a href="solving_linear_systems.html#ex_solve_sys_prac" class="xref" data-knowl="./knowl/xref/ex_solve_sys_prac.html" data-reveal-label="Reveal" data-close-label="Close" title="Activity 1.2.4">Activity 1.2.4</a>, note that you didn’t change anything but the <em class="emphasis">coefficients</em> in the system of equations as you traded one system for another. Some of the coefficients probably became zero, but you didn’t really eliminate any variables or consider a totally different problem. We will use matrices to efficiently store, and manipulate the coefficients in a system of linear equations, since they are all that matter for now. Matrices will have <em class="emphasis">many</em> uses in this and other courses, and we will use capital letters like <span class="process-math">\(A\)</span> and <span class="process-math">\(B\)</span> to denote matrices. Matrices will be rectangular arrays with the same number of entries in each row and the same number of entries in each column. The size of a matrix is given (in order) as the number of rows by the number of columns, so a <span class="process-math">\(3\)</span> by <span class="process-math">\(2\)</span> matrix has <span class="process-math">\(3\)</span> rows and <span class="process-math">\(2\)</span> columns.<div class="autopermalink" data-description="Paragraph"><a href="#solving_linear_systems-2-13" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
 <div class="para logical" id="solving_linear_systems-2-14">
 <div class="para">In order to specify what <dfn class="terminology">entry</dfn> we are referring to in a matrix, we need an ordered pair of indices telling us the number of the row and number of the column to look in respectively. For instance, if</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="solving_linear_systems-2-14-2">
 \begin{equation*}
 B=\begin{bmatrix} 1\amp 5\amp 0\\\heartsuit\amp \bigstar \amp \blacklozenge \\ £\amp \circledR\amp \maltese \end{bmatrix}\text{,}
 \end{equation*}
 </div>
 <div class="para">then the <span class="process-math">\((3,2)\)</span> entry of <span class="process-math">\(B\)</span> is in the third row and 2nd column. You could also write this as <span class="process-math">\(B_{3,2}= \circledR\text{.}\)</span> The <dfn class="terminology"><span class="process-math">\(i\)</span>-th row</dfn> of a matrix <span class="process-math">\(A\)</span> will be denoted <span class="process-math">\(row_i(A)\)</span> and the <dfn class="terminology"><span class="process-math">\(j\)</span>-th column</dfn> will be denoted <span class="process-math">\(column_j(A)\text{.}\)</span>
 </div>
+<div class="autopermalink" data-description="Paragraph"><a href="#solving_linear_systems-2-14" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="solving_linear_systems-2-15">In order to distinguish <dfn class="terminology">vectors</dfn> (as being more than just <span class="process-math">\(n\)</span> by <span class="process-math">\(1\)</span> matrices), we will use the arrow notation and lower case symbols like <span class="process-math">\(\vec{u}\)</span> and <span class="process-math">\(\vec{v}\)</span> to denote vectors. Unless otherwise stated, we will use column vectors. For instance, if <span class="process-math">\(\vec{v} =\begin{bmatrix}v_1\\ v_2\\\vdots\\ v_m\end{bmatrix}\text{,}\)</span> then the second <dfn class="terminology">component</dfn> of <span class="process-math">\(\vec{v}\)</span> is the scalar <span class="process-math">\(v_2\text{.}\)</span> The size of a vector in <span class="process-math">\(\mathbb{R}^n\)</span> is the number of components the vector has. In later work, we will deal with a <em class="emphasis">much</em> more general notion of vectors that will <em class="emphasis">not</em> have components like vectors in <span class="process-math">\(\mathbb{R}^n\text{.}\)</span>
+<div class="para" id="solving_linear_systems-2-15">In order to distinguish <dfn class="terminology">vectors</dfn> (as being more than just <span class="process-math">\(n\)</span> by <span class="process-math">\(1\)</span> matrices), we will use the arrow notation and lower case symbols like <span class="process-math">\(\vec{u}\)</span> and <span class="process-math">\(\vec{v}\)</span> to denote vectors. Unless otherwise stated, we will use column vectors. For instance, if <span class="process-math">\(\vec{v} =\begin{bmatrix}v_1\\ v_2\\\vdots\\ v_m\end{bmatrix}\text{,}\)</span> then the second <dfn class="terminology">component</dfn> of <span class="process-math">\(\vec{v}\)</span> is the scalar <span class="process-math">\(v_2\text{.}\)</span> The size of a vector in <span class="process-math">\(\mathbb{R}^n\)</span> is the number of components the vector has. In later work, we will deal with a <em class="emphasis">much</em> more general notion of vectors that will <em class="emphasis">not</em> have components like vectors in <span class="process-math">\(\mathbb{R}^n\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#solving_linear_systems-2-15" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="solving_linear_systems-2-16">The <dfn class="terminology">coefficient matrix</dfn> of a linear system of <span class="process-math">\(m\)</span> equations in <span class="process-math">\(n\)</span> variables is a <span class="process-math">\(m\)</span> by <span class="process-math">\(n\)</span> matrix whose <span class="process-math">\((i,j)\)</span> entry is the coefficient of the <span class="process-math">\(j\)</span>-th variable, <span class="process-math">\(x_j\text{,}\)</span> in the <span class="process-math">\(i\)</span>-th equation of the system. The <dfn class="terminology">augmented matrix</dfn> of a linear system of <span class="process-math">\(m\)</span> equations in <span class="process-math">\(n\)</span> variables is a <span class="process-math">\(m\)</span> by <span class="process-math">\((n+1)\)</span> matrix whose first <span class="process-math">\(n\)</span> columns are the coefficient matrix of the system and the last column is the constant terms from the right side of each equation.</div>
+<div class="para" id="solving_linear_systems-2-16">The <dfn class="terminology">coefficient matrix</dfn> of a linear system of <span class="process-math">\(m\)</span> equations in <span class="process-math">\(n\)</span> variables is a <span class="process-math">\(m\)</span> by <span class="process-math">\(n\)</span> matrix whose <span class="process-math">\((i,j)\)</span> entry is the coefficient of the <span class="process-math">\(j\)</span>-th variable, <span class="process-math">\(x_j\text{,}\)</span> in the <span class="process-math">\(i\)</span>-th equation of the system. The <dfn class="terminology">augmented matrix</dfn> of a linear system of <span class="process-math">\(m\)</span> equations in <span class="process-math">\(n\)</span> variables is a <span class="process-math">\(m\)</span> by <span class="process-math">\((n+1)\)</span> matrix whose first <span class="process-math">\(n\)</span> columns are the coefficient matrix of the system and the last column is the constant terms from the right side of each equation.<div class="autopermalink" data-description="Paragraph"><a href="#solving_linear_systems-2-16" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
 <div class="para logical" id="solving_linear_systems-2-17">
 <div class="para">The system</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="solving_linear_systems-2-17-1">
 \begin{equation*}
 \begin{array}{rcrcrcrcr}
 a_{11} x_1  \amp +\amp  a_{12} x_2 \amp +\amp  ... \amp +\amp   a_{1n}x_n \amp =\amp  b_1 \\ % -1  3
@@ -415,7 +480,7 @@ a_{m1} x_1  \amp +\amp  a_{m2} x_2 \amp +\amp  ... \amp +\amp   a_{mn}x_n \amp =
 \end{equation*}
 </div>
 <div class="para">has a coefficient matrix</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="solving_linear_systems-2-17-2">
 \begin{equation*}
 A=\begin{bmatrix} a_{11} \amp  a_{12} \amp  ... \amp   a_{1n} \\
 a_{21}\amp  a_{22}\amp  ... \amp   a_{2n} \\
@@ -424,7 +489,7 @@ a_{m1}\amp  a_{m2} \amp  ... \amp   a_{mn}  \end{bmatrix}
 \end{equation*}
 </div>
 <div class="para">and an augmented matrix of</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="solving_linear_systems-2-17-3">
 \begin{equation*}
 [A|b]=\begin{bmatrix} a_{11} \amp  a_{12} \amp  ... \amp   a_{1n} \amp \bigm| b_1\\
 a_{21}\amp  a_{22}\amp  ... \amp   a_{2n} \amp \bigm| b_2\\
@@ -432,105 +497,167 @@ a_{21}\amp  a_{22}\amp  ... \amp   a_{2n} \amp \bigm| b_2\\
 a_{m1}\amp  a_{m2} \amp  ... \amp   a_{mn} \amp \bigm| b_m \end{bmatrix}
 \end{equation*}
 </div>
+<div class="autopermalink" data-description="Paragraph"><a href="#solving_linear_systems-2-17" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="solving_linear_systems-2-18">For some properties of the system of equations, we need only look at the coefficient matrix but others will need the augmented matrix. It is important to know the difference and be able to state which corresponding matrix you are using in your work.</div>
+<div class="para" id="solving_linear_systems-2-18">For some properties of the system of equations, we need only look at the coefficient matrix but others will need the augmented matrix. It is important to know the difference and be able to state which corresponding matrix you are using in your work.<div class="autopermalink" data-description="Paragraph"><a href="#solving_linear_systems-2-18" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
 <details id="question-coefmatrix" class="question example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
-<span class="type">Question</span><span class="space"> </span><span class="codenumber">1.2.2</span><span class="period">.</span>
-</h4></summary><article class="question example-like knowl__content"><div class="introduction" id="question-coefmatrix-1"><div class="para" id="question-coefmatrix-1-1">For each system given, write the coefficent matrix.</div></div>
+<span class="type">Question</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.2.2</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4></summary><article class="question example-like knowl__content"><div class="introduction" id="question-coefmatrix-1"><div class="para" id="question-coefmatrix-1-1">For each system given, write the coefficent matrix.<div class="autopermalink" data-description="Paragraph"><a href="#question-coefmatrix-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></div>
 <article class="task exercise-like" id="question-coefmatrix-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
-<div class="para logical" id="question-coefmatrix-2-1"><div class="displaymath process-math" id="question-coefmatrix-2-1-1">
+<div class="para logical" id="question-coefmatrix-2-1">
+<div class="displaymath process-math" id="question-coefmatrix-2-1-1">
 \begin{align*}
 3x_1-2x_2\amp =6\\
 2x_1-2x_2\amp =-2\\
 -x_1+x_2\amp =1
 \end{align*}
-</div></div></article><article class="task exercise-like" id="question-coefmatrix-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
-<div class="para logical" id="question-coefmatrix-3-1"><div class="displaymath process-math" id="question-coefmatrix-3-1-1">
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#question-coefmatrix-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 1.2.2.a"><a href="#question-coefmatrix-2" title="Copy heading and permalink for Task 1.2.2.a" aria-label="Copy heading and permalink for Task 1.2.2.a">🔗</a></div></article><article class="task exercise-like" id="question-coefmatrix-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para logical" id="question-coefmatrix-3-1">
+<div class="displaymath process-math" id="question-coefmatrix-3-1-1">
 \begin{align*}
 3x_1-2x_2-4x_3\amp =6
 \end{align*}
-</div></div></article><article class="task exercise-like" id="question-coefmatrix-4"><h5 class="heading"><span class="codenumber">(c)</span></h5>
-<div class="para logical" id="question-coefmatrix-4-1"><div class="displaymath process-math" id="question-coefmatrix-4-1-1">
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#question-coefmatrix-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 1.2.2.b"><a href="#question-coefmatrix-3" title="Copy heading and permalink for Task 1.2.2.b" aria-label="Copy heading and permalink for Task 1.2.2.b">🔗</a></div></article><article class="task exercise-like" id="question-coefmatrix-4"><h5 class="heading"><span class="codenumber">(c)</span></h5>
+<div class="para logical" id="question-coefmatrix-4-1">
+<div class="displaymath process-math" id="question-coefmatrix-4-1-1">
 \begin{align*}
 3x_1-2x_2\amp =6\\
 2x_1-2x_2\amp=6\\
 -x_1+x_2\amp =1
 \end{align*}
-</div></div></article><article class="task exercise-like" id="question-coefmatrix-5"><h5 class="heading"><span class="codenumber">(d)</span></h5>
-<div class="para logical" id="question-coefmatrix-5-1"><div class="displaymath process-math" id="question-coefmatrix-5-1-1">
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#question-coefmatrix-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 1.2.2.c"><a href="#question-coefmatrix-4" title="Copy heading and permalink for Task 1.2.2.c" aria-label="Copy heading and permalink for Task 1.2.2.c">🔗</a></div></article><article class="task exercise-like" id="question-coefmatrix-5"><h5 class="heading"><span class="codenumber">(d)</span></h5>
+<div class="para logical" id="question-coefmatrix-5-1">
+<div class="displaymath process-math" id="question-coefmatrix-5-1-1">
 \begin{align*}
 x\amp =5\\
 4x\amp =-1\\
 -2x\amp =10
 \end{align*}
-</div></div></article><article class="task exercise-like" id="question-coefmatrix-6"><h5 class="heading"><span class="codenumber">(e)</span></h5>
-<div class="para logical" id="question-coefmatrix-6-1"><div class="displaymath process-math" id="question-coefmatrix-6-1-1">
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#question-coefmatrix-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 1.2.2.d"><a href="#question-coefmatrix-5" title="Copy heading and permalink for Task 1.2.2.d" aria-label="Copy heading and permalink for Task 1.2.2.d">🔗</a></div></article><article class="task exercise-like" id="question-coefmatrix-6"><h5 class="heading"><span class="codenumber">(e)</span></h5>
+<div class="para logical" id="question-coefmatrix-6-1">
+<div class="displaymath process-math" id="question-coefmatrix-6-1-1">
 \begin{align*}
 7x\amp =3\\
 2y\amp =1\\
 3z\amp =-2
 \end{align*}
-</div></div></article><article class="task exercise-like" id="question-coefmatrix-7"><h5 class="heading"><span class="codenumber">(f)</span></h5>
-<div class="para logical" id="question-coefmatrix-7-1"><div class="displaymath process-math" id="question-coefmatrix-7-1-1">
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#question-coefmatrix-6-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 1.2.2.e"><a href="#question-coefmatrix-6" title="Copy heading and permalink for Task 1.2.2.e" aria-label="Copy heading and permalink for Task 1.2.2.e">🔗</a></div></article><article class="task exercise-like" id="question-coefmatrix-7"><h5 class="heading"><span class="codenumber">(f)</span></h5>
+<div class="para logical" id="question-coefmatrix-7-1">
+<div class="displaymath process-math" id="question-coefmatrix-7-1-1">
 \begin{align*}
 3r-5s+t\amp =2\\
 -6r+10s-2t\amp =3
 \end{align*}
-</div></div></article></article></details><details id="question-augmatrix" class="question example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
-<span class="type">Question</span><span class="space"> </span><span class="codenumber">1.2.3</span><span class="period">.</span>
-</h4></summary><article class="question example-like knowl__content"><div class="introduction" id="question-augmatrix-1"><div class="para" id="question-augmatrix-1-1">For each system given, write the corresponding augmented matrix.</div></div>
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#question-coefmatrix-7-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 1.2.2.f"><a href="#question-coefmatrix-7" title="Copy heading and permalink for Task 1.2.2.f" aria-label="Copy heading and permalink for Task 1.2.2.f">🔗</a></div></article><div class="autopermalink" data-description="Question 1.2.2"><a href="#question-coefmatrix" title="Copy heading and permalink for Question 1.2.2" aria-label="Copy heading and permalink for Question 1.2.2">🔗</a></div></article></details><details id="question-augmatrix" class="question example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Question</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.2.3</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4></summary><article class="question example-like knowl__content"><div class="introduction" id="question-augmatrix-1"><div class="para" id="question-augmatrix-1-1">For each system given, write the corresponding augmented matrix.<div class="autopermalink" data-description="Paragraph"><a href="#question-augmatrix-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></div>
 <article class="task exercise-like" id="question-augmatrix-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
-<div class="para logical" id="question-augmatrix-2-1"><div class="displaymath process-math" id="question-augmatrix-2-1-1">
+<div class="para logical" id="question-augmatrix-2-1">
+<div class="displaymath process-math" id="question-augmatrix-2-1-1">
 \begin{align*}
 3x_1-2x_2\amp =6\\
 2x_1-2x_2\amp =-2\\
 -x_1+x_2\amp =1
 \end{align*}
-</div></div></article><article class="task exercise-like" id="question-augmatrix-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
-<div class="para logical" id="question-augmatrix-3-1"><div class="displaymath process-math" id="question-augmatrix-3-1-1">
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#question-augmatrix-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 1.2.3.a"><a href="#question-augmatrix-2" title="Copy heading and permalink for Task 1.2.3.a" aria-label="Copy heading and permalink for Task 1.2.3.a">🔗</a></div></article><article class="task exercise-like" id="question-augmatrix-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para logical" id="question-augmatrix-3-1">
+<div class="displaymath process-math" id="question-augmatrix-3-1-1">
 \begin{align*}
 3x_1-2x_2-4x_3\amp =6
 \end{align*}
-</div></div></article><article class="task exercise-like" id="question-augmatrix-4"><h5 class="heading"><span class="codenumber">(c)</span></h5>
-<div class="para logical" id="question-augmatrix-4-1"><div class="displaymath process-math" id="question-augmatrix-4-1-1">
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#question-augmatrix-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 1.2.3.b"><a href="#question-augmatrix-3" title="Copy heading and permalink for Task 1.2.3.b" aria-label="Copy heading and permalink for Task 1.2.3.b">🔗</a></div></article><article class="task exercise-like" id="question-augmatrix-4"><h5 class="heading"><span class="codenumber">(c)</span></h5>
+<div class="para logical" id="question-augmatrix-4-1">
+<div class="displaymath process-math" id="question-augmatrix-4-1-1">
 \begin{align*}
 3x_1-2x_2\amp =6\\
 2x_1-2x_2\amp=6\\
 -x_1+x_2\amp =1
 \end{align*}
-</div></div></article><article class="task exercise-like" id="question-augmatrix-5"><h5 class="heading"><span class="codenumber">(d)</span></h5>
-<div class="para logical" id="question-augmatrix-5-1"><div class="displaymath process-math" id="question-augmatrix-5-1-1">
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#question-augmatrix-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 1.2.3.c"><a href="#question-augmatrix-4" title="Copy heading and permalink for Task 1.2.3.c" aria-label="Copy heading and permalink for Task 1.2.3.c">🔗</a></div></article><article class="task exercise-like" id="question-augmatrix-5"><h5 class="heading"><span class="codenumber">(d)</span></h5>
+<div class="para logical" id="question-augmatrix-5-1">
+<div class="displaymath process-math" id="question-augmatrix-5-1-1">
 \begin{align*}
 x\amp =5\\
 4x\amp =-1\\
 -2x\amp =10
 \end{align*}
-</div></div></article><article class="task exercise-like" id="question-augmatrix-6"><h5 class="heading"><span class="codenumber">(e)</span></h5>
-<div class="para logical" id="question-augmatrix-6-1"><div class="displaymath process-math" id="question-augmatrix-6-1-1">
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#question-augmatrix-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 1.2.3.d"><a href="#question-augmatrix-5" title="Copy heading and permalink for Task 1.2.3.d" aria-label="Copy heading and permalink for Task 1.2.3.d">🔗</a></div></article><article class="task exercise-like" id="question-augmatrix-6"><h5 class="heading"><span class="codenumber">(e)</span></h5>
+<div class="para logical" id="question-augmatrix-6-1">
+<div class="displaymath process-math" id="question-augmatrix-6-1-1">
 \begin{align*}
 7x\amp =3\\
 2y\amp =1\\
 3z\amp =-2
 \end{align*}
-</div></div></article><article class="task exercise-like" id="question-augmatrix-7"><h5 class="heading"><span class="codenumber">(f)</span></h5>
-<div class="para logical" id="question-augmatrix-7-1"><div class="displaymath process-math" id="question-augmatrix-7-1-1">
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#question-augmatrix-6-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 1.2.3.e"><a href="#question-augmatrix-6" title="Copy heading and permalink for Task 1.2.3.e" aria-label="Copy heading and permalink for Task 1.2.3.e">🔗</a></div></article><article class="task exercise-like" id="question-augmatrix-7"><h5 class="heading"><span class="codenumber">(f)</span></h5>
+<div class="para logical" id="question-augmatrix-7-1">
+<div class="displaymath process-math" id="question-augmatrix-7-1-1">
 \begin{align*}
 3r-5s+t\amp =2\\
 -6r+10s-2t\amp =3
 \end{align*}
-</div></div></article></article></details><div class="para logical" id="solving_linear_systems-2-21">
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#question-augmatrix-7-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 1.2.3.f"><a href="#question-augmatrix-7" title="Copy heading and permalink for Task 1.2.3.f" aria-label="Copy heading and permalink for Task 1.2.3.f">🔗</a></div></article><div class="autopermalink" data-description="Question 1.2.3"><a href="#question-augmatrix" title="Copy heading and permalink for Question 1.2.3" aria-label="Copy heading and permalink for Question 1.2.3">🔗</a></div></article></details><div class="para logical" id="solving_linear_systems-2-21">
 <div class="para">The elementary operations on equations outlined above will correspond to elementary row operations on matrices as well. Specifically, an <dfn class="terminology">elementary row operation</dfn> on a matrix is an operation of the form:</div>
 <ul class="disc" id="solving_linear_systems-2-21-2">
-<li id="solving_linear_systems-2-21-2-1"><div class="para" id="p-derived-solving_linear_systems-2-21-2-1">multiplying a row by a non-zero scalar</div></li>
-<li id="solving_linear_systems-2-21-2-2"><div class="para" id="p-derived-solving_linear_systems-2-21-2-2">switching two rows</div></li>
-<li id="solving_linear_systems-2-21-2-3"><div class="para" id="p-derived-solving_linear_systems-2-21-2-3">adding a multiple of one row to another row</div></li>
+<li id="solving_linear_systems-2-21-2-1">
+<div class="para" id="p-derived-solving_linear_systems-2-21-2-1">multiplying a row by a non-zero scalar</div>
+<div class="autopermalink" data-description="Item"><a href="#solving_linear_systems-2-21-2-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="solving_linear_systems-2-21-2-2">
+<div class="para" id="p-derived-solving_linear_systems-2-21-2-2">switching two rows</div>
+<div class="autopermalink" data-description="Item"><a href="#solving_linear_systems-2-21-2-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="solving_linear_systems-2-21-2-3">
+<div class="para" id="p-derived-solving_linear_systems-2-21-2-3">adding a multiple of one row to another row</div>
+<div class="autopermalink" data-description="Item"><a href="#solving_linear_systems-2-21-2-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
 </ul>
+<div class="autopermalink" data-description="Paragraph"><a href="#solving_linear_systems-2-21" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <details id="solving_linear_systems-2-22" class="question example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
-<span class="type">Question</span><span class="space"> </span><span class="codenumber">1.2.4</span><span class="period">.</span>
+<span class="type">Question</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.2.4</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h4></summary><article class="question example-like knowl__content"><div class="para logical" id="solving_linear_systems-2-22-1-1">
 <div class="para">Using the matrix <span class="process-math">\(A\)</span> given below, perform each of the following row operations:</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="solving_linear_systems-2-22-1-1-2">
 \begin{equation*}
 A=\begin{bmatrix}
 1 \amp 2 \amp 3 \amp 4 \\
@@ -539,42 +666,80 @@ A=\begin{bmatrix}
 \end{bmatrix}
 \end{equation*}
 </div>
-</div> <div class="para logical" id="solving_linear_systems-2-22-1-2"><ol class="decimal" id="solving_linear_systems-2-22-1-2-1">
-<li id="solving_linear_systems-2-22-1-2-1-1"><div class="para" id="p-derived-solving_linear_systems-2-22-1-2-1-1"><span class="process-math">\(\displaystyle R_1 \leftrightarrow R_3\)</span></div></li>
-<li id="solving_linear_systems-2-22-1-2-1-2"><div class="para" id="p-derived-solving_linear_systems-2-22-1-2-1-2"><span class="process-math">\(\displaystyle -3 R_2 \rightarrow R_2\)</span></div></li>
-<li id="solving_linear_systems-2-22-1-2-1-3"><div class="para" id="p-derived-solving_linear_systems-2-22-1-2-1-3"><span class="process-math">\(\displaystyle 2 R_2 +R_1 \rightarrow R_1\)</span></div></li>
-</ol></div></article></details><div class="para" id="solving_linear_systems-2-23">We now have operations to trade our system of equations for an equivalent system, but we have not stated a way to make sure that the solution set will be easy to explicitly state from our new equivalent system. The following matrix forms will be useful for determining solution sets and various other properties of the corresponding system of equations.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#solving_linear_systems-2-22-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para logical" id="solving_linear_systems-2-22-1-2">
+<ol class="decimal" id="solving_linear_systems-2-22-1-2-1">
+<li id="solving_linear_systems-2-22-1-2-1-1">
+<div class="para" id="p-derived-solving_linear_systems-2-22-1-2-1-1"><span class="process-math">\(\displaystyle R_1 \leftrightarrow R_3\)</span></div>
+<div class="autopermalink" data-description="Item 1"><a href="#solving_linear_systems-2-22-1-2-1-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+</li>
+<li id="solving_linear_systems-2-22-1-2-1-2">
+<div class="para" id="p-derived-solving_linear_systems-2-22-1-2-1-2"><span class="process-math">\(\displaystyle -3 R_2 \rightarrow R_2\)</span></div>
+<div class="autopermalink" data-description="Item 2"><a href="#solving_linear_systems-2-22-1-2-1-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+</li>
+<li id="solving_linear_systems-2-22-1-2-1-3">
+<div class="para" id="p-derived-solving_linear_systems-2-22-1-2-1-3"><span class="process-math">\(\displaystyle 2 R_2 +R_1 \rightarrow R_1\)</span></div>
+<div class="autopermalink" data-description="Item 3"><a href="#solving_linear_systems-2-22-1-2-1-3" title="Copy heading and permalink for Item 3" aria-label="Copy heading and permalink for Item 3">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Paragraph"><a href="#solving_linear_systems-2-22-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Question 1.2.4"><a href="#solving_linear_systems-2-22" title="Copy heading and permalink for Question 1.2.4" aria-label="Copy heading and permalink for Question 1.2.4">🔗</a></div></article></details><div class="para" id="solving_linear_systems-2-23">We now have operations to trade our system of equations for an equivalent system, but we have not stated a way to make sure that the solution set will be easy to explicitly state from our new equivalent system. The following matrix forms will be useful for determining solution sets and various other properties of the corresponding system of equations.<div class="autopermalink" data-description="Paragraph"><a href="#solving_linear_systems-2-23" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
 <article class="definition definition-like" id="solving_linear_systems-2-24"><h4 class="heading">
-<span class="type">Definition</span><span class="space"> </span><span class="codenumber">1.2.5</span><span class="period">.</span>
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.2.5</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h4>
 <div class="para logical" id="solving_linear_systems-2-24-1-1">
 <div class="para">A rectangular matrix is in <dfn class="terminology">row echelon form</dfn> if it has the following three properties:</div>
 <ul class="disc" id="solving_linear_systems-2-24-1-1-2">
-<li id="solving_linear_systems-2-24-1-1-2-1"><div class="para" id="p-derived-solving_linear_systems-2-24-1-1-2-1">All nonzero rows are above any rows of all zeros.</div></li>
-<li id="solving_linear_systems-2-24-1-1-2-2"><div class="para" id="p-derived-solving_linear_systems-2-24-1-1-2-2">Each <dfn class="terminology">leading entry</dfn> (being the first non-zero entry) of a row is in a column to the right of the leading entry of the row above it.</div></li>
-<li id="solving_linear_systems-2-24-1-1-2-3"><div class="para" id="p-derived-solving_linear_systems-2-24-1-1-2-3">All entries in a column below a leading entry are zeros.</div></li>
+<li id="solving_linear_systems-2-24-1-1-2-1">
+<div class="para" id="p-derived-solving_linear_systems-2-24-1-1-2-1">All nonzero rows are above any rows of all zeros.</div>
+<div class="autopermalink" data-description="Item"><a href="#solving_linear_systems-2-24-1-1-2-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="solving_linear_systems-2-24-1-1-2-2">
+<div class="para" id="p-derived-solving_linear_systems-2-24-1-1-2-2">Each <dfn class="terminology">leading entry</dfn> (being the first non-zero entry) of a row is in a column to the right of the leading entry of the row above it.</div>
+<div class="autopermalink" data-description="Item"><a href="#solving_linear_systems-2-24-1-1-2-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="solving_linear_systems-2-24-1-1-2-3">
+<div class="para" id="p-derived-solving_linear_systems-2-24-1-1-2-3">All entries in a column below a leading entry are zeros.</div>
+<div class="autopermalink" data-description="Item"><a href="#solving_linear_systems-2-24-1-1-2-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
 </ul>
+<div class="autopermalink" data-description="Paragraph"><a href="#solving_linear_systems-2-24-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div> <div class="para logical" id="solving_linear_systems-2-24-1-2">
 <div class="para">If a matrix in row echelon form satisfies the following additional properties, then we say the matrix is in <dfn class="terminology">reduced row echelon form</dfn>:</div>
 <ul class="disc" id="solving_linear_systems-2-24-1-2-2">
-<li id="solving_linear_systems-2-24-1-2-2-1"><div class="para" id="p-derived-solving_linear_systems-2-24-1-2-2-1">The leading entry in each nonzero row is 1.</div></li>
-<li id="solving_linear_systems-2-24-1-2-2-2"><div class="para" id="p-derived-solving_linear_systems-2-24-1-2-2-2">Each leading 1 is the only nonzero entry in its column.</div></li>
+<li id="solving_linear_systems-2-24-1-2-2-1">
+<div class="para" id="p-derived-solving_linear_systems-2-24-1-2-2-1">The leading entry in each nonzero row is 1.</div>
+<div class="autopermalink" data-description="Item"><a href="#solving_linear_systems-2-24-1-2-2-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="solving_linear_systems-2-24-1-2-2-2">
+<div class="para" id="p-derived-solving_linear_systems-2-24-1-2-2-2">Each leading 1 is the only nonzero entry in its column.</div>
+<div class="autopermalink" data-description="Item"><a href="#solving_linear_systems-2-24-1-2-2-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
 </ul>
-</div></article><div class="para" id="solving_linear_systems-2-25">The leading entry in a nonzero row of the row echelon form is called a <dfn class="terminology">pivot</dfn>. The column in which a pivot occurs is called a <dfn class="terminology">pivot column</dfn> and the corresponding variable is a <dfn class="terminology">basic variable</dfn> or <dfn class="terminology">pivot variable</dfn>. A variable corresponding to a column in which the coefficient matrix does <em class="emphasis">not</em> have a pivot are called <dfn class="terminology">free variables</dfn>. While the echelon form is needed to find where pivots will occur, we will sometimes refer to pivot positions of a matrix even when the matrix is not in echelon form.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#solving_linear_systems-2-24-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Definition 1.2.5"><a href="#solving_linear_systems-2-24" title="Copy heading and permalink for Definition 1.2.5" aria-label="Copy heading and permalink for Definition 1.2.5">🔗</a></div></article><div class="para" id="solving_linear_systems-2-25">The leading entry in a nonzero row of the row echelon form is called a <dfn class="terminology">pivot</dfn>. The column in which a pivot occurs is called a <dfn class="terminology">pivot column</dfn> and the corresponding variable is a <dfn class="terminology">basic variable</dfn> or <dfn class="terminology">pivot variable</dfn>. A variable corresponding to a column in which the coefficient matrix does <em class="emphasis">not</em> have a pivot are called <dfn class="terminology">free variables</dfn>. While the echelon form is needed to find where pivots will occur, we will sometimes refer to pivot positions of a matrix even when the matrix is not in echelon form.<div class="autopermalink" data-description="Paragraph"><a href="#solving_linear_systems-2-25" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
 <details id="solving_linear_systems-2-26" class="question example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
-<span class="type">Question</span><span class="space"> </span><span class="codenumber">1.2.6</span><span class="period">.</span>
+<span class="type">Question</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.2.6</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h4></summary><article class="question example-like knowl__content"><div class="para logical" id="solving_linear_systems-2-26-1-1">
 <div class="para">For each of the following matrices, determine if the matrix is in row echelon form, reduced row echelon form, or neither. If the matrix is in row echelon or reduced row echelon form, treat the matrix like an augmented matrix and describe each variable as either a free variable or a pivot variable.</div>
 <ol class="decimal" id="solving_linear_systems-2-26-1-1-1">
-<li id="solving_linear_systems-2-26-1-1-1-1"><div class="para" id="p-derived-solving_linear_systems-2-26-1-1-1-1"><div class="displaymath process-math">
+<li id="solving_linear_systems-2-26-1-1-1-1">
+<div class="para" id="p-derived-solving_linear_systems-2-26-1-1-1-1"><div class="displaymath process-math" id="solving_linear_systems-2-26-1-1-1-1-1">
 \begin{equation*}
 A_1=\begin{bmatrix}
 1 \amp 2 \amp 3 \\ 
 0 \amp 1 \amp 4
 \end{bmatrix} 
 \end{equation*}
-</div></div></li>
-<li id="solving_linear_systems-2-26-1-1-1-2"><div class="para" id="p-derived-solving_linear_systems-2-26-1-1-1-2"><div class="displaymath process-math">
+</div></div>
+<div class="autopermalink" data-description="Item 1"><a href="#solving_linear_systems-2-26-1-1-1-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+</li>
+<li id="solving_linear_systems-2-26-1-1-1-2">
+<div class="para" id="p-derived-solving_linear_systems-2-26-1-1-1-2"><div class="displaymath process-math" id="solving_linear_systems-2-26-1-1-1-2-1">
 \begin{equation*}
 A_2=\begin{bmatrix}
 -3 \amp 2 \amp 1 \\ 
@@ -582,8 +747,11 @@ A_2=\begin{bmatrix}
 0 \amp 2 \amp 0
 \end{bmatrix} 
 \end{equation*}
-</div></div></li>
-<li id="solving_linear_systems-2-26-1-1-1-3"><div class="para" id="p-derived-solving_linear_systems-2-26-1-1-1-3"><div class="displaymath process-math">
+</div></div>
+<div class="autopermalink" data-description="Item 2"><a href="#solving_linear_systems-2-26-1-1-1-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+</li>
+<li id="solving_linear_systems-2-26-1-1-1-3">
+<div class="para" id="p-derived-solving_linear_systems-2-26-1-1-1-3"><div class="displaymath process-math" id="solving_linear_systems-2-26-1-1-1-3-1">
 \begin{equation*}
 A_3=\begin{bmatrix}
 1 \amp 2 \amp 1 \\ 
@@ -591,8 +759,11 @@ A_3=\begin{bmatrix}
 0 \amp 0 \amp 1
 \end{bmatrix} 
 \end{equation*}
-</div></div></li>
-<li id="solving_linear_systems-2-26-1-1-1-4"><div class="para" id="p-derived-solving_linear_systems-2-26-1-1-1-4"><div class="displaymath process-math">
+</div></div>
+<div class="autopermalink" data-description="Item 3"><a href="#solving_linear_systems-2-26-1-1-1-3" title="Copy heading and permalink for Item 3" aria-label="Copy heading and permalink for Item 3">🔗</a></div>
+</li>
+<li id="solving_linear_systems-2-26-1-1-1-4">
+<div class="para" id="p-derived-solving_linear_systems-2-26-1-1-1-4"><div class="displaymath process-math" id="solving_linear_systems-2-26-1-1-1-4-1">
 \begin{equation*}
 A_4=\begin{bmatrix}
 1 \amp 2 \amp 3 \\ 
@@ -600,8 +771,11 @@ A_4=\begin{bmatrix}
 0 \amp 0 \amp 0
 \end{bmatrix} 
 \end{equation*}
-</div></div></li>
-<li id="solving_linear_systems-2-26-1-1-1-5"><div class="para" id="p-derived-solving_linear_systems-2-26-1-1-1-5"><div class="displaymath process-math">
+</div></div>
+<div class="autopermalink" data-description="Item 4"><a href="#solving_linear_systems-2-26-1-1-1-4" title="Copy heading and permalink for Item 4" aria-label="Copy heading and permalink for Item 4">🔗</a></div>
+</li>
+<li id="solving_linear_systems-2-26-1-1-1-5">
+<div class="para" id="p-derived-solving_linear_systems-2-26-1-1-1-5"><div class="displaymath process-math" id="solving_linear_systems-2-26-1-1-1-5-1">
 \begin{equation*}
 A_5=\begin{bmatrix}
 0 \amp 1 \amp 2 \amp -1 \\ 
@@ -609,106 +783,168 @@ A_5=\begin{bmatrix}
 0 \amp 0 \amp 1 \amp 3 
 \end{bmatrix} 
 \end{equation*}
-</div></div></li>
+</div></div>
+<div class="autopermalink" data-description="Item 5"><a href="#solving_linear_systems-2-26-1-1-1-5" title="Copy heading and permalink for Item 5" aria-label="Copy heading and permalink for Item 5">🔗</a></div>
+</li>
 </ol>
-</div></article></details><article class="theorem theorem-like" id="solving_linear_systems-2-27"><h4 class="heading">
-<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">1.2.7</span><span class="period">.</span>
+<div class="autopermalink" data-description="Paragraph"><a href="#solving_linear_systems-2-26-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Question 1.2.6"><a href="#solving_linear_systems-2-26" title="Copy heading and permalink for Question 1.2.6" aria-label="Copy heading and permalink for Question 1.2.6">🔗</a></div></article></details><article class="theorem theorem-like" id="solving_linear_systems-2-27"><h4 class="heading">
+<span class="type">Theorem</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.2.7</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h4>
-<div class="para" id="solving_linear_systems-2-27-1-1">The reduced row echelon form of a rectangular matrix is unique.</div></article><div class="para" id="solving_linear_systems-2-28">It is important to note that the row echelon form of a matrix is <em class="emphasis">not</em> unique.</div>
+<div class="para" id="solving_linear_systems-2-27-1-1">The reduced row echelon form of a rectangular matrix is unique.<div class="autopermalink" data-description="Paragraph"><a href="#solving_linear_systems-2-27-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Theorem 1.2.7"><a href="#solving_linear_systems-2-27" title="Copy heading and permalink for Theorem 1.2.7" aria-label="Copy heading and permalink for Theorem 1.2.7">🔗</a></div></article><div class="para" id="solving_linear_systems-2-28">It is important to note that the row echelon form of a matrix is <em class="emphasis">not</em> unique.<div class="autopermalink" data-description="Paragraph"><a href="#solving_linear_systems-2-28" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
 <article class="activity project-like" id="solving_linear_systems-2-29"><h4 class="heading">
-<span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.2.5</span><span class="period">.</span>
+<span class="type">Activity</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.2.5</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h4>
-<div class="introduction" id="solving_linear_systems-2-29-1"><div class="para" id="solving_linear_systems-2-29-1-1">Give an example of a matrix <span class="process-math">\(M\)</span> that has the following properties. If such a matrix cannot exist, explain why.</div></div>
+<div class="introduction" id="solving_linear_systems-2-29-1"><div class="para" id="solving_linear_systems-2-29-1-1">Give an example of a matrix <span class="process-math">\(M\)</span> that has the following properties. If such a matrix cannot exist, explain why.<div class="autopermalink" data-description="Paragraph"><a href="#solving_linear_systems-2-29-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></div>
 <article class="task exercise-like" id="solving_linear_systems-2-29-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
 <div class="para" id="solving_linear_systems-2-29-2-1">
-<span class="process-math">\(M\)</span> satisfies the first two properties of row echelon form but does not satisfy the third.</div></article><article class="task exercise-like" id="solving_linear_systems-2-29-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<span class="process-math">\(M\)</span> satisfies the first two properties of row echelon form but does not satisfy the third.<div class="autopermalink" data-description="Paragraph"><a href="#solving_linear_systems-2-29-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 1.2.5.a"><a href="#solving_linear_systems-2-29-2" title="Copy heading and permalink for Task 1.2.5.a" aria-label="Copy heading and permalink for Task 1.2.5.a">🔗</a></div></article><article class="task exercise-like" id="solving_linear_systems-2-29-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
 <div class="para" id="solving_linear_systems-2-29-3-1">
-<span class="process-math">\(M\)</span> satisfies the first and third properties of row echelon form but does not satisfy the second.</div></article><article class="task exercise-like" id="solving_linear_systems-2-29-4"><h5 class="heading"><span class="codenumber">(c)</span></h5>
+<span class="process-math">\(M\)</span> satisfies the first and third properties of row echelon form but does not satisfy the second.<div class="autopermalink" data-description="Paragraph"><a href="#solving_linear_systems-2-29-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 1.2.5.b"><a href="#solving_linear_systems-2-29-3" title="Copy heading and permalink for Task 1.2.5.b" aria-label="Copy heading and permalink for Task 1.2.5.b">🔗</a></div></article><article class="task exercise-like" id="solving_linear_systems-2-29-4"><h5 class="heading"><span class="codenumber">(c)</span></h5>
 <div class="para" id="solving_linear_systems-2-29-4-1">
-<span class="process-math">\(M\)</span> satisfies the second and third properties of row echelon form but does not satisfy the first.</div></article><article class="task exercise-like" id="solving_linear_systems-2-29-5"><h5 class="heading"><span class="codenumber">(d)</span></h5>
+<span class="process-math">\(M\)</span> satisfies the second and third properties of row echelon form but does not satisfy the first.<div class="autopermalink" data-description="Paragraph"><a href="#solving_linear_systems-2-29-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 1.2.5.c"><a href="#solving_linear_systems-2-29-4" title="Copy heading and permalink for Task 1.2.5.c" aria-label="Copy heading and permalink for Task 1.2.5.c">🔗</a></div></article><article class="task exercise-like" id="solving_linear_systems-2-29-5"><h5 class="heading"><span class="codenumber">(d)</span></h5>
 <div class="para" id="solving_linear_systems-2-29-5-1">
-<span class="process-math">\(M\)</span> satisfies the three properties of row echelon form but does not satisfy the first property of reduced row echelon form.</div></article><article class="task exercise-like" id="solving_linear_systems-2-29-6"><h5 class="heading"><span class="codenumber">(e)</span></h5>
+<span class="process-math">\(M\)</span> satisfies the three properties of row echelon form but does not satisfy the first property of reduced row echelon form.<div class="autopermalink" data-description="Paragraph"><a href="#solving_linear_systems-2-29-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 1.2.5.d"><a href="#solving_linear_systems-2-29-5" title="Copy heading and permalink for Task 1.2.5.d" aria-label="Copy heading and permalink for Task 1.2.5.d">🔗</a></div></article><article class="task exercise-like" id="solving_linear_systems-2-29-6"><h5 class="heading"><span class="codenumber">(e)</span></h5>
 <div class="para" id="solving_linear_systems-2-29-6-1">
-<span class="process-math">\(M\)</span> satisfies the properties of row echelon form and the first property of reduced row echelon form but does not satisfy the second property of reduced row echelon form.</div></article></article><details id="solving_linear_systems-2-30" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.2.8</span><span class="period">.</span>
+<span class="process-math">\(M\)</span> satisfies the properties of row echelon form and the first property of reduced row echelon form but does not satisfy the second property of reduced row echelon form.<div class="autopermalink" data-description="Paragraph"><a href="#solving_linear_systems-2-29-6-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 1.2.5.e"><a href="#solving_linear_systems-2-29-6" title="Copy heading and permalink for Task 1.2.5.e" aria-label="Copy heading and permalink for Task 1.2.5.e">🔗</a></div></article><div class="autopermalink" data-description="Activity 1.2.5"><a href="#solving_linear_systems-2-29" title="Copy heading and permalink for Activity 1.2.5" aria-label="Copy heading and permalink for Activity 1.2.5">🔗</a></div></article><details id="solving_linear_systems-2-30" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.2.8</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h4></summary><article class="example example-like knowl__content"><article class="task exercise-like" id="solving_linear_systems-2-30-1"><h5 class="heading"><span class="codenumber">(a)</span></h5>
 <div class="para logical" id="solving_linear_systems-2-30-1-1">
 <div class="para">In this example, we will list out ALL of the possible row echelon forms of a two by two matrix. We will use the symbols <span class="process-math">\(\blacksquare\)</span> for a non-zero entry and <span class="process-math">\(*\)</span> for an entry that can be any real number. We will also use <span class="process-math">\(0\)</span> and <span class="process-math">\(1\)</span> for entries that must be <span class="process-math">\(0\)</span> and <span class="process-math">\(1\text{.}\)</span>
 </div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="solving_linear_systems-2-30-1-1-7">
 \begin{equation*}
 \begin{bmatrix} \blacksquare \amp * \\0 \amp \blacksquare \end{bmatrix} ,  \begin{bmatrix} \blacksquare \amp * \\0 \amp 0 \end{bmatrix} ,  \begin{bmatrix} 0 \amp \blacksquare \\0 \amp 0 \end{bmatrix} ,  \begin{bmatrix} 0 \amp 0 \\0 \amp 0 \end{bmatrix}
 \end{equation*}
 </div>
 <div class="para">You should think carefully to see if there are any possibilities missing here.</div>
-</div></article><article class="task exercise-like" id="solving_linear_systems-2-30-2"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="autopermalink" data-description="Paragraph"><a href="#solving_linear_systems-2-30-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 1.2.8.a"><a href="#solving_linear_systems-2-30-1" title="Copy heading and permalink for Task 1.2.8.a" aria-label="Copy heading and permalink for Task 1.2.8.a">🔗</a></div></article><article class="task exercise-like" id="solving_linear_systems-2-30-2"><h5 class="heading"><span class="codenumber">(b)</span></h5>
 <div class="para logical" id="solving_linear_systems-2-30-2-1">
 <div class="para">In this example, we will list out ALL of the possible reduced row echelon forms of a two by two matrix. We will use the symbols <span class="process-math">\(\blacksquare\)</span> for a non-zero entry and <span class="process-math">\(*\)</span> for an entry that can be any real number. We will also use <span class="process-math">\(0\)</span> and <span class="process-math">\(1\)</span> for entries that must be <span class="process-math">\(0\)</span> and <span class="process-math">\(1\text{.}\)</span>
 </div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="solving_linear_systems-2-30-2-1-7">
 \begin{equation*}
 \begin{bmatrix} 1 \amp 0 \\0 \amp 1 \end{bmatrix} ,  \begin{bmatrix} 1 \amp * \\0 \amp 0 \end{bmatrix} ,  \begin{bmatrix} 0 \amp 1 \\0 \amp 0 \end{bmatrix} ,  \begin{bmatrix} 0 \amp 0 \\0 \amp 0 \end{bmatrix}
 \end{equation*}
 </div>
 <div class="para">You should think carefully to see if there are any possibilities missing here.</div>
-</div></article></article></details><article class="activity project-like" id="ex_3x4_REF"><h4 class="heading">
-<span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.2.6</span><span class="period">.</span>
+<div class="autopermalink" data-description="Paragraph"><a href="#solving_linear_systems-2-30-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 1.2.8.b"><a href="#solving_linear_systems-2-30-2" title="Copy heading and permalink for Task 1.2.8.b" aria-label="Copy heading and permalink for Task 1.2.8.b">🔗</a></div></article><div class="autopermalink" data-description="Example 1.2.8"><a href="#solving_linear_systems-2-30" title="Copy heading and permalink for Example 1.2.8" aria-label="Copy heading and permalink for Example 1.2.8">🔗</a></div></article></details><article class="activity project-like" id="ex_3x4_REF"><h4 class="heading">
+<span class="type">Activity</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.2.6</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h4>
-<div class="para" id="ex_3x4_REF-1-1">List out all possible row echelon forms of 3 by 4 matrices using the symbols <span class="process-math">\(\blacksquare\)</span> for a pivot, <span class="process-math">\(*\)</span> for a non-pivot entry (possibly <span class="process-math">\(0\)</span>), and <span class="process-math">\(0\)</span> (when an entry <em class="emphasis">must</em> be <span class="process-math">\(0\)</span>). For each of these, list out which variables are pivot variables and which are free variables.</div>
-<div class="solutions"><details id="ex_3x4_REF-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para" id="ex_3x4_REF-2-1">There are 15 possible.</div></div></details></div></article><article class="activity project-like" id="ex_3x4_RREF"><h4 class="heading">
-<span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.2.7</span><span class="period">.</span>
+<div class="para" id="ex_3x4_REF-1-1">List out all possible row echelon forms of 3 by 4 matrices using the symbols <span class="process-math">\(\blacksquare\)</span> for a pivot, <span class="process-math">\(*\)</span> for a non-pivot entry (possibly <span class="process-math">\(0\)</span>), and <span class="process-math">\(0\)</span> (when an entry <em class="emphasis">must</em> be <span class="process-math">\(0\)</span>). For each of these, list out which variables are pivot variables and which are free variables.<div class="autopermalink" data-description="Paragraph"><a href="#ex_3x4_REF-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="ex_3x4_REF-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="hint solution-like knowl__content">
+<div class="para" id="ex_3x4_REF-2-1">There are 15 possible.<div class="autopermalink" data-description="Paragraph"><a href="#ex_3x4_REF-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Hint 1.2.6.1"><a href="#ex_3x4_REF-2" title="Copy heading and permalink for Hint 1.2.6.1" aria-label="Copy heading and permalink for Hint 1.2.6.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Activity 1.2.6"><a href="#ex_3x4_REF" title="Copy heading and permalink for Activity 1.2.6" aria-label="Copy heading and permalink for Activity 1.2.6">🔗</a></div></article><article class="activity project-like" id="ex_3x4_RREF"><h4 class="heading">
+<span class="type">Activity</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.2.7</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h4>
-<div class="para" id="ex_3x4_RREF-1-1">List out all possible reduced row echelon forms of 3 by 4 matrices using the symbols <span class="process-math">\(\blacksquare\)</span> for a pivot, <span class="process-math">\(*\)</span> for a non-pivot entry (possibly <span class="process-math">\(0\)</span>), and <span class="process-math">\(0\)</span> (when an entry <em class="emphasis">must</em> be <span class="process-math">\(0\)</span>). What value must the <span class="process-math">\(\blacksquare\)</span> entries be? For each of these, list out which variables are pivot variables and which are free variables.</div></article><article class="activity project-like" id="ex_five_systems"><h4 class="heading">
-<span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.2.8</span><span class="period">.</span>
+<div class="para" id="ex_3x4_RREF-1-1">List out all possible reduced row echelon forms of 3 by 4 matrices using the symbols <span class="process-math">\(\blacksquare\)</span> for a pivot, <span class="process-math">\(*\)</span> for a non-pivot entry (possibly <span class="process-math">\(0\)</span>), and <span class="process-math">\(0\)</span> (when an entry <em class="emphasis">must</em> be <span class="process-math">\(0\)</span>). What value must the <span class="process-math">\(\blacksquare\)</span> entries be? For each of these, list out which variables are pivot variables and which are free variables.<div class="autopermalink" data-description="Paragraph"><a href="#ex_3x4_RREF-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Activity 1.2.7"><a href="#ex_3x4_RREF" title="Copy heading and permalink for Activity 1.2.7" aria-label="Copy heading and permalink for Activity 1.2.7">🔗</a></div></article><article class="activity project-like" id="ex_five_systems"><h4 class="heading">
+<span class="type">Activity</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.2.8</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h4>
-<div class="introduction" id="ex_five_systems-1"><div class="para" id="ex_five_systems-1-1">Solve each of the following systems by converting to an augmented matrix and using elementary row operations to reduce the augmented matrix to reduced row echelon form. With each reduced row echelon form, put a box around all pivot entries. Use the system of equations corresponding to the reduced row echelon form to write out the solution set for each system.</div></div>
+<div class="introduction" id="ex_five_systems-1"><div class="para" id="ex_five_systems-1-1">Solve each of the following systems by converting to an augmented matrix and using elementary row operations to reduce the augmented matrix to reduced row echelon form. With each reduced row echelon form, put a box around all pivot entries. Use the system of equations corresponding to the reduced row echelon form to write out the solution set for each system.<div class="autopermalink" data-description="Paragraph"><a href="#ex_five_systems-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></div>
 <article class="task exercise-like" id="ex_five_systems-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
-<div class="para logical" id="ex_five_systems-2-1"><div class="displaymath process-math" id="ex_five_systems-2-1-1">
+<div class="para logical" id="ex_five_systems-2-1">
+<div class="displaymath process-math" id="ex_five_systems-2-1-1">
 \begin{align*}
 3x_1-2x_2\amp =6\\
 2x_1-2x_2\amp =-2\\
 -x_1+x_2\amp =1
 \end{align*}
-</div></div></article><article class="task exercise-like" id="ex_five_systems-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
-<div class="para logical" id="ex_five_systems-3-1"><div class="displaymath process-math" id="ex_five_systems-3-1-1">
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ex_five_systems-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 1.2.8.a"><a href="#ex_five_systems-2" title="Copy heading and permalink for Task 1.2.8.a" aria-label="Copy heading and permalink for Task 1.2.8.a">🔗</a></div></article><article class="task exercise-like" id="ex_five_systems-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para logical" id="ex_five_systems-3-1">
+<div class="displaymath process-math" id="ex_five_systems-3-1-1">
 \begin{align*}
 3x_1-2x_2\amp =6\\
 2x_1-2x_2\amp=6\\
 -x_1+x_2\amp =1
 \end{align*}
-</div></div></article><article class="task exercise-like" id="ex_five_systems-4"><h5 class="heading"><span class="codenumber">(c)</span></h5>
-<div class="para logical" id="ex_five_systems-4-1"><div class="displaymath process-math" id="ex_five_systems-4-1-1">
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ex_five_systems-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 1.2.8.b"><a href="#ex_five_systems-3" title="Copy heading and permalink for Task 1.2.8.b" aria-label="Copy heading and permalink for Task 1.2.8.b">🔗</a></div></article><article class="task exercise-like" id="ex_five_systems-4"><h5 class="heading"><span class="codenumber">(c)</span></h5>
+<div class="para logical" id="ex_five_systems-4-1">
+<div class="displaymath process-math" id="ex_five_systems-4-1-1">
 \begin{align*}
 4x-y+3z\amp =5\\
 3x-y+2z\amp =7
 \end{align*}
-</div></div></article><article class="task exercise-like" id="ex_five_systems-5"><h5 class="heading"><span class="codenumber">(d)</span></h5>
-<div class="para logical" id="ex_five_systems-5-1"><div class="displaymath process-math" id="ex_five_systems-5-1-1">
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ex_five_systems-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 1.2.8.c"><a href="#ex_five_systems-4" title="Copy heading and permalink for Task 1.2.8.c" aria-label="Copy heading and permalink for Task 1.2.8.c">🔗</a></div></article><article class="task exercise-like" id="ex_five_systems-5"><h5 class="heading"><span class="codenumber">(d)</span></h5>
+<div class="para logical" id="ex_five_systems-5-1">
+<div class="displaymath process-math" id="ex_five_systems-5-1-1">
 \begin{align*}
 7x-11y-2z\amp =3\\
 8x-2y+3z\amp =1
 \end{align*}
-</div></div></article><article class="task exercise-like" id="ex_five_systems-6"><h5 class="heading"><span class="codenumber">(e)</span></h5>
-<div class="para logical" id="ex_five_systems-6-1"><div class="displaymath process-math" id="ex_five_systems-6-1-1">
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ex_five_systems-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 1.2.8.d"><a href="#ex_five_systems-5" title="Copy heading and permalink for Task 1.2.8.d" aria-label="Copy heading and permalink for Task 1.2.8.d">🔗</a></div></article><article class="task exercise-like" id="ex_five_systems-6"><h5 class="heading"><span class="codenumber">(e)</span></h5>
+<div class="para logical" id="ex_five_systems-6-1">
+<div class="displaymath process-math" id="ex_five_systems-6-1-1">
 \begin{align*}
 3r-5s+t\amp =2\\
 -6r+10s-2t\amp =3
 \end{align*}
-</div></div></article></article><article class="investigation project-like" id="solving_linear_systems-2-34"><h4 class="heading">
-<span class="type">Investigation</span><span class="space"> </span><span class="codenumber">1.2.9</span><span class="period">.</span>
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ex_five_systems-6-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 1.2.8.e"><a href="#ex_five_systems-6" title="Copy heading and permalink for Task 1.2.8.e" aria-label="Copy heading and permalink for Task 1.2.8.e">🔗</a></div></article><div class="autopermalink" data-description="Activity 1.2.8"><a href="#ex_five_systems" title="Copy heading and permalink for Activity 1.2.8" aria-label="Copy heading and permalink for Activity 1.2.8">🔗</a></div></article><article class="investigation project-like" id="solving_linear_systems-2-34"><h4 class="heading">
+<span class="type">Investigation</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.2.9</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h4>
-<div class="para" id="solving_linear_systems-2-34-1-1">Once you have the augmented matrix for a system of linear equations in reduced row-echelon form, how do you use it to determine the solution set for the system? Write a step-by-step procedure that is general enough to be used on any system of linear equations. Be aware of any implicit assumptions you’re making (and try to avoid them).</div></article><div class="para logical" id="solving_linear_systems-2-35">
+<div class="para" id="solving_linear_systems-2-34-1-1">Once you have the augmented matrix for a system of linear equations in reduced row-echelon form, how do you use it to determine the solution set for the system? Write a step-by-step procedure that is general enough to be used on any system of linear equations. Be aware of any implicit assumptions you’re making (and try to avoid them).<div class="autopermalink" data-description="Paragraph"><a href="#solving_linear_systems-2-34-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Investigation 1.2.9"><a href="#solving_linear_systems-2-34" title="Copy heading and permalink for Investigation 1.2.9" aria-label="Copy heading and permalink for Investigation 1.2.9">🔗</a></div></article><div class="para logical" id="solving_linear_systems-2-35">
 <div class="para">Two of the most important questions we will consider this semester are:</div>
 <ol class="decimal" id="solving_linear_systems-2-35-1">
-<li id="solving_linear_systems-2-35-1-1"><div class="para" id="p-derived-solving_linear_systems-2-35-1-1">Is the system consistent?</div></li>
-<li id="solving_linear_systems-2-35-1-2"><div class="para" id="p-derived-solving_linear_systems-2-35-1-2">If a solution exists, is the solution unique?</div></li>
+<li id="solving_linear_systems-2-35-1-1">
+<div class="para" id="p-derived-solving_linear_systems-2-35-1-1">Is the system consistent?</div>
+<div class="autopermalink" data-description="Item 1"><a href="#solving_linear_systems-2-35-1-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+</li>
+<li id="solving_linear_systems-2-35-1-2">
+<div class="para" id="p-derived-solving_linear_systems-2-35-1-2">If a solution exists, is the solution unique?</div>
+<div class="autopermalink" data-description="Item 2"><a href="#solving_linear_systems-2-35-1-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+</li>
 </ol>
+<div class="autopermalink" data-description="Paragraph"><a href="#solving_linear_systems-2-35" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <article class="investigation project-like" id="solving_linear_systems-2-36"><h4 class="heading">
-<span class="type">Investigation</span><span class="space"> </span><span class="codenumber">1.2.10</span><span class="period">.</span>
+<span class="type">Investigation</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.2.10</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h4>
-<div class="para" id="solving_linear_systems-2-36-1-1">Look back at your results so far and try to figure out what properties of the system (or corresponding matrices) will help us answer question 1 and which properties of the system will help us answer question 2. Write a conjecture about each question.</div></article></section></section></div>
-<div class="ptx-content-footer">
+<div class="para" id="solving_linear_systems-2-36-1-1">Look back at your results so far and try to figure out what properties of the system (or corresponding matrices) will help us answer question 1 and which properties of the system will help us answer question 2. Write a conjecture about each question.<div class="autopermalink" data-description="Paragraph"><a href="#solving_linear_systems-2-36-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Investigation 1.2.10"><a href="#solving_linear_systems-2-36" title="Copy heading and permalink for Investigation 1.2.10" aria-label="Copy heading and permalink for Investigation 1.2.10">🔗</a></div></article><div class="autopermalink" data-description="Subsection 1.2.1: Elementary Operations"><a href="#solving_linear_systems-2" title="Copy heading and permalink for Subsection 1.2.1: Elementary Operations" aria-label="Copy heading and permalink for Subsection 1.2.1: Elementary Operations">🔗</a></div></section><div class="autopermalink" data-description="Section 1.2: Solving Linear Systems"><a href="#solving_linear_systems" title="Copy heading and permalink for Section 1.2: Solving Linear Systems" aria-label="Copy heading and permalink for Section 1.2: Solving Linear Systems">🔗</a></div></section></div>
+<div id="ptx-content-footer" class="ptx-content-footer">
 <a class="previous-button button" href="intro_activity.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="Conunique.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>
 </div>

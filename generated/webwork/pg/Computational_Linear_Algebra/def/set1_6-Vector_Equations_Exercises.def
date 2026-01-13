@@ -1,0 +1,15 @@
+openDate          = 01/13/2026 at 12:00am
+dueDate           = 07/13/2026 at 10:00pm
+answerDate        = 07/13/2026 at 10:00pm
+paperHeaderFile   = Computational_Linear_Algebra/header/1_6-Vector_Equations_Exercises.pg
+screenHeaderFile  = Computational_Linear_Algebra/header/1_6-Vector_Equations_Exercises.pg
+description       = Vector Equations
+problemListV2
+problem_start
+source_file = Library/Mizzou/Finite_Math/Linear_Algebra_Matrix_Equations/MatrixEquation1.pg
+problem_id = 1
+problem_end
+problem_start
+source_file = Contrib/Hope/Multi1/02-02-Linear-systems/Geometry_01/Geometry_01.pg
+problem_id = 2
+problem_end

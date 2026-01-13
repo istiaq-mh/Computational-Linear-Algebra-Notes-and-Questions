@@ -1,0 +1,168 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-representations>
+  <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-webwork-1" ww-id="webwork-1">
+    <static seed="1" source="Library/Mizzou/Finite_Math/Linear_Algebra_Matrix_Equations/MatrixEquation1.pg">
+      <statement><p>Solve the matrix equation <m>Ax = b</m>, where</p>
+<p><me>A = \left[\begin{array}{cc}
+-7 \amp 5\cr
+-6 \amp 3
+\end{array}\right], \quad x = 
+\left[
+\begin{array}{cc}
+ x_1 \\ x_2
+\end{array}
+\right]
+\text{ and } \quad b = \left[\begin{array}{c}
+-33\cr
+-27
+\end{array}\right].</me></p>
+<p>The solution is:</p>
+<p><m>x_1 =</m> <fillin characters="20" name="AnSwEr0001"/></p>
+<p><m>x_2 =</m> <fillin characters="20" name="AnSwEr0002"/></p>
+</statement>
+      <answer>
+        <p>
+          <m>4</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>-1</m>
+        </p>
+      </answer>
+    </static>
+    <rendering-data sourceFilePath="Library/Mizzou/Finite_Math/Linear_Algebra_Matrix_Equations/MatrixEquation1.pg" origin="webwork2" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" passwd="anonymous" language="en-US"/>
+    <pg source="Library/Mizzou/Finite_Math/Linear_Algebra_Matrix_Equations/MatrixEquation1.pg"/>
+  </webwork-reps>
+  <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-webwork-2" ww-id="webwork-2">
+    <static seed="2" source="Contrib/Hope/Multi1/02-02-Linear-systems/Geometry_01/Geometry_01.pg">
+      <statement><tabular valign="top">
+<row>
+<cell>Match each system of linear equations with the graph
+that most closely matches it.  
+Click on a graph to make it larger.
+<ol>
+<li>
+<m>\left\lbrace
+\begin{array}{rcl}
+z \amp  = \amp  0 \\
+1/z \amp  = \amp  1 \\
+3z - 3 \amp  = \amp  0
+\end{array}
+\right.</m>
+</li>
+<li>
+<m>\left\lbrace
+\begin{array}{rcl}
+z \amp  = \amp  0 \\
+y \amp  = \amp  0 \\
+x+y \amp  = \amp  0
+\end{array}
+\right.</m>
+</li>
+<li>
+<m>\left\lbrace
+\begin{array}{rcl}
+x + z \amp  = \amp  1 \\
+z \amp  = \amp  0 \\
+3x + 3z \amp  = \amp  3
+\end{array}
+\right.</m>
+</li>
+<li>
+<m>\left\lbrace
+\begin{array}{rcl}
+x \amp  = \amp  0 \\
+x - z \amp  = \amp  0 \\
+z \amp  = \amp  0
+\end{array}
+\right.</m>
+</li>
+<li>
+<m>\left\lbrace
+\begin{array}{rcl}
+z \amp  = \amp  1 \\
+z + x \amp  = \amp  1 \\
+z - x \amp  = \amp  1
+\end{array}
+\right.</m>
+</li>
+<li>
+<m>\left\lbrace
+\begin{array}{rcl}
+x \amp  = \amp  0 \\
+z \amp  = \amp  1 \\
+z \amp  = \amp  -1
+\end{array}
+\right.</m>
+</li>
+<li>
+<m>\left\lbrace
+\begin{array}{rcl}
+-x + z \amp  = \amp  1 \\
+x + z \amp  = \amp  1 \\
+z \amp  = \amp  -1
+\end{array}
+\right.</m>
+</li>
+<li>
+<m>\left\lbrace
+\begin{array}{rcl}
+x \amp  = \amp  0 \\
+y \amp  = \amp  0 \\
+z \amp  = \amp  0
+\end{array}
+\right.</m>
+</li>
+<li>
+<m>\left\lbrace
+\begin{array}{rcl}
+z \amp  = \amp  1 \\
+x + z \amp  = \amp  1 \\
+z \amp  = \amp  -1
+\end{array}
+\right.</m>
+</li>
+</ol></cell>
+<cell>
+<tabular bottom="none" left="none" right="none" top="none">
+<row halign="left" valign="middle">
+<cell><A HREF="/webwork2_files/tmp/anonymous/images/22b44369-0291-326a-9c75-c6fba136e5ce___2abb27f8-f158-367e-b87d-a50bc1143e15.png"><IMG ALIGN="BOTTOM" BORDER="2" HEIGHT="150" SRC="/webwork2_files/tmp/anonymous/images/22b44369-0291-326a-9c75-c6fba136e5ce___2abb27f8-f158-367e-b87d-a50bc1143e15.png" WIDTH="150"/></A></cell>
+<cell><A HREF="/webwork2_files/tmp/anonymous/images/22b44369-0291-326a-9c75-c6fba136e5ce___bc3326e5-611d-30f9-968d-e8bb2d9fbef8.png"><IMG ALIGN="BOTTOM" BORDER="2" HEIGHT="150" SRC="/webwork2_files/tmp/anonymous/images/22b44369-0291-326a-9c75-c6fba136e5ce___bc3326e5-611d-30f9-968d-e8bb2d9fbef8.png" WIDTH="150"/></A></cell>
+<cell><A HREF="/webwork2_files/tmp/anonymous/images/22b44369-0291-326a-9c75-c6fba136e5ce___33e08ae0-f90c-332b-b906-4bd960ec51ac.png"><IMG ALIGN="BOTTOM" BORDER="2" HEIGHT="150" SRC="/webwork2_files/tmp/anonymous/images/22b44369-0291-326a-9c75-c6fba136e5ce___33e08ae0-f90c-332b-b906-4bd960ec51ac.png" WIDTH="150"/></A></cell>
+</row>
+<row halign="left" valign="middle">
+<cell><CENTER><B>A</B></CENTER></cell>
+<cell><CENTER><B>B</B></CENTER></cell>
+<cell><CENTER><B>C</B></CENTER></cell>
+</row>
+<row halign="left" valign="middle">
+<cell><A HREF="/webwork2_files/tmp/anonymous/images/22b44369-0291-326a-9c75-c6fba136e5ce___5c082342-d11a-3c0b-bd9b-711853c7a55f.png"><IMG ALIGN="BOTTOM" BORDER="2" HEIGHT="150" SRC="/webwork2_files/tmp/anonymous/images/22b44369-0291-326a-9c75-c6fba136e5ce___5c082342-d11a-3c0b-bd9b-711853c7a55f.png" WIDTH="150"/></A></cell>
+<cell><A HREF="/webwork2_files/tmp/anonymous/images/22b44369-0291-326a-9c75-c6fba136e5ce___61a9e9e7-2732-3ffb-85f0-82fbbfb63c49.png"><IMG ALIGN="BOTTOM" BORDER="2" HEIGHT="150" SRC="/webwork2_files/tmp/anonymous/images/22b44369-0291-326a-9c75-c6fba136e5ce___61a9e9e7-2732-3ffb-85f0-82fbbfb63c49.png" WIDTH="150"/></A></cell>
+<cell><A HREF="/webwork2_files/tmp/anonymous/images/22b44369-0291-326a-9c75-c6fba136e5ce___d2d893d9-7338-3fd9-a74e-59d612c34e97.png"><IMG ALIGN="BOTTOM" BORDER="2" HEIGHT="150" SRC="/webwork2_files/tmp/anonymous/images/22b44369-0291-326a-9c75-c6fba136e5ce___d2d893d9-7338-3fd9-a74e-59d612c34e97.png" WIDTH="150"/></A></cell>
+</row>
+<row halign="left" valign="middle">
+<cell><CENTER><B>D</B></CENTER></cell>
+<cell><CENTER><B>E</B></CENTER></cell>
+<cell><CENTER><B>F</B></CENTER></cell>
+</row>
+<row halign="left" valign="middle">
+<cell><A HREF="/webwork2_files/tmp/anonymous/images/22b44369-0291-326a-9c75-c6fba136e5ce___c14ec27e-5f24-383b-9999-67ce2af21dc6.png"><IMG ALIGN="BOTTOM" BORDER="2" HEIGHT="150" SRC="/webwork2_files/tmp/anonymous/images/22b44369-0291-326a-9c75-c6fba136e5ce___c14ec27e-5f24-383b-9999-67ce2af21dc6.png" WIDTH="150"/></A></cell>
+<cell><A HREF="/webwork2_files/tmp/anonymous/images/22b44369-0291-326a-9c75-c6fba136e5ce___766fb37f-c321-3e42-886b-e01ab6187cd8.png"><IMG ALIGN="BOTTOM" BORDER="2" HEIGHT="150" SRC="/webwork2_files/tmp/anonymous/images/22b44369-0291-326a-9c75-c6fba136e5ce___766fb37f-c321-3e42-886b-e01ab6187cd8.png" WIDTH="150"/></A></cell>
+<cell><A HREF="/webwork2_files/tmp/anonymous/images/22b44369-0291-326a-9c75-c6fba136e5ce___57a8dbb6-2599-3616-bd87-8cd9583ec4db.png"><IMG ALIGN="BOTTOM" BORDER="2" HEIGHT="150" SRC="/webwork2_files/tmp/anonymous/images/22b44369-0291-326a-9c75-c6fba136e5ce___57a8dbb6-2599-3616-bd87-8cd9583ec4db.png" WIDTH="150"/></A></cell>
+</row>
+<row halign="left" valign="middle">
+<cell><CENTER><B>G</B></CENTER></cell>
+<cell><CENTER><B>H</B></CENTER></cell>
+<cell><CENTER><B>I</B></CENTER></cell>
+</row>
+</tabular>
+<p/></cell>
+</row>
+</tabular>
+</statement>
+    </static>
+    <rendering-data sourceFilePath="Contrib/Hope/Multi1/02-02-Linear-systems/Geometry_01/Geometry_01.pg" origin="webwork2" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" passwd="anonymous" language="en-US"/>
+    <pg source="Contrib/Hope/Multi1/02-02-Linear-systems/Geometry_01/Geometry_01.pg"/>
+  </webwork-reps>
+</webwork-representations>

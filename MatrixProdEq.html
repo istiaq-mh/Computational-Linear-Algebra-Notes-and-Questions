@@ -5,16 +5,22 @@
 <!--*         https://pretextbook.org          *-->
 <!--*                                          *-->
 <!--********************************************-->
-<html lang="en-US" dir="ltr" data-legacy-colorscheme="blue_red">
+<html lang="en-US" dir="ltr">
+<!--******************************************-->
+<!--*  Authored with PreTeXt                 *-->
+<!--*  pretextbook.org                       *-->
+<!--*  Theme: default-modern                 *-->
+<!--*  Palette:                              *-->
+<!--******************************************-->
 <head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Matrix Products and Equations</title>
-<meta name="Keywords" content="Authored in PreTeXt">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta property="og:type" content="book">
-<meta property="book:title" content="Computational Linear Algebra">
-<meta property="book:author" content="Nicholas Long">
-<script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script><script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+<link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/ol-markers.css" rel="stylesheet" type="text/css">
+<script>
 var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
 window.MathJax = {
   "tex": {
@@ -86,17 +92,12 @@ window.MathJax = {
     )}
   }
 };
-</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/lib/jquery.min.js"></script><script src="_static/pretext/js/lib/jquery.sticky.js"></script><script src="_static/pretext/js/lib/jquery.espy.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><script src="_static/pretext/js/user_preferences.js"></script><script src="_static/pretext/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
-</script><link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
-<link href="https://fonts.cdnfonts.com/css/dejavu-serif" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wdth,wght@75..100,300..800&amp;display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&amp;" rel="stylesheet">
-<link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
-<link href="_static/pretext/css/ol-markers.css" rel="stylesheet" type="text/css">
-<!--** eBookCongig is necessary to configure interactive       **-->
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="book:title" content="Computational Linear Algebra">
+<meta property="book:author" content="Nicholas Long">
+<script src="_static/pretext/js/lib/jquery.min.js"></script><script src="_static/pretext/js/lib/jquery.sticky.js"></script><script src="_static/pretext/js/lib/jquery.espy.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><script src="_static/pretext/js/user_preferences.js"></script><!--** eBookCongig is necessary to configure interactive       **-->
 <!--** Runestone components to run locally in reader's browser **-->
 <!--** No external communication:                              **-->
 <!--**     log level is 0, Runestone Services are disabled     **-->
@@ -118,19 +119,21 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '7.5.11';
+eBookConfig.runestone_version = '7.11.9';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script src="_static/prefix-runtime.ee5a0b116b7d0991.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.f6bda0c0ccce4835.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
-<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.e0c6d4592e23c667.css">
+<script src="_static/prefix-runtime.991c135ccf182bf5.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.1c010553c35c544c.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.677a75a9120449ff.css">
+<script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script><script src="_static/pretext/js/pretext-webwork/2.20/pretext-webwork.js"></script><script src="https://webwork-ptx.aimath.org/webwork2_files/node_modules/iframe-resizer/js/iframeResizer.min.js"></script><script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script>
 </head>
 <body class="pretext book ignore-math">
 <a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner"><div class="title-container">
-<h1 class="heading"><a href="my-great-book.html"><span class="title">Computational Linear Algebra:</span> <span class="subtitle">Notes and Questions for MATH 3325</span></a></h1>
+<h1 class="heading"><a href="my-great-book.html"><span class="title">Computational Linear Algebra</span> <span class="subtitle">Notes and Questions for MATH 3325</span></a></h1>
 <p class="byline">Nicholas Long</p>
 </div></div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><div class="ptx-navbar-contents">
 <button class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><div class="searchbox">
@@ -144,7 +147,7 @@ eBookConfig.enable_chatcodes =  false;
 <ol id="searchresults" class="searchresults"></ol>
 </div>
 </div>
-<span class="nav-other-controls"></span><span class="treebuttons"><a class="previous-button button" href="C2.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="C2.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="sec_matrix_ops.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
+<span class="nav-other-controls"><button id="light-dark-button" class="light-dark-button button" title="Dark Mode"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span class="name">Dark Mode</span></button></span><span class="treebuttons"><a class="previous-button button" href="C2.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="C2.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="sec_matrix_ops.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
 </div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\R}{\mathbb R}
 \newcommand\colvec[1]{\begin{bmatrix}#1\end{bmatrix}}
 \newcommand{\lt}{&lt;}
@@ -154,7 +157,7 @@ eBookConfig.enable_chatcodes =  false;
 \newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
 \)</span></div>
 <div class="ptx-page">
-<div id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth2"><ul class="structural toc-item-list contains-active">
+<div id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth2 focused" data-preexpanded-levels="0" data-max-levels="2"><ul class="structural toc-item-list contains-active">
 <li class="toc-item toc-frontmatter"><div class="toc-title-box"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div></li>
 <li class="toc-item toc-chapter">
 <div class="toc-title-box"><a href="C1.html" class="internal"><span class="codenumber">1</span> <span class="title">Solving Linear Systems</span></a></div>
@@ -185,7 +188,10 @@ eBookConfig.enable_chatcodes =  false;
 <div class="toc-title-box"><a href="sec_vector_calc.html" class="internal"><span class="codenumber">1.5</span> <span class="title">Vectors and Vector Calculations</span></a></div>
 <ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_vector_calc.html#sec_vector_calc-3" class="internal"><span class="codenumber">1.5.1</span> <span class="title">The Dot Product</span></a></div></li></ul>
 </li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_vector_eqns.html" class="internal"><span class="codenumber">1.6</span> <span class="title">Vector Equations</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec_vector_eqns.html" class="internal"><span class="codenumber">1.6</span> <span class="title">Vector Equations</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec_vector_eqns.html#sec_vector_eqns-9" class="internal"><span class="codenumber">1.6</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="span.html" class="internal"><span class="codenumber">1.7</span> <span class="title">Span (both a noun and a verb)</span></a></div>
 <ul class="structural toc-item-list">
@@ -270,115 +276,151 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-backmatter"><div class="toc-title-box"><a href="backmatter.html" class="internal"><span class="title">Backmatter</span></a></div></li>
 </ul></nav></div>
 <main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="MatrixProdEq"><h2 class="heading hide-type">
-<span class="type">Section</span><span class="space"> </span><span class="codenumber">2.1</span><span class="space"> </span><span class="title">Matrix Products and Equations</span>
+<span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.1</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Matrix Products and Equations</span>
 </h2>
 <article class="objectives goal-like" id="MatrixProdEq-2"><h3 class="heading"><span class="type">Objectives</span></h3>
 <ul class="disc" id="MatrixProdEq-2-1">
-<li id="MatrixProdEq-2-1-1"><div class="para" id="MatrixProdEq-2-1-1-1">To compute matrix-vector products and understand how this relates to linear combinations</div></li>
-<li id="MatrixProdEq-2-1-2"><div class="para" id="MatrixProdEq-2-1-2-1">To understand how to convert between systems of linear equations, vector equations, and matrix equations</div></li>
-<li id="MatrixProdEq-2-1-3"><div class="para" id="MatrixProdEq-2-1-3-1">To understand how the matrix-vector product gives rise to linear transformations</div></li>
-</ul></article><section class="subsection" id="MatrixProdEq-3"><h3 class="heading hide-type">
-<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">2.1.1</span><span class="space"> </span><span class="title">Matrix-Vector Products</span>
+<li id="MatrixProdEq-2-1-1">
+<div class="para" id="MatrixProdEq-2-1-1-1">To compute matrix-vector products and understand how this relates to linear combinations<div class="autopermalink" data-description="Paragraph"><a href="#MatrixProdEq-2-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Objective"><a href="#MatrixProdEq-2-1-1" title="Copy heading and permalink for Objective" aria-label="Copy heading and permalink for Objective">🔗</a></div>
+</li>
+<li id="MatrixProdEq-2-1-2">
+<div class="para" id="MatrixProdEq-2-1-2-1">To understand how to convert between systems of linear equations, vector equations, and matrix equations<div class="autopermalink" data-description="Paragraph"><a href="#MatrixProdEq-2-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Objective"><a href="#MatrixProdEq-2-1-2" title="Copy heading and permalink for Objective" aria-label="Copy heading and permalink for Objective">🔗</a></div>
+</li>
+<li id="MatrixProdEq-2-1-3">
+<div class="para" id="MatrixProdEq-2-1-3-1">To understand how the matrix-vector product gives rise to linear transformations<div class="autopermalink" data-description="Paragraph"><a href="#MatrixProdEq-2-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Objective"><a href="#MatrixProdEq-2-1-3" title="Copy heading and permalink for Objective" aria-label="Copy heading and permalink for Objective">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Objectives 2.1"><a href="#MatrixProdEq-2" title="Copy heading and permalink for Objectives 2.1" aria-label="Copy heading and permalink for Objectives 2.1">🔗</a></div></article><section class="subsection" id="MatrixProdEq-3"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.1.1</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Matrix-Vector Products</span>
 </h3>
 <article class="definition definition-like" id="MVProd"><h4 class="heading">
-<span class="type">Definition</span><span class="space"> </span><span class="codenumber">2.1.1</span><span class="period">.</span>
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.1.1</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h4>
 <div class="para logical" id="MVProd-1-1">
 <div class="para">We define a <dfn class="terminology">matrix-vector product</dfn> as follows: If <span class="process-math">\(A\)</span> is a <span class="process-math">\(m\)</span> by <span class="process-math">\(n\)</span> matrix,</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="MVProd-1-1-5">
 \begin{equation*}
 A=\begin{bmatrix} a_{11} \amp  a_{12} \amp  ... \amp   a_{1n} \\ a_{21}\amp  a_{22}\amp  ... \amp   a_{2n} \\ \vdots  \amp  \vdots \amp    \amp   \vdots   \\ a_{m1}\amp  a_{m2} \amp  ... \amp   a_{mn}  \end{bmatrix}
 \end{equation*}
 </div>
 <div class="para">and <span class="process-math">\(\vec{x}=\colvec{x_1\\x_2\\\vdots\\x_n} \in \mathbb{R}^n\text{,}\)</span> then the <dfn class="terminology">matrix-vector product</dfn> is given by</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="MVProd-1-1-8">
 \begin{equation*}
 A\vec{x} = x_1 \colvec{a_{11}\\a_{21}\\\vdots\\a_{m1}}+x_2 \colvec{a_{12}\\a_{22}\\\vdots\\a_{m2}}+ \cdots x_n \colvec{a_{1n}\\a_{2n}\\\vdots\\a_{mn}}
 \end{equation*}
 </div>
 <div class="para"><span class="process-math">\(\mathbb{R}^m\text{.}\)</span></div>
-</div></article><article class="investigation project-like" id="MatrixProdEq-3-3"><h4 class="heading">
-<span class="type">Investigation</span><span class="space"> </span><span class="codenumber">2.1.1</span><span class="period">.</span>
+<div class="autopermalink" data-description="Paragraph"><a href="#MVProd-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Definition 2.1.1"><a href="#MVProd" title="Copy heading and permalink for Definition 2.1.1" aria-label="Copy heading and permalink for Definition 2.1.1">🔗</a></div></article><article class="investigation project-like" id="MatrixProdEq-3-3"><h4 class="heading">
+<span class="type">Investigation</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.1.1</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h4>
-<div class="para" id="MatrixProdEq-3-3-1">If <span class="process-math">\(A\)</span> is a <span class="process-math">\(m\)</span> by <span class="process-math">\(n\)</span> matrix, then <span class="process-math">\(A\vec{x} \in \mathbb{R}^\diamondsuit\)</span> for what value of <span class="process-math">\(\diamondsuit\text{?}\)</span>
-</div></article><div class="para" id="MatrixProdEq-3-4">It should not surprise you that you can multiply a scalar multiple of a vector by a matrix by factoring out the scalar. In mathematical notation, <span class="process-math">\(A (k \vec{v}) = k (A\vec{v})\text{.}\)</span> Additionally, you can apply the scalar multiplication to the matrix. In other words, <span class="process-math">\(A (k \vec{v}) = k (A\vec{v}) = (kA)\vec{v}\text{.}\)</span> These kind of manipulations will be discussed more when we work with matrix operations later, but you may find these facts useful in your work right now. You should take time to write out the details of any of these arithmetic ideas that you think would be useful in your work.</div>
+<div class="para" id="MatrixProdEq-3-3-1">If <span class="process-math">\(A\)</span> is a <span class="process-math">\(m\)</span> by <span class="process-math">\(n\)</span> matrix, then <span class="process-math">\(A\vec{x} \in \mathbb{R}^\diamondsuit\)</span> for what value of <span class="process-math">\(\diamondsuit\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#MatrixProdEq-3-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Investigation 2.1.1"><a href="#MatrixProdEq-3-3" title="Copy heading and permalink for Investigation 2.1.1" aria-label="Copy heading and permalink for Investigation 2.1.1">🔗</a></div></article><div class="para" id="MatrixProdEq-3-4">It should not surprise you that you can multiply a scalar multiple of a vector by a matrix by factoring out the scalar. In mathematical notation, <span class="process-math">\(A (k \vec{v}) = k (A\vec{v})\text{.}\)</span> Additionally, you can apply the scalar multiplication to the matrix. In other words, <span class="process-math">\(A (k \vec{v}) = k (A\vec{v}) = (kA)\vec{v}\text{.}\)</span> These kind of manipulations will be discussed more when we work with matrix operations later, but you may find these facts useful in your work right now. You should take time to write out the details of any of these arithmetic ideas that you think would be useful in your work.<div class="autopermalink" data-description="Paragraph"><a href="#MatrixProdEq-3-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
 <article class="activity project-like" id="MatrixProdEq-3-5"><h4 class="heading">
-<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.1.2</span><span class="period">.</span>
+<span class="type">Activity</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.1.2</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h4>
 <div class="introduction" id="MatrixProdEq-3-5-1"><div class="para logical" id="MatrixProdEq-3-5-1-1">
 <div class="para">Let</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="MatrixProdEq-3-5-1-1-1">
 \begin{equation*}
 A=\begin{bmatrix} 1\amp 3 \amp 4 \amp 5\\2 \amp 1 \amp 0 \amp 1\end{bmatrix} 
 \end{equation*}
 </div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="MatrixProdEq-3-5-1-1-2">
 \begin{equation*}
 B=\begin{bmatrix} 1\amp 3 \amp 4 \\ 5 \amp 1 \amp 1 \\ -2 \amp 0 \amp 1\end{bmatrix} 
 \end{equation*}
 </div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="MatrixProdEq-3-5-1-1-3">
 \begin{equation*}
 C=\begin{bmatrix} 1\amp 3 \\ 5  \amp 1 \\ -2 \amp 0 \end{bmatrix} 
 \end{equation*}
 </div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="MatrixProdEq-3-5-1-1-4">
 \begin{equation*}
 \vec{x} =\colvec{ 4 \\ 2 \\ 2 \\ 1} 
 \end{equation*}
 </div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="MatrixProdEq-3-5-1-1-5">
 \begin{equation*}
 \vec{y} =\colvec{ -5 \\ 1 \\ 2} 
 \end{equation*}
 </div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="MatrixProdEq-3-5-1-1-6">
 \begin{equation*}
 \vec{z} =\colvec{ -3 \\ 2 } 
 \end{equation*}
 </div>
+<div class="autopermalink" data-description="Paragraph"><a href="#MatrixProdEq-3-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></div>
 <article class="task exercise-like" id="MatrixProdEq-3-5-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
-<div class="para" id="MatrixProdEq-3-5-2-1-1">Write out the matrix vector product of <span class="process-math">\(A\)</span> and <span class="process-math">\(\vec{x}\)</span> as a linear combination of the columns of <span class="process-math">\(A\text{.}\)</span>
-</div></article><article class="task exercise-like" id="MatrixProdEq-3-5-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
-<div class="para" id="MatrixProdEq-3-5-3-1-1">Find <span class="process-math">\(A\vec{x}\)</span>
-</div></article><article class="task exercise-like" id="MatrixProdEq-3-5-4"><h5 class="heading"><span class="codenumber">(c)</span></h5>
-<div class="para" id="MatrixProdEq-3-5-4-1-1">Compute all of the other matrix vector products that will be allowed with the matrices <span class="process-math">\(A,B,C\)</span> and <span class="process-math">\(\vec{x},\vec{y},\vec{z}\text{.}\)</span>
-</div></article></article><div class="para" id="MatrixProdEq-3-6">The matrix <span class="process-math">\(A\)</span> can be seen from a column vector form as <span class="process-math">\(A=[ \vec{a}_1 \; \vec{a}_2 \; \ldots \; \vec{a}_n]\)</span> which means that we can think of the product of <span class="process-math">\(A\)</span> and <span class="process-math">\(\vec{x}\)</span> as <span class="process-math">\(A\vec{x}= [ \vec{a}_1 \; \vec{a}_2 \; \ldots \; \vec{a}_n] \colvec{x_1 \\x_2\\ \vdots \\x_n}=x_1\vec{a}_1+x_2 \vec{a}_2 +\ldots+x_n\vec{a}_n\text{.}\)</span>
+<div class="para" id="MatrixProdEq-3-5-2-1-1">Write out the matrix vector product of <span class="process-math">\(A\)</span> and <span class="process-math">\(\vec{x}\)</span> as a linear combination of the columns of <span class="process-math">\(A\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#MatrixProdEq-3-5-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 2.1.2.a"><a href="#MatrixProdEq-3-5-2" title="Copy heading and permalink for Task 2.1.2.a" aria-label="Copy heading and permalink for Task 2.1.2.a">🔗</a></div></article><article class="task exercise-like" id="MatrixProdEq-3-5-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="MatrixProdEq-3-5-3-1-1">Find <span class="process-math">\(A\vec{x}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#MatrixProdEq-3-5-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 2.1.2.b"><a href="#MatrixProdEq-3-5-3" title="Copy heading and permalink for Task 2.1.2.b" aria-label="Copy heading and permalink for Task 2.1.2.b">🔗</a></div></article><article class="task exercise-like" id="MatrixProdEq-3-5-4"><h5 class="heading"><span class="codenumber">(c)</span></h5>
+<div class="para" id="MatrixProdEq-3-5-4-1-1">Compute all of the other matrix vector products that will be allowed with the matrices <span class="process-math">\(A,B,C\)</span> and <span class="process-math">\(\vec{x},\vec{y},\vec{z}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#MatrixProdEq-3-5-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 2.1.2.c"><a href="#MatrixProdEq-3-5-4" title="Copy heading and permalink for Task 2.1.2.c" aria-label="Copy heading and permalink for Task 2.1.2.c">🔗</a></div></article><div class="autopermalink" data-description="Activity 2.1.2"><a href="#MatrixProdEq-3-5" title="Copy heading and permalink for Activity 2.1.2" aria-label="Copy heading and permalink for Activity 2.1.2">🔗</a></div></article><div class="para" id="MatrixProdEq-3-6">The matrix <span class="process-math">\(A\)</span> can be seen from a column vector form as <span class="process-math">\(A=[ \vec{a}_1 \; \vec{a}_2 \; \ldots \; \vec{a}_n]\)</span> which means that we can think of the product of <span class="process-math">\(A\)</span> and <span class="process-math">\(\vec{x}\)</span> as <span class="process-math">\(A\vec{x}= [ \vec{a}_1 \; \vec{a}_2 \; \ldots \; \vec{a}_n] \colvec{x_1 \\x_2\\ \vdots \\x_n}=x_1\vec{a}_1+x_2 \vec{a}_2 +\ldots+x_n\vec{a}_n\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#MatrixProdEq-3-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <article class="investigation project-like" id="MatrixProdEq-3-7"><h4 class="heading">
-<span class="type">Investigation</span><span class="space"> </span><span class="codenumber">2.1.3</span><span class="period">.</span>
+<span class="type">Investigation</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.1.3</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h4>
 <article class="task exercise-like" id="MatrixProdEq-3-7-1"><h5 class="heading"><span class="codenumber">(a)</span></h5>
 <div class="para logical" id="MatrixProdEq-3-7-1-1-1">
 <div class="para">Write out the <span class="process-math">\(k\)</span>-th component of the resulting vector of the product</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="MatrixProdEq-3-7-1-1-1-2">
 \begin{equation*}
 \begin{bmatrix} a_{11} \amp  a_{12} \amp  ... \amp   a_{1n} \\  a_{21}\amp  a_{22}\amp  ... \amp   a_{2n} \\ \vdots  \amp  \vdots \amp    \amp   \vdots   \\ a_{m1}\amp  a_{m2} \amp  ... \amp   a_{mn}  \end{bmatrix} \colvec{x_1\\x_2\\\vdots\\x_n}
 \end{equation*}
 </div>
+<div class="autopermalink" data-description="Paragraph"><a href="#MatrixProdEq-3-7-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="solutions"><details id="MatrixProdEq-3-7-1-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para" id="MatrixProdEq-3-7-1-2-1"><span class="process-math">\(a_{k1}x_1+a_{k2}x_2+\cdots + a_{kn}x_n\)</span></div></div></details></div></article><article class="task exercise-like" id="MatrixProdEq-3-7-2"><h5 class="heading"><span class="codenumber">(b)</span></h5>
-<div class="para" id="MatrixProdEq-3-7-2-1-1">How can you express the result of the matrix-vector product in terms of <span class="process-math">\(\vec{x}\)</span> and the rows of <span class="process-math">\(A\text{?}\)</span>
+<div class="solutions"><details id="MatrixProdEq-3-7-1-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="MatrixProdEq-3-7-1-2-1">
+<span class="process-math">\(a_{k1}x_1+a_{k2}x_2+\cdots + a_{kn}x_n\)</span><div class="autopermalink" data-description="Paragraph"><a href="#MatrixProdEq-3-7-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="solutions"><details id="MatrixProdEq-3-7-2-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para" id="MatrixProdEq-3-7-2-2-1">The <span class="process-math">\(k\)</span>-th component of the matrix-vector product is the dot product of row <span class="process-math">\(k\)</span> of <span class="process-math">\(A\)</span> with <span class="process-math">\(\vec{x}\text{.}\)</span>
-</div></div></details></div></article><article class="task exercise-like" id="MatrixProdEq-3-7-3"><h5 class="heading"><span class="codenumber">(c)</span></h5>
-<div class="para" id="MatrixProdEq-3-7-3-1-1">How can you express the result of the matrix-vector product in terms of <span class="process-math">\(\vec{x}\)</span> and the columns of <span class="process-math">\(A\text{?}\)</span>
+<div class="autopermalink" data-description="Solution 2.1.3.a.1"><a href="#MatrixProdEq-3-7-1-2" title="Copy heading and permalink for Solution 2.1.3.a.1" aria-label="Copy heading and permalink for Solution 2.1.3.a.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Task 2.1.3.a"><a href="#MatrixProdEq-3-7-1" title="Copy heading and permalink for Task 2.1.3.a" aria-label="Copy heading and permalink for Task 2.1.3.a">🔗</a></div></article><article class="task exercise-like" id="MatrixProdEq-3-7-2"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="MatrixProdEq-3-7-2-1-1">How can you express the result of the matrix-vector product in terms of <span class="process-math">\(\vec{x}\)</span> and the rows of <span class="process-math">\(A\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#MatrixProdEq-3-7-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="solutions"><details id="MatrixProdEq-3-7-3-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para" id="MatrixProdEq-3-7-3-2-1">One way to view this is as a linear combination of the columns of <span class="process-math">\(A\)</span> with the coefficient on the <span class="process-math">\(k\)</span>-th column of <span class="process-math">\(A\)</span> being <span class="process-math">\(x_k\text{.}\)</span>
-</div></div></details></div></article></article></section><section class="subsection" id="MatrixProdEq-4"><h3 class="heading hide-type">
-<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">2.1.2</span><span class="space"> </span><span class="title">The Matrix Equation</span>
+<div class="solutions"><details id="MatrixProdEq-3-7-2-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="MatrixProdEq-3-7-2-2-1">The <span class="process-math">\(k\)</span>-th component of the matrix-vector product is the dot product of row <span class="process-math">\(k\)</span> of <span class="process-math">\(A\)</span> with <span class="process-math">\(\vec{x}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#MatrixProdEq-3-7-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 2.1.3.b.1"><a href="#MatrixProdEq-3-7-2-2" title="Copy heading and permalink for Solution 2.1.3.b.1" aria-label="Copy heading and permalink for Solution 2.1.3.b.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Task 2.1.3.b"><a href="#MatrixProdEq-3-7-2" title="Copy heading and permalink for Task 2.1.3.b" aria-label="Copy heading and permalink for Task 2.1.3.b">🔗</a></div></article><article class="task exercise-like" id="MatrixProdEq-3-7-3"><h5 class="heading"><span class="codenumber">(c)</span></h5>
+<div class="para" id="MatrixProdEq-3-7-3-1-1">How can you express the result of the matrix-vector product in terms of <span class="process-math">\(\vec{x}\)</span> and the columns of <span class="process-math">\(A\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#MatrixProdEq-3-7-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="MatrixProdEq-3-7-3-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="MatrixProdEq-3-7-3-2-1">One way to view this is as a linear combination of the columns of <span class="process-math">\(A\)</span> with the coefficient on the <span class="process-math">\(k\)</span>-th column of <span class="process-math">\(A\)</span> being <span class="process-math">\(x_k\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#MatrixProdEq-3-7-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 2.1.3.c.1"><a href="#MatrixProdEq-3-7-3-2" title="Copy heading and permalink for Solution 2.1.3.c.1" aria-label="Copy heading and permalink for Solution 2.1.3.c.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Task 2.1.3.c"><a href="#MatrixProdEq-3-7-3" title="Copy heading and permalink for Task 2.1.3.c" aria-label="Copy heading and permalink for Task 2.1.3.c">🔗</a></div></article><div class="autopermalink" data-description="Investigation 2.1.3"><a href="#MatrixProdEq-3-7" title="Copy heading and permalink for Investigation 2.1.3" aria-label="Copy heading and permalink for Investigation 2.1.3">🔗</a></div></article><div class="autopermalink" data-description="Subsection 2.1.1: Matrix-Vector Products"><a href="#MatrixProdEq-3" title="Copy heading and permalink for Subsection 2.1.1: Matrix-Vector Products" aria-label="Copy heading and permalink for Subsection 2.1.1: Matrix-Vector Products">🔗</a></div></section><section class="subsection" id="MatrixProdEq-4"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.1.2</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">The Matrix Equation</span>
 </h3>
 <div class="para logical" id="MatrixProdEq-4-2">
 <div class="para">Based on the above definition of the matrix vector product, if</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/q41.html">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/q41.html" id="MatrixProdEq-4-2-1">
 \begin{equation*}
 A=\begin{bmatrix} a_{11} \amp  a_{12} \amp  ... \amp   a_{1n} \\  a_{21}\amp  a_{22}\amp  ... \amp   a_{2n} \\
 \vdots  \amp  \vdots \amp    \amp   \vdots   \\ a_{m1}\amp  a_{m2} \amp  ... \amp   a_{mn}  \end{bmatrix}
 \end{equation*}
 </div>
 <div class="para">and <span class="process-math">\(\vec{b}= \colvec{b_1\\b_2\\\vdots\\b_m}\text{,}\)</span> then by <a href="sec_vector_eqns.html#q41" class="xref" data-knowl="./knowl/xref/q41.html" data-reveal-label="Reveal" data-close-label="Close" title="Investigation 1.6.1">Investigation 1.6.1</a>, <span class="process-math">\(A\vec{x} = \vec{b}\)</span> has the same solution set as the system</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/q41.html">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/q41.html" id="MatrixProdEq-4-2-5">
 \begin{equation*}
 \begin{array}{rcrcrcrcr}
 a_{11} x_1  \amp +\amp  a_{12} x_2 \amp +\amp  ... \amp +\amp   a_{1n}x_n \amp =\amp  b_1 \\ % -1  3
@@ -388,81 +430,118 @@ a_{m1} x_1  \amp +\amp  a_{m2} x_2 \amp +\amp  ... \amp +\amp   a_{mn}x_n \amp =
 \end{array}
 \end{equation*}
 </div>
+<div class="autopermalink" data-description="Paragraph"><a href="#MatrixProdEq-4-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <article class="investigation project-like" id="MatrixProdEq-4-3"><h4 class="heading">
-<span class="type">Investigation</span><span class="space"> </span><span class="codenumber">2.1.4</span><span class="period">.</span>
+<span class="type">Investigation</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.1.4</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h4>
-<div class="introduction" id="MatrixProdEq-4-3-1"><div class="para" id="MatrixProdEq-4-3-1-1">Write each of the following as a matrix equation, a vector equation, and system of equations. You need to write out the exact corresponding vector equation, matrix equation, and system of equations, <em class="emphasis">not</em> some equivalent form.</div></div>
+<div class="introduction" id="MatrixProdEq-4-3-1"><div class="para" id="MatrixProdEq-4-3-1-1">Write each of the following as a matrix equation, a vector equation, and system of equations. You need to write out the exact corresponding vector equation, matrix equation, and system of equations, <em class="emphasis">not</em> some equivalent form.<div class="autopermalink" data-description="Paragraph"><a href="#MatrixProdEq-4-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></div>
 <article class="task exercise-like" id="MatrixProdEq-4-3-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
-<div class="para" id="MatrixProdEq-4-3-2-1"><span class="process-math">\(\begin{bmatrix} 1 \amp  2\amp  3\\4\amp 5\amp 6\\7\amp 8\amp 9 \end{bmatrix} \colvec{x_1\\x_2\\x_3} =\colvec{a\\b\\c}\)</span></div></article><article class="task exercise-like" id="MatrixProdEq-4-3-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
-<div class="para" id="MatrixProdEq-4-3-3-1"><span class="process-math">\(a_1 \colvec{1\\2\\5}+\colvec{3\\0\\-1}+a_2 \colvec{-1\\0\\2} =\colvec{4\\5\\0}\)</span></div></article><article class="task exercise-like" id="MatrixProdEq-4-3-4"><h5 class="heading"><span class="codenumber">(c)</span></h5>
-<div class="para logical" id="MatrixProdEq-4-3-4-1"><div class="displaymath process-math" id="MatrixProdEq-4-3-4-1-1">
+<div class="para" id="MatrixProdEq-4-3-2-1">
+<span class="process-math">\(\begin{bmatrix} 1 \amp  2\amp  3\\4\amp 5\amp 6\\7\amp 8\amp 9 \end{bmatrix} \colvec{x_1\\x_2\\x_3} =\colvec{a\\b\\c}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#MatrixProdEq-4-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 2.1.4.a"><a href="#MatrixProdEq-4-3-2" title="Copy heading and permalink for Task 2.1.4.a" aria-label="Copy heading and permalink for Task 2.1.4.a">🔗</a></div></article><article class="task exercise-like" id="MatrixProdEq-4-3-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="MatrixProdEq-4-3-3-1">
+<span class="process-math">\(a_1 \colvec{1\\2\\5}+\colvec{3\\0\\-1}+a_2 \colvec{-1\\0\\2} =\colvec{4\\5\\0}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#MatrixProdEq-4-3-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 2.1.4.b"><a href="#MatrixProdEq-4-3-3" title="Copy heading and permalink for Task 2.1.4.b" aria-label="Copy heading and permalink for Task 2.1.4.b">🔗</a></div></article><article class="task exercise-like" id="MatrixProdEq-4-3-4"><h5 class="heading"><span class="codenumber">(c)</span></h5>
+<div class="para logical" id="MatrixProdEq-4-3-4-1">
+<div class="displaymath process-math" id="MatrixProdEq-4-3-4-1-1">
 \begin{align*}
 2x_1+3x_2\phantom{+3x_3}\amp =7\\
 -x_1+x_2+4x_3\amp =0\\
 5x_1-6x_2-x_3\amp =2
 \end{align*}
-</div></div></article></article><article class="investigation project-like" id="MatrixProdEq-4-4"><h4 class="heading">
-<span class="type">Investigation</span><span class="space"> </span><span class="codenumber">2.1.5</span><span class="period">.</span>
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#MatrixProdEq-4-3-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 2.1.4.c"><a href="#MatrixProdEq-4-3-4" title="Copy heading and permalink for Task 2.1.4.c" aria-label="Copy heading and permalink for Task 2.1.4.c">🔗</a></div></article><div class="autopermalink" data-description="Investigation 2.1.4"><a href="#MatrixProdEq-4-3" title="Copy heading and permalink for Investigation 2.1.4" aria-label="Copy heading and permalink for Investigation 2.1.4">🔗</a></div></article><article class="investigation project-like" id="MatrixProdEq-4-4"><h4 class="heading">
+<span class="type">Investigation</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.1.5</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h4>
-<div class="para" id="MatrixProdEq-4-4-1">Rephrase <a href="sec_vector_eqns.html#s1act" class="xref" data-knowl="./knowl/xref/s1act.html" data-reveal-label="Reveal" data-close-label="Close" title="Activity 1.6.2">Activity 1.6.2</a> as matrix equations.</div></article></section><section class="subsection" id="MatrixProdEq-5"><h3 class="heading hide-type">
-<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">2.1.3</span><span class="space"> </span><span class="title">Linear Transformations</span>
+<div class="para" id="MatrixProdEq-4-4-1">Rephrase <a href="sec_vector_eqns.html#s1act" class="xref" data-knowl="./knowl/xref/s1act.html" data-reveal-label="Reveal" data-close-label="Close" title="Activity 1.6.2">Activity 1.6.2</a> as matrix equations.<div class="autopermalink" data-description="Paragraph"><a href="#MatrixProdEq-4-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Investigation 2.1.5"><a href="#MatrixProdEq-4-4" title="Copy heading and permalink for Investigation 2.1.5" aria-label="Copy heading and permalink for Investigation 2.1.5">🔗</a></div></article><div class="autopermalink" data-description="Subsection 2.1.2: The Matrix Equation"><a href="#MatrixProdEq-4" title="Copy heading and permalink for Subsection 2.1.2: The Matrix Equation" aria-label="Copy heading and permalink for Subsection 2.1.2: The Matrix Equation">🔗</a></div></section><section class="subsection" id="MatrixProdEq-5"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.1.3</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Linear Transformations</span>
 </h3>
-<div class="para" id="MatrixProdEq-5-2">Our definition of a matrix vector product suggests that the <a href="MatrixProdEq.html#MVProd" class="xref" data-knowl="./knowl/xref/MVProd.html" data-reveal-label="Reveal" data-close-label="Close" title="Definition 2.1.1">matrix-vector product 2.1.1</a> of a <span class="process-math">\(m\)</span> by <span class="process-math">\(n\)</span> matrix will transform vectors from <span class="process-math">\(\mathbb{R}^n\)</span> to vectors in <span class="process-math">\(\mathbb{R}^m\text{.}\)</span> In this way, we can define a function as follows.</div>
+<div class="para" id="MatrixProdEq-5-2">Our definition of a matrix vector product suggests that the <a href="MatrixProdEq.html#MVProd" class="xref" data-knowl="./knowl/xref/MVProd.html" data-reveal-label="Reveal" data-close-label="Close" title="Definition 2.1.1">matrix-vector product 2.1.1</a> of a <span class="process-math">\(m\)</span> by <span class="process-math">\(n\)</span> matrix will transform vectors from <span class="process-math">\(\mathbb{R}^n\)</span> to vectors in <span class="process-math">\(\mathbb{R}^m\text{.}\)</span> In this way, we can define a function as follows.<div class="autopermalink" data-description="Paragraph"><a href="#MatrixProdEq-5-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
 <article class="definition definition-like" id="MatrixTransformation"><h4 class="heading">
-<span class="type">Definition</span><span class="space"> </span><span class="codenumber">2.1.2</span><span class="period">.</span>
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.1.2</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h4>
-<div class="para" id="MatrixTransformation-1">Let <span class="process-math">\(A\)</span> be a <span class="process-math">\(m\)</span> by <span class="process-math">\(n\)</span> matrix. Then we define <span class="process-math">\(T_A : \mathbb{R}^n \rightarrow \mathbb{R}^m\text{,}\)</span> where <span class="process-math">\(T_A(\vec{x})=A\vec{x}\text{.}\)</span>
-</div></article><div class="para logical" id="MatrixProdEq-5-4">
+<div class="para" id="MatrixTransformation-1">Let <span class="process-math">\(A\)</span> be a <span class="process-math">\(m\)</span> by <span class="process-math">\(n\)</span> matrix. Then we define <span class="process-math">\(T_A : \mathbb{R}^n \rightarrow \mathbb{R}^m\text{,}\)</span> where <span class="process-math">\(T_A(\vec{x})=A\vec{x}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#MatrixTransformation-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Definition 2.1.2"><a href="#MatrixTransformation" title="Copy heading and permalink for Definition 2.1.2" aria-label="Copy heading and permalink for Definition 2.1.2">🔗</a></div></article><div class="para logical" id="MatrixProdEq-5-4">
 <div class="para">Using what we know of solving linear systems, vector equations, and thier relationship to matrix vector products, we note the following:</div>
 <ul class="disc" id="MatrixProdEq-5-4-1">
-<li id="MatrixProdEq-5-4-1-1"><div class="para" id="p-derived-MatrixProdEq-5-4-1-1">If there is no soltuion to the matrix equation <span class="process-math">\(A\vec{x}=\vec{b}\text{,}\)</span> then we say that <span class="process-math">\(\vec{b}\)</span> is NOT in the range of the linear transformation <span class="process-math">\(T_A\text{.}\)</span>
-</div></li>
-<li id="MatrixProdEq-5-4-1-2"><div class="para" id="p-derived-MatrixProdEq-5-4-1-2">If there is always a solution to the matrix equation <span class="process-math">\(A\vec{x}=\vec{b}\text{,}\)</span> then we say that the map <span class="process-math">\(T_A\)</span> completely covers <span class="process-math">\(\mathbb{R}^m\text{.}\)</span> In other words, the range of <span class="process-math">\(T_A\)</span> is all of <span class="process-math">\(\mathbb{R}^m\text{.}\)</span>
-</div></li>
-<li id="MatrixProdEq-5-4-1-3"><div class="para" id="p-derived-MatrixProdEq-5-4-1-3">If whenever a solution exists, the solution is unique, then we say that the map <span class="process-math">\(T_A\)</span> is one-to-one.</div></li>
+<li id="MatrixProdEq-5-4-1-1">
+<div class="para" id="p-derived-MatrixProdEq-5-4-1-1">If there is no soltuion to the matrix equation <span class="process-math">\(A\vec{x}=\vec{b}\text{,}\)</span> then we say that <span class="process-math">\(\vec{b}\)</span> is NOT in the range of the linear transformation <span class="process-math">\(T_A\text{.}\)</span>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#MatrixProdEq-5-4-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="MatrixProdEq-5-4-1-2">
+<div class="para" id="p-derived-MatrixProdEq-5-4-1-2">If there is always a solution to the matrix equation <span class="process-math">\(A\vec{x}=\vec{b}\text{,}\)</span> then we say that the map <span class="process-math">\(T_A\)</span> completely covers <span class="process-math">\(\mathbb{R}^m\text{.}\)</span> In other words, the range of <span class="process-math">\(T_A\)</span> is all of <span class="process-math">\(\mathbb{R}^m\text{.}\)</span>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#MatrixProdEq-5-4-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="MatrixProdEq-5-4-1-3">
+<div class="para" id="p-derived-MatrixProdEq-5-4-1-3">If whenever a solution exists, the solution is unique, then we say that the map <span class="process-math">\(T_A\)</span> is one-to-one.</div>
+<div class="autopermalink" data-description="Item"><a href="#MatrixProdEq-5-4-1-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
 </ul>
+<div class="autopermalink" data-description="Paragraph"><a href="#MatrixProdEq-5-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para logical" id="MatrixProdEq-5-5">
 <div class="para">Linear Transformations are very important ways to understand how a vector space is changed under the operation given. Linear transformations are important because they preserve linear combinations. In other words,</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="MatrixProdEq-5-5-1">
 \begin{equation*}
 T_A(a_1\vec{v}_1 +a_2 \vec{v}_2)= a_1 T_A(\vec{v}_1) +a_2 T_A(\vec{v}_2)
 \end{equation*}
 </div>
+<div class="autopermalink" data-description="Paragraph"><a href="#MatrixProdEq-5-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <article class="activity project-like" id="MatrixProdEq-5-6"><h4 class="heading">
-<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.1.6</span><span class="period">.</span>
+<span class="type">Activity</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.1.6</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h4>
-<div class="introduction" id="MatrixProdEq-5-6-1"><div class="para" id="MatrixProdEq-5-6-1-1">Let <span class="process-math">\(A=\begin{bmatrix} 2 \amp 0 \amp 0 \\0 \amp -1 \amp 1 \end{bmatrix}\text{.}\)</span>
+<div class="introduction" id="MatrixProdEq-5-6-1"><div class="para" id="MatrixProdEq-5-6-1-1">Let <span class="process-math">\(A=\begin{bmatrix} 2 \amp 0 \amp 0 \\0 \amp -1 \amp 1 \end{bmatrix}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#MatrixProdEq-5-6-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></div>
 <article class="task exercise-like" id="MatrixProdEq-5-6-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
-<div class="para" id="MatrixProdEq-5-6-2-1-1">The linear transformation <span class="process-math">\(T_A\)</span> takes <span class="process-math">\(\mathbb{R}^{m}\)</span> to <span class="process-math">\(\mathbb{R}^{n}\)</span> for what values of <span class="process-math">\(m\)</span> and <span class="process-math">\(n\text{?}\)</span>
-</div></article><article class="task exercise-like" id="MatrixProdEq-5-6-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
-<div class="para" id="MatrixProdEq-5-6-3-1-1">Compute <span class="process-math">\(T_A \left( \colvec{1\\0\\0 } \right)\text{.}\)</span>
-</div></article><article class="task exercise-like" id="MatrixProdEq-5-6-4"><h5 class="heading"><span class="codenumber">(c)</span></h5>
-<div class="para" id="MatrixProdEq-5-6-4-1-1">Compute <span class="process-math">\(T_A \left( \colvec{1\\1\\0} \right)\text{.}\)</span>
-</div></article><article class="task exercise-like" id="MatrixProdEq-5-6-5"><h5 class="heading"><span class="codenumber">(d)</span></h5>
-<div class="para" id="MatrixProdEq-5-6-5-1-1">Compute <span class="process-math">\(T_A \left( \colvec{a\\b\\c} \right)\text{.}\)</span>
-</div></article><article class="task exercise-like" id="MatrixProdEq-5-6-6"><h5 class="heading"><span class="codenumber">(e)</span></h5>
-<div class="para" id="MatrixProdEq-5-6-6-1-1">Compute <span class="process-math">\(T_A\)</span> for any other vectors you might want to and write a few sentences about how vectors are transformed by <span class="process-math">\(T_A\text{.}\)</span>
-</div></article></article><article class="activity project-like" id="MatrixProdEq-5-7"><h4 class="heading">
-<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.1.7</span><span class="period">.</span>
+<div class="para" id="MatrixProdEq-5-6-2-1-1">The linear transformation <span class="process-math">\(T_A\)</span> takes <span class="process-math">\(\mathbb{R}^{m}\)</span> to <span class="process-math">\(\mathbb{R}^{n}\)</span> for what values of <span class="process-math">\(m\)</span> and <span class="process-math">\(n\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#MatrixProdEq-5-6-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 2.1.6.a"><a href="#MatrixProdEq-5-6-2" title="Copy heading and permalink for Task 2.1.6.a" aria-label="Copy heading and permalink for Task 2.1.6.a">🔗</a></div></article><article class="task exercise-like" id="MatrixProdEq-5-6-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="MatrixProdEq-5-6-3-1-1">Compute <span class="process-math">\(T_A \left( \colvec{1\\0\\0 } \right)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#MatrixProdEq-5-6-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 2.1.6.b"><a href="#MatrixProdEq-5-6-3" title="Copy heading and permalink for Task 2.1.6.b" aria-label="Copy heading and permalink for Task 2.1.6.b">🔗</a></div></article><article class="task exercise-like" id="MatrixProdEq-5-6-4"><h5 class="heading"><span class="codenumber">(c)</span></h5>
+<div class="para" id="MatrixProdEq-5-6-4-1-1">Compute <span class="process-math">\(T_A \left( \colvec{1\\1\\0} \right)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#MatrixProdEq-5-6-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 2.1.6.c"><a href="#MatrixProdEq-5-6-4" title="Copy heading and permalink for Task 2.1.6.c" aria-label="Copy heading and permalink for Task 2.1.6.c">🔗</a></div></article><article class="task exercise-like" id="MatrixProdEq-5-6-5"><h5 class="heading"><span class="codenumber">(d)</span></h5>
+<div class="para" id="MatrixProdEq-5-6-5-1-1">Compute <span class="process-math">\(T_A \left( \colvec{a\\b\\c} \right)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#MatrixProdEq-5-6-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 2.1.6.d"><a href="#MatrixProdEq-5-6-5" title="Copy heading and permalink for Task 2.1.6.d" aria-label="Copy heading and permalink for Task 2.1.6.d">🔗</a></div></article><article class="task exercise-like" id="MatrixProdEq-5-6-6"><h5 class="heading"><span class="codenumber">(e)</span></h5>
+<div class="para" id="MatrixProdEq-5-6-6-1-1">Compute <span class="process-math">\(T_A\)</span> for any other vectors you might want to and write a few sentences about how vectors are transformed by <span class="process-math">\(T_A\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#MatrixProdEq-5-6-6-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 2.1.6.e"><a href="#MatrixProdEq-5-6-6" title="Copy heading and permalink for Task 2.1.6.e" aria-label="Copy heading and permalink for Task 2.1.6.e">🔗</a></div></article><div class="autopermalink" data-description="Activity 2.1.6"><a href="#MatrixProdEq-5-6" title="Copy heading and permalink for Activity 2.1.6" aria-label="Copy heading and permalink for Activity 2.1.6">🔗</a></div></article><article class="activity project-like" id="MatrixProdEq-5-7"><h4 class="heading">
+<span class="type">Activity</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.1.7</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h4>
-<div class="introduction" id="MatrixProdEq-5-7-1"><div class="para" id="MatrixProdEq-5-7-1-1">Let <span class="process-math">\(B=\begin{bmatrix} 1 \amp 1 \\ 0 \amp -1 \\ 2 \amp 1  \end{bmatrix}\text{.}\)</span>
+<div class="introduction" id="MatrixProdEq-5-7-1"><div class="para" id="MatrixProdEq-5-7-1-1">Let <span class="process-math">\(B=\begin{bmatrix} 1 \amp 1 \\ 0 \amp -1 \\ 2 \amp 1  \end{bmatrix}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#MatrixProdEq-5-7-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></div>
 <article class="task exercise-like" id="MatrixProdEq-5-7-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
-<div class="para" id="MatrixProdEq-5-7-2-1-1">The linear transformation <span class="process-math">\(T_B\)</span> takes <span class="process-math">\(\mathbb{R}^{m}\)</span> to <span class="process-math">\(\mathbb{R}^{n}\)</span> for what values of <span class="process-math">\(m\)</span> and <span class="process-math">\(n\text{?}\)</span>
-</div></article><article class="task exercise-like" id="MatrixProdEq-5-7-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
-<div class="para" id="MatrixProdEq-5-7-3-1-1">Compute <span class="process-math">\(T_B \left( \colvec{1\\0 } \right)\text{.}\)</span>
-</div></article><article class="task exercise-like" id="MatrixProdEq-5-7-4"><h5 class="heading"><span class="codenumber">(c)</span></h5>
-<div class="para" id="MatrixProdEq-5-7-4-1-1">Compute <span class="process-math">\(T_B \left( \colvec{1\\1} \right)\text{.}\)</span>
-</div></article><article class="task exercise-like" id="MatrixProdEq-5-7-5"><h5 class="heading"><span class="codenumber">(d)</span></h5>
-<div class="para" id="MatrixProdEq-5-7-5-1-1">Compute <span class="process-math">\(T_B \left( \colvec{a\\b} \right)\text{.}\)</span>
-</div></article><article class="task exercise-like" id="MatrixProdEq-5-7-6"><h5 class="heading"><span class="codenumber">(e)</span></h5>
-<div class="para" id="MatrixProdEq-5-7-6-1-1">Compute <span class="process-math">\(T_B\)</span> for any other vectors you might want to and write a few sentences about how vectors are transformed by <span class="process-math">\(T_B\text{.}\)</span>
-</div></article></article></section></section></div>
-<div class="ptx-content-footer">
+<div class="para" id="MatrixProdEq-5-7-2-1-1">The linear transformation <span class="process-math">\(T_B\)</span> takes <span class="process-math">\(\mathbb{R}^{m}\)</span> to <span class="process-math">\(\mathbb{R}^{n}\)</span> for what values of <span class="process-math">\(m\)</span> and <span class="process-math">\(n\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#MatrixProdEq-5-7-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 2.1.7.a"><a href="#MatrixProdEq-5-7-2" title="Copy heading and permalink for Task 2.1.7.a" aria-label="Copy heading and permalink for Task 2.1.7.a">🔗</a></div></article><article class="task exercise-like" id="MatrixProdEq-5-7-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="MatrixProdEq-5-7-3-1-1">Compute <span class="process-math">\(T_B \left( \colvec{1\\0 } \right)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#MatrixProdEq-5-7-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 2.1.7.b"><a href="#MatrixProdEq-5-7-3" title="Copy heading and permalink for Task 2.1.7.b" aria-label="Copy heading and permalink for Task 2.1.7.b">🔗</a></div></article><article class="task exercise-like" id="MatrixProdEq-5-7-4"><h5 class="heading"><span class="codenumber">(c)</span></h5>
+<div class="para" id="MatrixProdEq-5-7-4-1-1">Compute <span class="process-math">\(T_B \left( \colvec{1\\1} \right)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#MatrixProdEq-5-7-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 2.1.7.c"><a href="#MatrixProdEq-5-7-4" title="Copy heading and permalink for Task 2.1.7.c" aria-label="Copy heading and permalink for Task 2.1.7.c">🔗</a></div></article><article class="task exercise-like" id="MatrixProdEq-5-7-5"><h5 class="heading"><span class="codenumber">(d)</span></h5>
+<div class="para" id="MatrixProdEq-5-7-5-1-1">Compute <span class="process-math">\(T_B \left( \colvec{a\\b} \right)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#MatrixProdEq-5-7-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 2.1.7.d"><a href="#MatrixProdEq-5-7-5" title="Copy heading and permalink for Task 2.1.7.d" aria-label="Copy heading and permalink for Task 2.1.7.d">🔗</a></div></article><article class="task exercise-like" id="MatrixProdEq-5-7-6"><h5 class="heading"><span class="codenumber">(e)</span></h5>
+<div class="para" id="MatrixProdEq-5-7-6-1-1">Compute <span class="process-math">\(T_B\)</span> for any other vectors you might want to and write a few sentences about how vectors are transformed by <span class="process-math">\(T_B\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#MatrixProdEq-5-7-6-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 2.1.7.e"><a href="#MatrixProdEq-5-7-6" title="Copy heading and permalink for Task 2.1.7.e" aria-label="Copy heading and permalink for Task 2.1.7.e">🔗</a></div></article><div class="autopermalink" data-description="Activity 2.1.7"><a href="#MatrixProdEq-5-7" title="Copy heading and permalink for Activity 2.1.7" aria-label="Copy heading and permalink for Activity 2.1.7">🔗</a></div></article><div class="autopermalink" data-description="Subsection 2.1.3: Linear Transformations"><a href="#MatrixProdEq-5" title="Copy heading and permalink for Subsection 2.1.3: Linear Transformations" aria-label="Copy heading and permalink for Subsection 2.1.3: Linear Transformations">🔗</a></div></section><div class="autopermalink" data-description="Section 2.1: Matrix Products and Equations"><a href="#MatrixProdEq" title="Copy heading and permalink for Section 2.1: Matrix Products and Equations" aria-label="Copy heading and permalink for Section 2.1: Matrix Products and Equations">🔗</a></div></section></div>
+<div id="ptx-content-footer" class="ptx-content-footer">
 <a class="previous-button button" href="C2.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec_matrix_ops.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>
 </div>
