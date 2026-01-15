@@ -1,6 +1,6 @@
-openDate          = 01/13/2026 at 12:00am
-dueDate           = 07/13/2026 at 10:00pm
-answerDate        = 07/13/2026 at 10:00pm
+openDate          = 01/15/2026 at 12:00am
+dueDate           = 07/15/2026 at 10:00pm
+answerDate        = 07/15/2026 at 10:00pm
 paperHeaderFile   = Computational_Linear_Algebra/header/1_6-Vector_Equations_Exercises.pg
 screenHeaderFile  = Computational_Linear_Algebra/header/1_6-Vector_Equations_Exercises.pg
 description       = Vector Equations
@@ -12,4 +12,8 @@ problem_end
 problem_start
 source_file = Contrib/Hope/Multi1/02-02-Linear-systems/Geometry_01/Geometry_01.pg
 problem_id = 2
+problem_end
+problem_start
+source_file = Contrib/Hope/Multi1/02-02-Linear-systems/Substitution_01.pg
+problem_id = 3
 problem_end
