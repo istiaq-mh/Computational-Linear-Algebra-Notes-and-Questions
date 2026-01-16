@@ -606,6 +606,57 @@
 
 
 </subsection>
+<exercises>
+  <exercise>
+    <webwork source="Library/ASU-topics/set119LinearSystems/p21.pg" />
+  </exercise>
+  <exercise>
+    <webwork source="Library/Hope/Multi1/02-03-Row-operations/Row_ops_05.pg" />
+  </exercise>
+  <exercise>
+    <webwork source="Library/Hope/Multi1/02-03-Row-operations/Row_ops_02.pg" />
+  </exercise>
+  <exercise>
+    <webwork source="Library/Hope/Multi1/02-03-Row-operations/Row_ops_01.pg" />
+  </exercise>
+  <exercise>
+    <webwork source="Library/WHFreeman/Holt_linear_algebra/Chaps_1-4/holt_01_02_011.pg" />
+  </exercise>
+  <exercise>
+    <webwork source="Library/WHFreeman/Holt_linear_algebra/Chaps_1-4/holt_01_02_013.pg" />
+  </exercise>
+  <exercise>
+    <webwork source="Library/Rochester/setAlgebra35SystemMatrices/ID_row_ops_2.pg" />
+  </exercise>
+  <exercise>
+    <webwork source="Library/Rochester/setLinearAlgebra3Matrices/ur_la_3_5.pg" />
+  </exercise>
+  <exercise>
+    <webwork source="Library/ASU-topics/set119LinearSystems/p33.pg" />
+  </exercise>
+  <exercise>
+    <webwork source="Library/TCNJ/TCNJ_RowReduction/problem1.pg" />
+  </exercise>
+  <exercise>
+    <webwork source="Library/NAU/setLinearSys/linearsys_3var_4.pg" />
+  </exercise>
+  <exercise>
+    <webwork source="Library/Rochester/setAlgebra35SystemMatrices/augmentedmatrix.pg" />
+  </exercise>
+  <exercise>
+    <webwork source="Library/Mizzou/Finite_Math/Augmented_Matrices/GJ1.pg" />
+  </exercise>
+  <exercise>
+    <webwork source="Library/Mizzou/Finite_Math/Gauss-Jordan_Elimination/3by3a.pg" />
+  </exercise>
+  <exercise>
+    <webwork source="Library/TCNJ/TCNJ_RowReduction/problem14.pg" />
+  </exercise>
+  <exercise>
+    <webwork source="Library/TCNJ/TCNJ_RowReduction/problem15.pg" />
+  </exercise>
+
+</exercises>
 </section>
 
 

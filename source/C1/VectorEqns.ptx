@@ -115,5 +115,16 @@
   </p>
 </task>
 </activity>
+<exercises>
+  <exercise>
+    <webwork source="Library/Mizzou/Finite_Math/Linear_Algebra_Matrix_Equations/MatrixEquation1.pg" />
+  </exercise>
+  <exercise>
+    <webwork source="Contrib/Hope/Multi1/02-02-Linear-systems/Geometry_01/Geometry_01.pg" />
+  </exercise>
+  <exercise>
+    <webwork source="Contrib/Hope/Multi1/02-02-Linear-systems/Substitution_01.pg" />
+  </exercise>
+</exercises>
 </section>
 
