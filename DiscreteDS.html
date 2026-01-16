@@ -5,11 +5,11 @@
 <!--*         https://pretextbook.org          *-->
 <!--*                                          *-->
 <!--********************************************-->
-<html lang="en-US" dir="ltr">
+<html lang="en-US" dir="ltr" data-legacy-colorscheme="blue_red">
 <!--******************************************-->
 <!--*  Authored with PreTeXt                 *-->
 <!--*  pretextbook.org                       *-->
-<!--*  Theme: default-modern                 *-->
+<!--*  Theme: default-legacy                 *-->
 <!--*  Palette:                              *-->
 <!--******************************************-->
 <head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
@@ -18,6 +18,10 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+<link href="https://fonts.cdnfonts.com/css/dejavu-serif" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wdth,wght@75..100,300..800&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&amp;" rel="stylesheet">
 <link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
 <link href="_static/pretext/css/ol-markers.css" rel="stylesheet" type="text/css">
 <script>
@@ -80,7 +84,7 @@ window.MathJax = {
       "[pretext]/mathjaxknowl3.js"
     ],
     "paths": {
-      "pretext": "_static/pretext/js"
+      "pretext": "_static/pretext/js/lib"
     }
   },
   "startup": {
@@ -97,7 +101,7 @@ window.MathJax = {
 <meta property="og:type" content="book">
 <meta property="book:title" content="Computational Linear Algebra">
 <meta property="book:author" content="Nicholas Long">
-<script src="_static/pretext/js/jquery.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><!--** eBookCongig is necessary to configure interactive       **-->
+<script src="_static/pretext/js/lib/jquery.min.js"></script><script src="_static/pretext/js/lib/jquery.sticky.js"></script><script src="_static/pretext/js/lib/jquery.espy.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><script src="_static/pretext/js/user_preferences.js"></script><!--** eBookCongig is necessary to configure interactive       **-->
 <!--** Runestone components to run locally in reader's browser **-->
 <!--** No external communication:                              **-->
 <!--**     log level is 0, Runestone Services are disabled     **-->
@@ -128,7 +132,7 @@ eBookConfig.enable_chatcodes =  false;
 <!--*** Runestone Services ***-->
 <script src="_static/prefix-runtime.991c135ccf182bf5.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.1c010553c35c544c.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
 <link rel="stylesheet" type="text/css" href="_static/prefix-runestone.677a75a9120449ff.css">
-<script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script><script src="_static/pretext/js/pretext-webwork/2.20/pretext-webwork.js"></script><script src="https://webwork-ptx.aimath.org/webwork2_files/node_modules/iframe-resizer/js/iframeResizer.min.js"></script><script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+<script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script><script src="_static/pretext/js/pretext-webwork/2.20/pretext-webwork.js"></script><script src="https://webwork-ptx.aimath.org/webwork2_files/node_modules/iframe-resizer/js/iframeResizer.min.js"></script><script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
 </script>
 </head>
 <body class="pretext book ignore-math">
@@ -147,7 +151,7 @@ eBookConfig.enable_chatcodes =  false;
 <ol id="searchresults" class="searchresults"></ol>
 </div>
 </div>
-<span class="nav-other-controls"><button id="light-dark-button" class="light-dark-button button" title="Dark Mode"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span class="name">Dark Mode</span></button></span><span class="treebuttons"><a class="previous-button button" href="C3.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="C3.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="ChangeofCoordinates.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
+<span class="nav-other-controls"></span><span class="treebuttons"><a class="previous-button button" href="C3.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="C3.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="ChangeofCoordinates.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
 </div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\R}{\mathbb R}
 \newcommand\colvec[1]{\begin{bmatrix}#1\end{bmatrix}}
 \newcommand{\lt}{&lt;}
@@ -157,7 +161,7 @@ eBookConfig.enable_chatcodes =  false;
 \newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
 \)</span></div>
 <div class="ptx-page">
-<div id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth2 focused" data-preexpanded-levels="0" data-max-levels="2"><ul class="structural toc-item-list contains-active">
+<div id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth2"><ul class="structural toc-item-list contains-active">
 <li class="toc-item toc-frontmatter"><div class="toc-title-box"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div></li>
 <li class="toc-item toc-chapter">
 <div class="toc-title-box"><a href="C1.html" class="internal"><span class="codenumber">1</span> <span class="title">Solving Linear Systems</span></a></div>
@@ -168,7 +172,10 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="solving_linear_systems.html" class="internal"><span class="codenumber">1.2</span> <span class="title">Solving Linear Systems</span></a></div>
-<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="solving_linear_systems.html#solving_linear_systems-2" class="internal"><span class="codenumber">1.2.1</span> <span class="title">Elementary Operations</span></a></div></li></ul>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="solving_linear_systems.html#solving_linear_systems-2" class="internal"><span class="codenumber">1.2.1</span> <span class="title">Elementary Operations</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="solving_linear_systems.html#solving_linear_systems-3" class="internal"><span class="codenumber">1.2.2</span> <span class="title">Exercises</span></a></div></li>
+</ul>
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="Conunique.html" class="internal"><span class="codenumber">1.3</span> <span class="title">Consistency and Uniqueness Theorems</span></a></div>
@@ -276,338 +283,338 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-backmatter"><div class="toc-title-box"><a href="backmatter.html" class="internal"><span class="title">Backmatter</span></a></div></li>
 </ul></nav></div>
 <main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="DiscreteDS"><h2 class="heading hide-type">
-<span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.1</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Discrete Dynamical Systems</span>
+<span class="type">Section</span><span class="space"> </span><span class="codenumber">3.1</span><span class="space"> </span><span class="title">Discrete Dynamical Systems</span>
 </h2>
-<section class="introduction" id="DiscreteDS-2"><div class="para" id="DiscreteDS-2-1">A <dfn class="terminology">dynamical system</dfn> is a pair <span class="process-math">\((X,R)\)</span> where <span class="process-math">\(X\)</span> is the set of states a system can be in and <span class="process-math">\(R\)</span> is a rule for how the system evolves or changes. This can feel like a really abstract and general statement, so let’s look at some real life examples and some simple math examples that we can easily work with.<div class="autopermalink" data-description="Paragraph"><a href="#DiscreteDS-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<section class="introduction" id="DiscreteDS-2"><div class="para" id="DiscreteDS-2-1">A <dfn class="terminology">dynamical system</dfn> is a pair <span class="process-math">\((X,R)\)</span> where <span class="process-math">\(X\)</span> is the set of states a system can be in and <span class="process-math">\(R\)</span> is a rule for how the system evolves or changes. This can feel like a really abstract and general statement, so let’s look at some real life examples and some simple math examples that we can easily work with.<div class="autopermalink" data-description="Paragraph"><a href="#DiscreteDS-2-1" title="Copy permalink for Paragraph">🔗</a></div>
 </div>
 <details id="DiscreteDS-2-2" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
-<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.1.1</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
-</h3></summary><article class="example example-like knowl__content"><div class="para" id="DiscreteDS-2-2-1">Let our state space be the set of all possible collections of position, velocities, and times of the sun and nine planets (Pluto is still a planet to me...). You might store each planet’s position, velocity, and time as a vector then we would say that the ten vectors are the current state of the system and the rule for evolution would be the the force of gravity. In this way, each state leads to the next by following the dynamical rule.<div class="autopermalink" data-description="Paragraph"><a href="#DiscreteDS-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.1.1</span><span class="period">.</span>
+</h3></summary><article class="example example-like knowl__content"><div class="para" id="DiscreteDS-2-2-1">Let our state space be the set of all possible collections of position, velocities, and times of the sun and nine planets (Pluto is still a planet to me...). You might store each planet’s position, velocity, and time as a vector then we would say that the ten vectors are the current state of the system and the rule for evolution would be the the force of gravity. In this way, each state leads to the next by following the dynamical rule.<div class="autopermalink" data-description="Paragraph"><a href="#DiscreteDS-2-2-1" title="Copy permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="DiscreteDS-2-2-2">The field of dynamical systems would study questions like 1)if this system always has a solution, 2)what properties solutions typically have, or 3) what is the long term behavior of solution? Another important part of the system above would be an initial condition, or the state of the system at beginning.<div class="autopermalink" data-description="Paragraph"><a href="#DiscreteDS-2-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="DiscreteDS-2-2-2">The field of dynamical systems would study questions like 1)if this system always has a solution, 2)what properties solutions typically have, or 3) what is the long term behavior of solution? Another important part of the system above would be an initial condition, or the state of the system at beginning.<div class="autopermalink" data-description="Paragraph"><a href="#DiscreteDS-2-2-2" title="Copy permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="DiscreteDS-2-2-3">You often label this as time zero and state the values for the different planets’ position and velocity at time zero. This leads to even more questions like "If the initial configuration of planets was a bit different, would the long term behavior still be the same?" This example is a continuous dynamical system since we look how the states of the system evolve in terms of a continuous variable (time in this case). This particular system is quite complicated and has been a focus of science, philosophy, and religion for quite some time.<div class="autopermalink" data-description="Paragraph"><a href="#DiscreteDS-2-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="DiscreteDS-2-2-3">You often label this as time zero and state the values for the different planets’ position and velocity at time zero. This leads to even more questions like "If the initial configuration of planets was a bit different, would the long term behavior still be the same?" This example is a continuous dynamical system since we look how the states of the system evolve in terms of a continuous variable (time in this case). This particular system is quite complicated and has been a focus of science, philosophy, and religion for quite some time.<div class="autopermalink" data-description="Paragraph"><a href="#DiscreteDS-2-2-3" title="Copy permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Example 3.1.1"><a href="#DiscreteDS-2-2" title="Copy heading and permalink for Example 3.1.1" aria-label="Copy heading and permalink for Example 3.1.1">🔗</a></div></article></details><details id="DiscreteDS-2-3" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
-<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.1.2</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
-</h3></summary><article class="example example-like knowl__content"><div class="para" id="DiscreteDS-2-3-1">Let us look at a much simplier example and do some calculations. Let our dynamical system be <span class="process-math">\((\mathbb{R},f(x)=x^2)\text{.}\)</span> This means that our state space is the set of real numbers and our current state evolves according to the rule <span class="process-math">\(x \rightarrow x^2\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#DiscreteDS-2-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Example 3.1.1"><a href="#DiscreteDS-2-2" title="Copy permalink for Example 3.1.1">🔗</a></div></article></details><details id="DiscreteDS-2-3" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.1.2</span><span class="period">.</span>
+</h3></summary><article class="example example-like knowl__content"><div class="para" id="DiscreteDS-2-3-1">Let us look at a much simplier example and do some calculations. Let our dynamical system be <span class="process-math">\((\mathbb{R},f(x)=x^2)\text{.}\)</span> This means that our state space is the set of real numbers and our current state evolves according to the rule <span class="process-math">\(x \rightarrow x^2\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#DiscreteDS-2-3-1" title="Copy permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="DiscreteDS-2-3-2">Notice here that we can only apply our rule (apply the function<span class="process-math">\(f\)</span>) in discrete amounts. So if we start with the initial value <span class="process-math">\(x_0=a\text{,}\)</span> then our next state will be <span class="process-math">\(x_1=f(x_0=a)=a^2\text{.}\)</span> Our study really becomes about the sequence <span class="process-math">\(x_0,x_1=f(x_0),x_2=f(x_1)=f(f(x_0)), x_3=f(x_2)=f(f(f(x_0))), \ldots\text{.}\)</span> This is called a <dfn class="terminology">discrete dynamical system</dfn> because we can measure the state of the system (and it’s evolution) only at discrete values.<div class="autopermalink" data-description="Paragraph"><a href="#DiscreteDS-2-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="DiscreteDS-2-3-2">Notice here that we can only apply our rule (apply the function<span class="process-math">\(f\)</span>) in discrete amounts. So if we start with the initial value <span class="process-math">\(x_0=a\text{,}\)</span> then our next state will be <span class="process-math">\(x_1=f(x_0=a)=a^2\text{.}\)</span> Our study really becomes about the sequence <span class="process-math">\(x_0,x_1=f(x_0),x_2=f(x_1)=f(f(x_0)), x_3=f(x_2)=f(f(f(x_0))), \ldots\text{.}\)</span> This is called a <dfn class="terminology">discrete dynamical system</dfn> because we can measure the state of the system (and it’s evolution) only at discrete values.<div class="autopermalink" data-description="Paragraph"><a href="#DiscreteDS-2-3-2" title="Copy permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="DiscreteDS-2-3-3">Take a few minutes to find the solution sequence for <span class="process-math">\(x_0=2\text{.}\)</span> Try to write out what the long term behavior of this solution sequence is. Will all initial values have this same long term behavior? How many different long term behaviors can you find?<div class="autopermalink" data-description="Paragraph"><a href="#DiscreteDS-2-3-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="DiscreteDS-2-3-3">Take a few minutes to find the solution sequence for <span class="process-math">\(x_0=2\text{.}\)</span> Try to write out what the long term behavior of this solution sequence is. Will all initial values have this same long term behavior? How many different long term behaviors can you find?<div class="autopermalink" data-description="Paragraph"><a href="#DiscreteDS-2-3-3" title="Copy permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Example 3.1.2"><a href="#DiscreteDS-2-3" title="Copy heading and permalink for Example 3.1.2" aria-label="Copy heading and permalink for Example 3.1.2">🔗</a></div></article></details><details id="DiscreteDS-2-4" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
-<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.1.3</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
-</h3></summary><article class="example example-like knowl__content"><div class="para" id="DiscreteDS-2-4-1">You may think a game like chess is also a dynamical system but that is not the case. You could consider all the different ways that pieces could be configured on the board as a state space for the game, there is no rule for how the configuration must change. This is what makes chess an interesting game.<div class="autopermalink" data-description="Paragraph"><a href="#DiscreteDS-2-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Example 3.1.2"><a href="#DiscreteDS-2-3" title="Copy permalink for Example 3.1.2">🔗</a></div></article></details><details id="DiscreteDS-2-4" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.1.3</span><span class="period">.</span>
+</h3></summary><article class="example example-like knowl__content"><div class="para" id="DiscreteDS-2-4-1">You may think a game like chess is also a dynamical system but that is not the case. You could consider all the different ways that pieces could be configured on the board as a state space for the game, there is no rule for how the configuration must change. This is what makes chess an interesting game.<div class="autopermalink" data-description="Paragraph"><a href="#DiscreteDS-2-4-1" title="Copy permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Example 3.1.3"><a href="#DiscreteDS-2-4" title="Copy heading and permalink for Example 3.1.3" aria-label="Copy heading and permalink for Example 3.1.3">🔗</a></div></article></details></section><section class="subsection" id="DiscreteDS-3"><h3 class="heading hide-type">
-<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.1.1</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Predator-Prey Systems</span>
+<div class="autopermalink" data-description="Example 3.1.3"><a href="#DiscreteDS-2-4" title="Copy permalink for Example 3.1.3">🔗</a></div></article></details></section><section class="subsection" id="DiscreteDS-3"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">3.1.1</span><span class="space"> </span><span class="title">Predator-Prey Systems</span>
 </h3>
 <div class="para logical" id="DiscreteDS-3-2">
 <div class="para">In this section we will look at a basic type of two dimensional discrete dynamical system that models the populations of a predator and a prey, which we will call foxes (<span class="process-math">\(F\)</span>) and rabbits, <span class="process-math">\(R\text{.}\)</span> We will construct a discrete dynamcial system that describe the amount of foxes and rabbits in the next year based on the amount of foxes and rabbits in the current year. In other words,</div>
-<div class="displaymath process-math" id="DiscreteDS-3-2-3">
+<div class="displaymath process-math">
 \begin{equation*}
 F_{n+1}=g(F_n,R_n) 
 \end{equation*}
 </div>
-<div class="displaymath process-math" id="DiscreteDS-3-2-4">
+<div class="displaymath process-math">
 \begin{equation*}
 R_{n+1}=h(F_n,R_n) 
 \end{equation*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#DiscreteDS-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#DiscreteDS-3-2" title="Copy permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para logical" id="DiscreteDS-3-3">
 <div class="para">Let’s figure out reasonable functions for <span class="process-math">\(g\)</span> and <span class="process-math">\(h\)</span> under the following ideas:</div>
 <ul class="disc" id="DiscreteDS-3-3-3">
 <li id="DiscreteDS-3-3-3-1">
 <div class="para" id="p-derived-DiscreteDS-3-3-3-1">If there are no rabbits, then some of the foxes will die in the next year (starvation)</div>
-<div class="autopermalink" data-description="Item"><a href="#DiscreteDS-3-3-3-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+<div class="autopermalink" data-description="Item"><a href="#DiscreteDS-3-3-3-1" title="Copy permalink for Item">🔗</a></div>
 </li>
 <li id="DiscreteDS-3-3-3-2">
 <div class="para" id="p-derived-DiscreteDS-3-3-3-2">If there are rabbits, then the fox populations grows in the next year based on the interaction of the species (predation)</div>
-<div class="autopermalink" data-description="Item"><a href="#DiscreteDS-3-3-3-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+<div class="autopermalink" data-description="Item"><a href="#DiscreteDS-3-3-3-2" title="Copy permalink for Item">🔗</a></div>
 </li>
 <li id="DiscreteDS-3-3-3-3">
 <div class="para" id="p-derived-DiscreteDS-3-3-3-3">If there are no foxes, the rabbit population will grow by some proportion in the next year</div>
-<div class="autopermalink" data-description="Item"><a href="#DiscreteDS-3-3-3-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+<div class="autopermalink" data-description="Item"><a href="#DiscreteDS-3-3-3-3" title="Copy permalink for Item">🔗</a></div>
 </li>
 <li id="DiscreteDS-3-3-3-4">
 <div class="para" id="p-derived-DiscreteDS-3-3-3-4">If there are foxes, then the rabbit population will decrease based on the interaction of the species (being eaten)</div>
-<div class="autopermalink" data-description="Item"><a href="#DiscreteDS-3-3-3-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+<div class="autopermalink" data-description="Item"><a href="#DiscreteDS-3-3-3-4" title="Copy permalink for Item">🔗</a></div>
 </li>
 </ul>
 <div class="para">Functions that fit these simple rules might be of the form</div>
-<div class="displaymath process-math" id="DiscreteDS-3-3-4">
+<div class="displaymath process-math">
 \begin{equation*}
 F_{n+1}=g(F_n,R_n)= -a F_n + b R_n 
 \end{equation*}
 </div>
-<div class="displaymath process-math" id="DiscreteDS-3-3-5">
+<div class="displaymath process-math">
 \begin{equation*}
 R_{n+1}=h(F_n,R_n)= c R_n - d F_n 
 \end{equation*}
 </div>
 <div class="para">So choosing coefficients would give the relative weight of each of these rules on the change in each population. For instance,</div>
-<div class="displaymath process-math" id="DiscreteDS-3-3-6">
+<div class="displaymath process-math">
 \begin{equation*}
 F_{n+1} = -0.2 F_n + 0.13 R_n 
 \end{equation*}
 </div>
-<div class="displaymath process-math" id="DiscreteDS-3-3-7">
+<div class="displaymath process-math">
 \begin{equation*}
 R_{n+1}  = 1.05 R_n - 2.1 F_n
 \end{equation*}
 </div>
 <div class="para">Note here that we can use linear algebra to analyse this type of problem because our sequence now looks like</div>
-<div class="displaymath process-math" id="DiscreteDS-3-3-8">
+<div class="displaymath process-math">
 \begin{equation*}
 \vec{x}_0=\colvec{F_0 \\R_0}, \vec{x}_1=A \vec{x}_0, \vec{x}_2=A \vec{x}_1 = A(A \vec{x}_0), \ldots 
 \end{equation*}
 </div>
 <div class="para">where <span class="process-math">\(A=\begin{bmatrix} a\amp b \\c \amp d \end{bmatrix} \text{.}\)</span> In other words, the solution to this two dimensional, discrete dynamical system is of the form <span class="process-math">\(\vec{x}_n = A^n \vec{x}_0\text{.}\)</span>
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#DiscreteDS-3-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#DiscreteDS-3-3" title="Copy permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Subsection 3.1.1: Predator-Prey Systems"><a href="#DiscreteDS-3" title="Copy heading and permalink for Subsection 3.1.1: Predator-Prey Systems" aria-label="Copy heading and permalink for Subsection 3.1.1: Predator-Prey Systems">🔗</a></div></section><section class="subsection" id="DiscreteDS-4"><h3 class="heading hide-type">
-<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.1.2</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Difference Equations and Linear Algebra</span>
+<div class="autopermalink" data-description="Subsection 3.1.1: Predator-Prey Systems"><a href="#DiscreteDS-3" title="Copy permalink for Subsection 3.1.1: Predator-Prey Systems">🔗</a></div></section><section class="subsection" id="DiscreteDS-4"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">3.1.2</span><span class="space"> </span><span class="title">Difference Equations and Linear Algebra</span>
 </h3>
-<div class="para" id="DiscreteDS-4-2">A dynamical system with an n-dimensional vector for the state and dynamical rule given by <span class="process-math">\(\vec{x}_{n+1} = A \vec{x}_n\)</span> is called a linear <dfn class="terminology">difference equation</dfn>.<div class="autopermalink" data-description="Paragraph"><a href="#DiscreteDS-4-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="DiscreteDS-4-2">A dynamical system with an n-dimensional vector for the state and dynamical rule given by <span class="process-math">\(\vec{x}_{n+1} = A \vec{x}_n\)</span> is called a linear <dfn class="terminology">difference equation</dfn>.<div class="autopermalink" data-description="Paragraph"><a href="#DiscreteDS-4-2" title="Copy permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para logical" id="DiscreteDS-4-3">
 <div class="para">Let examine how eigenvalues and eigenvectors could help us easily understand the long term behavior of a linear difference equation. In particular, we will assume that we have a difference equation given by a <span class="process-math">\(n\)</span> by <span class="process-math">\(n\)</span> matrix <span class="process-math">\(A\)</span> and that we can find a set of <span class="process-math">\(n\)</span> linearly independent eigenvectors, <span class="process-math">\(\{\vec{v}_1,\vec{v}_2, \ldots, \vec{v}_n\}\text{,}\)</span> with eigenvalues <span class="process-math">\(\{\lambda_1,\lambda_2, \ldots, \lambda_n\}\text{.}\)</span> This is actually a really big assumption and is NOT true in general, so the discussion below will not be enough to analyze the general case. Because we have a set of <span class="process-math">\(n\)</span> linearly independent vectors from <span class="process-math">\(\mathbb{R}^n\text{,}\)</span> we can put them as columns of a matrix and apply the Invertible Matrix Theorem to demonstrate that this set will also span all of <span class="process-math">\(\mathbb{R}^n\text{.}\)</span> This means that no matter what initial values we take for our system, we can write that initial value as a linear combination of the set <span class="process-math">\(\{\vec{v}_1,\vec{v}_2, \ldots, \vec{v}_n\}\text{.}\)</span> In other words, there is a solution to the vector equation</div>
-<div class="displaymath process-math" id="DiscreteDS-4-3-11">
+<div class="displaymath process-math">
 \begin{equation*}
 \vec{x}_0 = c_1 \vec{v}_1 + c_2 \vec{v}_2 + \ldots+ c_n \vec{v}_n
 \end{equation*}
 </div>
 <div class="para">for every <span class="process-math">\(\vec{x}_0 \in \mathbb{R}^n\text{.}\)</span> Because these vectors in our spanning set are not just some vectors, but rather are eigenvectors of <span class="process-math">\(A\text{,}\)</span> we will be able to write out the rest of the sequence and understand the long term behavior regardless of initial values of our system.</div>
-<div class="autopermalink" data-description="Paragraph"><a href="#DiscreteDS-4-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#DiscreteDS-4-3" title="Copy permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para logical" id="DiscreteDS-4-4">
 <div class="para">Looking at <span class="process-math">\(\vec{x}_1\)</span> we get the following:</div>
-<div class="displaymath process-math" id="DiscreteDS-4-4-2">
+<div class="displaymath process-math">
 \begin{equation*}
 \vec{x}_1 = A \vec{x}_0 = A (c_1 \vec{v}_1 + c_2 \vec{v}_2 + \ldots+ c_n \vec{v}_n) 
 \end{equation*}
 </div>
-<div class="displaymath process-math" id="DiscreteDS-4-4-3">
+<div class="displaymath process-math">
 \begin{equation*}
 = c_1 (A \vec{v}_1) + c_2 (A \vec{v}_2) + \ldots+ c_n (A \vec{v}_n) 
 \end{equation*}
 </div>
 <div class="para">Since each of the <span class="process-math">\(\vec{x}_i\)</span> are eigenvectors, <span class="process-math">\(A \vec{v}_i = \lambda_i \vec{v}_i\text{.}\)</span> Thus,</div>
-<div class="displaymath process-math" id="DiscreteDS-4-4-6">
+<div class="displaymath process-math">
 \begin{equation*}
 \vec{x}_1 = c_1 \lambda_1 \vec{v}_1 + c_2 \lambda_2 \vec{v}_2 + \ldots+ c_n \lambda_n \vec{v}_n 
 \end{equation*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#DiscreteDS-4-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#DiscreteDS-4-4" title="Copy permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para logical" id="DiscreteDS-4-5">
 <div class="para">In this same way, we can look at the <span class="process-math">\(k\)</span>-th iteration of our system and get</div>
-<div class="displaymath process-math" id="DiscreteDS-4-5-2">
+<div class="displaymath process-math">
 \begin{equation*}
 \vec{x}_k = A^k \vec{x}_0 = A^k (c_1 \vec{v}_1 + c_2 \vec{v}_2 + \ldots+ c_n \vec{v}_n) 
 \end{equation*}
 </div>
-<div class="displaymath process-math" id="DiscreteDS-4-5-3">
+<div class="displaymath process-math">
 \begin{equation*}
 = c_1 \lambda_1^k \vec{v}_1 + c_2 \lambda_2^k \vec{v}_2 + \ldots+ c_n \lambda_n^k \vec{v}_n 
 \end{equation*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#DiscreteDS-4-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#DiscreteDS-4-5" title="Copy permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="DiscreteDS-4-6">Notice that the only thing changing under iteration is the power of the eigenvalue. Once we figure out how much of our inital value vector is in the direction of each of our eigenvectors, then that amount does NOT change during the evolution of our system! The only thing changing is that each eigenvector direction is getting stretched or shrunk by the eigenvalue at each step. So when will these different parts grow or shrink?<div class="autopermalink" data-description="Paragraph"><a href="#DiscreteDS-4-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="DiscreteDS-4-6">Notice that the only thing changing under iteration is the power of the eigenvalue. Once we figure out how much of our inital value vector is in the direction of each of our eigenvectors, then that amount does NOT change during the evolution of our system! The only thing changing is that each eigenvector direction is getting stretched or shrunk by the eigenvalue at each step. So when will these different parts grow or shrink?<div class="autopermalink" data-description="Paragraph"><a href="#DiscreteDS-4-6" title="Copy permalink for Paragraph">🔗</a></div>
 </div>
 <article class="activity project-like" id="DiscreteDS-4-7"><h4 class="heading">
-<span class="type">Activity</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.1.1</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">3.1.1</span><span class="period">.</span>
 </h4>
-<div class="introduction" id="DiscreteDS-4-7-1"><div class="para" id="DiscreteDS-4-7-1-1">In this activity, we want to go through all of the parts of the argument above and its geometric meaning for the difference equation described by <span class="process-math">\(A=\begin{bmatrix} 2 \amp 0 \\ 0 \amp \frac{1}{2} \end{bmatrix}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#DiscreteDS-4-7-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="introduction" id="DiscreteDS-4-7-1"><div class="para" id="DiscreteDS-4-7-1-1">In this activity, we want to go through all of the parts of the argument above and its geometric meaning for the difference equation described by <span class="process-math">\(A=\begin{bmatrix} 2 \amp 0 \\ 0 \amp \frac{1}{2} \end{bmatrix}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#DiscreteDS-4-7-1-1" title="Copy permalink for Paragraph">🔗</a></div>
 </div></div>
 <article class="task exercise-like" id="DiscreteDS-4-7-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
-<div class="para" id="DiscreteDS-4-7-2-1">What are the eigenvalues and eigenvectors of <span class="process-math">\(A\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#DiscreteDS-4-7-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="DiscreteDS-4-7-2-1">What are the eigenvalues and eigenvectors of <span class="process-math">\(A\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#DiscreteDS-4-7-2-1" title="Copy permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Task 3.1.1.a"><a href="#DiscreteDS-4-7-2" title="Copy heading and permalink for Task 3.1.1.a" aria-label="Copy heading and permalink for Task 3.1.1.a">🔗</a></div></article><article class="task exercise-like" id="DiscreteDS-4-7-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
-<div class="para" id="DiscreteDS-4-7-3-1">How can we write the vector <span class="process-math">\(\colvec{2 \\ -3}\)</span> as a linear combination of the eigenvectors of <span class="process-math">\(A\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#DiscreteDS-4-7-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Task 3.1.1.a"><a href="#DiscreteDS-4-7-2" title="Copy permalink for Task 3.1.1.a">🔗</a></div></article><article class="task exercise-like" id="DiscreteDS-4-7-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="DiscreteDS-4-7-3-1">How can we write the vector <span class="process-math">\(\colvec{2 \\ -3}\)</span> as a linear combination of the eigenvectors of <span class="process-math">\(A\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#DiscreteDS-4-7-3-1" title="Copy permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Task 3.1.1.b"><a href="#DiscreteDS-4-7-3" title="Copy heading and permalink for Task 3.1.1.b" aria-label="Copy heading and permalink for Task 3.1.1.b">🔗</a></div></article><article class="task exercise-like" id="DiscreteDS-4-7-4"><h5 class="heading"><span class="codenumber">(c)</span></h5>
-<div class="para" id="DiscreteDS-4-7-4-1">How can we write the vector <span class="process-math">\(\colvec{\alpha \\ \beta}\)</span> as a linear combination of the eigenvectors of <span class="process-math">\(A\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#DiscreteDS-4-7-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Task 3.1.1.b"><a href="#DiscreteDS-4-7-3" title="Copy permalink for Task 3.1.1.b">🔗</a></div></article><article class="task exercise-like" id="DiscreteDS-4-7-4"><h5 class="heading"><span class="codenumber">(c)</span></h5>
+<div class="para" id="DiscreteDS-4-7-4-1">How can we write the vector <span class="process-math">\(\colvec{\alpha \\ \beta}\)</span> as a linear combination of the eigenvectors of <span class="process-math">\(A\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#DiscreteDS-4-7-4-1" title="Copy permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Task 3.1.1.c"><a href="#DiscreteDS-4-7-4" title="Copy heading and permalink for Task 3.1.1.c" aria-label="Copy heading and permalink for Task 3.1.1.c">🔗</a></div></article><article class="task exercise-like" id="DiscreteDS-4-7-5"><h5 class="heading"><span class="codenumber">(d)</span></h5>
-<div class="para" id="DiscreteDS-4-7-5-1">Show that if <span class="process-math">\(\vec{w}=c_1 \vec{v}_1 +c_2 \vec{v}_2\text{,}\)</span> then <span class="process-math">\(A \vec{w} = c_1 \lambda_1 \vec{v}_1 +c_2 \lambda_2 \vec{v}_2\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#DiscreteDS-4-7-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Task 3.1.1.c"><a href="#DiscreteDS-4-7-4" title="Copy permalink for Task 3.1.1.c">🔗</a></div></article><article class="task exercise-like" id="DiscreteDS-4-7-5"><h5 class="heading"><span class="codenumber">(d)</span></h5>
+<div class="para" id="DiscreteDS-4-7-5-1">Show that if <span class="process-math">\(\vec{w}=c_1 \vec{v}_1 +c_2 \vec{v}_2\text{,}\)</span> then <span class="process-math">\(A \vec{w} = c_1 \lambda_1 \vec{v}_1 +c_2 \lambda_2 \vec{v}_2\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#DiscreteDS-4-7-5-1" title="Copy permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Task 3.1.1.d"><a href="#DiscreteDS-4-7-5" title="Copy heading and permalink for Task 3.1.1.d" aria-label="Copy heading and permalink for Task 3.1.1.d">🔗</a></div></article><article class="task exercise-like" id="DiscreteDS-4-7-6"><h5 class="heading"><span class="codenumber">(e)</span></h5>
-<div class="para" id="DiscreteDS-4-7-6-1">What is the long term behavior of the solution with initial value <span class="process-math">\(\colvec{2 \\ -3}\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#DiscreteDS-4-7-6-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Task 3.1.1.d"><a href="#DiscreteDS-4-7-5" title="Copy permalink for Task 3.1.1.d">🔗</a></div></article><article class="task exercise-like" id="DiscreteDS-4-7-6"><h5 class="heading"><span class="codenumber">(e)</span></h5>
+<div class="para" id="DiscreteDS-4-7-6-1">What is the long term behavior of the solution with initial value <span class="process-math">\(\colvec{2 \\ -3}\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#DiscreteDS-4-7-6-1" title="Copy permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Task 3.1.1.e"><a href="#DiscreteDS-4-7-6" title="Copy heading and permalink for Task 3.1.1.e" aria-label="Copy heading and permalink for Task 3.1.1.e">🔗</a></div></article><div class="autopermalink" data-description="Activity 3.1.1"><a href="#DiscreteDS-4-7" title="Copy heading and permalink for Activity 3.1.1" aria-label="Copy heading and permalink for Activity 3.1.1">🔗</a></div></article><article class="activity project-like" id="DiscreteDS-4-8"><h4 class="heading">
-<span class="type">Activity</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.1.2</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+<div class="autopermalink" data-description="Task 3.1.1.e"><a href="#DiscreteDS-4-7-6" title="Copy permalink for Task 3.1.1.e">🔗</a></div></article><div class="autopermalink" data-description="Activity 3.1.1"><a href="#DiscreteDS-4-7" title="Copy permalink for Activity 3.1.1">🔗</a></div></article><article class="activity project-like" id="DiscreteDS-4-8"><h4 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">3.1.2</span><span class="period">.</span>
 </h4>
-<div class="introduction" id="DiscreteDS-4-8-1"><div class="para" id="DiscreteDS-4-8-1-1">In this activity, we want to go through all of the parts of the argument above and its geometric meaning for the difference equation described by <span class="process-math">\(A=\begin{bmatrix} 1 \amp 3 \\ 3 \amp 1 \end{bmatrix}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#DiscreteDS-4-8-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="introduction" id="DiscreteDS-4-8-1"><div class="para" id="DiscreteDS-4-8-1-1">In this activity, we want to go through all of the parts of the argument above and its geometric meaning for the difference equation described by <span class="process-math">\(A=\begin{bmatrix} 1 \amp 3 \\ 3 \amp 1 \end{bmatrix}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#DiscreteDS-4-8-1-1" title="Copy permalink for Paragraph">🔗</a></div>
 </div></div>
 <article class="task exercise-like" id="DiscreteDS-4-8-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
-<div class="para" id="DiscreteDS-4-8-2-1">What are the eigenvalues and eigenvectors of <span class="process-math">\(A\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#DiscreteDS-4-8-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="DiscreteDS-4-8-2-1">What are the eigenvalues and eigenvectors of <span class="process-math">\(A\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#DiscreteDS-4-8-2-1" title="Copy permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Task 3.1.2.a"><a href="#DiscreteDS-4-8-2" title="Copy heading and permalink for Task 3.1.2.a" aria-label="Copy heading and permalink for Task 3.1.2.a">🔗</a></div></article><article class="task exercise-like" id="DiscreteDS-4-8-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
-<div class="para" id="DiscreteDS-4-8-3-1">How can we write the vector <span class="process-math">\(\colvec{2 \\ -3}\)</span> as a linear combination of the eigenvectors of <span class="process-math">\(A\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#DiscreteDS-4-8-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Task 3.1.2.a"><a href="#DiscreteDS-4-8-2" title="Copy permalink for Task 3.1.2.a">🔗</a></div></article><article class="task exercise-like" id="DiscreteDS-4-8-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="DiscreteDS-4-8-3-1">How can we write the vector <span class="process-math">\(\colvec{2 \\ -3}\)</span> as a linear combination of the eigenvectors of <span class="process-math">\(A\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#DiscreteDS-4-8-3-1" title="Copy permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Task 3.1.2.b"><a href="#DiscreteDS-4-8-3" title="Copy heading and permalink for Task 3.1.2.b" aria-label="Copy heading and permalink for Task 3.1.2.b">🔗</a></div></article><article class="task exercise-like" id="DiscreteDS-4-8-4"><h5 class="heading"><span class="codenumber">(c)</span></h5>
-<div class="para" id="DiscreteDS-4-8-4-1">Show that if <span class="process-math">\(\vec{w}=c_1 \vec{v}_1 +c_2 \vec{v}_2\text{,}\)</span> then <span class="process-math">\(A \vec{w} = c_1 \lambda_1 \vec{v}_1 +c_2 \lambda_2 \vec{v}_2\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#DiscreteDS-4-8-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Task 3.1.2.b"><a href="#DiscreteDS-4-8-3" title="Copy permalink for Task 3.1.2.b">🔗</a></div></article><article class="task exercise-like" id="DiscreteDS-4-8-4"><h5 class="heading"><span class="codenumber">(c)</span></h5>
+<div class="para" id="DiscreteDS-4-8-4-1">Show that if <span class="process-math">\(\vec{w}=c_1 \vec{v}_1 +c_2 \vec{v}_2\text{,}\)</span> then <span class="process-math">\(A \vec{w} = c_1 \lambda_1 \vec{v}_1 +c_2 \lambda_2 \vec{v}_2\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#DiscreteDS-4-8-4-1" title="Copy permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Task 3.1.2.c"><a href="#DiscreteDS-4-8-4" title="Copy heading and permalink for Task 3.1.2.c" aria-label="Copy heading and permalink for Task 3.1.2.c">🔗</a></div></article><article class="task exercise-like" id="DiscreteDS-4-8-5"><h5 class="heading"><span class="codenumber">(d)</span></h5>
-<div class="para" id="DiscreteDS-4-8-5-1">What is the long term behavior of the solution with initial value <span class="process-math">\(\colvec{2 \\ -3}\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#DiscreteDS-4-8-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Task 3.1.2.c"><a href="#DiscreteDS-4-8-4" title="Copy permalink for Task 3.1.2.c">🔗</a></div></article><article class="task exercise-like" id="DiscreteDS-4-8-5"><h5 class="heading"><span class="codenumber">(d)</span></h5>
+<div class="para" id="DiscreteDS-4-8-5-1">What is the long term behavior of the solution with initial value <span class="process-math">\(\colvec{2 \\ -3}\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#DiscreteDS-4-8-5-1" title="Copy permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Task 3.1.2.d"><a href="#DiscreteDS-4-8-5" title="Copy heading and permalink for Task 3.1.2.d" aria-label="Copy heading and permalink for Task 3.1.2.d">🔗</a></div></article><div class="autopermalink" data-description="Activity 3.1.2"><a href="#DiscreteDS-4-8" title="Copy heading and permalink for Activity 3.1.2" aria-label="Copy heading and permalink for Activity 3.1.2">🔗</a></div></article><div class="autopermalink" data-description="Subsection 3.1.2: Difference Equations and Linear Algebra"><a href="#DiscreteDS-4" title="Copy heading and permalink for Subsection 3.1.2: Difference Equations and Linear Algebra" aria-label="Copy heading and permalink for Subsection 3.1.2: Difference Equations and Linear Algebra">🔗</a></div></section><section class="subsection" id="DiscreteDS-5"><h3 class="heading hide-type">
-<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.1.3</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Types of Solutions to Two Dimensional Linear Difference Equations</span>
+<div class="autopermalink" data-description="Task 3.1.2.d"><a href="#DiscreteDS-4-8-5" title="Copy permalink for Task 3.1.2.d">🔗</a></div></article><div class="autopermalink" data-description="Activity 3.1.2"><a href="#DiscreteDS-4-8" title="Copy permalink for Activity 3.1.2">🔗</a></div></article><div class="autopermalink" data-description="Subsection 3.1.2: Difference Equations and Linear Algebra"><a href="#DiscreteDS-4" title="Copy permalink for Subsection 3.1.2: Difference Equations and Linear Algebra">🔗</a></div></section><section class="subsection" id="DiscreteDS-5"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">3.1.3</span><span class="space"> </span><span class="title">Types of Solutions to Two Dimensional Linear Difference Equations</span>
 </h3>
 <details id="DiscreteDS-5-2" class="question example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
-<span class="type">Question</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.1.4</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
-</h4></summary><article class="question example-like knowl__content"><div class="para" id="DiscreteDS-5-2-1">What are the fixed points of the difference equation <span class="process-math">\(\vec{x}_{k+1}=A \vec{x}_k\)</span> where <span class="process-math">\(A=\begin{bmatrix} 1 \amp 2 \\ 3 \amp 4 \end{bmatrix}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#DiscreteDS-5-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<span class="type">Question</span><span class="space"> </span><span class="codenumber">3.1.4</span><span class="period">.</span>
+</h4></summary><article class="question example-like knowl__content"><div class="para" id="DiscreteDS-5-2-1">What are the fixed points of the difference equation <span class="process-math">\(\vec{x}_{k+1}=A \vec{x}_k\)</span> where <span class="process-math">\(A=\begin{bmatrix} 1 \amp 2 \\ 3 \amp 4 \end{bmatrix}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#DiscreteDS-5-2-1" title="Copy permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Question 3.1.4"><a href="#DiscreteDS-5-2" title="Copy heading and permalink for Question 3.1.4" aria-label="Copy heading and permalink for Question 3.1.4">🔗</a></div></article></details><details id="DiscreteDS-5-3" class="question example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
-<span class="type">Question</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.1.5</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
-</h4></summary><article class="question example-like knowl__content"><div class="para" id="DiscreteDS-5-3-1">What are the fixed points of the difference equation <span class="process-math">\(\vec{x}_{k+1}=A \vec{x}_k\)</span> where <span class="process-math">\(A=\begin{bmatrix} 2 \amp -1 \\ 1 \amp 0 \end{bmatrix}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#DiscreteDS-5-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Question 3.1.4"><a href="#DiscreteDS-5-2" title="Copy permalink for Question 3.1.4">🔗</a></div></article></details><details id="DiscreteDS-5-3" class="question example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Question</span><span class="space"> </span><span class="codenumber">3.1.5</span><span class="period">.</span>
+</h4></summary><article class="question example-like knowl__content"><div class="para" id="DiscreteDS-5-3-1">What are the fixed points of the difference equation <span class="process-math">\(\vec{x}_{k+1}=A \vec{x}_k\)</span> where <span class="process-math">\(A=\begin{bmatrix} 2 \amp -1 \\ 1 \amp 0 \end{bmatrix}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#DiscreteDS-5-3-1" title="Copy permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Question 3.1.5"><a href="#DiscreteDS-5-3" title="Copy heading and permalink for Question 3.1.5" aria-label="Copy heading and permalink for Question 3.1.5">🔗</a></div></article></details><div class="para logical" id="DiscreteDS-5-4">
+<div class="autopermalink" data-description="Question 3.1.5"><a href="#DiscreteDS-5-3" title="Copy permalink for Question 3.1.5">🔗</a></div></article></details><div class="para logical" id="DiscreteDS-5-4">
 <div class="para">Since the long term behavior of these type of systems depends on the eigenvalues, we wil try to talk about all of the possible cases of eigenvalues and the corresponding behaviors. Remember that we need to pay attention to how <span class="process-math">\(\lambda^k\)</span> changes as <span class="process-math">\(k\)</span> increases.</div>
 <ul class="disc" id="DiscreteDS-5-4-3">
 <li id="DiscreteDS-5-4-3-1">
 <div class="para" id="p-derived-DiscreteDS-5-4-3-1">
 <span class="process-math">\(|\lambda_1| \lt 1\)</span> and <span class="process-math">\(|\lambda_2| \lt 1\)</span>
 </div>
-<div class="autopermalink" data-description="Item"><a href="#DiscreteDS-5-4-3-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+<div class="autopermalink" data-description="Item"><a href="#DiscreteDS-5-4-3-1" title="Copy permalink for Item">🔗</a></div>
 </li>
 <li id="DiscreteDS-5-4-3-2">
 <div class="para" id="p-derived-DiscreteDS-5-4-3-2">
 <span class="process-math">\(|\lambda_1| \gt 1\)</span> and <span class="process-math">\(|\lambda_2| \gt 1\)</span>
 </div>
-<div class="autopermalink" data-description="Item"><a href="#DiscreteDS-5-4-3-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+<div class="autopermalink" data-description="Item"><a href="#DiscreteDS-5-4-3-2" title="Copy permalink for Item">🔗</a></div>
 </li>
 <li id="DiscreteDS-5-4-3-3">
 <div class="para" id="p-derived-DiscreteDS-5-4-3-3">
 <span class="process-math">\(|\lambda_1| \lt 1\)</span> and <span class="process-math">\(|\lambda_2| \gt 1\)</span>
 </div>
-<div class="autopermalink" data-description="Item"><a href="#DiscreteDS-5-4-3-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+<div class="autopermalink" data-description="Item"><a href="#DiscreteDS-5-4-3-3" title="Copy permalink for Item">🔗</a></div>
 </li>
 <li id="DiscreteDS-5-4-3-4">
 <div class="para" id="p-derived-DiscreteDS-5-4-3-4">
 <span class="process-math">\(|\lambda_1|=1\)</span> and <span class="process-math">\(|\lambda_2| \lt 1\)</span>
 </div>
-<div class="autopermalink" data-description="Item"><a href="#DiscreteDS-5-4-3-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+<div class="autopermalink" data-description="Item"><a href="#DiscreteDS-5-4-3-4" title="Copy permalink for Item">🔗</a></div>
 </li>
 <li id="DiscreteDS-5-4-3-5">
 <div class="para" id="p-derived-DiscreteDS-5-4-3-5">
 <span class="process-math">\(|\lambda_1|=1\)</span> and <span class="process-math">\(|\lambda_2| \gt 1\)</span>
 </div>
-<div class="autopermalink" data-description="Item"><a href="#DiscreteDS-5-4-3-5" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+<div class="autopermalink" data-description="Item"><a href="#DiscreteDS-5-4-3-5" title="Copy permalink for Item">🔗</a></div>
 </li>
 <li id="DiscreteDS-5-4-3-6">
 <div class="para" id="p-derived-DiscreteDS-5-4-3-6">
 <span class="process-math">\(|\lambda_1|=0\)</span> and <span class="process-math">\(|\lambda_2| \lt 1\)</span>
 </div>
-<div class="autopermalink" data-description="Item"><a href="#DiscreteDS-5-4-3-6" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+<div class="autopermalink" data-description="Item"><a href="#DiscreteDS-5-4-3-6" title="Copy permalink for Item">🔗</a></div>
 </li>
 <li id="DiscreteDS-5-4-3-7">
 <div class="para" id="p-derived-DiscreteDS-5-4-3-7">
 <span class="process-math">\(|\lambda_1|=0\)</span> and <span class="process-math">\(|\lambda_2| \gt 1\)</span>
 </div>
-<div class="autopermalink" data-description="Item"><a href="#DiscreteDS-5-4-3-7" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+<div class="autopermalink" data-description="Item"><a href="#DiscreteDS-5-4-3-7" title="Copy permalink for Item">🔗</a></div>
 </li>
 <li id="DiscreteDS-5-4-3-8">
 <div class="para" id="p-derived-DiscreteDS-5-4-3-8">What other possibilities are there?</div>
-<div class="autopermalink" data-description="Item"><a href="#DiscreteDS-5-4-3-8" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+<div class="autopermalink" data-description="Item"><a href="#DiscreteDS-5-4-3-8" title="Copy permalink for Item">🔗</a></div>
 </li>
 </ul>
-<div class="autopermalink" data-description="Paragraph"><a href="#DiscreteDS-5-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#DiscreteDS-5-4" title="Copy permalink for Paragraph">🔗</a></div>
 </div>
 <article class="activity project-like" id="DiscreteDS-5-5"><h4 class="heading">
-<span class="type">Activity</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.1.3</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">3.1.3</span><span class="period">.</span>
 </h4>
-<div class="introduction" id="DiscreteDS-5-5-1"><div class="para" id="DiscreteDS-5-5-1-1">Use your new found appreaciation of eigenvalues and eigenvectors to describe the general solution and behavior of solutions to the difference equation <span class="process-math">\(\vec{x}_{k+1}=A \vec{x}_k\)</span> with each of the following <span class="process-math">\(A\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#DiscreteDS-5-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="introduction" id="DiscreteDS-5-5-1"><div class="para" id="DiscreteDS-5-5-1-1">Use your new found appreaciation of eigenvalues and eigenvectors to describe the general solution and behavior of solutions to the difference equation <span class="process-math">\(\vec{x}_{k+1}=A \vec{x}_k\)</span> with each of the following <span class="process-math">\(A\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#DiscreteDS-5-5-1-1" title="Copy permalink for Paragraph">🔗</a></div>
 </div></div>
 <article class="task exercise-like" id="DiscreteDS-5-5-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
 <div class="para" id="DiscreteDS-5-5-2-1">
-<span class="process-math">\(A=\begin{bmatrix} 2 \amp 0 \\ 0 \amp 1/2 \end{bmatrix}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#DiscreteDS-5-5-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(A=\begin{bmatrix} 2 \amp 0 \\ 0 \amp 1/2 \end{bmatrix}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#DiscreteDS-5-5-2-1" title="Copy permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Task 3.1.3.a"><a href="#DiscreteDS-5-5-2" title="Copy heading and permalink for Task 3.1.3.a" aria-label="Copy heading and permalink for Task 3.1.3.a">🔗</a></div></article><article class="task exercise-like" id="DiscreteDS-5-5-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="autopermalink" data-description="Task 3.1.3.a"><a href="#DiscreteDS-5-5-2" title="Copy permalink for Task 3.1.3.a">🔗</a></div></article><article class="task exercise-like" id="DiscreteDS-5-5-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
 <div class="para" id="DiscreteDS-5-5-3-1">
-<span class="process-math">\(A=\begin{bmatrix} 0.75 \amp 0 \\ 0 \amp 0.999 \end{bmatrix}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#DiscreteDS-5-5-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(A=\begin{bmatrix} 0.75 \amp 0 \\ 0 \amp 0.999 \end{bmatrix}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#DiscreteDS-5-5-3-1" title="Copy permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Task 3.1.3.b"><a href="#DiscreteDS-5-5-3" title="Copy heading and permalink for Task 3.1.3.b" aria-label="Copy heading and permalink for Task 3.1.3.b">🔗</a></div></article><article class="task exercise-like" id="DiscreteDS-5-5-4"><h5 class="heading"><span class="codenumber">(c)</span></h5>
+<div class="autopermalink" data-description="Task 3.1.3.b"><a href="#DiscreteDS-5-5-3" title="Copy permalink for Task 3.1.3.b">🔗</a></div></article><article class="task exercise-like" id="DiscreteDS-5-5-4"><h5 class="heading"><span class="codenumber">(c)</span></h5>
 <div class="para" id="DiscreteDS-5-5-4-1">
-<span class="process-math">\(A=\begin{bmatrix} -2 \amp 0 \\ 0 \amp 3 \end{bmatrix}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#DiscreteDS-5-5-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(A=\begin{bmatrix} -2 \amp 0 \\ 0 \amp 3 \end{bmatrix}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#DiscreteDS-5-5-4-1" title="Copy permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Task 3.1.3.c"><a href="#DiscreteDS-5-5-4" title="Copy heading and permalink for Task 3.1.3.c" aria-label="Copy heading and permalink for Task 3.1.3.c">🔗</a></div></article><article class="task exercise-like" id="DiscreteDS-5-5-5"><h5 class="heading"><span class="codenumber">(d)</span></h5>
+<div class="autopermalink" data-description="Task 3.1.3.c"><a href="#DiscreteDS-5-5-4" title="Copy permalink for Task 3.1.3.c">🔗</a></div></article><article class="task exercise-like" id="DiscreteDS-5-5-5"><h5 class="heading"><span class="codenumber">(d)</span></h5>
 <div class="para" id="DiscreteDS-5-5-5-1">
-<span class="process-math">\(A=\begin{bmatrix} 1.25 \amp -0.75 \\ -0.75 \amp 1.25 \end{bmatrix}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#DiscreteDS-5-5-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(A=\begin{bmatrix} 1.25 \amp -0.75 \\ -0.75 \amp 1.25 \end{bmatrix}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#DiscreteDS-5-5-5-1" title="Copy permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Task 3.1.3.d"><a href="#DiscreteDS-5-5-5" title="Copy heading and permalink for Task 3.1.3.d" aria-label="Copy heading and permalink for Task 3.1.3.d">🔗</a></div></article><article class="task exercise-like" id="DiscreteDS-5-5-6"><h5 class="heading"><span class="codenumber">(e)</span></h5>
+<div class="autopermalink" data-description="Task 3.1.3.d"><a href="#DiscreteDS-5-5-5" title="Copy permalink for Task 3.1.3.d">🔗</a></div></article><article class="task exercise-like" id="DiscreteDS-5-5-6"><h5 class="heading"><span class="codenumber">(e)</span></h5>
 <div class="para" id="DiscreteDS-5-5-6-1">
-<span class="process-math">\(A=\begin{bmatrix} 2 \amp 1 \\ 1 \amp 2 \end{bmatrix}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#DiscreteDS-5-5-6-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(A=\begin{bmatrix} 2 \amp 1 \\ 1 \amp 2 \end{bmatrix}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#DiscreteDS-5-5-6-1" title="Copy permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Task 3.1.3.e"><a href="#DiscreteDS-5-5-6" title="Copy heading and permalink for Task 3.1.3.e" aria-label="Copy heading and permalink for Task 3.1.3.e">🔗</a></div></article><article class="task exercise-like" id="DiscreteDS-5-5-7"><h5 class="heading"><span class="codenumber">(f)</span></h5>
+<div class="autopermalink" data-description="Task 3.1.3.e"><a href="#DiscreteDS-5-5-6" title="Copy permalink for Task 3.1.3.e">🔗</a></div></article><article class="task exercise-like" id="DiscreteDS-5-5-7"><h5 class="heading"><span class="codenumber">(f)</span></h5>
 <div class="para" id="DiscreteDS-5-5-7-1">
-<span class="process-math">\(A=\begin{bmatrix} 2 \amp -1 \\ 1 \amp 0 \end{bmatrix}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#DiscreteDS-5-5-7-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(A=\begin{bmatrix} 2 \amp -1 \\ 1 \amp 0 \end{bmatrix}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#DiscreteDS-5-5-7-1" title="Copy permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Task 3.1.3.f"><a href="#DiscreteDS-5-5-7" title="Copy heading and permalink for Task 3.1.3.f" aria-label="Copy heading and permalink for Task 3.1.3.f">🔗</a></div></article><article class="task exercise-like" id="DiscreteDS-5-5-8"><h5 class="heading"><span class="codenumber">(g)</span></h5>
+<div class="autopermalink" data-description="Task 3.1.3.f"><a href="#DiscreteDS-5-5-7" title="Copy permalink for Task 3.1.3.f">🔗</a></div></article><article class="task exercise-like" id="DiscreteDS-5-5-8"><h5 class="heading"><span class="codenumber">(g)</span></h5>
 <div class="para" id="DiscreteDS-5-5-8-1">
-<span class="process-math">\(A=\begin{bmatrix} 1 \amp -1 \\ 1 \amp 1 \end{bmatrix}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#DiscreteDS-5-5-8-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(A=\begin{bmatrix} 1 \amp -1 \\ 1 \amp 1 \end{bmatrix}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#DiscreteDS-5-5-8-1" title="Copy permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Task 3.1.3.g"><a href="#DiscreteDS-5-5-8" title="Copy heading and permalink for Task 3.1.3.g" aria-label="Copy heading and permalink for Task 3.1.3.g">🔗</a></div></article><article class="task exercise-like" id="DiscreteDS-5-5-9"><h5 class="heading"><span class="codenumber">(h)</span></h5>
+<div class="autopermalink" data-description="Task 3.1.3.g"><a href="#DiscreteDS-5-5-8" title="Copy permalink for Task 3.1.3.g">🔗</a></div></article><article class="task exercise-like" id="DiscreteDS-5-5-9"><h5 class="heading"><span class="codenumber">(h)</span></h5>
 <div class="para" id="DiscreteDS-5-5-9-1">
-<span class="process-math">\(A=\begin{bmatrix} -0.2 \amp 0.13 \\ -2.1 \amp 1.05 \end{bmatrix}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#DiscreteDS-5-5-9-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(A=\begin{bmatrix} -0.2 \amp 0.13 \\ -2.1 \amp 1.05 \end{bmatrix}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#DiscreteDS-5-5-9-1" title="Copy permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Task 3.1.3.h"><a href="#DiscreteDS-5-5-9" title="Copy heading and permalink for Task 3.1.3.h" aria-label="Copy heading and permalink for Task 3.1.3.h">🔗</a></div></article><div class="autopermalink" data-description="Activity 3.1.3"><a href="#DiscreteDS-5-5" title="Copy heading and permalink for Activity 3.1.3" aria-label="Copy heading and permalink for Activity 3.1.3">🔗</a></div></article><article class="definition definition-like" id="DiscreteDS-5-6"><h4 class="heading">
-<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.1.6</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+<div class="autopermalink" data-description="Task 3.1.3.h"><a href="#DiscreteDS-5-5-9" title="Copy permalink for Task 3.1.3.h">🔗</a></div></article><div class="autopermalink" data-description="Activity 3.1.3"><a href="#DiscreteDS-5-5" title="Copy permalink for Activity 3.1.3">🔗</a></div></article><article class="definition definition-like" id="DiscreteDS-5-6"><h4 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">3.1.6</span><span class="period">.</span>
 </h4>
-<div class="para" id="DiscreteDS-5-6-1">An <dfn class="terminology">attractor</dfn> or attracting fixed point is a fixed point of a dynamical system where all nearby points converge to the fixed point. These are also called <dfn class="terminology">sinks</dfn>.<div class="autopermalink" data-description="Paragraph"><a href="#DiscreteDS-5-6-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="DiscreteDS-5-6-1">An <dfn class="terminology">attractor</dfn> or attracting fixed point is a fixed point of a dynamical system where all nearby points converge to the fixed point. These are also called <dfn class="terminology">sinks</dfn>.<div class="autopermalink" data-description="Paragraph"><a href="#DiscreteDS-5-6-1" title="Copy permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="DiscreteDS-5-6-2">A <dfn class="terminology">repeller</dfn> or repelling fixed point is a fixed point of a dynamical system where all nearby points move away from the fixed point. These are also called <dfn class="terminology">sources</dfn>.<div class="autopermalink" data-description="Paragraph"><a href="#DiscreteDS-5-6-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="DiscreteDS-5-6-2">A <dfn class="terminology">repeller</dfn> or repelling fixed point is a fixed point of a dynamical system where all nearby points move away from the fixed point. These are also called <dfn class="terminology">sources</dfn>.<div class="autopermalink" data-description="Paragraph"><a href="#DiscreteDS-5-6-2" title="Copy permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="DiscreteDS-5-6-3">A <dfn class="terminology">saddle</dfn> fixed point is a fixed point of a dynamical system where some nearby points converge to the fixed point and other nearby points move away from the fixed point.<div class="autopermalink" data-description="Paragraph"><a href="#DiscreteDS-5-6-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="DiscreteDS-5-6-3">A <dfn class="terminology">saddle</dfn> fixed point is a fixed point of a dynamical system where some nearby points converge to the fixed point and other nearby points move away from the fixed point.<div class="autopermalink" data-description="Paragraph"><a href="#DiscreteDS-5-6-3" title="Copy permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Definition 3.1.6"><a href="#DiscreteDS-5-6" title="Copy heading and permalink for Definition 3.1.6" aria-label="Copy heading and permalink for Definition 3.1.6">🔗</a></div></article><details id="DiscreteDS-5-7" class="question example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
-<span class="type">Question</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.1.7</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
-</h4></summary><article class="question example-like knowl__content"><div class="para" id="DiscreteDS-5-7-1">If we consider the dynamical system given by <span class="process-math">\((\mathbb{R},f(x)=-x^2)\text{,}\)</span> what are the fixed points of this system and what behaviors do they exhibit?<div class="autopermalink" data-description="Paragraph"><a href="#DiscreteDS-5-7-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Definition 3.1.6"><a href="#DiscreteDS-5-6" title="Copy permalink for Definition 3.1.6">🔗</a></div></article><details id="DiscreteDS-5-7" class="question example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Question</span><span class="space"> </span><span class="codenumber">3.1.7</span><span class="period">.</span>
+</h4></summary><article class="question example-like knowl__content"><div class="para" id="DiscreteDS-5-7-1">If we consider the dynamical system given by <span class="process-math">\((\mathbb{R},f(x)=-x^2)\text{,}\)</span> what are the fixed points of this system and what behaviors do they exhibit?<div class="autopermalink" data-description="Paragraph"><a href="#DiscreteDS-5-7-1" title="Copy permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Question 3.1.7"><a href="#DiscreteDS-5-7" title="Copy heading and permalink for Question 3.1.7" aria-label="Copy heading and permalink for Question 3.1.7">🔗</a></div></article></details><article class="activity project-like" id="DiscreteDS-5-8"><h4 class="heading">
-<span class="type">Activity</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.1.4</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+<div class="autopermalink" data-description="Question 3.1.7"><a href="#DiscreteDS-5-7" title="Copy permalink for Question 3.1.7">🔗</a></div></article></details><article class="activity project-like" id="DiscreteDS-5-8"><h4 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">3.1.4</span><span class="period">.</span>
 </h4>
-<div class="introduction" id="DiscreteDS-5-8-1"><div class="para" id="DiscreteDS-5-8-1-1">Use your work from the earlier activity to describe the fixed points and thier behavior for the difference equation <span class="process-math">\(\vec{x}_{k+1}=A \vec{x}_k\)</span> with each of the following <span class="process-math">\(A\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#DiscreteDS-5-8-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="introduction" id="DiscreteDS-5-8-1"><div class="para" id="DiscreteDS-5-8-1-1">Use your work from the earlier activity to describe the fixed points and thier behavior for the difference equation <span class="process-math">\(\vec{x}_{k+1}=A \vec{x}_k\)</span> with each of the following <span class="process-math">\(A\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#DiscreteDS-5-8-1-1" title="Copy permalink for Paragraph">🔗</a></div>
 </div></div>
 <article class="task exercise-like" id="DiscreteDS-5-8-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
 <div class="para" id="DiscreteDS-5-8-2-1">
-<span class="process-math">\(A=\begin{bmatrix} 2 \amp 0 \\ 0 \amp 1/2 \end{bmatrix}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#DiscreteDS-5-8-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(A=\begin{bmatrix} 2 \amp 0 \\ 0 \amp 1/2 \end{bmatrix}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#DiscreteDS-5-8-2-1" title="Copy permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Task 3.1.4.a"><a href="#DiscreteDS-5-8-2" title="Copy heading and permalink for Task 3.1.4.a" aria-label="Copy heading and permalink for Task 3.1.4.a">🔗</a></div></article><article class="task exercise-like" id="DiscreteDS-5-8-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="autopermalink" data-description="Task 3.1.4.a"><a href="#DiscreteDS-5-8-2" title="Copy permalink for Task 3.1.4.a">🔗</a></div></article><article class="task exercise-like" id="DiscreteDS-5-8-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
 <div class="para" id="DiscreteDS-5-8-3-1">
-<span class="process-math">\(A=\begin{bmatrix} 0.75 \amp 0 \\ 0 \amp 0.999 \end{bmatrix}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#DiscreteDS-5-8-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(A=\begin{bmatrix} 0.75 \amp 0 \\ 0 \amp 0.999 \end{bmatrix}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#DiscreteDS-5-8-3-1" title="Copy permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Task 3.1.4.b"><a href="#DiscreteDS-5-8-3" title="Copy heading and permalink for Task 3.1.4.b" aria-label="Copy heading and permalink for Task 3.1.4.b">🔗</a></div></article><article class="task exercise-like" id="DiscreteDS-5-8-4"><h5 class="heading"><span class="codenumber">(c)</span></h5>
+<div class="autopermalink" data-description="Task 3.1.4.b"><a href="#DiscreteDS-5-8-3" title="Copy permalink for Task 3.1.4.b">🔗</a></div></article><article class="task exercise-like" id="DiscreteDS-5-8-4"><h5 class="heading"><span class="codenumber">(c)</span></h5>
 <div class="para" id="DiscreteDS-5-8-4-1">
-<span class="process-math">\(A=\begin{bmatrix} -2 \amp 0 \\ 0 \amp 3 \end{bmatrix}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#DiscreteDS-5-8-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(A=\begin{bmatrix} -2 \amp 0 \\ 0 \amp 3 \end{bmatrix}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#DiscreteDS-5-8-4-1" title="Copy permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Task 3.1.4.c"><a href="#DiscreteDS-5-8-4" title="Copy heading and permalink for Task 3.1.4.c" aria-label="Copy heading and permalink for Task 3.1.4.c">🔗</a></div></article><article class="task exercise-like" id="DiscreteDS-5-8-5"><h5 class="heading"><span class="codenumber">(d)</span></h5>
+<div class="autopermalink" data-description="Task 3.1.4.c"><a href="#DiscreteDS-5-8-4" title="Copy permalink for Task 3.1.4.c">🔗</a></div></article><article class="task exercise-like" id="DiscreteDS-5-8-5"><h5 class="heading"><span class="codenumber">(d)</span></h5>
 <div class="para" id="DiscreteDS-5-8-5-1">
-<span class="process-math">\(A=\begin{bmatrix} 1.25 \amp -0.75 \\ -0.75 \amp 1.25 \end{bmatrix}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#DiscreteDS-5-8-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(A=\begin{bmatrix} 1.25 \amp -0.75 \\ -0.75 \amp 1.25 \end{bmatrix}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#DiscreteDS-5-8-5-1" title="Copy permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Task 3.1.4.d"><a href="#DiscreteDS-5-8-5" title="Copy heading and permalink for Task 3.1.4.d" aria-label="Copy heading and permalink for Task 3.1.4.d">🔗</a></div></article><article class="task exercise-like" id="DiscreteDS-5-8-6"><h5 class="heading"><span class="codenumber">(e)</span></h5>
+<div class="autopermalink" data-description="Task 3.1.4.d"><a href="#DiscreteDS-5-8-5" title="Copy permalink for Task 3.1.4.d">🔗</a></div></article><article class="task exercise-like" id="DiscreteDS-5-8-6"><h5 class="heading"><span class="codenumber">(e)</span></h5>
 <div class="para" id="DiscreteDS-5-8-6-1">
-<span class="process-math">\(A=\begin{bmatrix} 2 \amp 1 \\ 1 \amp 2 \end{bmatrix}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#DiscreteDS-5-8-6-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(A=\begin{bmatrix} 2 \amp 1 \\ 1 \amp 2 \end{bmatrix}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#DiscreteDS-5-8-6-1" title="Copy permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Task 3.1.4.e"><a href="#DiscreteDS-5-8-6" title="Copy heading and permalink for Task 3.1.4.e" aria-label="Copy heading and permalink for Task 3.1.4.e">🔗</a></div></article><article class="task exercise-like" id="DiscreteDS-5-8-7"><h5 class="heading"><span class="codenumber">(f)</span></h5>
+<div class="autopermalink" data-description="Task 3.1.4.e"><a href="#DiscreteDS-5-8-6" title="Copy permalink for Task 3.1.4.e">🔗</a></div></article><article class="task exercise-like" id="DiscreteDS-5-8-7"><h5 class="heading"><span class="codenumber">(f)</span></h5>
 <div class="para" id="DiscreteDS-5-8-7-1">
-<span class="process-math">\(A=\begin{bmatrix} 2 \amp -1 \\ 1 \amp 0 \end{bmatrix}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#DiscreteDS-5-8-7-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(A=\begin{bmatrix} 2 \amp -1 \\ 1 \amp 0 \end{bmatrix}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#DiscreteDS-5-8-7-1" title="Copy permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Task 3.1.4.f"><a href="#DiscreteDS-5-8-7" title="Copy heading and permalink for Task 3.1.4.f" aria-label="Copy heading and permalink for Task 3.1.4.f">🔗</a></div></article><article class="task exercise-like" id="DiscreteDS-5-8-8"><h5 class="heading"><span class="codenumber">(g)</span></h5>
+<div class="autopermalink" data-description="Task 3.1.4.f"><a href="#DiscreteDS-5-8-7" title="Copy permalink for Task 3.1.4.f">🔗</a></div></article><article class="task exercise-like" id="DiscreteDS-5-8-8"><h5 class="heading"><span class="codenumber">(g)</span></h5>
 <div class="para" id="DiscreteDS-5-8-8-1">
-<span class="process-math">\(A=\begin{bmatrix} 1 \amp -1 \\ 1 \amp 1 \end{bmatrix}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#DiscreteDS-5-8-8-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(A=\begin{bmatrix} 1 \amp -1 \\ 1 \amp 1 \end{bmatrix}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#DiscreteDS-5-8-8-1" title="Copy permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Task 3.1.4.g"><a href="#DiscreteDS-5-8-8" title="Copy heading and permalink for Task 3.1.4.g" aria-label="Copy heading and permalink for Task 3.1.4.g">🔗</a></div></article><article class="task exercise-like" id="DiscreteDS-5-8-9"><h5 class="heading"><span class="codenumber">(h)</span></h5>
+<div class="autopermalink" data-description="Task 3.1.4.g"><a href="#DiscreteDS-5-8-8" title="Copy permalink for Task 3.1.4.g">🔗</a></div></article><article class="task exercise-like" id="DiscreteDS-5-8-9"><h5 class="heading"><span class="codenumber">(h)</span></h5>
 <div class="para" id="DiscreteDS-5-8-9-1">
-<span class="process-math">\(A=\begin{bmatrix} -0.2 \amp 0.13 \\ -2.1 \amp 1.05 \end{bmatrix}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#DiscreteDS-5-8-9-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(A=\begin{bmatrix} -0.2 \amp 0.13 \\ -2.1 \amp 1.05 \end{bmatrix}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#DiscreteDS-5-8-9-1" title="Copy permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Task 3.1.4.h"><a href="#DiscreteDS-5-8-9" title="Copy heading and permalink for Task 3.1.4.h" aria-label="Copy heading and permalink for Task 3.1.4.h">🔗</a></div></article><div class="autopermalink" data-description="Activity 3.1.4"><a href="#DiscreteDS-5-8" title="Copy heading and permalink for Activity 3.1.4" aria-label="Copy heading and permalink for Activity 3.1.4">🔗</a></div></article><div class="autopermalink" data-description="Subsection 3.1.3: Types of Solutions to Two Dimensional Linear Difference Equations"><a href="#DiscreteDS-5" title="Copy heading and permalink for Subsection 3.1.3: Types of Solutions to Two Dimensional Linear Difference Equations" aria-label="Copy heading and permalink for Subsection 3.1.3: Types of Solutions to Two Dimensional Linear Difference Equations">🔗</a></div></section><div class="autopermalink" data-description="Section 3.1: Discrete Dynamical Systems"><a href="#DiscreteDS" title="Copy heading and permalink for Section 3.1: Discrete Dynamical Systems" aria-label="Copy heading and permalink for Section 3.1: Discrete Dynamical Systems">🔗</a></div></section></div>
+<div class="autopermalink" data-description="Task 3.1.4.h"><a href="#DiscreteDS-5-8-9" title="Copy permalink for Task 3.1.4.h">🔗</a></div></article><div class="autopermalink" data-description="Activity 3.1.4"><a href="#DiscreteDS-5-8" title="Copy permalink for Activity 3.1.4">🔗</a></div></article><div class="autopermalink" data-description="Subsection 3.1.3: Types of Solutions to Two Dimensional Linear Difference Equations"><a href="#DiscreteDS-5" title="Copy permalink for Subsection 3.1.3: Types of Solutions to Two Dimensional Linear Difference Equations">🔗</a></div></section><div class="autopermalink" data-description="Section 3.1: Discrete Dynamical Systems"><a href="#DiscreteDS" title="Copy permalink for Section 3.1: Discrete Dynamical Systems">🔗</a></div></section></div>
 <div id="ptx-content-footer" class="ptx-content-footer">
 <a class="previous-button button" href="C3.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="ChangeofCoordinates.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>

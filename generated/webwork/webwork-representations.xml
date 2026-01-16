@@ -1,28 +1,804 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-representations>
-  <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-webwork-1" ww-id="webwork-1">
-    <static seed="1" source="Library/Mizzou/Finite_Math/Linear_Algebra_Matrix_Equations/MatrixEquation1.pg">
-      <statement><p>Solve the matrix equation <m>Ax = b</m>, where</p>
-<p><me>A = \left[\begin{array}{cc}
--7 \amp 5\cr
--6 \amp 3
-\end{array}\right], \quad x = 
-\left[
-\begin{array}{cc}
- x_1 \\ x_2
-\end{array}
-\right]
-\text{ and } \quad b = \left[\begin{array}{c}
--33\cr
--27
-\end{array}\right].</me></p>
-<p>The solution is:</p>
-<p><m>x_1 =</m> <fillin characters="20" name="AnSwEr0001"/></p>
-<p><m>x_2 =</m> <fillin characters="20" name="AnSwEr0002"/></p>
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-1" ww-id="webwork-1">
+    <static seed="1" source="Library/ASU-topics/set119LinearSystems/p21.pg">
+      <statement><p>Write the augmented matrix of the system
+<me>\left\{ \begin{array}{r@{}r@{}r@{}r@{}r}
+\amp +78 y\amp  - 2 z\amp =\amp 0 \cr
+76 x\amp \amp +20 z\amp =\amp 28 \cr
+-4 x\amp  - 5 y\amp  - 72 z\amp =\amp -63 \cr
+\end{array} \right.</me></p>
+<tabular>
+<row>
+<cell><fillin characters="5" name="AnSwEr0001"/></cell>
+<cell><fillin characters="5" name="AnSwEr0002"/></cell>
+<cell><fillin characters="5" name="AnSwEr0003"/></cell>
+<cell><fillin characters="5" name="AnSwEr0004"/></cell>
+</row>
+<row>
+<cell><fillin characters="5" name="AnSwEr0005"/></cell>
+<cell><fillin characters="5" name="AnSwEr0006"/></cell>
+<cell><fillin characters="5" name="AnSwEr0007"/></cell>
+<cell><fillin characters="5" name="AnSwEr0008"/></cell>
+</row>
+<row>
+<cell><fillin characters="5" name="AnSwEr0009"/></cell>
+<cell><fillin characters="5" name="AnSwEr0010"/></cell>
+<cell><fillin characters="5" name="AnSwEr0011"/></cell>
+<cell><fillin characters="5" name="AnSwEr0012"/></cell>
+</row>
+</tabular>
 </statement>
       <answer>
         <p>
-          <m>4</m>
+          <m>0</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>78</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>-2</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>0</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>76</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>0</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>20</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>28</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>-4</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>-5</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>-72</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>-63</m>
+        </p>
+      </answer>
+    </static>
+    <server-data sourceFilePath="Library/ASU-topics/set119LinearSystems/p21.pg" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" password="anonymous" language="en-US"/>
+    <pg source="Library/ASU-topics/set119LinearSystems/p21.pg"/>
+  </webwork-reps>
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-2" ww-id="webwork-2">
+    <static seed="2" source="Library/Hope/Multi1/02-03-Row-operations/Row_ops_05.pg">
+      <statement><p>Give the result of applying the row operation <m>R_{1} - 5 R_{2}  \rightarrow R_{1}</m> to the given matrix.</p>
+<p><m>\left[\begin{array}{cccc}
+-3 \amp -1 \amp 1 \amp 1\cr
+4 \amp 4 \amp 1 \amp -2\cr
+-4 \amp 4 \amp -3 \amp -5
+\end{array}\right] \mathop{\longrightarrow}^{R_{1} - 5 R_{2}  \rightarrow R_{1}}</m>
+<fillin cols="4" rows="3"/></p>
+</statement>
+    </static>
+    <server-data sourceFilePath="Library/Hope/Multi1/02-03-Row-operations/Row_ops_05.pg" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" password="anonymous" language="en-US"/>
+    <pg source="Library/Hope/Multi1/02-03-Row-operations/Row_ops_05.pg"/>
+  </webwork-reps>
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-3" ww-id="webwork-3">
+    <static seed="3" source="Library/Hope/Multi1/02-03-Row-operations/Row_ops_02.pg">
+      <statement><p>Give the result of applying the row operation <m>6 R_{2} \rightarrow R_{2}</m> to the given matrix.</p>
+<p><m>\left[\begin{array}{ccc}
+-2 \amp -5 \amp -5\cr
+-2 \amp 4 \amp -1\cr
+2 \amp 2 \amp 3
+\end{array}\right] \mathop{\longrightarrow}^{6 R_{2} \rightarrow R_{2}}</m>
+<fillin cols="3" rows="3"/></p>
+</statement>
+    </static>
+    <server-data sourceFilePath="Library/Hope/Multi1/02-03-Row-operations/Row_ops_02.pg" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" password="anonymous" language="en-US"/>
+    <pg source="Library/Hope/Multi1/02-03-Row-operations/Row_ops_02.pg"/>
+  </webwork-reps>
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-4" ww-id="webwork-4">
+    <static seed="4" source="Library/Hope/Multi1/02-03-Row-operations/Row_ops_01.pg">
+      <statement><p>Give the result of applying the row operation <m>R_{1} \leftrightarrow R_{2}</m> to the given matrix.</p>
+<p><m>\left[\begin{array}{ccc}
+-1 \amp 2 \amp -1\cr
+-5 \amp 4 \amp 4\cr
+3 \amp -4 \amp -4
+\end{array}\right] \mathop{\longrightarrow}^{R_{1} \leftrightarrow R_{2}}</m>
+<fillin cols="3" rows="3"/></p>
+</statement>
+    </static>
+    <server-data sourceFilePath="Library/Hope/Multi1/02-03-Row-operations/Row_ops_01.pg" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" password="anonymous" language="en-US"/>
+    <pg source="Library/Hope/Multi1/02-03-Row-operations/Row_ops_01.pg"/>
+  </webwork-reps>
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-5" ww-id="webwork-5">
+    <static seed="5" source="Library/WHFreeman/Holt_linear_algebra/Chaps_1-4/holt_01_02_011.pg">
+      <statement><p>The matrix on the right results after performing a single row operation on the matrix on the left.</p>
+<p><me>\left[\begin{array}{ccc}
+-1 \amp 2 \amp 6\cr
+0 \amp 5 \amp -2\cr
+-13 \amp -7 \amp 3
+\end{array}\right]  \text{ row op produces: } \left[\begin{array}{ccc}
+-1 \amp 2 \amp 6\cr
+0 \amp 15 \amp -6\cr
+-13 \amp -7 \amp 3
+\end{array}\right]</me></p>
+<p>Identify the row operation. Use <alert>R1</alert>, <alert>R2</alert>, and <alert>R3</alert> to represent the rows <m>R_1</m>, <m>R_2</m>, and <m>R_3</m>.  For example, if the row operation were "add 2 times row 4 to row 6" then the answer would be "<m>2*R4+R6 \longrightarrow R6</m>".   If it were "swap row 4 with row 6" the answer would be "<m>R4 \longleftrightarrow R6</m>".</p>
+<p>Answer: <fillin characters="10" name="AnSwEr0001"/> <ul form="popup" name="AnSwEr0002"><li>
+<p>select</p>
+</li><li>
+<p>--&gt;</p>
+</li><li>
+<p>&lt;--&gt;</p>
+</li></ul> <fillin characters="10" name="AnSwEr0003"/></p>
+</statement>
+      <answer>
+        <p>
+          <m>3R_{2}</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>{\verb!--&gt;!}</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>R_{2}</m>
+        </p>
+      </answer>
+      <solution><p><alert>SOLUTION:</alert>
+<m>3R_{2} \longrightarrow R_{2}</m></p>
+</solution>
+    </static>
+    <server-data sourceFilePath="Library/WHFreeman/Holt_linear_algebra/Chaps_1-4/holt_01_02_011.pg" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" password="anonymous" language="en-US"/>
+    <pg source="Library/WHFreeman/Holt_linear_algebra/Chaps_1-4/holt_01_02_011.pg"/>
+  </webwork-reps>
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-6" ww-id="webwork-6">
+    <static seed="6" source="Library/WHFreeman/Holt_linear_algebra/Chaps_1-4/holt_01_02_013.pg">
+      <statement><p>The matrix on the right results after performing a single row operation on the matrix on the left.</p>
+<p><me>\left[\begin{array}{rrrr} 2 \amp   -5 \amp   -3 \amp   4 \\ 4 \amp   5 \amp   5 \amp   0 \\ 4 \amp   -1 \amp   -4 \amp   1\end{array}\right]  \text{ row op produces: } \left[\begin{array}{rrrr} 2 \amp   -5 \amp   -3 \amp   4 \\ 0 \amp   15 \amp   11 \amp   -8 \\ 4 \amp   -1 \amp   -4 \amp   1\end{array}\right]</me></p>
+<p>Identify the row operation. Use <alert>R1</alert>, <alert>R2</alert>, and <alert>R3</alert> to represent the rows <m>R_1</m>, <m>R_2</m>, and <m>R_3</m>.  For example, if the operation were "add 2 times row 4 to row 6" then the answer would be "<m>2*R4 + R6 \longrightarrow R6</m>".  If it were "swap row 4 with row 6" the answer would be "<m>R4 \longleftrightarrow R6</m>".</p>
+<p>Answer: <fillin characters="10" name="AnSwEr0001"/> <ul form="popup" name="AnSwEr0002"><li>
+<p>select</p>
+</li><li>
+<p>--&gt;</p>
+</li><li>
+<p>&lt;--&gt;</p>
+</li></ul> <fillin characters="10" name="AnSwEr0003"/></p>
+</statement>
+      <answer>
+        <p>
+          <m>-2R_1+R_2</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>{\verb!--&gt;!}</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>R_2</m>
+        </p>
+      </answer>
+      <solution><p><alert>SOLUTION:</alert>
+<m>-2R_1+R_2 \longrightarrow R_2</m></p>
+</solution>
+    </static>
+    <server-data sourceFilePath="Library/WHFreeman/Holt_linear_algebra/Chaps_1-4/holt_01_02_013.pg" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" password="anonymous" language="en-US"/>
+    <pg source="Library/WHFreeman/Holt_linear_algebra/Chaps_1-4/holt_01_02_013.pg"/>
+  </webwork-reps>
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-7" ww-id="webwork-7">
+    <static seed="7" source="Library/Rochester/setAlgebra35SystemMatrices/ID_row_ops_2.pg">
+      <statement><p>Identify the elementary row operation used below.  Write your answer with one
+space between every character.</p>
+<p><me>\displaystyle\left[\begin{array}{cccc} 
+5 \amp 3 \amp 3 \amp -5 \cr  
+6 \amp -2 \amp -9 \amp -3 \cr  
+-9 \amp -3 \amp -9 \amp -7 \cr  
+-1 \amp -1 \amp -2 \amp -4 \cr  
+\end{array}\right] \rightarrow \displaystyle\left[\begin{array}{cccc} 
+15 \amp 9 \amp 9 \amp -15 \cr  
+6 \amp -2 \amp -9 \amp -3 \cr  
+-9 \amp -3 \amp -9 \amp -7 \cr  
+-1 \amp -1 \amp -2 \amp -4 \cr  
+\end{array}\right]</me></p>
+<p>The row operation is <fillin characters="10" name="AnSwEr0001"/>.</p>
+<p>Note: "E 2 3" indicates equations 2 and 3 are interchanged; "-7 E 1" indicates equation 1 is multiplied
+by -7; "5 E 2 + E 4" indicates 5 times equation 2 is added to equation 4.</p>
+</statement>
+      <answer>
+        <p>3 E 1</p>
+      </answer>
+    </static>
+    <server-data sourceFilePath="Library/Rochester/setAlgebra35SystemMatrices/ID_row_ops_2.pg" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" password="anonymous" language="en-US"/>
+    <pg source="Library/Rochester/setAlgebra35SystemMatrices/ID_row_ops_2.pg"/>
+  </webwork-reps>
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-8" ww-id="webwork-8">
+    <static seed="8" source="Library/Rochester/setLinearAlgebra3Matrices/ur_la_3_5.pg">
+      <statement><p>Given the augmented matrix
+<me>A = 
+\left\lbrack
+\begin{array}{rrr|r}
+1 \amp  3 \amp  4 \amp  5 \\
+4 \amp  13 \amp  -5 \amp  3 \\
+-2 \amp  -8 \amp  -2 \amp  4 
+\end{array}
+\right\rbrack,</me>
+perform each row operation in the order specified and enter the final result.</p>
+<p>First: <m>R_2 - 4 R_1 \to R_2</m>,</p>
+<p>Second: <m>R_3 + 2 R_1 \to R_3</m>,</p>
+<p>Third: <m>R_3 + 2 R_2 \to R_3</m>.</p>
+<p><fillin cols="4" rows="3"/></p>
+</statement>
+    </static>
+    <server-data sourceFilePath="Library/Rochester/setLinearAlgebra3Matrices/ur_la_3_5.pg" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" password="anonymous" language="en-US"/>
+    <pg source="Library/Rochester/setLinearAlgebra3Matrices/ur_la_3_5.pg"/>
+  </webwork-reps>
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-9" ww-id="webwork-9">
+    <static seed="9" source="Library/ASU-topics/set119LinearSystems/p33.pg">
+      <statement><p>Enter T or F depending on whether the statement is true or false.
+(You must enter T or F -- True and False will not work.)</p>
+<p><ol>
+<li>
+<p>If the number of rows of an augmented matrix in reduced row-echelon form is greater than the number of columns (to the left of the vertical bar), then the system has infinitely many solutions.</p>
+</li>
+<li>
+<p>If a matrix is in reduced-row echelon form, then the first nonzero entry in each row is a 1 and has 0's below it.</p>
+</li>
+<li>
+<p>If the entries of the bottom row of an augmented matrix in reduced row-echelon form are 0, 1, 3, 1, then the system has no solution.</p>
+</li>
+</ol></p>
+</statement>
+    </static>
+    <server-data sourceFilePath="Library/ASU-topics/set119LinearSystems/p33.pg" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" password="anonymous" language="en-US"/>
+    <pg source="Library/ASU-topics/set119LinearSystems/p33.pg"/>
+  </webwork-reps>
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-10" ww-id="webwork-10">
+    <static seed="10" source="Library/TCNJ/TCNJ_RowReduction/problem1.pg">
+      <statement><p>Determine whether the following matrices are in echelon form, reduced echelon form or not in echelon form.</p>
+<p><OL TYPE="a"/></p>
+<p><LI>
+<ul form="popup" name="AnSwEr0001"><li>
+<p>Choose</p>
+</li><li>
+<p>Echelon Form</p>
+</li><li>
+<p>Reduced Echelon Form</p>
+</li><li>
+<p>Not in Echelon Form</p>
+</li></ul> <m>\left[\begin{array}{cccc}
+1 \amp 0 \amp 0 \amp 9\cr
+0 \amp 1 \amp 0 \amp -7\cr
+0 \amp 0 \amp 1 \amp -10
+\end{array}\right]</m>
+<BR><BR>
+<LI>
+<ul form="popup" name="AnSwEr0002"><li>
+<p>Choose</p>
+</li><li>
+<p>Echelon Form</p>
+</li><li>
+<p>Reduced Echelon Form</p>
+</li><li>
+<p>Not in Echelon Form</p>
+</li></ul> <m>\left[\begin{array}{cccc}
+10 \amp 1 \amp 1 \amp 0\cr
+0 \amp 1 \amp -10 \amp 0\cr
+0 \amp 0 \amp 0 \amp 3
+\end{array}\right]</m>
+<BR><BR>
+<LI>
+<ul form="popup" name="AnSwEr0003"><li>
+<p>Choose</p>
+</li><li>
+<p>Echelon Form</p>
+</li><li>
+<p>Reduced Echelon Form</p>
+</li><li>
+<p>Not in Echelon Form</p>
+</li></ul> <m>\left[\begin{array}{ccc}
+1 \amp 0 \amp 1\cr
+0 \amp 1 \amp 1\cr
+0 \amp 0 \amp 5
+\end{array}\right]</m>
+<BR><BR>
+<LI>
+<ul form="popup" name="AnSwEr0004"><li>
+<p>Choose</p>
+</li><li>
+<p>Echelon Form</p>
+</li><li>
+<p>Reduced Echelon Form</p>
+</li><li>
+<p>Not in Echelon Form</p>
+</li></ul> <m>\left[\begin{array}{cccc}
+1 \amp 0 \amp 9 \amp 0\cr
+0 \amp 0 \amp 0 \amp 0\cr
+0 \amp 1 \amp 0 \amp 2\cr
+0 \amp 0 \amp 1 \amp 0
+\end{array}\right]</m>
+</LI></BR></BR></LI></BR></BR></LI></BR></BR></LI></p>
+</statement>
+      <answer>
+        <p>
+          <m>\text{Reduced Echelon Form}</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>\text{Echelon Form}</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>\text{Echelon Form}</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>\text{Not in Echelon Form}</m>
+        </p>
+      </answer>
+    </static>
+    <server-data sourceFilePath="Library/TCNJ/TCNJ_RowReduction/problem1.pg" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" password="anonymous" language="en-US"/>
+    <pg source="Library/TCNJ/TCNJ_RowReduction/problem1.pg"/>
+  </webwork-reps>
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-11" ww-id="webwork-11">
+    <static seed="11" source="Library/NAU/setLinearSys/linearsys_3var_4.pg">
+      <statement><p><alert> Linear System - Three Variables </alert></p>
+<p>Let 
+<table><tr valign="middle"><td align="center" nowrap="nowrap"><m>A=</m></td><td align="center" nowrap="nowrap"/></tr></table></p>
+<tabular>
+<row>
+<cell>1</cell>
+<cell>0</cell>
+<cell>0</cell>
+<cell>0</cell>
+<cell>3</cell>
+</row>
+<row>
+<cell>0</cell>
+<cell>0</cell>
+<cell>0</cell>
+<cell>0</cell>
+<cell>-2</cell>
+</row>
+<row>
+<cell>0</cell>
+<cell>0</cell>
+<cell>0</cell>
+<cell>1</cell>
+<cell>-1</cell>
+</row>
+<row>
+<cell>0</cell>
+<cell>0</cell>
+<cell>0</cell>
+<cell>0</cell>
+<cell>0</cell>
+</row>
+</tabular>
+<p><td align="center" nowrap="nowrap">.</td></p>
+<p>Is the matrix in row echelon form? (input Yes or No) <fillin characters="15" name="AnSwEr0001"/></p>
+<p>If this matrix were the augmented matrix for a system of linear equations, 
+would the system have no, unique, or many solutions 
+(input no or unique or many)? <fillin characters="15" name="AnSwEr0002"/></p>
+</statement>
+      <answer>
+        <p>No</p>
+      </answer>
+      <answer>
+        <p>no</p>
+      </answer>
+    </static>
+    <server-data sourceFilePath="Library/NAU/setLinearSys/linearsys_3var_4.pg" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" password="anonymous" language="en-US"/>
+    <pg source="Library/NAU/setLinearSys/linearsys_3var_4.pg"/>
+  </webwork-reps>
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-12" ww-id="webwork-12">
+    <static seed="12" source="Library/Rochester/setAlgebra35SystemMatrices/augmentedmatrix.pg">
+      <statement><p>Let 
+<m>A= \displaystyle\left[\begin{array}{ccccc} 
+1 \amp 0 \amp 3 \amp 0 \amp 1 \cr  
+0 \amp 1 \amp 4 \amp 0 \amp -3 \cr  
+0 \amp 0 \amp 0 \amp 1 \amp 5 \cr  
+0 \amp 0 \amp 0 \amp 0 \amp 0 \cr  
+\end{array}\right]</m></p>
+<p>Is the matrix in row echelon form? <ul form="popup" name="AnSwEr0001"><li>
+<p>Choose</p>
+</li><li>
+<p>Yes</p>
+</li><li>
+<p>No</p>
+</li></ul></p>
+<p>Is the matrix in reduced row echelon form? <ul form="popup" name="AnSwEr0002"><li>
+<p>Choose</p>
+</li><li>
+<p>Yes</p>
+</li><li>
+<p>No</p>
+</li></ul></p>
+<p>If this matrix were the augmented matrix for a system of linear equations, 
+would the system be inconsistent, dependent, or independent? <ul form="popup" name="AnSwEr0003"><li>
+<p>Choose</p>
+</li><li>
+<p>inconsistent</p>
+</li><li>
+<p>dependent</p>
+</li><li>
+<p>independent</p>
+</li></ul></p>
+</statement>
+      <answer>
+        <p>
+          <m>\text{Yes}</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>\text{Yes}</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>\text{dependent}</m>
+        </p>
+      </answer>
+    </static>
+    <server-data sourceFilePath="Library/Rochester/setAlgebra35SystemMatrices/augmentedmatrix.pg" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" password="anonymous" language="en-US"/>
+    <pg source="Library/Rochester/setAlgebra35SystemMatrices/augmentedmatrix.pg"/>
+  </webwork-reps>
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-13" ww-id="webwork-13">
+    <static seed="13" source="Library/Mizzou/Finite_Math/Augmented_Matrices/GJ1.pg">
+      <statement><p>Solve the following system using augmented matrix methods:
+<me>\begin{array}{c}
+2 x  - 4 y = 18
+\\
+3 x  - 5 y = 23
+\end{array}</me></p>
+<p>(a) The initial matrix is:</p>
+<tabular>
+<row>
+<cell><fillin characters="5" name="AnSwEr0001"/></cell>
+<cell><fillin characters="5" name="AnSwEr0002"/></cell>
+<cell><fillin characters="5" name="AnSwEr0003"/></cell>
+</row>
+<row>
+<cell><fillin characters="5" name="AnSwEr0004"/></cell>
+<cell><fillin characters="5" name="AnSwEr0005"/></cell>
+<cell><fillin characters="5" name="AnSwEr0006"/></cell>
+</row>
+</tabular>
+<p>(b) First, perform the Row Operation <m>\frac{1}{2} R_1 \to R_1</m>.  The resulting matrix is:</p>
+<tabular>
+<row>
+<cell><fillin characters="5" name="AnSwEr0007"/></cell>
+<cell><fillin characters="5" name="AnSwEr0008"/></cell>
+<cell><fillin characters="5" name="AnSwEr0009"/></cell>
+</row>
+<row>
+<cell><fillin characters="5" name="AnSwEr0010"/></cell>
+<cell><fillin characters="5" name="AnSwEr0011"/></cell>
+<cell><fillin characters="5" name="AnSwEr0012"/></cell>
+</row>
+</tabular>
+<p>(c) Next, perform the operation <m>-3 R_1 + R_2 \to R_2</m>.  The resulting matrix is:</p>
+<tabular>
+<row>
+<cell><fillin characters="5" name="AnSwEr0013"/></cell>
+<cell><fillin characters="5" name="AnSwEr0014"/></cell>
+<cell><fillin characters="5" name="AnSwEr0015"/></cell>
+</row>
+<row>
+<cell><fillin characters="5" name="AnSwEr0016"/></cell>
+<cell><fillin characters="5" name="AnSwEr0017"/></cell>
+<cell><fillin characters="5" name="AnSwEr0018"/></cell>
+</row>
+</tabular>
+<p>(d) Finish simplifying the augmented matrix.  The reduced matrix is:</p>
+<tabular>
+<row>
+<cell><fillin characters="5" name="AnSwEr0019"/></cell>
+<cell><fillin characters="5" name="AnSwEr0020"/></cell>
+<cell><fillin characters="5" name="AnSwEr0021"/></cell>
+</row>
+<row>
+<cell><fillin characters="5" name="AnSwEr0022"/></cell>
+<cell><fillin characters="5" name="AnSwEr0023"/></cell>
+<cell><fillin characters="5" name="AnSwEr0024"/></cell>
+</row>
+</tabular>
+<p>(e) How many solutions does the system have?  If infinitely many, enter "Infinity".</p>
+<p><fillin characters="25" name="AnSwEr0025"/></p>
+<p>(f) What are the solutions to the system?</p>
+<p>If there are no solutions, write "No Solution" or "None" for each answer.  If there are infinitely many solutions let <m>y = t</m> and solve for <m>x</m> in terms of <m>t</m>.</p>
+<p><m>x=</m> <fillin characters="25" name="AnSwEr0026"/></p>
+<p><m>y=</m> <fillin characters="25" name="AnSwEr0027"/></p>
+</statement>
+      <answer>
+        <p>
+          <m>2</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>-4</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>18</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>3</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>-5</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>23</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>1</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>-2</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>9</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>3</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>-5</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>23</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>1</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>-2</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>9</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>0</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>1</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>-4</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>1</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>0</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>1</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>0</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>1</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>-4</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>1</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>1</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>-4</m>
+        </p>
+      </answer>
+    </static>
+    <server-data sourceFilePath="Library/Mizzou/Finite_Math/Augmented_Matrices/GJ1.pg" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" password="anonymous" language="en-US"/>
+    <pg source="Library/Mizzou/Finite_Math/Augmented_Matrices/GJ1.pg"/>
+  </webwork-reps>
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-14" ww-id="webwork-14">
+    <static seed="14" source="Library/Mizzou/Finite_Math/Gauss-Jordan_Elimination/3by3a.pg">
+      <statement><p>Solve the following system using augmented matrix methods:
+<me>\begin{array}{c}
+3 x_1  - 4 x_2  - 4 x_3 = -1
+\\
+2 x_1 + 0 x_2 + 5 x_3 = -21
+\\
+7 x_1 + 0 x_2 + 15 x_3 = -66
+\end{array}</me></p>
+<p>(a) The initial matrix is:</p>
+<tabular>
+<row>
+<cell><fillin characters="5" name="AnSwEr0001"/></cell>
+<cell><fillin characters="5" name="AnSwEr0002"/></cell>
+<cell><fillin characters="5" name="AnSwEr0003"/></cell>
+<cell><fillin characters="5" name="AnSwEr0004"/></cell>
+</row>
+<row>
+<cell><fillin characters="5" name="AnSwEr0005"/></cell>
+<cell><fillin characters="5" name="AnSwEr0006"/></cell>
+<cell><fillin characters="5" name="AnSwEr0007"/></cell>
+<cell><fillin characters="5" name="AnSwEr0008"/></cell>
+</row>
+<row>
+<cell><fillin characters="5" name="AnSwEr0009"/></cell>
+<cell><fillin characters="5" name="AnSwEr0010"/></cell>
+<cell><fillin characters="5" name="AnSwEr0011"/></cell>
+<cell><fillin characters="5" name="AnSwEr0012"/></cell>
+</row>
+</tabular>
+<p>(b) First, perform the Row Operation <m>\frac{1}{3} R_1 \to R_1</m>.  The resulting matrix is:</p>
+<tabular>
+<row>
+<cell><fillin characters="5" name="AnSwEr0013"/></cell>
+<cell><fillin characters="5" name="AnSwEr0014"/></cell>
+<cell><fillin characters="5" name="AnSwEr0015"/></cell>
+<cell><fillin characters="5" name="AnSwEr0016"/></cell>
+</row>
+<row>
+<cell><fillin characters="5" name="AnSwEr0017"/></cell>
+<cell><fillin characters="5" name="AnSwEr0018"/></cell>
+<cell><fillin characters="5" name="AnSwEr0019"/></cell>
+<cell><fillin characters="5" name="AnSwEr0020"/></cell>
+</row>
+<row>
+<cell><fillin characters="5" name="AnSwEr0021"/></cell>
+<cell><fillin characters="5" name="AnSwEr0022"/></cell>
+<cell><fillin characters="5" name="AnSwEr0023"/></cell>
+<cell><fillin characters="5" name="AnSwEr0024"/></cell>
+</row>
+</tabular>
+<p>(c) Next, perform the operations</p>
+<p><m>\qquad \qquad -2 R_1 + R_2 \to R_2</m></p>
+<p><m>\qquad \qquad -7 R_1 + R_3 \to R_3</m>.</p>
+<p>The resulting matrix is:</p>
+<tabular>
+<row>
+<cell><fillin characters="5" name="AnSwEr0025"/></cell>
+<cell><fillin characters="5" name="AnSwEr0026"/></cell>
+<cell><fillin characters="5" name="AnSwEr0027"/></cell>
+<cell><fillin characters="5" name="AnSwEr0028"/></cell>
+</row>
+<row>
+<cell><fillin characters="5" name="AnSwEr0029"/></cell>
+<cell><fillin characters="5" name="AnSwEr0030"/></cell>
+<cell><fillin characters="5" name="AnSwEr0031"/></cell>
+<cell><fillin characters="5" name="AnSwEr0032"/></cell>
+</row>
+<row>
+<cell><fillin characters="5" name="AnSwEr0033"/></cell>
+<cell><fillin characters="5" name="AnSwEr0034"/></cell>
+<cell><fillin characters="5" name="AnSwEr0035"/></cell>
+<cell><fillin characters="5" name="AnSwEr0036"/></cell>
+</row>
+</tabular>
+<p>(d) Finish simplifying the augmented matrix down to reduced row echelon form. The reduced matrix is:</p>
+<tabular>
+<row>
+<cell><fillin characters="5" name="AnSwEr0037"/></cell>
+<cell><fillin characters="5" name="AnSwEr0038"/></cell>
+<cell><fillin characters="5" name="AnSwEr0039"/></cell>
+<cell><fillin characters="5" name="AnSwEr0040"/></cell>
+</row>
+<row>
+<cell><fillin characters="5" name="AnSwEr0041"/></cell>
+<cell><fillin characters="5" name="AnSwEr0042"/></cell>
+<cell><fillin characters="5" name="AnSwEr0043"/></cell>
+<cell><fillin characters="5" name="AnSwEr0044"/></cell>
+</row>
+<row>
+<cell><fillin characters="5" name="AnSwEr0045"/></cell>
+<cell><fillin characters="5" name="AnSwEr0046"/></cell>
+<cell><fillin characters="5" name="AnSwEr0047"/></cell>
+<cell><fillin characters="5" name="AnSwEr0048"/></cell>
+</row>
+</tabular>
+<p>Remember: This matrix must be simplified all the way to reduced form.</p>
+<p>(e) How many solutions does the system have?  If infinitely many, enter "Infinity".  If none, enter 0.</p>
+<p><fillin characters="25" name="AnSwEr0049"/></p>
+<p>(f) What are the solutions of the system?</p>
+<p><m>x_1=</m> <fillin characters="25" name="AnSwEr0050"/></p>
+<p><m>x_2=</m> <fillin characters="25" name="AnSwEr0051"/></p>
+<p><m>x_3=</m> <fillin characters="25" name="AnSwEr0052"/></p>
+<p><alert>Note:</alert> In part (f), if there are no solutions, write "No Solution" or "None" in the answer blank after each equal sign.  If there are infinitely many solutions, and the solution set describes a line (that is, if there is only one free variable), set <m>x_{3} = t</m> and solve for the remaining variables in terms of <m>t</m>.  If there are infinitely many solutions, and the solution set describes a plane (that is, if the solution set has two free variables), set the variables <m>x_3 = t</m>  and <m>x_2 = s</m>, and then solve for <m>x_1</m> in terms of <m>s</m> and <m>t</m>.</p>
+</statement>
+      <answer>
+        <p>
+          <m>3</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>-4</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>-4</m>
         </p>
       </answer>
       <answer>
@@ -30,12 +806,504 @@
           <m>-1</m>
         </p>
       </answer>
+      <answer>
+        <p>
+          <m>2</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>0</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>5</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>-21</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>7</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>0</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>15</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>-66</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>1</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>-1.33333</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>-1.33333</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>-0.333333</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>2</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>0</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>5</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>-21</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>7</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>0</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>15</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>-66</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>1</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>-1.33333</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>-1.33333</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>-0.333333</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>0</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>2.66667</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>7.66667</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>-20.3333</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>0</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>9.33333</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>24.3333</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>-63.6667</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>1</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>0</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>0</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>-3</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>0</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>1</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>0</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>1</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>0</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>0</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>1</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>-3</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>1</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>-3</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>1</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>-3</m>
+        </p>
+      </answer>
     </static>
-    <rendering-data sourceFilePath="Library/Mizzou/Finite_Math/Linear_Algebra_Matrix_Equations/MatrixEquation1.pg" origin="webwork2" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" passwd="anonymous" language="en-US"/>
+    <server-data sourceFilePath="Library/Mizzou/Finite_Math/Gauss-Jordan_Elimination/3by3a.pg" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" password="anonymous" language="en-US"/>
+    <pg source="Library/Mizzou/Finite_Math/Gauss-Jordan_Elimination/3by3a.pg"/>
+  </webwork-reps>
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-15" ww-id="webwork-15">
+    <static seed="15" source="Library/TCNJ/TCNJ_RowReduction/problem14.pg">
+      <statement><p>How many free variables does each augmented matrix have?</p>
+<p><OL TYPE="a"/></p>
+<p><LI>
+<ul form="popup" name="AnSwEr0001"><li>
+<p>Choose</p>
+</li><li>
+<p>None</p>
+</li><li>
+<p>One</p>
+</li><li>
+<p>Two</p>
+</li><li>
+<p>Three</p>
+</li></ul> <m>\left\lbrack 
+\begin{array}{rr|r} 
+1 \amp  -4 \amp  3 \\
+0 \amp  0 \amp  0 \\
+0 \amp  0 \amp  0
+\end{array}
+\right\rbrack</m>
+<BR><BR>
+<LI>
+<ul form="popup" name="AnSwEr0002"><li>
+<p>Choose</p>
+</li><li>
+<p>None</p>
+</li><li>
+<p>One</p>
+</li><li>
+<p>Two</p>
+</li><li>
+<p>Three</p>
+</li></ul> <m>\left\lbrack 
+\begin{array}{rrrr|r} 
+1 \amp  0 \amp  0 \amp  -3 \amp  4 \\
+0 \amp  1 \amp  0 \amp  0 \amp  -4 \\
+0 \amp  0 \amp  0 \amp  0 \amp  0 \\
+0 \amp  0 \amp  0 \amp  0 \amp  0 
+\end{array}
+\right\rbrack</m>
+<BR><BR>
+<LI>
+<ul form="popup" name="AnSwEr0003"><li>
+<p>Choose</p>
+</li><li>
+<p>None</p>
+</li><li>
+<p>One</p>
+</li><li>
+<p>Two</p>
+</li><li>
+<p>Three</p>
+</li></ul> <m>\left\lbrack 
+\begin{array}{rr|r} 
+1 \amp  0 \amp  7 \\ 
+0 \amp  1 \amp  -2 \\ 
+0 \amp  0 \amp  0 
+\end{array}
+\right\rbrack</m>
+<BR><BR>
+<LI>
+<ul form="popup" name="AnSwEr0004"><li>
+<p>Choose</p>
+</li><li>
+<p>None</p>
+</li><li>
+<p>One</p>
+</li><li>
+<p>Two</p>
+</li><li>
+<p>Three</p>
+</li></ul> <m>\left\lbrack 
+\begin{array}{rrr|r} 
+1 \amp  2 \amp  7 \amp  -2 \\
+0 \amp  0 \amp  0 \amp  0
+\end{array}
+\right\rbrack</m>
+</LI></BR></BR></LI></BR></BR></LI></BR></BR></LI></p>
+</statement>
+      <answer>
+        <p>
+          <m>\text{One}</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>\text{Two}</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>\text{None}</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>\text{Two}</m>
+        </p>
+      </answer>
+    </static>
+    <server-data sourceFilePath="Library/TCNJ/TCNJ_RowReduction/problem14.pg" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" password="anonymous" language="en-US"/>
+    <pg source="Library/TCNJ/TCNJ_RowReduction/problem14.pg"/>
+  </webwork-reps>
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-16" ww-id="webwork-16">
+    <static seed="16" source="Library/TCNJ/TCNJ_RowReduction/problem15.pg">
+      <statement><p>How many determined (basic) variables does each augmented matrix have?</p>
+<p><OL TYPE="a"/></p>
+<p><LI>
+<ul form="popup" name="AnSwEr0001"><li>
+<p>Choose</p>
+</li><li>
+<p>Zero</p>
+</li><li>
+<p>One</p>
+</li><li>
+<p>Two</p>
+</li><li>
+<p>Three</p>
+</li><li>
+<p>Four</p>
+</li></ul> <m>\left\lbrack
+\begin{array}{rr|r}
+1 \amp  0 \amp  8 \\
+0 \amp  1 \amp  5 \\
+0 \amp  0 \amp  0
+\end{array}
+\right\rbrack</m>
+<BR><BR>
+<LI>
+<ul form="popup" name="AnSwEr0002"><li>
+<p>Choose</p>
+</li><li>
+<p>Zero</p>
+</li><li>
+<p>One</p>
+</li><li>
+<p>Two</p>
+</li><li>
+<p>Three</p>
+</li><li>
+<p>Four</p>
+</li></ul> <m>\left\lbrack
+\begin{array}{rrrr|r}
+1 \amp  0 \amp  0 \amp  -2 \amp  2 \\
+0 \amp  1 \amp  7 \amp  0 \amp  -4 \\
+0 \amp  0 \amp  0 \amp  0 \amp  0
+\end{array}
+\right\rbrack</m>
+<BR><BR>
+<LI>
+<ul form="popup" name="AnSwEr0003"><li>
+<p>Choose</p>
+</li><li>
+<p>Zero</p>
+</li><li>
+<p>One</p>
+</li><li>
+<p>Two</p>
+</li><li>
+<p>Three</p>
+</li><li>
+<p>Four</p>
+</li></ul> <m>\left\lbrack
+\begin{array}{rr|r}
+1 \amp  -3 \amp  9 \\
+0 \amp  0 \amp  0 \\
+0 \amp  0 \amp  0
+\end{array}
+\right\rbrack</m>
+<BR><BR>
+<LI>
+<ul form="popup" name="AnSwEr0004"><li>
+<p>Choose</p>
+</li><li>
+<p>Zero</p>
+</li><li>
+<p>One</p>
+</li><li>
+<p>Two</p>
+</li><li>
+<p>Three</p>
+</li><li>
+<p>Four</p>
+</li></ul> <m>\left\lbrack
+\begin{array}{rrr|r}
+1 \amp  0 \amp  0 \amp  8 \\
+0 \amp  1 \amp  0 \amp  9 \\
+0 \amp  0 \amp  1 \amp  -8
+\end{array}
+\right\rbrack</m>
+</LI></BR></BR></LI></BR></BR></LI></BR></BR></LI></p>
+</statement>
+      <answer>
+        <p>
+          <m>\text{Two}</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>\text{Two}</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>\text{One}</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>\text{Three}</m>
+        </p>
+      </answer>
+    </static>
+    <server-data sourceFilePath="Library/TCNJ/TCNJ_RowReduction/problem15.pg" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" password="anonymous" language="en-US"/>
+    <pg source="Library/TCNJ/TCNJ_RowReduction/problem15.pg"/>
+  </webwork-reps>
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-17" ww-id="webwork-17">
+    <static seed="17" source="Library/Mizzou/Finite_Math/Linear_Algebra_Matrix_Equations/MatrixEquation1.pg">
+      <statement><p>Solve the matrix equation <m>Ax = b</m>, where</p>
+<p><me>A = \left[\begin{array}{cc}
+7 \amp -6\cr
+7 \amp 0
+\end{array}\right], \quad x = 
+\left[
+\begin{array}{cc}
+ x_1 \\ x_2
+\end{array}
+\right]
+\text{ and } \quad b = \left[\begin{array}{c}
+26\cr
+14
+\end{array}\right].</me></p>
+<p>The solution is:</p>
+<p><m>x_1 =</m> <fillin characters="20" name="AnSwEr0001"/></p>
+<p><m>x_2 =</m> <fillin characters="20" name="AnSwEr0002"/></p>
+</statement>
+      <answer>
+        <p>
+          <m>2</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>-2</m>
+        </p>
+      </answer>
+    </static>
+    <server-data sourceFilePath="Library/Mizzou/Finite_Math/Linear_Algebra_Matrix_Equations/MatrixEquation1.pg" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" password="anonymous" language="en-US"/>
     <pg source="Library/Mizzou/Finite_Math/Linear_Algebra_Matrix_Equations/MatrixEquation1.pg"/>
   </webwork-reps>
-  <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-webwork-2" ww-id="webwork-2">
-    <static seed="2" source="Contrib/Hope/Multi1/02-02-Linear-systems/Geometry_01/Geometry_01.pg">
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-18" ww-id="webwork-18">
+    <static seed="18" source="Contrib/Hope/Multi1/02-02-Linear-systems/Geometry_01/Geometry_01.pg">
       <statement><tabular valign="top">
 <row>
 <cell>Match each system of linear equations with the graph
@@ -54,18 +1322,18 @@ z \amp  = \amp  0 \\
 <li>
 <m>\left\lbrace
 \begin{array}{rcl}
-z \amp  = \amp  0 \\
-y \amp  = \amp  0 \\
-x+y \amp  = \amp  0
+x \amp  = \amp  0 \\
+z \amp  = \amp  1 \\
+z \amp  = \amp  -1
 \end{array}
 \right.</m>
 </li>
 <li>
 <m>\left\lbrace
 \begin{array}{rcl}
-x + z \amp  = \amp  1 \\
 z \amp  = \amp  0 \\
-3x + 3z \amp  = \amp  3
+y \amp  = \amp  0 \\
+x+y \amp  = \amp  0
 \end{array}
 \right.</m>
 </li>
@@ -82,17 +1350,17 @@ z \amp  = \amp  0
 <m>\left\lbrace
 \begin{array}{rcl}
 z \amp  = \amp  1 \\
-z + x \amp  = \amp  1 \\
-z - x \amp  = \amp  1
+z \amp  = \amp  0 \\
+z \amp  = \amp  -1
 \end{array}
 \right.</m>
 </li>
 <li>
 <m>\left\lbrace
 \begin{array}{rcl}
-x \amp  = \amp  0 \\
 z \amp  = \amp  1 \\
-z \amp  = \amp  -1
+3z \amp  = \amp  3 \\
+-1/z \amp  = \amp  -1
 \end{array}
 \right.</m>
 </li>
@@ -117,9 +1385,9 @@ z \amp  = \amp  0
 <li>
 <m>\left\lbrace
 \begin{array}{rcl}
-z \amp  = \amp  1 \\
 x + z \amp  = \amp  1 \\
-z \amp  = \amp  -1
+z \amp  = \amp  0 \\
+3x + 3z \amp  = \amp  3
 \end{array}
 \right.</m>
 </li>
@@ -162,16 +1430,16 @@ z \amp  = \amp  -1
 </tabular>
 </statement>
     </static>
-    <rendering-data sourceFilePath="Contrib/Hope/Multi1/02-02-Linear-systems/Geometry_01/Geometry_01.pg" origin="webwork2" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" passwd="anonymous" language="en-US"/>
+    <server-data sourceFilePath="Contrib/Hope/Multi1/02-02-Linear-systems/Geometry_01/Geometry_01.pg" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" password="anonymous" language="en-US"/>
     <pg source="Contrib/Hope/Multi1/02-02-Linear-systems/Geometry_01/Geometry_01.pg"/>
   </webwork-reps>
-  <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-webwork-3" ww-id="webwork-3">
-    <static seed="3" source="Contrib/Hope/Multi1/02-02-Linear-systems/Substitution_01.pg">
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-19" ww-id="webwork-19">
+    <static seed="19" source="Contrib/Hope/Multi1/02-02-Linear-systems/Substitution_01.pg">
       <statement><p>Solve the linear system below by substitution.
 <me>\left\lbrace
 \begin{array}{rcr}
--2x-5y \amp  = \amp  -5 \\
-10x+25y \amp  = \amp  25 
+2y-4x \amp  = \amp  5 \\
+6y-12x \amp  = \amp  15 
 \end{array}
 \right.</me>
 If the answer is a line such as <m>y = x + 1</m>, enter <m>x = x</m> and <m>y = x+1</m>.
@@ -186,11 +1454,11 @@ If there is no solution, enter <em>DNE</em> for both answers.</p>
       </answer>
       <answer>
         <p>
-          <m>\frac{-5--2x}{-5}</m>
+          <m>\frac{5--4x}{2}</m>
         </p>
       </answer>
     </static>
-    <rendering-data sourceFilePath="Contrib/Hope/Multi1/02-02-Linear-systems/Substitution_01.pg" origin="webwork2" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" passwd="anonymous" language="en-US"/>
+    <server-data sourceFilePath="Contrib/Hope/Multi1/02-02-Linear-systems/Substitution_01.pg" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" password="anonymous" language="en-US"/>
     <pg source="Contrib/Hope/Multi1/02-02-Linear-systems/Substitution_01.pg"/>
   </webwork-reps>
 </webwork-representations>
