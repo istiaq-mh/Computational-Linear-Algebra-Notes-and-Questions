@@ -1269,28 +1269,472 @@ would the system be inconsistent, dependent, or independent? <ul form="popup" na
     <pg source="Library/TCNJ/TCNJ_RowReduction/problem15.pg"/>
   </webwork-reps>
   <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-17" ww-id="webwork-17">
-    <static seed="17" source="Library/Mizzou/Finite_Math/Linear_Algebra_Matrix_Equations/MatrixEquation1.pg">
-      <statement><p>Solve the matrix equation <m>Ax = b</m>, where</p>
-<p><me>A = \left[\begin{array}{cc}
-7 \amp -6\cr
-7 \amp 0
-\end{array}\right], \quad x = 
-\left[
-\begin{array}{cc}
- x_1 \\ x_2
-\end{array}
-\right]
-\text{ and } \quad b = \left[\begin{array}{c}
-26\cr
-14
-\end{array}\right].</me></p>
-<p>The solution is:</p>
-<p><m>x_1 =</m> <fillin characters="20" name="AnSwEr0001"/></p>
-<p><m>x_2 =</m> <fillin characters="20" name="AnSwEr0002"/></p>
+    <static seed="17" source="Contrib/Michigan/linalg/Library/TCNJ/TCNJ_RowReduction/problem13.pg">
+      <statement><p>Determine how many pivots each of the following matrices have.</p>
+<p>1.</p>
+<tabular>
+<row>
+<cell>1</cell>
+<cell>0</cell>
+<cell>-9</cell>
+</row>
+<row>
+<cell>0</cell>
+<cell>1</cell>
+<cell>-9</cell>
+</row>
+<row>
+<cell>0</cell>
+<cell>0</cell>
+<cell>0</cell>
+</row>
+</tabular>
+<p><var form="buttons">
+<li>
+<p>One Pivot (leading 1)</p>
+</li>
+<li>
+<p>Two Pivots (leading 1s)</p>
+</li>
+<li>
+<p>Three Pivots (leading 1s)</p>
+</li>
+<li>
+<p>Four Pivots (leading 1s)</p>
+</li>
+</var></p>
+<p>2.</p>
+<tabular>
+<row>
+<cell>1</cell>
+<cell>0</cell>
+<cell>5</cell>
+</row>
+<row>
+<cell>0</cell>
+<cell>0</cell>
+<cell>0</cell>
+</row>
+<row>
+<cell>0</cell>
+<cell>0</cell>
+<cell>0</cell>
+</row>
+</tabular>
+<p><var form="buttons">
+<li>
+<p>One Pivot (leading 1)</p>
+</li>
+<li>
+<p>Two Pivots (leading 1s)</p>
+</li>
+<li>
+<p>Three Pivots (leading 1s)</p>
+</li>
+<li>
+<p>Four Pivots (leading 1s)</p>
+</li>
+</var></p>
+<p>3.</p>
+<tabular>
+<row>
+<cell>1</cell>
+<cell>0</cell>
+<cell>-4</cell>
+<cell>9</cell>
+</row>
+<row>
+<cell>0</cell>
+<cell>1</cell>
+<cell>4</cell>
+<cell>9</cell>
+</row>
+<row>
+<cell>0</cell>
+<cell>0</cell>
+<cell>0</cell>
+<cell>0</cell>
+</row>
+<row>
+<cell>0</cell>
+<cell>0</cell>
+<cell>0</cell>
+<cell>0</cell>
+</row>
+</tabular>
+<p><var form="buttons">
+<li>
+<p>One Pivot (leading 1)</p>
+</li>
+<li>
+<p>Two Pivots (leading 1s)</p>
+</li>
+<li>
+<p>Three Pivots (leading 1s)</p>
+</li>
+<li>
+<p>Four Pivots (leading 1s)</p>
+</li>
+</var></p>
+<p>4.</p>
+<tabular>
+<row>
+<cell>1</cell>
+<cell>0</cell>
+<cell>0</cell>
+<cell>0</cell>
+<cell>10</cell>
+</row>
+<row>
+<cell>0</cell>
+<cell>1</cell>
+<cell>0</cell>
+<cell>0</cell>
+<cell>-10</cell>
+</row>
+<row>
+<cell>0</cell>
+<cell>0</cell>
+<cell>1</cell>
+<cell>0</cell>
+<cell>8</cell>
+</row>
+<row>
+<cell>0</cell>
+<cell>0</cell>
+<cell>0</cell>
+<cell>1</cell>
+<cell>-4</cell>
+</row>
+</tabular>
+<p><var form="buttons">
+<li>
+<p>One Pivot (leading 1)</p>
+</li>
+<li>
+<p>Two Pivots (leading 1s)</p>
+</li>
+<li>
+<p>Three Pivots (leading 1s)</p>
+</li>
+<li>
+<p>Four Pivots (leading 1s)</p>
+</li>
+</var></p>
+</statement>
+    </static>
+    <server-data sourceFilePath="Contrib/Michigan/linalg/Library/TCNJ/TCNJ_RowReduction/problem13.pg" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" password="anonymous" language="en-US"/>
+    <pg source="Contrib/Michigan/linalg/Library/TCNJ/TCNJ_RowReduction/problem13.pg"/>
+  </webwork-reps>
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-18" ww-id="webwork-18">
+    <static seed="18" source="Library/ASU-topics/set119LinearSystems/p22.pg">
+      <statement><p>The reduced row echelon form of a system of linear equations in
+<m>x</m> and <m>y</m> or in <m>x</m>, <m>y</m> and <m>z</m> is given.
+For each system, determine whether it has a unique solution 
+(in this case, find the solution), infinitely many solutions, or no solutions.</p>
+<p>1.
+<me>\left[  \begin{array}{cc}
+ 1 \amp  0  \\
+ 0 \amp  1   \\
+ 0 \amp  0  
+\end{array} \right| \left. \begin{array}{c}
+0 \\ 0 \\ 0 \end{array} \right]</me>
+<var form="buttons">
+<li>
+<p>Infinitely many solutions</p>
+</li>
+<li>
+<p>Unique solution: <m>x=1, y=1 ,z = 0</m></p>
+</li>
+<li>
+<p>No solutions</p>
+</li>
+<li>
+<p>Unique solution: <m>x=0, y=0, z = 0</m></p>
+</li>
+<li>
+<p>Unique solution: <m>x=0, y=0</m></p>
+</li>
+<li>
+<p>None of the above</p>
+</li>
+</var></p>
+<p>2.
+<me>\left[\begin{array}{ccc}
+ 1 \amp  0 \amp  0  \\
+ 0 \amp  1 \amp  0  \\
+ 0 \amp  0 \amp  0 
+\end{array}\right| \left. \begin{array}{c}
+ -2 \\-3\\ 2 \end{array} \right]</me>
+<var form="buttons">
+<li>
+<p>Unique solution: <m>x=-2, y=-3, z =0</m></p>
+</li>
+<li>
+<p>No solutions</p>
+</li>
+<li>
+<p>Infinitely many solutions</p>
+</li>
+<li>
+<p>Unique solution: <m>x=-2, y=-3, z=2</m></p>
+</li>
+<li>
+<p>Unique solution: <m>x=-2, y=-3</m></p>
+</li>
+<li>
+<p>None of the above</p>
+</li>
+</var></p>
+<p>3.
+<me>\left[
+\begin{array}{ccc}
+ 1 \amp  0  \amp  0   \\
+ 0 \amp  1 \amp   0 \\
+ 0 \amp  0 \amp  1 
+\end{array} \right| \left. \begin{array}{c}
+0 \\ 4\\3 \end{array} \right]</me>
+<var form="buttons">
+<li>
+<p>Unique solution: <m>x=0, y=4, z=3</m></p>
+</li>
+<li>
+<p>Infinitely many solutions</p>
+</li>
+<li>
+<p>Unique solution: <m>x=0, y=4</m></p>
+</li>
+<li>
+<p>Unique solution: <m>x=4,  y=3</m></p>
+</li>
+<li>
+<p>No solutions</p>
+</li>
+<li>
+<p>None of the above</p>
+</li>
+</var></p>
+<p>4.
+<me>\left[ \begin{array}{ccc}
+  1 \amp  0 \amp  0  \\
+  0 \amp  1 \amp  0  \\
+  0 \amp  0 \amp  0  
+\end{array}\right| \left. \begin{array}{c}
+3\\ 4 \\0 \end{array}  \right]</me>
+<var form="buttons">
+<li>
+<p>Unique solution: <m>x=4, y=3</m></p>
+</li>
+<li>
+<p>Unique solution: <m>x=0, y=0, z=0</m></p>
+</li>
+<li>
+<p>No solutions</p>
+</li>
+<li>
+<p>Unique solution:<m>x=3, y=4</m></p>
+</li>
+<li>
+<p>Infinitely many solutions</p>
+</li>
+<li>
+<p>None of the above</p>
+</li>
+</var></p>
+</statement>
+    </static>
+    <server-data sourceFilePath="Library/ASU-topics/set119LinearSystems/p22.pg" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" password="anonymous" language="en-US"/>
+    <pg source="Library/ASU-topics/set119LinearSystems/p22.pg"/>
+  </webwork-reps>
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-19" ww-id="webwork-19">
+    <static seed="19" source="Library/Rochester/setLinearAlgebra1Systems/ur_la_1_8.pg">
+      <statement><p>Determine the value of <m>h</m> such that the matrix is the augmented matrix of a consistent linear
+system.</p>
+<p><me>\left[ \begin{array} {rr}
+3 \amp  -4 \cr
+-9 \amp  12
+\end{array} \right| \left. \begin{array}{r}
+h \cr
+9
+\end{array} \right]</me></p>
+<p><m>h=</m> <fillin characters="10" name="AnSwEr0001"/></p>
 </statement>
       <answer>
         <p>
-          <m>2</m>
+          <m>\frac{-9}{3}</m>
+        </p>
+      </answer>
+    </static>
+    <server-data sourceFilePath="Library/Rochester/setLinearAlgebra1Systems/ur_la_1_8.pg" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" password="anonymous" language="en-US"/>
+    <pg source="Library/Rochester/setLinearAlgebra1Systems/ur_la_1_8.pg"/>
+  </webwork-reps>
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-20" ww-id="webwork-20">
+    <static seed="20" source="Library/Mizzou/Matrix_Theory/HW_1/prob_2.pg">
+      <statement><p>Consider a linear system whose augmented matrix is</p>
+<p><me>\left[
+\begin{array}{rrr|r}
+1   \amp  1   \amp  2 \amp  1 \cr
+1 \amp  2 \amp  -3 \amp  2 \cr
+2 \amp   8  \amp  k  \amp   9 
+\end{array} 
+\right]</me></p>
+<p>For what value of <m>k</m> will the system have no solutions?</p>
+<p><m>k=</m> <fillin characters="20" name="AnSwEr0001"/></p>
+</statement>
+      <answer>
+        <p>
+          <m>-26</m>
+        </p>
+      </answer>
+      <solution><p><alert> SOLUTION: </alert>
+Performing several elementary row operations, we get that the given augmented matrix is row equivalent to:</p>
+<p><me>\left[
+\begin{array}{rrc|r}
+1   \amp  1   \amp  2 \amp  1 \cr
+0 \amp  1 \amp  -5 \amp  1 \cr
+0 \amp   0  \amp  k  + 26 \amp   3 
+\end{array} 
+\right]</me></p>
+<p>Therefore the system has no solutions if <m>k  + 26 = 0</m>, so <m>k = -26</m>.</p>
+</solution>
+    </static>
+    <server-data sourceFilePath="Library/Mizzou/Matrix_Theory/HW_1/prob_2.pg" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" password="anonymous" language="en-US"/>
+    <pg source="Library/Mizzou/Matrix_Theory/HW_1/prob_2.pg"/>
+  </webwork-reps>
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-21" ww-id="webwork-21">
+    <static seed="21" source="Library/Mizzou/Finite_Math/Gauss-Jordan_Elimination/3by3a.pg">
+      <statement><p>Solve the following system using augmented matrix methods:
+<me>\begin{array}{c}
+-3 x_1  - 5 x_2 + 4 x_3 = -20
+\\
+-3 x_1 + 4 x_2  - 2 x_3 = -8
+\\
+3 x_1  - 4 x_2 + 2 x_3 = 10
+\end{array}</me></p>
+<p>(a) The initial matrix is:</p>
+<tabular>
+<row>
+<cell><fillin characters="5" name="AnSwEr0001"/></cell>
+<cell><fillin characters="5" name="AnSwEr0002"/></cell>
+<cell><fillin characters="5" name="AnSwEr0003"/></cell>
+<cell><fillin characters="5" name="AnSwEr0004"/></cell>
+</row>
+<row>
+<cell><fillin characters="5" name="AnSwEr0005"/></cell>
+<cell><fillin characters="5" name="AnSwEr0006"/></cell>
+<cell><fillin characters="5" name="AnSwEr0007"/></cell>
+<cell><fillin characters="5" name="AnSwEr0008"/></cell>
+</row>
+<row>
+<cell><fillin characters="5" name="AnSwEr0009"/></cell>
+<cell><fillin characters="5" name="AnSwEr0010"/></cell>
+<cell><fillin characters="5" name="AnSwEr0011"/></cell>
+<cell><fillin characters="5" name="AnSwEr0012"/></cell>
+</row>
+</tabular>
+<p>(b) First, perform the Row Operation <m>\frac{1}{-3} R_1 \to R_1</m>.  The resulting matrix is:</p>
+<tabular>
+<row>
+<cell><fillin characters="5" name="AnSwEr0013"/></cell>
+<cell><fillin characters="5" name="AnSwEr0014"/></cell>
+<cell><fillin characters="5" name="AnSwEr0015"/></cell>
+<cell><fillin characters="5" name="AnSwEr0016"/></cell>
+</row>
+<row>
+<cell><fillin characters="5" name="AnSwEr0017"/></cell>
+<cell><fillin characters="5" name="AnSwEr0018"/></cell>
+<cell><fillin characters="5" name="AnSwEr0019"/></cell>
+<cell><fillin characters="5" name="AnSwEr0020"/></cell>
+</row>
+<row>
+<cell><fillin characters="5" name="AnSwEr0021"/></cell>
+<cell><fillin characters="5" name="AnSwEr0022"/></cell>
+<cell><fillin characters="5" name="AnSwEr0023"/></cell>
+<cell><fillin characters="5" name="AnSwEr0024"/></cell>
+</row>
+</tabular>
+<p>(c) Next, perform the operations</p>
+<p><m>\qquad \qquad  + 3 R_1 + R_2 \to R_2</m></p>
+<p><m>\qquad \qquad -3 R_1 + R_3 \to R_3</m>.</p>
+<p>The resulting matrix is:</p>
+<tabular>
+<row>
+<cell><fillin characters="5" name="AnSwEr0025"/></cell>
+<cell><fillin characters="5" name="AnSwEr0026"/></cell>
+<cell><fillin characters="5" name="AnSwEr0027"/></cell>
+<cell><fillin characters="5" name="AnSwEr0028"/></cell>
+</row>
+<row>
+<cell><fillin characters="5" name="AnSwEr0029"/></cell>
+<cell><fillin characters="5" name="AnSwEr0030"/></cell>
+<cell><fillin characters="5" name="AnSwEr0031"/></cell>
+<cell><fillin characters="5" name="AnSwEr0032"/></cell>
+</row>
+<row>
+<cell><fillin characters="5" name="AnSwEr0033"/></cell>
+<cell><fillin characters="5" name="AnSwEr0034"/></cell>
+<cell><fillin characters="5" name="AnSwEr0035"/></cell>
+<cell><fillin characters="5" name="AnSwEr0036"/></cell>
+</row>
+</tabular>
+<p>(d) Finish simplifying the augmented matrix down to reduced row echelon form. The reduced matrix is:</p>
+<tabular>
+<row>
+<cell><fillin characters="5" name="AnSwEr0037"/></cell>
+<cell><fillin characters="5" name="AnSwEr0038"/></cell>
+<cell><fillin characters="5" name="AnSwEr0039"/></cell>
+<cell><fillin characters="5" name="AnSwEr0040"/></cell>
+</row>
+<row>
+<cell><fillin characters="5" name="AnSwEr0041"/></cell>
+<cell><fillin characters="5" name="AnSwEr0042"/></cell>
+<cell><fillin characters="5" name="AnSwEr0043"/></cell>
+<cell><fillin characters="5" name="AnSwEr0044"/></cell>
+</row>
+<row>
+<cell><fillin characters="5" name="AnSwEr0045"/></cell>
+<cell><fillin characters="5" name="AnSwEr0046"/></cell>
+<cell><fillin characters="5" name="AnSwEr0047"/></cell>
+<cell><fillin characters="5" name="AnSwEr0048"/></cell>
+</row>
+</tabular>
+<p>Remember: This matrix must be simplified all the way to reduced form.</p>
+<p>(e) How many solutions does the system have?  If infinitely many, enter "Infinity".  If none, enter 0.</p>
+<p><fillin characters="25" name="AnSwEr0049"/></p>
+<p>(f) What are the solutions of the system?</p>
+<p><m>x_1=</m> <fillin characters="25" name="AnSwEr0050"/></p>
+<p><m>x_2=</m> <fillin characters="25" name="AnSwEr0051"/></p>
+<p><m>x_3=</m> <fillin characters="25" name="AnSwEr0052"/></p>
+<p><alert>Note:</alert> In part (f), if there are no solutions, write "No Solution" or "None" in the answer blank after each equal sign.  If there are infinitely many solutions, and the solution set describes a line (that is, if there is only one free variable), set <m>x_{3} = t</m> and solve for the remaining variables in terms of <m>t</m>.  If there are infinitely many solutions, and the solution set describes a plane (that is, if the solution set has two free variables), set the variables <m>x_3 = t</m>  and <m>x_2 = s</m>, and then solve for <m>x_1</m> in terms of <m>s</m> and <m>t</m>.</p>
+</statement>
+      <answer>
+        <p>
+          <m>-3</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>-5</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>4</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>-20</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>-3</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>4</m>
         </p>
       </answer>
       <answer>
@@ -1298,18 +1742,295 @@ would the system be inconsistent, dependent, or independent? <ul form="popup" na
           <m>-2</m>
         </p>
       </answer>
+      <answer>
+        <p>
+          <m>-8</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>3</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>-4</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>2</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>10</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>1</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>1.66667</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>-1.33333</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>6.66667</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>-3</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>4</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>-2</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>-8</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>3</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>-4</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>2</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>10</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>1</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>1.66667</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>-1.33333</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>6.66667</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>0</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>9</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>-6</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>12</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>0</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>-9</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>6</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>-10</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>1</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>0</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>-0.222222</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>0</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>0</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>1</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>-0.666667</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>0</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>0</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>0</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>0</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>1</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>0</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>\text{No Solution}</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>\text{No Solution}</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>\text{No Solution}</m>
+        </p>
+      </answer>
+    </static>
+    <server-data sourceFilePath="Library/Mizzou/Finite_Math/Gauss-Jordan_Elimination/3by3a.pg" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" password="anonymous" language="en-US"/>
+    <pg source="Library/Mizzou/Finite_Math/Gauss-Jordan_Elimination/3by3a.pg"/>
+  </webwork-reps>
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-22" ww-id="webwork-22">
+    <static seed="22" source="Library/Mizzou/Finite_Math/Linear_Algebra_Matrix_Equations/MatrixEquation1.pg">
+      <statement><p>Solve the matrix equation <m>Ax = b</m>, where</p>
+<p><me>A = \left[\begin{array}{cc}
+-1 \amp -1\cr
+8 \amp -3
+\end{array}\right], \quad x = 
+\left[
+\begin{array}{cc}
+ x_1 \\ x_2
+\end{array}
+\right]
+\text{ and } \quad b = \left[\begin{array}{c}
+-5\cr
+-4
+\end{array}\right].</me></p>
+<p>The solution is:</p>
+<p><m>x_1 =</m> <fillin characters="20" name="AnSwEr0001"/></p>
+<p><m>x_2 =</m> <fillin characters="20" name="AnSwEr0002"/></p>
+</statement>
+      <answer>
+        <p>
+          <m>1</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>4</m>
+        </p>
+      </answer>
     </static>
     <server-data sourceFilePath="Library/Mizzou/Finite_Math/Linear_Algebra_Matrix_Equations/MatrixEquation1.pg" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" password="anonymous" language="en-US"/>
     <pg source="Library/Mizzou/Finite_Math/Linear_Algebra_Matrix_Equations/MatrixEquation1.pg"/>
   </webwork-reps>
-  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-18" ww-id="webwork-18">
-    <static seed="18" source="Contrib/Hope/Multi1/02-02-Linear-systems/Geometry_01/Geometry_01.pg">
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-23" ww-id="webwork-23">
+    <static seed="23" source="Contrib/Hope/Multi1/02-02-Linear-systems/Geometry_01/Geometry_01.pg">
       <statement><tabular valign="top">
 <row>
 <cell>Match each system of linear equations with the graph
 that most closely matches it.  
 Click on a graph to make it larger.
 <ol>
+<li>
+<m>\left\lbrace
+\begin{array}{rcl}
+z \amp  = \amp  1 \\
+3z \amp  = \amp  3 \\
+-1/z \amp  = \amp  -1
+\end{array}
+\right.</m>
+</li>
+<li>
+<m>\left\lbrace
+\begin{array}{rcl}
+z \amp  = \amp  1 \\
+z + x \amp  = \amp  1 \\
+z - x \amp  = \amp  1
+\end{array}
+\right.</m>
+</li>
 <li>
 <m>\left\lbrace
 \begin{array}{rcl}
@@ -1323,8 +2044,8 @@ z \amp  = \amp  0 \\
 <m>\left\lbrace
 \begin{array}{rcl}
 x \amp  = \amp  0 \\
-z \amp  = \amp  1 \\
-z \amp  = \amp  -1
+y \amp  = \amp  0 \\
+z \amp  = \amp  0
 \end{array}
 \right.</m>
 </li>
@@ -1350,24 +2071,6 @@ z \amp  = \amp  0
 <m>\left\lbrace
 \begin{array}{rcl}
 z \amp  = \amp  1 \\
-z \amp  = \amp  0 \\
-z \amp  = \amp  -1
-\end{array}
-\right.</m>
-</li>
-<li>
-<m>\left\lbrace
-\begin{array}{rcl}
-z \amp  = \amp  1 \\
-3z \amp  = \amp  3 \\
--1/z \amp  = \amp  -1
-\end{array}
-\right.</m>
-</li>
-<li>
-<m>\left\lbrace
-\begin{array}{rcl}
--x + z \amp  = \amp  1 \\
 x + z \amp  = \amp  1 \\
 z \amp  = \amp  -1
 \end{array}
@@ -1377,8 +2080,8 @@ z \amp  = \amp  -1
 <m>\left\lbrace
 \begin{array}{rcl}
 x \amp  = \amp  0 \\
-y \amp  = \amp  0 \\
-z \amp  = \amp  0
+z \amp  = \amp  1 \\
+z \amp  = \amp  -1
 \end{array}
 \right.</m>
 </li>
@@ -1395,9 +2098,9 @@ z \amp  = \amp  0 \\
 <cell>
 <tabular bottom="none" left="none" right="none" top="none">
 <row halign="left" valign="middle">
-<cell><A HREF=""><IMG ALIGN="BOTTOM" BORDER="2" HEIGHT="150" SRC="" WIDTH="150"/></A></cell>
-<cell><A HREF=""><IMG ALIGN="BOTTOM" BORDER="2" HEIGHT="150" SRC="" WIDTH="150"/></A></cell>
-<cell><A HREF=""><IMG ALIGN="BOTTOM" BORDER="2" HEIGHT="150" SRC="" WIDTH="150"/></A></cell>
+<cell><A HREF="/webwork2_files/tmp/anonymous/images/7550d11e-3a04-3166-8498-824084f5dd9a___bc3326e5-611d-30f9-968d-e8bb2d9fbef8.png"><IMG ALIGN="BOTTOM" BORDER="2" HEIGHT="150" SRC="/webwork2_files/tmp/anonymous/images/7550d11e-3a04-3166-8498-824084f5dd9a___bc3326e5-611d-30f9-968d-e8bb2d9fbef8.png" WIDTH="150"/></A></cell>
+<cell><A HREF="/webwork2_files/tmp/anonymous/images/7550d11e-3a04-3166-8498-824084f5dd9a___61a9e9e7-2732-3ffb-85f0-82fbbfb63c49.png"><IMG ALIGN="BOTTOM" BORDER="2" HEIGHT="150" SRC="/webwork2_files/tmp/anonymous/images/7550d11e-3a04-3166-8498-824084f5dd9a___61a9e9e7-2732-3ffb-85f0-82fbbfb63c49.png" WIDTH="150"/></A></cell>
+<cell><A HREF="/webwork2_files/tmp/anonymous/images/7550d11e-3a04-3166-8498-824084f5dd9a___02fc0ecb-a97a-32d7-b16e-8679c21814c4.png"><IMG ALIGN="BOTTOM" BORDER="2" HEIGHT="150" SRC="/webwork2_files/tmp/anonymous/images/7550d11e-3a04-3166-8498-824084f5dd9a___02fc0ecb-a97a-32d7-b16e-8679c21814c4.png" WIDTH="150"/></A></cell>
 </row>
 <row halign="left" valign="middle">
 <cell><CENTER><B>A</B></CENTER></cell>
@@ -1405,9 +2108,9 @@ z \amp  = \amp  0 \\
 <cell><CENTER><B>C</B></CENTER></cell>
 </row>
 <row halign="left" valign="middle">
-<cell><A HREF=""><IMG ALIGN="BOTTOM" BORDER="2" HEIGHT="150" SRC="" WIDTH="150"/></A></cell>
-<cell><A HREF=""><IMG ALIGN="BOTTOM" BORDER="2" HEIGHT="150" SRC="" WIDTH="150"/></A></cell>
-<cell><A HREF=""><IMG ALIGN="BOTTOM" BORDER="2" HEIGHT="150" SRC="" WIDTH="150"/></A></cell>
+<cell><A HREF="/webwork2_files/tmp/anonymous/images/7550d11e-3a04-3166-8498-824084f5dd9a___5c082342-d11a-3c0b-bd9b-711853c7a55f.png"><IMG ALIGN="BOTTOM" BORDER="2" HEIGHT="150" SRC="/webwork2_files/tmp/anonymous/images/7550d11e-3a04-3166-8498-824084f5dd9a___5c082342-d11a-3c0b-bd9b-711853c7a55f.png" WIDTH="150"/></A></cell>
+<cell><A HREF="/webwork2_files/tmp/anonymous/images/7550d11e-3a04-3166-8498-824084f5dd9a___57a8dbb6-2599-3616-bd87-8cd9583ec4db.png"><IMG ALIGN="BOTTOM" BORDER="2" HEIGHT="150" SRC="/webwork2_files/tmp/anonymous/images/7550d11e-3a04-3166-8498-824084f5dd9a___57a8dbb6-2599-3616-bd87-8cd9583ec4db.png" WIDTH="150"/></A></cell>
+<cell><A HREF="/webwork2_files/tmp/anonymous/images/7550d11e-3a04-3166-8498-824084f5dd9a___2abb27f8-f158-367e-b87d-a50bc1143e15.png"><IMG ALIGN="BOTTOM" BORDER="2" HEIGHT="150" SRC="/webwork2_files/tmp/anonymous/images/7550d11e-3a04-3166-8498-824084f5dd9a___2abb27f8-f158-367e-b87d-a50bc1143e15.png" WIDTH="150"/></A></cell>
 </row>
 <row halign="left" valign="middle">
 <cell><CENTER><B>D</B></CENTER></cell>
@@ -1415,9 +2118,9 @@ z \amp  = \amp  0 \\
 <cell><CENTER><B>F</B></CENTER></cell>
 </row>
 <row halign="left" valign="middle">
-<cell><A HREF=""><IMG ALIGN="BOTTOM" BORDER="2" HEIGHT="150" SRC="" WIDTH="150"/></A></cell>
-<cell><A HREF=""><IMG ALIGN="BOTTOM" BORDER="2" HEIGHT="150" SRC="" WIDTH="150"/></A></cell>
-<cell><A HREF=""><IMG ALIGN="BOTTOM" BORDER="2" HEIGHT="150" SRC="" WIDTH="150"/></A></cell>
+<cell><A HREF="/webwork2_files/tmp/anonymous/images/7550d11e-3a04-3166-8498-824084f5dd9a___d2d893d9-7338-3fd9-a74e-59d612c34e97.png"><IMG ALIGN="BOTTOM" BORDER="2" HEIGHT="150" SRC="/webwork2_files/tmp/anonymous/images/7550d11e-3a04-3166-8498-824084f5dd9a___d2d893d9-7338-3fd9-a74e-59d612c34e97.png" WIDTH="150"/></A></cell>
+<cell><A HREF="/webwork2_files/tmp/anonymous/images/7550d11e-3a04-3166-8498-824084f5dd9a___766fb37f-c321-3e42-886b-e01ab6187cd8.png"><IMG ALIGN="BOTTOM" BORDER="2" HEIGHT="150" SRC="/webwork2_files/tmp/anonymous/images/7550d11e-3a04-3166-8498-824084f5dd9a___766fb37f-c321-3e42-886b-e01ab6187cd8.png" WIDTH="150"/></A></cell>
+<cell><A HREF="/webwork2_files/tmp/anonymous/images/7550d11e-3a04-3166-8498-824084f5dd9a___c14ec27e-5f24-383b-9999-67ce2af21dc6.png"><IMG ALIGN="BOTTOM" BORDER="2" HEIGHT="150" SRC="/webwork2_files/tmp/anonymous/images/7550d11e-3a04-3166-8498-824084f5dd9a___c14ec27e-5f24-383b-9999-67ce2af21dc6.png" WIDTH="150"/></A></cell>
 </row>
 <row halign="left" valign="middle">
 <cell><CENTER><B>G</B></CENTER></cell>
@@ -1433,13 +2136,13 @@ z \amp  = \amp  0 \\
     <server-data sourceFilePath="Contrib/Hope/Multi1/02-02-Linear-systems/Geometry_01/Geometry_01.pg" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" password="anonymous" language="en-US"/>
     <pg source="Contrib/Hope/Multi1/02-02-Linear-systems/Geometry_01/Geometry_01.pg"/>
   </webwork-reps>
-  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-19" ww-id="webwork-19">
-    <static seed="19" source="Contrib/Hope/Multi1/02-02-Linear-systems/Substitution_01.pg">
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-24" ww-id="webwork-24">
+    <static seed="24" source="Contrib/Hope/Multi1/02-02-Linear-systems/Substitution_01.pg">
       <statement><p>Solve the linear system below by substitution.
 <me>\left\lbrace
 \begin{array}{rcr}
-2y-4x \amp  = \amp  5 \\
-6y-12x \amp  = \amp  15 
+2x+3y \amp  = \amp  3 \\
+8x+12y \amp  = \amp  12 
 \end{array}
 \right.</me>
 If the answer is a line such as <m>y = x + 1</m>, enter <m>x = x</m> and <m>y = x+1</m>.
@@ -1454,7 +2157,7 @@ If there is no solution, enter <em>DNE</em> for both answers.</p>
       </answer>
       <answer>
         <p>
-          <m>\frac{5--4x}{2}</m>
+          <m>\frac{3-2x}{3}</m>
         </p>
       </answer>
     </static>
