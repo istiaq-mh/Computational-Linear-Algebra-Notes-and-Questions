@@ -1972,24 +1972,317 @@ Performing several elementary row operations, we get that the given augmented ma
     <pg source="Library/Mizzou/Finite_Math/Gauss-Jordan_Elimination/3by3a.pg"/>
   </webwork-reps>
   <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-22" ww-id="webwork-22">
-    <static seed="22" source="Library/Mizzou/Finite_Math/Linear_Algebra_Matrix_Equations/MatrixEquation1.pg">
-      <statement><p>Solve the matrix equation <m>Ax = b</m>, where</p>
-<p><me>A = \left[\begin{array}{cc}
--1 \amp -1\cr
-8 \amp -3
-\end{array}\right], \quad x = 
-\left[
-\begin{array}{cc}
- x_1 \\ x_2
-\end{array}
-\right]
-\text{ and } \quad b = \left[\begin{array}{c}
--5\cr
--4
-\end{array}\right].</me></p>
-<p>The solution is:</p>
-<p><m>x_1 =</m> <fillin characters="20" name="AnSwEr0001"/></p>
-<p><m>x_2 =</m> <fillin characters="20" name="AnSwEr0002"/></p>
+    <static seed="22" source="Library/NewHampshire/NECAP/grade11/gr11-2009/n11-2009-11s.pg">
+      <statement><p>Look at this system of equations.</p>
+<p><m>2y+12=8x</m></p>
+<p><m>12x-3y=18</m></p>
+<p>Which graph (below) shows the solution set of this system of equations? 
+<var form="buttons">
+<li>
+<p>Graph W</p>
+</li>
+<li>
+<p>Graph X</p>
+</li>
+<li>
+<p>Graph Y</p>
+</li>
+<li>
+<p>Graph Z</p>
+</li>
+</var></p>
+<image xmlns:pi="http://pretextbook.org/2020/pretext/internal" pi:generated="webwork/images/webwork-22-image-1.png" width="76%"/>
+<image xmlns:pi="http://pretextbook.org/2020/pretext/internal" pi:generated="webwork/images/webwork-22-image-2.png" width="76%"/>
+<image xmlns:pi="http://pretextbook.org/2020/pretext/internal" pi:generated="webwork/images/webwork-22-image-3.png" width="76%"/>
+<image xmlns:pi="http://pretextbook.org/2020/pretext/internal" pi:generated="webwork/images/webwork-22-image-4.png" width="76%"/>
+</statement>
+      <solution><p>Solution</p>
+<p>If these equations represented lines with different slopes, there would be a single point for solution.</p>
+<p>But, putting them in slope interecept form we obtain <m>y=4x-6</m>  for both (by dividing the first equation</p>
+<p>by 2 and the second by 3).  Thus the solution set is a line with slope 4 and y intercept -6.</p>
+<p>Graph W satisfies those conditions</p>
+</solution>
+    </static>
+    <server-data sourceFilePath="Library/NewHampshire/NECAP/grade11/gr11-2009/n11-2009-11s.pg" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" password="anonymous" language="en-US"/>
+    <pg source="Library/NewHampshire/NECAP/grade11/gr11-2009/n11-2009-11s.pg"/>
+  </webwork-reps>
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-23" ww-id="webwork-23">
+    <static seed="23" source="Library/TCNJ/TCNJ_LinearSystems/problem11.pg">
+      <statement><p>Give a geometric description of the following systems of equations.</p>
+<p><ol>
+<li>
+<p><m>\left\lbrace\begin{array}{rrrrrr}\amp  6 \,x\amp - \amp 4 \,y\amp =\amp -2\\\amp  -15 \, x\amp +\amp  10 \, y\amp =\amp 5\\ \end{array}\right.</m></p>
+</li>
+<li>
+<p><m>\left\lbrace\begin{array}{rrrrrr}\amp  6 \,x\amp - \amp 4 \,y\amp =\amp -2\\\amp  -15 \, x\amp +\amp  10 \, y\amp =\amp 3\\ \end{array}\right.</m></p>
+</li>
+<li>
+<p><m>\left\lbrace\begin{array}{rrrrrr}\amp  7 \,x\amp - \amp 3 \,y\amp =\amp -9\\\amp  2 \,x\amp - \amp  \,y\amp =\amp -7\\ \end{array}\right.</m></p>
+</li>
+</ol></p>
+</statement>
+    </static>
+    <server-data sourceFilePath="Library/TCNJ/TCNJ_LinearSystems/problem11.pg" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" password="anonymous" language="en-US"/>
+    <pg source="Library/TCNJ/TCNJ_LinearSystems/problem11.pg"/>
+  </webwork-reps>
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-24" ww-id="webwork-24">
+    <static seed="24" source="Library/TCNJ/TCNJ_LinearSystems/problem4.pg">
+      <statement><p>Give a geometric description of the following system of equations</p>
+<p><ol>
+<li>
+<p><m>\left\lbrace\begin{array}{rrrrrrr}
+2x \amp  + \amp  4y \amp  - \amp  6z \amp  = \amp  12 \cr
+-x \amp  + \amp  5y \amp  - \amp  9z \amp  = \amp  1
+\end{array} \right.</m></p>
+</li>
+<li>
+<p><m>\left\lbrace\begin{array}{rrrrrrr}
+2x \amp  + \amp  4y \amp  - \amp  6z \amp  = \amp  -12 \cr
+-3x \amp  - \amp  6y \amp  + \amp  9z \amp  = \amp  18
+\end{array} \right.</m></p>
+</li>
+<li>
+<p><m>\left\lbrace\begin{array}{rrrrrrr}
+2x \amp  + \amp  4y \amp  - \amp  6z \amp  = \amp  12 \cr
+-3x \amp  - \amp  6y \amp  + \amp  9z \amp  = \amp  16
+\end{array}\right.</m></p>
+</li>
+</ol></p>
+</statement>
+    </static>
+    <server-data sourceFilePath="Library/TCNJ/TCNJ_LinearSystems/problem4.pg" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" password="anonymous" language="en-US"/>
+    <pg source="Library/TCNJ/TCNJ_LinearSystems/problem4.pg"/>
+  </webwork-reps>
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-25" ww-id="webwork-25">
+    <static seed="25" source="Library/Hope/Multi1/02-02-Linear-systems/Geometry_02/Geometry_02.pg">
+      <statement><p>Each graph below is the graph of a system of three linear equations 
+in three unknowns.  Determine which systems are consistent 
+and inconsistent.</p>
+<tabular xmlns:pi="http://pretextbook.org/2020/pretext/internal" bottom="none" left="none" right="none" top="none">
+<row halign="center" valign="middle">
+<cell>
+<image pi:generated="webwork/images/webwork-25-image-1.png" width="33%"/>
+</cell>
+<cell>
+<image pi:generated="webwork/images/webwork-25-image-2.png" width="33%"/>
+</cell>
+<cell>
+<image pi:generated="webwork/images/webwork-25-image-3.png" width="33%"/>
+</cell>
+</row>
+<row halign="center" valign="middle">
+<cell>A. <var form="popup">
+<li>
+consistent
+</li>
+<li>
+inconsistent
+</li>
+<li>
+choose
+</li>
+</var></cell>
+<cell>B. <var form="popup">
+<li>
+inconsistent
+</li>
+<li>
+choose
+</li>
+<li>
+consistent
+</li>
+</var></cell>
+<cell>C. <var form="popup">
+<li>
+consistent
+</li>
+<li>
+choose
+</li>
+<li>
+inconsistent
+</li>
+</var></cell>
+</row>
+<row halign="center" valign="middle">
+<cell>
+<image pi:generated="webwork/images/webwork-25-image-4.png" width="33%"/>
+</cell>
+<cell>
+<image pi:generated="webwork/images/webwork-25-image-5.png" width="33%"/>
+</cell>
+<cell>
+<image pi:generated="webwork/images/webwork-25-image-6.png" width="33%"/>
+</cell>
+</row>
+<row halign="center" valign="middle">
+<cell>D. <var form="popup">
+<li>
+consistent
+</li>
+<li>
+choose
+</li>
+<li>
+inconsistent
+</li>
+</var></cell>
+<cell>E. <var form="popup">
+<li>
+consistent
+</li>
+<li>
+choose
+</li>
+<li>
+inconsistent
+</li>
+</var></cell>
+<cell>F. <var form="popup">
+<li>
+inconsistent
+</li>
+<li>
+choose
+</li>
+<li>
+consistent
+</li>
+</var></cell>
+</row>
+<row halign="center" valign="middle">
+<cell>
+<image pi:generated="webwork/images/webwork-25-image-7.png" width="33%"/>
+</cell>
+<cell>
+<image pi:generated="webwork/images/webwork-25-image-8.png" width="33%"/>
+</cell>
+<cell>
+<image pi:generated="webwork/images/webwork-25-image-9.png" width="33%"/>
+</cell>
+</row>
+<row halign="center" valign="middle">
+<cell>G. <var form="popup">
+<li>
+consistent
+</li>
+<li>
+choose
+</li>
+<li>
+inconsistent
+</li>
+</var></cell>
+<cell>H. <var form="popup">
+<li>
+inconsistent
+</li>
+<li>
+choose
+</li>
+<li>
+consistent
+</li>
+</var></cell>
+<cell>I. <var form="popup">
+<li>
+consistent
+</li>
+<li>
+choose
+</li>
+<li>
+<p>inconsistent
+</p></li>
+</var></cell>
+</row>
+</tabular>
+<p>(Click on a graph to enlarge it.)</p>
+</statement>
+    </static>
+    <server-data sourceFilePath="Library/Hope/Multi1/02-02-Linear-systems/Geometry_02/Geometry_02.pg" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" password="anonymous" language="en-US"/>
+    <pg source="Library/Hope/Multi1/02-02-Linear-systems/Geometry_02/Geometry_02.pg"/>
+  </webwork-reps>
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-26" ww-id="webwork-26">
+    <static seed="26" source="Library/WHFreeman/Holt_linear_algebra/Chaps_1-4/holt_01_04_007.pg">
+      <statement><p>Balance the chemical equation</p>
+<p><me>\mbox{Fe}_{2} + \mbox{O}_{8} \longrightarrow \mbox{Fe}_{7}\mbox{O}_{9}</me></p>
+<p>and give your answer in lowest terms. That is, the coefficients should all be integers that do not all share a common factor.</p>
+<p><fillin characters="5" name="AnSwEr0001"/><m>\mbox{Fe}_{2}+</m><fillin characters="5" name="AnSwEr0002"/><m>\mbox{O}_{8} \longrightarrow</m><fillin characters="5" name="AnSwEr0003"/><m>\mbox{Fe}_{7}\mbox{O}_{9}</m></p>
+</statement>
+      <answer>
+        <p>
+          <m>28</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>9</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>8</m>
+        </p>
+      </answer>
+      <solution><p><alert>SOLUTION:</alert> 
+We consider <m>x_1 \mbox{Fe}_{2} +x_2 \mbox{O}_{8} \longrightarrow x_3 \mbox{Fe}_{7}\mbox{O}_{9}</m>, which implies <me>\begin{array}{rcrcrcr}2 x_1 \amp  \amp   \amp  - \amp  7 x_{3} \amp  = \amp  0 \\ \amp   \amp  8 x_{2} \amp  - \amp  9 x_{3} \amp  = \amp  0\end{array}</me>
+From the augmented matrix <me>\left[\begin{array}{rrrr} 2 \amp   0 \amp   -7 \amp   0 \\ 0 \amp   8 \amp   -9 \amp   0\end{array}\right]</me> we set <m>x_3 = s_1</m> as a free variable, and thus <m>x_2 = \frac{9}{8} s_1</m> and <m>x_1 = \frac{7}{2} s_1</m>. We set <m>s_1 = 8</m> to obtain <m>x_1 = 28</m>, <m>x_2 = 9</m>, and <m>x_3 = 8</m>, and the balanced equation</p>
+<p><me>28 \mbox{Fe}_{2}+ 9 \mbox{O}_{8} \longrightarrow 8 \mbox{Fe}_{7}\mbox{O}_{9}.</me></p>
+</solution>
+    </static>
+    <server-data sourceFilePath="Library/WHFreeman/Holt_linear_algebra/Chaps_1-4/holt_01_04_007.pg" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" password="anonymous" language="en-US"/>
+    <pg source="Library/WHFreeman/Holt_linear_algebra/Chaps_1-4/holt_01_04_007.pg"/>
+  </webwork-reps>
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-27" ww-id="webwork-27">
+    <static seed="27" source="Library/WHFreeman/Holt_linear_algebra/Chaps_1-4/holt_01_04_008.pg">
+      <statement><p>Balance the chemical equation</p>
+<p><me>\mbox{Na} + {\mbox{H}_{4}}{\mbox{O}} \longrightarrow {\mbox{Na}}{\mbox{O}_3}{\mbox{H}_5} + \mbox{H}_3</me></p>
+<p>and give your answer in lowest terms. That is, the coefficients should all be integers that do not all share a common factor.</p>
+<p><fillin characters="5" name="AnSwEr0001"/><m>\mbox{Na}+</m><fillin characters="5" name="AnSwEr0002"/><m>\mbox{H}_{4} \mbox{O} \longrightarrow</m><fillin characters="5" name="AnSwEr0003"/><m>\mbox{Na} \mbox{O}_3 \mbox{H}_5 +</m><fillin characters="5" name="AnSwEr0004"/><m>\mbox{H}_3</m></p>
+</statement>
+      <answer>
+        <p>
+          <m>3</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>9</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>3</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>7</m>
+        </p>
+      </answer>
+      <solution><p><alert>SOLUTION:</alert> 
+We consider <m>x_1 \mbox{Na} + x_2 \mbox{H}_{4} \mbox{O} \longrightarrow x_3 \mbox{Na} \mbox{O}_3 \mbox{H}_5 + x_4 \mbox{H}_3</m>, which implies
+<me>\begin{array}{rcrcrcrcr} x_1  \amp  \amp   \amp  - \amp  x_{3} \amp  \amp   \amp  = \amp  0 \\ \amp   \amp  4 x_{2} \amp  - \amp  5 x_{3} \amp  - \amp  3 x_{4} \amp  = \amp  0 \\ \amp   \amp  x_{2} \amp  - \amp  3 x_{3} \amp  \amp   \amp  = \amp  0\end{array}</me>
+Row-reduce the augmented matrix
+<me>\begin{array}{ccc}
+\left[\begin{array}{rrrrr} 1 \amp   0 \amp   -1 \amp   0 \amp   0 \\ 0 \amp   4 \amp   -5 \amp   -3 \amp   0 \\ 0 \amp   1 \amp   -3 \amp   0 \amp   0\end{array}\right] \amp  \overset{R_2 \Leftrightarrow R_3}{\sim} \amp  \left[\begin{array}{rrrrr} 1 \amp   0 \amp   -1 \amp   0 \amp   0 \\ 0 \amp   1 \amp   -3 \amp   0 \amp   0 \\ 0 \amp   4 \amp   -5 \amp   -3 \amp   0\end{array}\right] \\ 
+ \amp  \overset{-4 R_2 + R_3 \Leftrightarrow R_3}{\sim} \amp  \left[\begin{array}{rrrrr} 1 \amp   0 \amp   -1 \amp   0 \amp   0 \\ 0 \amp   1 \amp   -3 \amp   0 \amp   0 \\ 0 \amp   0 \amp   7 \amp   -3 \amp   0\end{array}\right]
+\end{array}</me>
+We set <m>x_4 = s_1</m> as a free variable, and thus <m>x_3 = {\frac{3}{7}} s_1</m>, <m>x_2 = 3 x_3={\frac{9}{7}} s_1</m>, and <m>x_1 = x_3={\frac{3}{7}} s_1</m>. Setting <m>s_1 = 7</m> gives that <m>x_1 = 3</m>, <m>x_2 = 9</m>, and <m>x_3 = 3</m>, and hence the balanced equation is
+<me>3 \mbox{Na}+ 9 \mbox{H}_{4} \mbox{O} \longrightarrow 3 \mbox{Na} \mbox{O}_3 \mbox{H}_5+ 7 \mbox{H}_3.</me></p>
+</solution>
+    </static>
+    <server-data sourceFilePath="Library/WHFreeman/Holt_linear_algebra/Chaps_1-4/holt_01_04_008.pg" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" password="anonymous" language="en-US"/>
+    <pg source="Library/WHFreeman/Holt_linear_algebra/Chaps_1-4/holt_01_04_008.pg"/>
+  </webwork-reps>
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-28" ww-id="webwork-28">
+    <static seed="28" source="Library/WHFreeman/Holt_linear_algebra/Chaps_1-4/holt_01_04_012.pg">
+      <statement><p>Balance the chemical equation</p>
+<p><me>\mbox{Mn}_{2} \mbox{O}_{4} + \mbox{H}_{2} \mbox{Cl}_{2} \longrightarrow \mbox{Mn}_{2} \mbox{Cl}_{4} + \mbox{H}_{4} \mbox{O}_{2} + \mbox{Cl}_{4}</me></p>
+<p>and give your answer in lowest terms. That is, the coefficients should all be integers that do not all share a common factor.</p>
+<p><fillin characters="5" name="AnSwEr0001"/><m>\mbox{Mn}_{2} \mbox{O}_{4} +</m><fillin characters="5" name="AnSwEr0002"/><m>\mbox{H}_{2} \mbox{Cl}_{2} \longrightarrow</m><fillin characters="5" name="AnSwEr0003"/><m>\mbox{Mn}_{2} \mbox{Cl}_{4}  +</m><fillin characters="5" name="AnSwEr0004"/><m>\mbox{H}_{4} \mbox{O}_{2} +</m><fillin characters="5" name="AnSwEr0005"/><m>\mbox{Cl}_{4}</m></p>
 </statement>
       <answer>
         <p>
@@ -2001,54 +2294,464 @@ Performing several elementary row operations, we get that the given augmented ma
           <m>4</m>
         </p>
       </answer>
+      <answer>
+        <p>
+          <m>1</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>2</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>1</m>
+        </p>
+      </answer>
+      <solution><p><alert>SOLUTION:</alert> 
+We consider <m>x_1 \mbox{Mn}_{2} \mbox{O}_{4} + x_2 \mbox{H}_{2} \mbox{Cl}_{2} \longrightarrow x_3 \mbox{Mn}_{2} \mbox{Cl}_{4} + x_4 \mbox{H}_{4} \mbox{O}_{2} + x_5 \mbox{Cl}_{4}</m>, which implies
+<me>\begin{array}{rcrcrcrcrcrcr}2 x_1 \amp  \amp   \amp  - \amp  2 x_{3} \amp  \amp   \amp  \amp   \amp  \amp   \amp  = \amp  0 \\4 x_1 \amp  \amp   \amp  \amp   \amp  - \amp  2 x_{4} \amp  \amp   \amp  \amp   \amp  = \amp  0 \\ \amp   \amp  2 x_{2} \amp  \amp   \amp  - \amp  4 x_{4} \amp  \amp   \amp  \amp   \amp  = \amp  0 \\ \amp   \amp  2 x_{2} \amp  - \amp  4 x_{3} \amp  \amp   \amp  - \amp  4 x_{5} \amp  \amp   \amp  = \amp  0\end{array}</me>
+which has augmented matrix 
+<me>\left[\begin{array}{rrrrrr} 2 \amp   0 \amp   -2 \amp   0 \amp   0 \amp   0 \\ 4 \amp   0 \amp   0 \amp   -2 \amp   0 \amp   0 \\ 0 \amp   2 \amp   0 \amp   -4 \amp   0 \amp   0 \\ 0 \amp   2 \amp   -4 \amp   0 \amp   -4 \amp   0\end{array}\right]</me>
+Notice that entries of the augmented matrix share a common factor of <m>2</m>, so that it is row equivalent to the matrix
+<me>\left[\begin{array}{rrrrrr} 1 \amp   0 \amp   -1 \amp   0 \amp   0 \amp   0 \\ 2 \amp   0 \amp   0 \amp   -1 \amp   0 \amp   0 \\ 0 \amp   1 \amp   0 \amp   -2 \amp   0 \amp   0 \\ 0 \amp   1 \amp   -2 \amp   0 \amp   -2 \amp   0\end{array}\right].</me>
+Now row reduce this matrix to get
+<me>\begin{array}{ccc}
+\left[\begin{array}{rrrrrr} 1 \amp   0 \amp   -1 \amp   0 \amp   0 \amp   0 \\ 2 \amp   0 \amp   0 \amp   -1 \amp   0 \amp   0 \\ 0 \amp   1 \amp   0 \amp   -2 \amp   0 \amp   0 \\ 0 \amp   1 \amp   -2 \amp   0 \amp   -2 \amp   0\end{array}\right] \amp  \overset{-4 R_1 + R_2 \Rightarrow R_2}{\sim} \amp  \left[\begin{array}{rrrrrr} 1 \amp   0 \amp   -1 \amp   0 \amp   0 \amp   0 \\ 0 \amp   0 \amp   2 \amp   -1 \amp   0 \amp   0 \\ 0 \amp   1 \amp   0 \amp   -2 \amp   0 \amp   0 \\ 0 \amp   1 \amp   -2 \amp   0 \amp   -2 \amp   0\end{array}\right] \\ 
+\amp  \overset{R_2 \Leftrightarrow R_4}{\sim} \amp  \left[\begin{array}{rrrrrr} 1 \amp   0 \amp   -1 \amp   0 \amp   0 \amp   0 \\ 0 \amp   1 \amp   -2 \amp   0 \amp   -2 \amp   0 \\ 0 \amp   1 \amp   0 \amp   -2 \amp   0 \amp   0 \\ 0 \amp   0 \amp   2 \amp   -1 \amp   0 \amp   0\end{array}\right] \\
+\amp  \overset{-R_2 + R_3 \Rightarrow R_3}{\sim} \amp  \left[\begin{array}{rrrrrr} 1 \amp   0 \amp   -1 \amp   0 \amp   0 \amp   0 \\ 0 \amp   1 \amp   -2 \amp   0 \amp   -2 \amp   0 \\ 0 \amp   0 \amp   2 \amp   -2 \amp   2 \amp   0 \\ 0 \amp   0 \amp   2 \amp   -1 \amp   0 \amp   0\end{array}\right] \\
+\amp  \overset{-R_3 + R_4 \Rightarrow R_4}{\sim} \amp  \left[\begin{array}{rrrrrr} 1 \amp   0 \amp   -1 \amp   0 \amp   0 \amp   0 \\ 0 \amp   1 \amp   -2 \amp   0 \amp   -2 \amp   0 \\ 0 \amp   0 \amp   2 \amp   -2 \amp   2 \amp   0 \\ 0 \amp   0 \amp   0 \amp   1 \amp   -2 \amp   0\end{array}\right]
+\end{array}</me>
+We set <m>x_5 = s_1</m> as a free variable. From row 4, 
+<me>x_4 - 2 s_1 = 0\Rightarrow x_4 = 2 s_1.</me>
+From row 3, 
+<me>2 x_3 - 2 x_4 + 2 s_1 = 0 \Rightarrow 2 x_3 - 2\left(2 s_1\right) +2 s_1 = 0 \Rightarrow x_3 = s_1.</me>
+From row 2 
+<me>x_2 - 2 x_3 - 2 s_1 = 0 \Rightarrow x_2 - 2 (1 s_1) - 2 s_1 = 0 \Rightarrow x_2 = 4 s_1.</me>
+From row 1, 
+<me>x_1 - x_3 = 0 \Rightarrow x_1 - \left(s_1\right) = 0 \Rightarrow x_1 = s_1.</me>
+We set <m>s_1 = 1</m> to obtain <m>x_1 = 1</m>, <m>x_2 = 4</m>, <m>x_3 = 1</m>, <m>x_4 = 2</m>, and <m>x_5 = 1</m>, and the balanced equation is
+<me>\mbox{Mn}_{2} \mbox{O}_{4}+ 4 \mbox{H}_{2} \mbox{Cl}_{2} \longrightarrow \mbox{Mn}_{2} \mbox{Cl}_{4}+ 2 \mbox{H}_{4} \mbox{O}_{2}+ \mbox{Cl}_{4}.</me></p>
+</solution>
+    </static>
+    <server-data sourceFilePath="Library/WHFreeman/Holt_linear_algebra/Chaps_1-4/holt_01_04_012.pg" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" password="anonymous" language="en-US"/>
+    <pg source="Library/WHFreeman/Holt_linear_algebra/Chaps_1-4/holt_01_04_012.pg"/>
+  </webwork-reps>
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-29" ww-id="webwork-29">
+    <static seed="29" source="Library/Rochester/setLinearAlgebra2SystemsApplications/ur_la_2_6.pg">
+      <statement><tabular xmlns:pi="http://pretextbook.org/2020/pretext/internal" valign="top">
+<row>
+<cell>In a grid of wires, the temperature at exterior mesh poins is maintained at constant values as shown in the
+figure. When the grid is in thermal equilibrium, the temperature at each interior mesh point is the average of
+the temperatures at the four adjacent points. For instance, 
+<me>T_1= \frac{T_2+T_3+20 - 120}{4}.</me>
+Find the temperatures <m>T_1,</m> <m>T_2,</m> <m>T_3,</m> <m>T_4,</m> when the grid is in thermal equilibrium.
+<m>T_1=</m> <fillin characters="10" name="AnSwEr0001"/>
+<m>T_2=</m> <fillin characters="10" name="AnSwEr0002"/>
+<m>T_3=</m> <fillin characters="10" name="AnSwEr0003"/>
+<m>T_4=</m> <fillin characters="10" name="AnSwEr0004"/></cell>
+<cell>
+<image pi:generated="webwork/images/webwork-29-image-1.png" width="50%"/>
+<p/></cell>
+</row>
+</tabular>
+</statement>
+      <answer>
+        <p>
+          <m>-10</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>0</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>60</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>0</m>
+        </p>
+      </answer>
+    </static>
+    <server-data sourceFilePath="Library/Rochester/setLinearAlgebra2SystemsApplications/ur_la_2_6.pg" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" password="anonymous" language="en-US"/>
+    <pg source="Library/Rochester/setLinearAlgebra2SystemsApplications/ur_la_2_6.pg"/>
+  </webwork-reps>
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-30" ww-id="webwork-30">
+    <static seed="30" source="Library/Rochester/setLinearAlgebra2SystemsApplications/ur_la_2_2.pg">
+      <statement><p>Find the quadratic polynomial whose graph goes through the points <m>(-1,0),</m> <m>(0,2),</m> and 
+<m>(2,18)</m>.</p>
+<p><m>f(x)=</m> <fillin characters="25" name="AnSwEr0001"/>.</p>
+</statement>
+      <answer>
+        <p>
+          <m>2x^{2}+4x+2</m>
+        </p>
+      </answer>
+    </static>
+    <server-data sourceFilePath="Library/Rochester/setLinearAlgebra2SystemsApplications/ur_la_2_2.pg" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" password="anonymous" language="en-US"/>
+    <pg source="Library/Rochester/setLinearAlgebra2SystemsApplications/ur_la_2_2.pg"/>
+  </webwork-reps>
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-31" ww-id="webwork-31">
+    <static seed="31" source="Library/WHFreeman/Holt_linear_algebra/Chaps_1-4/holt_01_04_026.pg">
+      <statement><p>Find a polynomial of the form 
+<me>f(x) = a x^3 + bx^2 + cx + d</me>
+such that <m>f(0) = 5</m>, <m>f(-1) = 1</m>, <m>f(-3) = 5</m>, and <m>f(4) = 3</m>.</p>
+<p>Answer: <m>f(x) =</m><fillin characters="30" name="AnSwEr0001"/></p>
+</statement>
+      <answer>
+        <p>
+          <m>-0.414286x^{3}+0.342857x^{2}+4.75714x+5</m>
+        </p>
+      </answer>
+      <solution><p><alert>SOLUTION:</alert> 
+Using the values <m>f(0) = 5</m>, <m>f(-1) = 1</m>, <m>f(-3) = 5</m>, and <m>f(4) = 3</m> in the function <m>f(x) = a x^3 + bx^2 + cx + d</m>, we obtain the equations
+<me>\begin{align*} d \amp = 5 \\ - a+ b- c+ d \amp = 1 \\ -27 a+ 9 b - 3 c+ d\amp = 5 \\ 64 a+ 16 b+ 4 c+ d \amp = 3 \end{align*}</me>
+Using a computer algebra system we obtain <m>a = -{\frac{29}{70}}</m>, <m>b = {\frac{12}{35}}</m>, <m>c =</m>, and <m>d = 5</m>. Thus
+<me>f(x) = -{\frac{29}{70}} x^3+ {\frac{12}{35}} x^2+ {\frac{333}{70}} x+ 5 .</me></p>
+</solution>
+    </static>
+    <server-data sourceFilePath="Library/WHFreeman/Holt_linear_algebra/Chaps_1-4/holt_01_04_026.pg" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" password="anonymous" language="en-US"/>
+    <pg source="Library/WHFreeman/Holt_linear_algebra/Chaps_1-4/holt_01_04_026.pg"/>
+  </webwork-reps>
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-32" ww-id="webwork-32">
+    <static seed="32" source="Library/WHFreeman/Holt_linear_algebra/Chaps_1-4/2.1.33.pg">
+      <statement><p>Fertilizer is sold in 100 pound bags labelled with the amount of nitrogen ( N), phosphoric acid ( P2O5), and potash ( K2O) present. The mixture of these nutrients varies from one type of fertilizer to the next.</p>
+<p>For example, a <m>100</m> pound bag of Vigoro Ultra Turf fertilizer contains <m>29</m> pounds of nitrogen, <m>3</m> pounds of phosphoric acid, and <m>4</m> pounds of potash.</p>
+<p>Another type of fertilizer, Parker’s Premium Starter, has <m>18</m> pounds of nitrogen, <m>25</m> pounds of phosphoric acid, and <m>6</m> pounds of potash per <m>100</m> pounds.</p>
+<p>Determine the amount of each type required to yield a mixture containing the <m>112</m> pounds of nitrogen, <m>81</m> pounds of phosphoric acid, and <m>26</m> pounds of potash.</p>
+<p>The mixture contains <fillin characters="10" name="AnSwEr0001"/> pounds of Vigoro, and <fillin characters="10" name="AnSwEr0002"/> pounds of Parker’s.</p>
+</statement>
+      <answer>
+        <p>
+          <m>200</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>300</m>
+        </p>
+      </answer>
+      <solution><me>(x_1)
+\left[\begin{matrix} 29 \cr 3 \cr 4 \cr \end{matrix}\right]+
+(x_2)
+\left[\begin{matrix} 18 \cr 25 \cr 6 \cr \end{matrix}\right]=
+\left[\begin{matrix} 112 \cr 81 \cr 26 \cr \end{matrix}\right]</me>
+
+
+
+We see <m>x_1=2</m> and <m>x_2=3</m>, so we need <m>200</m> pounds of Vigoro and <m>300</m> pounds of Parker's.
+
+
+
+
+
+
+
+
+
+</solution>
+    </static>
+    <server-data sourceFilePath="Library/WHFreeman/Holt_linear_algebra/Chaps_1-4/2.1.33.pg" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" password="anonymous" language="en-US"/>
+    <pg source="Library/WHFreeman/Holt_linear_algebra/Chaps_1-4/2.1.33.pg"/>
+  </webwork-reps>
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-33" ww-id="webwork-33">
+    <static seed="33" source="Library/ASU-topics/set119LinearSystems/p27.pg">
+      <statement><p>A dietician is planning a meal that supplies certain quantities of vitamin C, calcium, and
+magnesium.  Three foods will be used, their quantities measured in milligrams.  The
+nutrients supplied by these foods and the dietary requirements are given in the table below.</p>
+<tabular bottom="medium" left="medium" right="medium" top="medium">
+<row>
+<cell>Nutrient</cell>
+<cell>Food 1</cell>
+<cell>Food 2</cell>
+<cell>Food 3</cell>
+<cell>Total Required (mg)</cell>
+</row>
+<row>
+<cell>Vitamin C</cell>
+<cell><m>10</m></cell>
+<cell><m>10</m></cell>
+<cell><m>5</m></cell>
+<cell><m>870</m></cell>
+</row>
+<row>
+<cell>Calcium</cell>
+<cell><m>30</m></cell>
+<cell><m>50</m></cell>
+<cell><m>25</m></cell>
+<cell><m>3630</m></cell>
+</row>
+<row>
+<cell>Magnesium</cell>
+<cell><m>20</m></cell>
+<cell><m>40</m></cell>
+<cell><m>30</m></cell>
+<cell><m>3070</m></cell>
+</row>
+</tabular>
+<p>Write the augmented matrix for this problem.</p>
+<tabular>
+<row>
+<cell><fillin characters="10" name="AnSwEr0001"/></cell>
+<cell><fillin characters="10" name="AnSwEr0002"/></cell>
+<cell><fillin characters="10" name="AnSwEr0003"/></cell>
+<cell><fillin characters="10" name="AnSwEr0004"/></cell>
+</row>
+<row>
+<cell><fillin characters="10" name="AnSwEr0005"/></cell>
+<cell><fillin characters="10" name="AnSwEr0006"/></cell>
+<cell><fillin characters="10" name="AnSwEr0007"/></cell>
+<cell><fillin characters="10" name="AnSwEr0008"/></cell>
+</row>
+<row>
+<cell><fillin characters="10" name="AnSwEr0009"/></cell>
+<cell><fillin characters="10" name="AnSwEr0010"/></cell>
+<cell><fillin characters="10" name="AnSwEr0011"/></cell>
+<cell><fillin characters="10" name="AnSwEr0012"/></cell>
+</row>
+</tabular>
+<p>What quantity (mg) of Food 1 is necessary to meet the dietary requirements?</p>
+<p><fillin characters="10" name="AnSwEr0013"/></p>
+<p>What quantity (mg) of Food 2 is necessary to meet the dietary requirements?</p>
+<p><fillin characters="10" name="AnSwEr0014"/></p>
+<p>What quantity (mg) of Food 3 is necessary to meet the dietary requirements?</p>
+<p><fillin characters="10" name="AnSwEr0015"/></p>
+</statement>
+      <answer>
+        <p>
+          <m>10</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>10</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>5</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>870</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>30</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>50</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>25</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>3630</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>20</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>40</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>30</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>3070</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>36</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>35.5</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>31</m>
+        </p>
+      </answer>
+    </static>
+    <server-data sourceFilePath="Library/ASU-topics/set119LinearSystems/p27.pg" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" password="anonymous" language="en-US"/>
+    <pg source="Library/ASU-topics/set119LinearSystems/p27.pg"/>
+  </webwork-reps>
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-34" ww-id="webwork-34">
+    <static seed="34" source="Library/WHFreeman/Holt_linear_algebra/Chaps_1-4/holt_01_04_024.pg">
+      <statement><p>The points <m>(-3,-1,1)</m>, <m>(-1,-5,-11)</m>, and <m>(4,5,-1)</m> lie on a unique plane. Use linear algebra to find the equation of the plane and then determine where the line crosses the <m>z</m>-axis.</p>
+<p>Equation of plane (use <m>x</m>, <m>y</m>, and <m>z</m> as the variables): <fillin characters="25" name="AnSwEr0001"/></p>
+<p>Crosses the <m>z</m>-axis at the point: <m>\bigg(</m> <fillin characters="5" name="AnSwEr0002"/>, <fillin characters="5" name="AnSwEr0003"/>, <fillin characters="5" name="AnSwEr0004"/> <m>\bigg)</m></p>
+</statement>
+      <answer>
+        <p>
+          <m>2x-2y+z = -3</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>0</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>0</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>-3</m>
+        </p>
+      </answer>
+      <solution><p><alert>SOLUTION:</alert> 
+Let the plane be given by the equation <m>z = a x + b y + c</m>. Using the points, we obtain the system
+<me>\begin{align*}
+-3 a- b+ c \amp = 1\\
+- a - 5 b+ c \amp = -11 \\
+4 a+ 5 b+ c \amp = -1
+\end{align*}</me>
+The solution to the system is <m>a = -2</m>, <m>b = 2</m>, and <m>c = -3</m>. Thus <m>z = -2 x+ 2 y - 3</m>.
+ The point where the plane crosses the <m>z</m>-axis is determined by setting <m>y = 0</m> and <m>z = 0</m>, and then solving for <m>z</m>. Hence <m>= -3</m>. Therefore, the plane crosses the <m>z</m>-axis is <m>(0,0,-3)</m>.</p>
+</solution>
+    </static>
+    <server-data sourceFilePath="Library/WHFreeman/Holt_linear_algebra/Chaps_1-4/holt_01_04_024.pg" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" password="anonymous" language="en-US"/>
+    <pg source="Library/WHFreeman/Holt_linear_algebra/Chaps_1-4/holt_01_04_024.pg"/>
+  </webwork-reps>
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-35" ww-id="webwork-35">
+    <static seed="35" source="Library/WHFreeman/Holt_linear_algebra/Chaps_1-4/holt_01_04_028.pg">
+      <statement><p>Find the values of the coefficients <m>a</m>, <m>b</m> and <m>c</m> so that the conditions</p>
+<p><me>f(0) = -4, \quad f'(0) = -13, \quad \mbox{ and } \quad \ f''(0) = 9</me></p>
+<p>hold for the function</p>
+<p><me>f(x) = a e^{x} + b e^{2 x} + c e^{-3 x}.</me></p>
+<p><m>a =</m><fillin characters="5" name="AnSwEr0001"/></p>
+<p><m>b =</m><fillin characters="5" name="AnSwEr0002"/></p>
+<p><m>c =</m><fillin characters="5" name="AnSwEr0003"/></p>
+</statement>
+      <answer>
+        <p>
+          <m>-5</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>-1</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>2</m>
+        </p>
+      </answer>
+      <solution><p><alert>SOLUTION:</alert> 
+Using <m>f(0) = -4</m>, we obtain <m>-4 = a + b + c</m>. Using <m>f'(0) = -13</m> in the derivative <m>f'(x) = a e^{x}+ 2 b e^{2 x} - 3 c e^{-3 x}</m> we obtain <m>-13 = a+ 2 b - 3 c</m>. And using <m>f''(0) = -13</m> in the second deriative <m>f''(x) = a e^{x}+ 4 b e^{2 x}+ 9 c e^{-3 x}</m> we obtain <m>9 = a+ 4 b+ 9 c</m>. Using a computer algebra system we solve the system of equations
+<me>\begin{align*}
+ a + b + c \amp = -4 \\
+a+ 2 b - 3 c \amp = -13 \\
+a+ 4 b+ 9 c \amp = 9
+\end{align*}</me>
+to get <m>a = -5</m>, <m>b = -1</m>, and <m>c = 2</m>. Thus <m>f(x) = -5 e^{x}- e^{2 x}+ 2 e^{-3 x}</m>.</p>
+</solution>
+    </static>
+    <server-data sourceFilePath="Library/WHFreeman/Holt_linear_algebra/Chaps_1-4/holt_01_04_028.pg" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" password="anonymous" language="en-US"/>
+    <pg source="Library/WHFreeman/Holt_linear_algebra/Chaps_1-4/holt_01_04_028.pg"/>
+  </webwork-reps>
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-36" ww-id="webwork-36">
+    <static seed="36" source="Library/WHFreeman/Holt_linear_algebra/Chaps_1-4/holt_01_04_030.pg">
+      <statement><p>A new <lq/>LAI<rq/> (for Linear Algebra Index) formula has been used to rank the eight college football teams shown below. Determine the formula for the LAI.</p>
+<p><me>\begin{array}{clcccc} \mbox{Rank} \amp  \mbox{Team} \amp  \mbox{USA} \amp  \mbox{Harris} \amp  \mbox{Computer} \amp  \mbox{LAI} \\\hline  1 \amp  \mbox{Oklahoma} \amp  1482 \amp  2699 \amp  100 \amp  1.0682012 \\ 2 \amp  \mbox{Florida} \amp  1481 \amp  2776 \amp  89 \amp  1.0670989 \\ 3 \amp  \mbox{Texas} \amp  1408 \amp  2616 \amp  94 \amp  1.0210238 \\ 4 \amp  \mbox{Alabama} \amp  1309 \amp  2442 \amp  81 \amp  0.9439797 \\ 5 \amp  \mbox{Southern Cal} \amp  1309 \amp  2413 \amp  75 \amp  0.9337119 \\ 6 \amp  \mbox{Penn State} \amp  1193 \amp  2186 \amp  66 \amp  0.8466918 \end{array}</me></p>
+<p>LAI = <fillin characters="10" name="AnSwEr0001"/>(USA) + <fillin characters="10" name="AnSwEr0002"/>(Harris) + <fillin characters="10" name="AnSwEr0003"/>(Computer)</p>
+<p><alert>Help:</alert> The use of a computer algebra system is advised. Be sure to use all 8 digits of the LAI in your computations, or else suffer huge rounding errors!</p>
+</statement>
+      <answer>
+        <p>
+          <m>0.0003972</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>0.0001392</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>0.0010385</m>
+        </p>
+      </answer>
+      <solution><p><alert>SOLUTION:</alert> 
+With the new LAI values, we obtain the three equations using the top three schools
+<me>\begin{align*} 1482 x_1 + 2699 x_2 + 100 x_3 = 1.0682012 \\ 1481 x_1 + 2776 x_2 + 89 x_3 = 1.0670989 \\ 1408 x_1 + 2616 x_2 + 94 x_3 = 1.0210238 \end{align*}</me>
+Using a computer algebra system we solve this system and obtain <m>x_1 = 0.0003972</m>, <m>x_2 = 0.0001392</m>, and <m>x_3 = 0.0010385</m>.</p>
+</solution>
+    </static>
+    <server-data sourceFilePath="Library/WHFreeman/Holt_linear_algebra/Chaps_1-4/holt_01_04_030.pg" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" password="anonymous" language="en-US"/>
+    <pg source="Library/WHFreeman/Holt_linear_algebra/Chaps_1-4/holt_01_04_030.pg"/>
+  </webwork-reps>
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-37" ww-id="webwork-37">
+    <static seed="37" source="Library/Mizzou/Finite_Math/Linear_Algebra_Matrix_Equations/MatrixEquation1.pg">
+      <statement><p>Solve the matrix equation <m>Ax = b</m>, where</p>
+<p><me>A = \left[\begin{array}{cc}
+-8 \amp -5\cr
+-6 \amp 3
+\end{array}\right], \quad x = 
+\left[
+\begin{array}{cc}
+ x_1 \\ x_2
+\end{array}
+\right]
+\text{ and } \quad b = \left[\begin{array}{c}
+18\cr
+0
+\end{array}\right].</me></p>
+<p>The solution is:</p>
+<p><m>x_1 =</m> <fillin characters="20" name="AnSwEr0001"/></p>
+<p><m>x_2 =</m> <fillin characters="20" name="AnSwEr0002"/></p>
+</statement>
+      <answer>
+        <p>
+          <m>-1</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>-2</m>
+        </p>
+      </answer>
     </static>
     <server-data sourceFilePath="Library/Mizzou/Finite_Math/Linear_Algebra_Matrix_Equations/MatrixEquation1.pg" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" password="anonymous" language="en-US"/>
     <pg source="Library/Mizzou/Finite_Math/Linear_Algebra_Matrix_Equations/MatrixEquation1.pg"/>
   </webwork-reps>
-  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-23" ww-id="webwork-23">
-    <static seed="23" source="Contrib/Hope/Multi1/02-02-Linear-systems/Geometry_01/Geometry_01.pg">
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-38" ww-id="webwork-38">
+    <static seed="38" source="Contrib/Hope/Multi1/02-02-Linear-systems/Geometry_01/Geometry_01.pg">
       <statement><tabular valign="top">
 <row>
 <cell>Match each system of linear equations with the graph
 that most closely matches it.  
 Click on a graph to make it larger.
 <ol>
-<li>
-<m>\left\lbrace
-\begin{array}{rcl}
-z \amp  = \amp  1 \\
-3z \amp  = \amp  3 \\
--1/z \amp  = \amp  -1
-\end{array}
-\right.</m>
-</li>
-<li>
-<m>\left\lbrace
-\begin{array}{rcl}
-z \amp  = \amp  1 \\
-z + x \amp  = \amp  1 \\
-z - x \amp  = \amp  1
-\end{array}
-\right.</m>
-</li>
-<li>
-<m>\left\lbrace
-\begin{array}{rcl}
-z \amp  = \amp  0 \\
-1/z \amp  = \amp  1 \\
-3z - 3 \amp  = \amp  0
-\end{array}
-\right.</m>
-</li>
-<li>
-<m>\left\lbrace
-\begin{array}{rcl}
-x \amp  = \amp  0 \\
-y \amp  = \amp  0 \\
-z \amp  = \amp  0
-\end{array}
-\right.</m>
-</li>
 <li>
 <m>\left\lbrace
 \begin{array}{rcl}
@@ -2071,8 +2774,26 @@ z \amp  = \amp  0
 <m>\left\lbrace
 \begin{array}{rcl}
 z \amp  = \amp  1 \\
+z \amp  = \amp  0 \\
+z \amp  = \amp  -1
+\end{array}
+\right.</m>
+</li>
+<li>
+<m>\left\lbrace
+\begin{array}{rcl}
+z \amp  = \amp  1 \\
 x + z \amp  = \amp  1 \\
 z \amp  = \amp  -1
+\end{array}
+\right.</m>
+</li>
+<li>
+<m>\left\lbrace
+\begin{array}{rcl}
+x + z \amp  = \amp  1 \\
+z \amp  = \amp  0 \\
+3x + 3z \amp  = \amp  3
 \end{array}
 \right.</m>
 </li>
@@ -2088,9 +2809,27 @@ z \amp  = \amp  -1
 <li>
 <m>\left\lbrace
 \begin{array}{rcl}
+z \amp  = \amp  1 \\
+3z \amp  = \amp  3 \\
+-1/z \amp  = \amp  -1
+\end{array}
+\right.</m>
+</li>
+<li>
+<m>\left\lbrace
+\begin{array}{rcl}
+-x + z \amp  = \amp  1 \\
 x + z \amp  = \amp  1 \\
-z \amp  = \amp  0 \\
-3x + 3z \amp  = \amp  3
+z \amp  = \amp  -1
+\end{array}
+\right.</m>
+</li>
+<li>
+<m>\left\lbrace
+\begin{array}{rcl}
+x \amp  = \amp  0 \\
+y \amp  = \amp  0 \\
+z \amp  = \amp  0
 \end{array}
 \right.</m>
 </li>
@@ -2098,9 +2837,9 @@ z \amp  = \amp  0 \\
 <cell>
 <tabular bottom="none" left="none" right="none" top="none">
 <row halign="left" valign="middle">
-<cell><A HREF="/webwork2_files/tmp/anonymous/images/7550d11e-3a04-3166-8498-824084f5dd9a___bc3326e5-611d-30f9-968d-e8bb2d9fbef8.png"><IMG ALIGN="BOTTOM" BORDER="2" HEIGHT="150" SRC="/webwork2_files/tmp/anonymous/images/7550d11e-3a04-3166-8498-824084f5dd9a___bc3326e5-611d-30f9-968d-e8bb2d9fbef8.png" WIDTH="150"/></A></cell>
-<cell><A HREF="/webwork2_files/tmp/anonymous/images/7550d11e-3a04-3166-8498-824084f5dd9a___61a9e9e7-2732-3ffb-85f0-82fbbfb63c49.png"><IMG ALIGN="BOTTOM" BORDER="2" HEIGHT="150" SRC="/webwork2_files/tmp/anonymous/images/7550d11e-3a04-3166-8498-824084f5dd9a___61a9e9e7-2732-3ffb-85f0-82fbbfb63c49.png" WIDTH="150"/></A></cell>
-<cell><A HREF="/webwork2_files/tmp/anonymous/images/7550d11e-3a04-3166-8498-824084f5dd9a___02fc0ecb-a97a-32d7-b16e-8679c21814c4.png"><IMG ALIGN="BOTTOM" BORDER="2" HEIGHT="150" SRC="/webwork2_files/tmp/anonymous/images/7550d11e-3a04-3166-8498-824084f5dd9a___02fc0ecb-a97a-32d7-b16e-8679c21814c4.png" WIDTH="150"/></A></cell>
+<cell><A HREF="/webwork2_files/tmp/anonymous/images/cb60d72e-e2e5-301f-a5d2-928aba3c2110___d2d893d9-7338-3fd9-a74e-59d612c34e97.png"><IMG ALIGN="BOTTOM" BORDER="2" HEIGHT="150" SRC="/webwork2_files/tmp/anonymous/images/cb60d72e-e2e5-301f-a5d2-928aba3c2110___d2d893d9-7338-3fd9-a74e-59d612c34e97.png" WIDTH="150"/></A></cell>
+<cell><A HREF="/webwork2_files/tmp/anonymous/images/cb60d72e-e2e5-301f-a5d2-928aba3c2110___c14ec27e-5f24-383b-9999-67ce2af21dc6.png"><IMG ALIGN="BOTTOM" BORDER="2" HEIGHT="150" SRC="/webwork2_files/tmp/anonymous/images/cb60d72e-e2e5-301f-a5d2-928aba3c2110___c14ec27e-5f24-383b-9999-67ce2af21dc6.png" WIDTH="150"/></A></cell>
+<cell><A HREF="/webwork2_files/tmp/anonymous/images/cb60d72e-e2e5-301f-a5d2-928aba3c2110___02fc0ecb-a97a-32d7-b16e-8679c21814c4.png"><IMG ALIGN="BOTTOM" BORDER="2" HEIGHT="150" SRC="/webwork2_files/tmp/anonymous/images/cb60d72e-e2e5-301f-a5d2-928aba3c2110___02fc0ecb-a97a-32d7-b16e-8679c21814c4.png" WIDTH="150"/></A></cell>
 </row>
 <row halign="left" valign="middle">
 <cell><CENTER><B>A</B></CENTER></cell>
@@ -2108,9 +2847,9 @@ z \amp  = \amp  0 \\
 <cell><CENTER><B>C</B></CENTER></cell>
 </row>
 <row halign="left" valign="middle">
-<cell><A HREF="/webwork2_files/tmp/anonymous/images/7550d11e-3a04-3166-8498-824084f5dd9a___5c082342-d11a-3c0b-bd9b-711853c7a55f.png"><IMG ALIGN="BOTTOM" BORDER="2" HEIGHT="150" SRC="/webwork2_files/tmp/anonymous/images/7550d11e-3a04-3166-8498-824084f5dd9a___5c082342-d11a-3c0b-bd9b-711853c7a55f.png" WIDTH="150"/></A></cell>
-<cell><A HREF="/webwork2_files/tmp/anonymous/images/7550d11e-3a04-3166-8498-824084f5dd9a___57a8dbb6-2599-3616-bd87-8cd9583ec4db.png"><IMG ALIGN="BOTTOM" BORDER="2" HEIGHT="150" SRC="/webwork2_files/tmp/anonymous/images/7550d11e-3a04-3166-8498-824084f5dd9a___57a8dbb6-2599-3616-bd87-8cd9583ec4db.png" WIDTH="150"/></A></cell>
-<cell><A HREF="/webwork2_files/tmp/anonymous/images/7550d11e-3a04-3166-8498-824084f5dd9a___2abb27f8-f158-367e-b87d-a50bc1143e15.png"><IMG ALIGN="BOTTOM" BORDER="2" HEIGHT="150" SRC="/webwork2_files/tmp/anonymous/images/7550d11e-3a04-3166-8498-824084f5dd9a___2abb27f8-f158-367e-b87d-a50bc1143e15.png" WIDTH="150"/></A></cell>
+<cell><A HREF="/webwork2_files/tmp/anonymous/images/cb60d72e-e2e5-301f-a5d2-928aba3c2110___bc3326e5-611d-30f9-968d-e8bb2d9fbef8.png"><IMG ALIGN="BOTTOM" BORDER="2" HEIGHT="150" SRC="/webwork2_files/tmp/anonymous/images/cb60d72e-e2e5-301f-a5d2-928aba3c2110___bc3326e5-611d-30f9-968d-e8bb2d9fbef8.png" WIDTH="150"/></A></cell>
+<cell><A HREF="/webwork2_files/tmp/anonymous/images/cb60d72e-e2e5-301f-a5d2-928aba3c2110___57a8dbb6-2599-3616-bd87-8cd9583ec4db.png"><IMG ALIGN="BOTTOM" BORDER="2" HEIGHT="150" SRC="/webwork2_files/tmp/anonymous/images/cb60d72e-e2e5-301f-a5d2-928aba3c2110___57a8dbb6-2599-3616-bd87-8cd9583ec4db.png" WIDTH="150"/></A></cell>
+<cell><A HREF="/webwork2_files/tmp/anonymous/images/cb60d72e-e2e5-301f-a5d2-928aba3c2110___33e08ae0-f90c-332b-b906-4bd960ec51ac.png"><IMG ALIGN="BOTTOM" BORDER="2" HEIGHT="150" SRC="/webwork2_files/tmp/anonymous/images/cb60d72e-e2e5-301f-a5d2-928aba3c2110___33e08ae0-f90c-332b-b906-4bd960ec51ac.png" WIDTH="150"/></A></cell>
 </row>
 <row halign="left" valign="middle">
 <cell><CENTER><B>D</B></CENTER></cell>
@@ -2118,9 +2857,9 @@ z \amp  = \amp  0 \\
 <cell><CENTER><B>F</B></CENTER></cell>
 </row>
 <row halign="left" valign="middle">
-<cell><A HREF="/webwork2_files/tmp/anonymous/images/7550d11e-3a04-3166-8498-824084f5dd9a___d2d893d9-7338-3fd9-a74e-59d612c34e97.png"><IMG ALIGN="BOTTOM" BORDER="2" HEIGHT="150" SRC="/webwork2_files/tmp/anonymous/images/7550d11e-3a04-3166-8498-824084f5dd9a___d2d893d9-7338-3fd9-a74e-59d612c34e97.png" WIDTH="150"/></A></cell>
-<cell><A HREF="/webwork2_files/tmp/anonymous/images/7550d11e-3a04-3166-8498-824084f5dd9a___766fb37f-c321-3e42-886b-e01ab6187cd8.png"><IMG ALIGN="BOTTOM" BORDER="2" HEIGHT="150" SRC="/webwork2_files/tmp/anonymous/images/7550d11e-3a04-3166-8498-824084f5dd9a___766fb37f-c321-3e42-886b-e01ab6187cd8.png" WIDTH="150"/></A></cell>
-<cell><A HREF="/webwork2_files/tmp/anonymous/images/7550d11e-3a04-3166-8498-824084f5dd9a___c14ec27e-5f24-383b-9999-67ce2af21dc6.png"><IMG ALIGN="BOTTOM" BORDER="2" HEIGHT="150" SRC="/webwork2_files/tmp/anonymous/images/7550d11e-3a04-3166-8498-824084f5dd9a___c14ec27e-5f24-383b-9999-67ce2af21dc6.png" WIDTH="150"/></A></cell>
+<cell><A HREF="/webwork2_files/tmp/anonymous/images/cb60d72e-e2e5-301f-a5d2-928aba3c2110___2abb27f8-f158-367e-b87d-a50bc1143e15.png"><IMG ALIGN="BOTTOM" BORDER="2" HEIGHT="150" SRC="/webwork2_files/tmp/anonymous/images/cb60d72e-e2e5-301f-a5d2-928aba3c2110___2abb27f8-f158-367e-b87d-a50bc1143e15.png" WIDTH="150"/></A></cell>
+<cell><A HREF="/webwork2_files/tmp/anonymous/images/cb60d72e-e2e5-301f-a5d2-928aba3c2110___61a9e9e7-2732-3ffb-85f0-82fbbfb63c49.png"><IMG ALIGN="BOTTOM" BORDER="2" HEIGHT="150" SRC="/webwork2_files/tmp/anonymous/images/cb60d72e-e2e5-301f-a5d2-928aba3c2110___61a9e9e7-2732-3ffb-85f0-82fbbfb63c49.png" WIDTH="150"/></A></cell>
+<cell><A HREF="/webwork2_files/tmp/anonymous/images/cb60d72e-e2e5-301f-a5d2-928aba3c2110___febfef27-654d-3a9e-9c02-73a397c799d6.png"><IMG ALIGN="BOTTOM" BORDER="2" HEIGHT="150" SRC="/webwork2_files/tmp/anonymous/images/cb60d72e-e2e5-301f-a5d2-928aba3c2110___febfef27-654d-3a9e-9c02-73a397c799d6.png" WIDTH="150"/></A></cell>
 </row>
 <row halign="left" valign="middle">
 <cell><CENTER><B>G</B></CENTER></cell>
@@ -2136,13 +2875,13 @@ z \amp  = \amp  0 \\
     <server-data sourceFilePath="Contrib/Hope/Multi1/02-02-Linear-systems/Geometry_01/Geometry_01.pg" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" password="anonymous" language="en-US"/>
     <pg source="Contrib/Hope/Multi1/02-02-Linear-systems/Geometry_01/Geometry_01.pg"/>
   </webwork-reps>
-  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-24" ww-id="webwork-24">
-    <static seed="24" source="Contrib/Hope/Multi1/02-02-Linear-systems/Substitution_01.pg">
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-39" ww-id="webwork-39">
+    <static seed="39" source="Contrib/Hope/Multi1/02-02-Linear-systems/Substitution_01.pg">
       <statement><p>Solve the linear system below by substitution.
 <me>\left\lbrace
 \begin{array}{rcr}
-2x+3y \amp  = \amp  3 \\
-8x+12y \amp  = \amp  12 
+y-2x \amp  = \amp  -5 \\
+6x-3y \amp  = \amp  15 
 \end{array}
 \right.</me>
 If the answer is a line such as <m>y = x + 1</m>, enter <m>x = x</m> and <m>y = x+1</m>.
@@ -2157,7 +2896,7 @@ If there is no solution, enter <em>DNE</em> for both answers.</p>
       </answer>
       <answer>
         <p>
-          <m>\frac{3-2x}{3}</m>
+          <m>\frac{-5--2x}{1}</m>
         </p>
       </answer>
     </static>
