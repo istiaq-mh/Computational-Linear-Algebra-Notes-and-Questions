@@ -2073,13 +2073,13 @@ and inconsistent.</p>
 <row halign="center" valign="middle">
 <cell>A. <var form="popup">
 <li>
-consistent
-</li>
-<li>
 inconsistent
 </li>
 <li>
 choose
+</li>
+<li>
+consistent
 </li>
 </var></cell>
 <cell>B. <var form="popup">
@@ -2095,13 +2095,13 @@ consistent
 </var></cell>
 <cell>C. <var form="popup">
 <li>
-consistent
+inconsistent
 </li>
 <li>
 choose
 </li>
 <li>
-inconsistent
+consistent
 </li>
 </var></cell>
 </row>
@@ -2130,13 +2130,13 @@ inconsistent
 </var></cell>
 <cell>E. <var form="popup">
 <li>
-consistent
+inconsistent
 </li>
 <li>
 choose
 </li>
 <li>
-inconsistent
+consistent
 </li>
 </var></cell>
 <cell>F. <var form="popup">
@@ -2165,13 +2165,13 @@ consistent
 <row halign="center" valign="middle">
 <cell>G. <var form="popup">
 <li>
-consistent
+inconsistent
 </li>
 <li>
 choose
 </li>
 <li>
-inconsistent
+consistent
 </li>
 </var></cell>
 <cell>H. <var form="popup">
@@ -2711,28 +2711,396 @@ Using a computer algebra system we solve this system and obtain <m>x_1 = 0.00039
     <pg source="Library/WHFreeman/Holt_linear_algebra/Chaps_1-4/holt_01_04_030.pg"/>
   </webwork-reps>
   <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-37" ww-id="webwork-37">
-    <static seed="37" source="Library/Mizzou/Finite_Math/Linear_Algebra_Matrix_Equations/MatrixEquation1.pg">
-      <statement><p>Solve the matrix equation <m>Ax = b</m>, where</p>
-<p><me>A = \left[\begin{array}{cc}
--8 \amp -5\cr
--6 \amp 3
-\end{array}\right], \quad x = 
-\left[
-\begin{array}{cc}
- x_1 \\ x_2
-\end{array}
-\right]
-\text{ and } \quad b = \left[\begin{array}{c}
-18\cr
-0
-\end{array}\right].</me></p>
-<p>The solution is:</p>
-<p><m>x_1 =</m> <fillin characters="20" name="AnSwEr0001"/></p>
-<p><m>x_2 =</m> <fillin characters="20" name="AnSwEr0002"/></p>
+    <static seed="37" source="Library/WHFreeman/Holt_linear_algebra/Chaps_1-4/2.1.66.pg">
+      <statement><p>Select the best statement.</p>
+<p><var form="buttons">
+<li>
+<p>A vector can only have nonnegative components.  A scalar must be nonnegative.</p>
+</li>
+<li>
+<p>A vector can have positive or negative components.  A scalar must be negative.</p>
+</li>
+<li>
+<p>A vector can have positive or negative components.  A scalar must be positive.</p>
+</li>
+<li>
+<p>A vector can only have nonnegative components.  A scalar can be positive or negative.</p>
+</li>
+<li>
+<p>A vector can have positive or negative components.  A scalar can be positive or negative.</p>
+</li>
+<li>
+<p>none of the above</p>
+</li>
+</var></p>
+</statement>
+      <solution/>
+    </static>
+    <server-data sourceFilePath="Library/WHFreeman/Holt_linear_algebra/Chaps_1-4/2.1.66.pg" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" password="anonymous" language="en-US"/>
+    <pg source="Library/WHFreeman/Holt_linear_algebra/Chaps_1-4/2.1.66.pg"/>
+  </webwork-reps>
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-38" ww-id="webwork-38">
+    <static seed="38" source="Library/Michigan/Chap13Sec1/Q29.pg">
+      <statement><p>Find the value(s) of <m>a</m> making
+<m>\vec v = 4 a\,\vec i - 3\, \vec j</m> parallel to
+<m>\vec w = a^2\,\vec i + 6\, \vec j</m>.</p>
+<p><m>a =</m> <fillin characters="35" name="AnSwEr0001"/></p>
+<p><em>(If there is more than one value of a, enter
+the values as a comma-separated list.)</em></p>
 </statement>
       <answer>
         <p>
-          <m>-1</m>
+          <m>0, -8</m>
+        </p>
+      </answer>
+      <solution><m>a\ne 0</m>,
+<me>\frac{a^2}{4 a} = \frac{6}{-3}.</me>
+Solving, and noticing that <m>a = 0</m> also gives parallel vectors,
+gives
+<me>a = 0, -8.</me>
+
+
+
+</solution>
+    </static>
+    <server-data sourceFilePath="Library/Michigan/Chap13Sec1/Q29.pg" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" password="anonymous" language="en-US"/>
+    <pg source="Library/Michigan/Chap13Sec1/Q29.pg"/>
+  </webwork-reps>
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-39" ww-id="webwork-39">
+    <static seed="39" source="Library/Union/setMVvectors/an12_2_27.pg">
+      <statement><p>Let <m>\lt B&gt;\lt I&gt;u\lt /B&gt;\lt /I&gt; = \left\lt -2,1\right&gt;</m>, <m>\lt B&gt;\lt I&gt;v\lt /B&gt;\lt /I&gt; = \left\lt -5,-1\right&gt;</m>, and <m>\lt B&gt;\lt I&gt;w\lt /B&gt;\lt /I&gt; = \left\lt -1,-2\right&gt;</m>.
+Find the vector <m>\lt B&gt;\lt I&gt;x\lt /B&gt;\lt /I&gt;</m> that satisfies
+<me>9 \lt B&gt;\lt I&gt;u\lt /B&gt;\lt /I&gt; - \lt B&gt;\lt I&gt;v\lt /B&gt;\lt /I&gt; + \lt B&gt;\lt I&gt;x\lt /B&gt;\lt /I&gt; = 4 \lt B&gt;\lt I&gt;x\lt /B&gt;\lt /I&gt; + \lt B&gt;\lt I&gt;w\lt /B&gt;\lt /I&gt;.</me></p>
+<p>In this case, <m>\lt B&gt;\lt I&gt;x\lt /B&gt;\lt /I&gt; =</m> <fillin characters="30" name="AnSwEr0001"/>.</p>
+</statement>
+      <answer>
+        <p>
+          <m>\left&lt;-4,4\right&gt;</m>
+        </p>
+      </answer>
+      <solution><p>Solving the given equation for <m>\lt B&gt;\lt I&gt;x\lt /B&gt;\lt /I&gt;</m> yields
+<me>\begin{array}{lcl} \lt B&gt;\lt I&gt;x\lt /B&gt;\lt /I&gt;\amp =\amp  \frac{1}{3}( 9 \lt B&gt;\lt I&gt;u\lt /B&gt;\lt /I&gt; - \lt B&gt;\lt I&gt;v\lt /B&gt;\lt /I&gt; - \lt B&gt;\lt I&gt;w\lt /B&gt;\lt /I&gt;)
+\\\amp  =\amp  \frac{1}{3} (9 \left\lt -2,1\right&gt; - \left\lt -5,-1\right&gt; - \left\lt -1,-2\right&gt; )
+\\\amp =\amp  
+\frac{1}{3} \left\lt -12,12\right&gt;
+\\\amp  =\amp  \left \langle -4 ,4 \right\rangle 
+\end{array}</me></p>
+</solution>
+    </static>
+    <server-data sourceFilePath="Library/Union/setMVvectors/an12_2_27.pg" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" password="anonymous" language="en-US"/>
+    <pg source="Library/Union/setMVvectors/an12_2_27.pg"/>
+  </webwork-reps>
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-40" ww-id="webwork-40">
+    <static seed="40" source="Library/Hope/Multi1/01-01-Vectors-in-Rn/Vectors-02.pg">
+      <statement><tabular xmlns:pi="http://pretextbook.org/2020/pretext/internal" valign="top">
+<row>
+<cell>Find the vector <m>\overrightarrow{AB}</m>
+in <m>\mathbb{R}^2</m> given in the figure.
+<m>\overrightarrow{AB} =</m> <fillin characters="20" name="AnSwEr0001"/> </cell>
+<cell>
+<image pi:generated="webwork/images/webwork-40-image-1.png" width="50%"/>
+<p/></cell>
+</row>
+</tabular>
+</statement>
+      <answer>
+        <p>
+          <m>\left&lt;6,5\right&gt;</m>
+        </p>
+      </answer>
+    </static>
+    <server-data sourceFilePath="Library/Hope/Multi1/01-01-Vectors-in-Rn/Vectors-02.pg" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" password="anonymous" language="en-US"/>
+    <pg source="Library/Hope/Multi1/01-01-Vectors-in-Rn/Vectors-02.pg"/>
+  </webwork-reps>
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-41" ww-id="webwork-41">
+    <static seed="41" source="Library/WHFreeman/Rogawski_Calculus_Early_Transcendentals_Second_Edition/12_Vector_Geometry/12.1_Vectors_in_the_Plane/12.1.29.pg">
+      <statement><p>Are <m>\vec{AB}</m> and <m>\vec{PQ}</m> parallel, and if so, do they point in the same direction?</p>
+<p><m>A=(4,4),\qquad B=(3,2),\qquad P=(0,3),\qquad Q=(-2,-1)</m></p>
+<p><ul form="popup" name="AnSwEr0001"><li>
+<p>Select</p>
+</li><li>
+<p>Parallel</p>
+</li><li>
+<p>Not Parallel</p>
+</li></ul></p>
+<p><ul form="popup" name="AnSwEr0002"><li>
+<p>Select</p>
+</li><li>
+<p>Same Direction</p>
+</li><li>
+<p>Opposite Direction</p>
+</li><li>
+<p>N/A (they are not parallel)</p>
+</li></ul></p>
+</statement>
+      <answer>
+        <p>
+          <m>\text{Parallel}</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>\text{Same Direction}</m>
+        </p>
+      </answer>
+      <solution><m>\vec{AB}</m> and <m>\vec{PQ}</m>:
+<me>\vec{AB}=\langle 3 - 4 , 2-4\rangle = \left\lt -1,-2\right&gt;</me>
+<me>\vec{PQ}=\langle -2 - 0 , -1-3\rangle = \left\lt -2,-4\right&gt;</me>
+Since <m>\vec{AB}=\frac{1}{2} \left\lt -2,-4\right&gt;</m>, the vectors are parallel and point in the same direction.
+
+
+</solution>
+    </static>
+    <server-data sourceFilePath="Library/WHFreeman/Rogawski_Calculus_Early_Transcendentals_Second_Edition/12_Vector_Geometry/12.1_Vectors_in_the_Plane/12.1.29.pg" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" password="anonymous" language="en-US"/>
+    <pg source="Library/WHFreeman/Rogawski_Calculus_Early_Transcendentals_Second_Edition/12_Vector_Geometry/12.1_Vectors_in_the_Plane/12.1.29.pg"/>
+  </webwork-reps>
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-42" ww-id="webwork-42">
+    <static seed="42" source="Library/FortLewis/Calc3/13-3-Dot-product/geometric-dot-product/geometric-dot-product.pg">
+      <statement><tabular xmlns:pi="http://pretextbook.org/2020/pretext/internal" valign="top">
+<row>
+<cell>Several unit vectors <m>\vec{r}, \vec{s}, \vec{t}, \vec{u}, \vec{n},</m>
+and <m>\vec{e}</m> in the xy-plane (not three-dimensional space) are shown in the figure.
+Using the geometric definition of the dot product, are the following dot products positive, negative, or zero? 
+You may assume that angles that look the same are the same.
+<ol>
+<li>
+<m>\vec{t} \cdot \vec{u}</m>
+</li>
+<li>
+<m>\vec{r} \cdot \vec{u}</m>
+</li>
+<li>
+<m>\vec{e} \cdot \vec{s}</m>
+</li>
+<li>
+<m>\vec{n} \cdot \vec{e}</m>
+</li>
+<li>
+<m>\vec{e} \cdot \vec{r}</m>
+</li>
+<li>
+<m>\vec{s} \cdot \vec{t}</m>
+</li>
+<li>
+<m>\vec{n} \cdot \vec{t}</m>
+</li>
+<li>
+<m>\vec{r} \cdot \vec{s}</m>
+</li>
+</ol></cell>
+<cell>
+<image pi:generated="webwork/images/webwork-42-image-1.png" width="26%"/>
+<p>(Click on graph to enlarge)</p></cell>
+</row>
+</tabular>
+</statement>
+      <solution><p>SOLUTION</p>
+<p><alert> 1. </alert> 
+The angle between the vectors is acute. Thus the dot
+product is positive.</p>
+<p><alert> 2. </alert> 
+The angle between the vectors is obtuse. Thus the dot
+product is negative.</p>
+<p><alert> 3. </alert> 
+The vectors are perpendicular. Thus the dot product is zero.</p>
+<p><alert> 4. </alert> 
+The vectors are perpendicular. Thus the dot product is zero.</p>
+<p><alert> 5. </alert> 
+The angle between the vectors is obtuse. Thus the dot
+product is negative.</p>
+<p><alert> 6. </alert> 
+The angle between the vectors is acute. Thus the dot
+product is positive.</p>
+<p><alert> 7. </alert> 
+The angle between the vectors is obtuse. Thus the dot
+product is negative.</p>
+<p><alert> 8. </alert> 
+The angle between the vectors is acute. Thus the dot
+product is positive.</p>
+</solution>
+    </static>
+    <server-data sourceFilePath="Library/FortLewis/Calc3/13-3-Dot-product/geometric-dot-product/geometric-dot-product.pg" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" password="anonymous" language="en-US"/>
+    <pg source="Library/FortLewis/Calc3/13-3-Dot-product/geometric-dot-product/geometric-dot-product.pg"/>
+  </webwork-reps>
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-43" ww-id="webwork-43">
+    <static seed="43" source="Library/Michigan/Chap13Sec1/Q39.pg">
+      <statement><p>Find all vectors <m>\vec v</m> in 2 dimensions having
+<m>||\vec v|| = 41</m> where the
+<m>\,\mathit{\vec i}</m>-component of <m>\vec v</m> is <m>9 \,\mathit{\vec i}</m>.</p>
+<p>vectors: <fillin characters="35" name="AnSwEr0001"/></p>
+<p><em>(If you find more than one vector, enter them in a
+comma-separated list.)</em></p>
+</statement>
+      <answer>
+        <p>
+          <m>9\,\mathit{\vec i}+40\,\mathit{\vec j}, 9\,\mathit{\vec i}-40\,\mathit{\vec j}</m>
+        </p>
+      </answer>
+      <solution><m>\vec v</m> in the <m>\,\mathit{\vec i}</m>-direction
+is 9, we have
+<m>\vec v = 9 \,\mathit{\vec i} + b \,\mathit{\vec j}</m> for some <m>b</m>.  Since
+<m>||\vec v|| = 41</m>, we have 
+<m>\sqrt{9^2 + b^2} = 41^2</m>, so
+<m>b = 40</m> or <m>b = -40</m>.
+There are two vectors satisfying the properties given:
+<m>\vec v = 9\,\mathit{\vec i}+40\,\mathit{\vec j}, 9\,\mathit{\vec i}-40\,\mathit{\vec j}</m>.
+
+
+
+
+</solution>
+    </static>
+    <server-data sourceFilePath="Library/Michigan/Chap13Sec1/Q39.pg" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" password="anonymous" language="en-US"/>
+    <pg source="Library/Michigan/Chap13Sec1/Q39.pg"/>
+  </webwork-reps>
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-44" ww-id="webwork-44">
+    <static seed="44" source="Library/UMN/calculusStewartET/s_12_2_26.pg">
+      <statement><p>Find a vector <m>\mathbf{a}</m> that has the same direction as <m>\langle -10, 9, 10 \rangle</m> but has length <m>3</m>.</p>
+<p>Answer: <m>\mathbf{a} =</m> <fillin characters="20" name="AnSwEr0001"/></p>
+</statement>
+      <answer>
+        <p>
+          <m>\left&lt;-1.78965,1.61069,1.78965\right&gt;</m>
+        </p>
+      </answer>
+      <solution><p>SOLUTION</p>
+<p>The given vector has length <m>\left| \langle -10, 9, 10 \rangle \right|
+= \sqrt{(-10)^2+9^2+10^2}= \sqrt{281}</m>, so a unit vector in the direction of 
+<m>\langle -10, 9, 10 \rangle</m> is 
+<m>\mathbf u = \frac{1}{\sqrt{281}}\langle -10, 9, 10 \rangle</m>.</p>
+<p>A vector in the same direction but with length  <m>3</m>  is</p>
+<p><m>\displaystyle 3 \mathbf u = \frac{3}{\sqrt{281}} \langle -10, 9, 10 \rangle 
+=  \left \langle \frac{-30}{\sqrt{281}} , \frac{27}{\sqrt{281}},
+\frac{30}{\sqrt{281}} \right \rangle</m>.</p>
+</solution>
+    </static>
+    <server-data sourceFilePath="Library/UMN/calculusStewartET/s_12_2_26.pg" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" password="anonymous" language="en-US"/>
+    <pg source="Library/UMN/calculusStewartET/s_12_2_26.pg"/>
+  </webwork-reps>
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-45" ww-id="webwork-45">
+    <static seed="45" source="Library/Union/setMVvectors/an12_2_17.pg">
+      <statement><p>Find <B>unit</B> vectors that satisfy the given conditions:</p>
+<p><OL/></p>
+<p><LI>
+The unit vector in the same direction as <m>\left\lt 5,0\right&gt;</m> is <fillin characters="30" name="AnSwEr0001"/>.</LI></p>
+<p><BR><BR/></BR></p>
+<p><LI>
+The unit vector oppositely directed to <m>2\boldsymbol{j}-2\boldsymbol{k}</m> is <fillin characters="30" name="AnSwEr0002"/>.
+<BR><BR/></BR></LI></p>
+<p><LI>
+The unit vector that has the same direction as the
+vector from the point <m>A=\left(-3,-1\right)</m> to the point <m>B=\left(0,-1\right)</m> is <fillin characters="30" name="AnSwEr0003"/>.</LI></p>
+<p/>
+</statement>
+      <answer>
+        <p>
+          <m>\left&lt;1,0\right&gt;</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>\left&lt;0,-0.707107,0.707107\right&gt;</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>\left&lt;1,0\right&gt;</m>
+        </p>
+      </answer>
+    </static>
+    <server-data sourceFilePath="Library/Union/setMVvectors/an12_2_17.pg" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" password="anonymous" language="en-US"/>
+    <pg source="Library/Union/setMVvectors/an12_2_17.pg"/>
+  </webwork-reps>
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-46" ww-id="webwork-46">
+    <static seed="46" source="Library/WHFreeman/Rogawski_Calculus_Early_Transcendentals_Second_Edition/12_Vector_Geometry/12.3_Dot_Product_and_the_Angle_Between_Two_Vectors/12.3.19.pg">
+      <statement><p><m>v = \left\lt 1,2,10\right&gt;</m></p>
+<p><m>w = \left\lt 5,4,8\right&gt;</m></p>
+<p>Find the cosine of the angle between <m>v</m> and <m>w</m>.</p>
+<p><m>\cos{\theta}</m>  = <fillin characters="20" name="AnSwEr0001"/></p>
+</statement>
+      <answer>
+        <p>
+          <m>0.885714</m>
+        </p>
+      </answer>
+      <solution><m>v \cdotp w = \| v \| \, \| w \| \cos{\theta}</m>,
+
+
+
+<m>\cos{\theta} = \frac{v \cdotp w}{\| v \| \, \| w \|} = \frac{ 93 }{ (10.247) (10.247) } = 0.885714</m>.
+
+
+</solution>
+    </static>
+    <server-data sourceFilePath="Library/WHFreeman/Rogawski_Calculus_Early_Transcendentals_Second_Edition/12_Vector_Geometry/12.3_Dot_Product_and_the_Angle_Between_Two_Vectors/12.3.19.pg" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" password="anonymous" language="en-US"/>
+    <pg source="Library/WHFreeman/Rogawski_Calculus_Early_Transcendentals_Second_Edition/12_Vector_Geometry/12.3_Dot_Product_and_the_Angle_Between_Two_Vectors/12.3.19.pg"/>
+  </webwork-reps>
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-47" ww-id="webwork-47">
+    <static seed="47" source="Library/272/setStewart12_1/problem_1.pg">
+      <statement><p>What are the projections of the point <m>(-6, 6, -3)</m> on the coordinate planes?</p>
+<p>On the xy-plane:  (<fillin characters="10" name="AnSwEr0001"/>,<fillin characters="10" name="AnSwEr0002"/>,<fillin characters="10" name="AnSwEr0003"/>)</p>
+<p>On the yz-plane:  (<fillin characters="10" name="AnSwEr0004"/>,<fillin characters="10" name="AnSwEr0005"/>,<fillin characters="10" name="AnSwEr0006"/>)</p>
+<p>On the xz-plane:  (<fillin characters="10" name="AnSwEr0007"/>,<fillin characters="10" name="AnSwEr0008"/>,<fillin characters="10" name="AnSwEr0009"/>)</p>
+</statement>
+      <answer>
+        <p>
+          <m>-6</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>6</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>0</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>0</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>6</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>-3</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>-6</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>0</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>-3</m>
+        </p>
+      </answer>
+    </static>
+    <server-data sourceFilePath="Library/272/setStewart12_1/problem_1.pg" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" password="anonymous" language="en-US"/>
+    <pg source="Library/272/setStewart12_1/problem_1.pg"/>
+  </webwork-reps>
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-48" ww-id="webwork-48">
+    <static seed="48" source="Library/272/setStewart12_1/problem_1.pg">
+      <statement><p>What are the projections of the point <m>(-4, -2, 6)</m> on the coordinate planes?</p>
+<p>On the xy-plane:  (<fillin characters="10" name="AnSwEr0001"/>,<fillin characters="10" name="AnSwEr0002"/>,<fillin characters="10" name="AnSwEr0003"/>)</p>
+<p>On the yz-plane:  (<fillin characters="10" name="AnSwEr0004"/>,<fillin characters="10" name="AnSwEr0005"/>,<fillin characters="10" name="AnSwEr0006"/>)</p>
+<p>On the xz-plane:  (<fillin characters="10" name="AnSwEr0007"/>,<fillin characters="10" name="AnSwEr0008"/>,<fillin characters="10" name="AnSwEr0009"/>)</p>
+</statement>
+      <answer>
+        <p>
+          <m>-4</m>
         </p>
       </answer>
       <answer>
@@ -2740,148 +3108,52 @@ Using a computer algebra system we solve this system and obtain <m>x_1 = 0.00039
           <m>-2</m>
         </p>
       </answer>
+      <answer>
+        <p>
+          <m>0</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>0</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>-2</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>6</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>-4</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>0</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>6</m>
+        </p>
+      </answer>
     </static>
-    <server-data sourceFilePath="Library/Mizzou/Finite_Math/Linear_Algebra_Matrix_Equations/MatrixEquation1.pg" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" password="anonymous" language="en-US"/>
-    <pg source="Library/Mizzou/Finite_Math/Linear_Algebra_Matrix_Equations/MatrixEquation1.pg"/>
+    <server-data sourceFilePath="Library/272/setStewart12_1/problem_1.pg" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" password="anonymous" language="en-US"/>
+    <pg source="Library/272/setStewart12_1/problem_1.pg"/>
   </webwork-reps>
-  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-38" ww-id="webwork-38">
-    <static seed="38" source="Contrib/Hope/Multi1/02-02-Linear-systems/Geometry_01/Geometry_01.pg">
-      <statement><tabular valign="top">
-<row>
-<cell>Match each system of linear equations with the graph
-that most closely matches it.  
-Click on a graph to make it larger.
-<ol>
-<li>
-<m>\left\lbrace
-\begin{array}{rcl}
-z \amp  = \amp  0 \\
-y \amp  = \amp  0 \\
-x+y \amp  = \amp  0
-\end{array}
-\right.</m>
-</li>
-<li>
-<m>\left\lbrace
-\begin{array}{rcl}
-x \amp  = \amp  0 \\
-x - z \amp  = \amp  0 \\
-z \amp  = \amp  0
-\end{array}
-\right.</m>
-</li>
-<li>
-<m>\left\lbrace
-\begin{array}{rcl}
-z \amp  = \amp  1 \\
-z \amp  = \amp  0 \\
-z \amp  = \amp  -1
-\end{array}
-\right.</m>
-</li>
-<li>
-<m>\left\lbrace
-\begin{array}{rcl}
-z \amp  = \amp  1 \\
-x + z \amp  = \amp  1 \\
-z \amp  = \amp  -1
-\end{array}
-\right.</m>
-</li>
-<li>
-<m>\left\lbrace
-\begin{array}{rcl}
-x + z \amp  = \amp  1 \\
-z \amp  = \amp  0 \\
-3x + 3z \amp  = \amp  3
-\end{array}
-\right.</m>
-</li>
-<li>
-<m>\left\lbrace
-\begin{array}{rcl}
-x \amp  = \amp  0 \\
-z \amp  = \amp  1 \\
-z \amp  = \amp  -1
-\end{array}
-\right.</m>
-</li>
-<li>
-<m>\left\lbrace
-\begin{array}{rcl}
-z \amp  = \amp  1 \\
-3z \amp  = \amp  3 \\
--1/z \amp  = \amp  -1
-\end{array}
-\right.</m>
-</li>
-<li>
-<m>\left\lbrace
-\begin{array}{rcl}
--x + z \amp  = \amp  1 \\
-x + z \amp  = \amp  1 \\
-z \amp  = \amp  -1
-\end{array}
-\right.</m>
-</li>
-<li>
-<m>\left\lbrace
-\begin{array}{rcl}
-x \amp  = \amp  0 \\
-y \amp  = \amp  0 \\
-z \amp  = \amp  0
-\end{array}
-\right.</m>
-</li>
-</ol></cell>
-<cell>
-<tabular bottom="none" left="none" right="none" top="none">
-<row halign="left" valign="middle">
-<cell><A HREF="/webwork2_files/tmp/anonymous/images/cb60d72e-e2e5-301f-a5d2-928aba3c2110___d2d893d9-7338-3fd9-a74e-59d612c34e97.png"><IMG ALIGN="BOTTOM" BORDER="2" HEIGHT="150" SRC="/webwork2_files/tmp/anonymous/images/cb60d72e-e2e5-301f-a5d2-928aba3c2110___d2d893d9-7338-3fd9-a74e-59d612c34e97.png" WIDTH="150"/></A></cell>
-<cell><A HREF="/webwork2_files/tmp/anonymous/images/cb60d72e-e2e5-301f-a5d2-928aba3c2110___c14ec27e-5f24-383b-9999-67ce2af21dc6.png"><IMG ALIGN="BOTTOM" BORDER="2" HEIGHT="150" SRC="/webwork2_files/tmp/anonymous/images/cb60d72e-e2e5-301f-a5d2-928aba3c2110___c14ec27e-5f24-383b-9999-67ce2af21dc6.png" WIDTH="150"/></A></cell>
-<cell><A HREF="/webwork2_files/tmp/anonymous/images/cb60d72e-e2e5-301f-a5d2-928aba3c2110___02fc0ecb-a97a-32d7-b16e-8679c21814c4.png"><IMG ALIGN="BOTTOM" BORDER="2" HEIGHT="150" SRC="/webwork2_files/tmp/anonymous/images/cb60d72e-e2e5-301f-a5d2-928aba3c2110___02fc0ecb-a97a-32d7-b16e-8679c21814c4.png" WIDTH="150"/></A></cell>
-</row>
-<row halign="left" valign="middle">
-<cell><CENTER><B>A</B></CENTER></cell>
-<cell><CENTER><B>B</B></CENTER></cell>
-<cell><CENTER><B>C</B></CENTER></cell>
-</row>
-<row halign="left" valign="middle">
-<cell><A HREF="/webwork2_files/tmp/anonymous/images/cb60d72e-e2e5-301f-a5d2-928aba3c2110___bc3326e5-611d-30f9-968d-e8bb2d9fbef8.png"><IMG ALIGN="BOTTOM" BORDER="2" HEIGHT="150" SRC="/webwork2_files/tmp/anonymous/images/cb60d72e-e2e5-301f-a5d2-928aba3c2110___bc3326e5-611d-30f9-968d-e8bb2d9fbef8.png" WIDTH="150"/></A></cell>
-<cell><A HREF="/webwork2_files/tmp/anonymous/images/cb60d72e-e2e5-301f-a5d2-928aba3c2110___57a8dbb6-2599-3616-bd87-8cd9583ec4db.png"><IMG ALIGN="BOTTOM" BORDER="2" HEIGHT="150" SRC="/webwork2_files/tmp/anonymous/images/cb60d72e-e2e5-301f-a5d2-928aba3c2110___57a8dbb6-2599-3616-bd87-8cd9583ec4db.png" WIDTH="150"/></A></cell>
-<cell><A HREF="/webwork2_files/tmp/anonymous/images/cb60d72e-e2e5-301f-a5d2-928aba3c2110___33e08ae0-f90c-332b-b906-4bd960ec51ac.png"><IMG ALIGN="BOTTOM" BORDER="2" HEIGHT="150" SRC="/webwork2_files/tmp/anonymous/images/cb60d72e-e2e5-301f-a5d2-928aba3c2110___33e08ae0-f90c-332b-b906-4bd960ec51ac.png" WIDTH="150"/></A></cell>
-</row>
-<row halign="left" valign="middle">
-<cell><CENTER><B>D</B></CENTER></cell>
-<cell><CENTER><B>E</B></CENTER></cell>
-<cell><CENTER><B>F</B></CENTER></cell>
-</row>
-<row halign="left" valign="middle">
-<cell><A HREF="/webwork2_files/tmp/anonymous/images/cb60d72e-e2e5-301f-a5d2-928aba3c2110___2abb27f8-f158-367e-b87d-a50bc1143e15.png"><IMG ALIGN="BOTTOM" BORDER="2" HEIGHT="150" SRC="/webwork2_files/tmp/anonymous/images/cb60d72e-e2e5-301f-a5d2-928aba3c2110___2abb27f8-f158-367e-b87d-a50bc1143e15.png" WIDTH="150"/></A></cell>
-<cell><A HREF="/webwork2_files/tmp/anonymous/images/cb60d72e-e2e5-301f-a5d2-928aba3c2110___61a9e9e7-2732-3ffb-85f0-82fbbfb63c49.png"><IMG ALIGN="BOTTOM" BORDER="2" HEIGHT="150" SRC="/webwork2_files/tmp/anonymous/images/cb60d72e-e2e5-301f-a5d2-928aba3c2110___61a9e9e7-2732-3ffb-85f0-82fbbfb63c49.png" WIDTH="150"/></A></cell>
-<cell><A HREF="/webwork2_files/tmp/anonymous/images/cb60d72e-e2e5-301f-a5d2-928aba3c2110___febfef27-654d-3a9e-9c02-73a397c799d6.png"><IMG ALIGN="BOTTOM" BORDER="2" HEIGHT="150" SRC="/webwork2_files/tmp/anonymous/images/cb60d72e-e2e5-301f-a5d2-928aba3c2110___febfef27-654d-3a9e-9c02-73a397c799d6.png" WIDTH="150"/></A></cell>
-</row>
-<row halign="left" valign="middle">
-<cell><CENTER><B>G</B></CENTER></cell>
-<cell><CENTER><B>H</B></CENTER></cell>
-<cell><CENTER><B>I</B></CENTER></cell>
-</row>
-</tabular>
-<p/></cell>
-</row>
-</tabular>
-</statement>
-    </static>
-    <server-data sourceFilePath="Contrib/Hope/Multi1/02-02-Linear-systems/Geometry_01/Geometry_01.pg" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" password="anonymous" language="en-US"/>
-    <pg source="Contrib/Hope/Multi1/02-02-Linear-systems/Geometry_01/Geometry_01.pg"/>
-  </webwork-reps>
-  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-39" ww-id="webwork-39">
-    <static seed="39" source="Contrib/Hope/Multi1/02-02-Linear-systems/Substitution_01.pg">
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-49" ww-id="webwork-49">
+    <static seed="49" source="Contrib/Hope/Multi1/02-02-Linear-systems/Substitution_01.pg">
       <statement><p>Solve the linear system below by substitution.
 <me>\left\lbrace
 \begin{array}{rcr}
-y-2x \amp  = \amp  -5 \\
-6x-3y \amp  = \amp  15 
+-x-5y \amp  = \amp  -3 \\
+-3x-15y \amp  = \amp  -9 
 \end{array}
 \right.</me>
 If the answer is a line such as <m>y = x + 1</m>, enter <m>x = x</m> and <m>y = x+1</m>.
@@ -2896,7 +3168,7 @@ If there is no solution, enter <em>DNE</em> for both answers.</p>
       </answer>
       <answer>
         <p>
-          <m>\frac{-5--2x}{1}</m>
+          <m>\frac{-3--1x}{-5}</m>
         </p>
       </answer>
     </static>
