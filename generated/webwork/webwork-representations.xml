@@ -2073,13 +2073,13 @@ and inconsistent.</p>
 <row halign="center" valign="middle">
 <cell>A. <var form="popup">
 <li>
-consistent
+choose
 </li>
 <li>
 inconsistent
 </li>
 <li>
-choose
+consistent
 </li>
 </var></cell>
 <cell>B. <var form="popup">
@@ -2119,13 +2119,13 @@ consistent
 <row halign="center" valign="middle">
 <cell>D. <var form="popup">
 <li>
-consistent
+inconsistent
 </li>
 <li>
 choose
 </li>
 <li>
-inconsistent
+consistent
 </li>
 </var></cell>
 <cell>E. <var form="popup">
@@ -2176,13 +2176,13 @@ inconsistent
 </var></cell>
 <cell>H. <var form="popup">
 <li>
-consistent
+inconsistent
 </li>
 <li>
 choose
 </li>
 <li>
-inconsistent
+consistent
 </li>
 </var></cell>
 <cell>I. <var form="popup">
