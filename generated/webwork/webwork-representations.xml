@@ -2073,13 +2073,13 @@ and inconsistent.</p>
 <row halign="center" valign="middle">
 <cell>A. <var form="popup">
 <li>
+consistent
+</li>
+<li>
 inconsistent
 </li>
 <li>
 choose
-</li>
-<li>
-consistent
 </li>
 </var></cell>
 <cell>B. <var form="popup">
@@ -2130,13 +2130,13 @@ inconsistent
 </var></cell>
 <cell>E. <var form="popup">
 <li>
-inconsistent
+consistent
 </li>
 <li>
 choose
 </li>
 <li>
-consistent
+inconsistent
 </li>
 </var></cell>
 <cell>F. <var form="popup">
@@ -2165,24 +2165,24 @@ consistent
 <row halign="center" valign="middle">
 <cell>G. <var form="popup">
 <li>
-inconsistent
+consistent
 </li>
 <li>
 choose
 </li>
 <li>
-consistent
+inconsistent
 </li>
 </var></cell>
 <cell>H. <var form="popup">
 <li>
-inconsistent
+consistent
 </li>
 <li>
 choose
 </li>
 <li>
-consistent
+inconsistent
 </li>
 </var></cell>
 <cell>I. <var form="popup">
@@ -3148,31 +3148,464 @@ vector from the point <m>A=\left(-3,-1\right)</m> to the point <m>B=\left(0,-1\r
     <pg source="Library/272/setStewart12_1/problem_1.pg"/>
   </webwork-reps>
   <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-49" ww-id="webwork-49">
-    <static seed="49" source="Contrib/Hope/Multi1/02-02-Linear-systems/Substitution_01.pg">
-      <statement><p>Solve the linear system below by substitution.
-<me>\left\lbrace
-\begin{array}{rcr}
--x-5y \amp  = \amp  -3 \\
--3x-15y \amp  = \amp  -9 
-\end{array}
-\right.</me>
-If the answer is a line such as <m>y = x + 1</m>, enter <m>x = x</m> and <m>y = x+1</m>.
-If there is no solution, enter <em>DNE</em> for both answers.</p>
-<p><m>x =</m> <fillin characters="15" name="AnSwEr0001"/></p>
-<p><m>y =</m> <fillin characters="15" name="AnSwEr0002"/></p>
+    <static seed="49" source="Library/Rochester/setLinearAlgebra9Dependence/ur_la_9_10.pg">
+      <statement><p>Express the vector <m>\vec{v}= \left[\begin{array}{c}
+15\cr
+12
+\end{array}\right]</m> as a linear combination of <m>\vec{x}= \left[\begin{array}{c}
+-2\cr
+-5
+\end{array}\right]</m> and <m>\vec{y}=\left[\begin{array}{c}
+-3\cr
+1
+\end{array}\right]</m>.</p>
+<p><m>\vec{v} =</m> <fillin characters="5" name="AnSwEr0001"/> <m>\vec{x}+</m> <fillin characters="5" name="AnSwEr0002"/> <m>\vec{y}</m>.</p>
 </statement>
       <answer>
         <p>
-          <m>x</m>
+          <m>-3</m>
         </p>
       </answer>
       <answer>
         <p>
-          <m>\frac{-3--1x}{-5}</m>
+          <m>-3</m>
         </p>
       </answer>
     </static>
-    <server-data sourceFilePath="Contrib/Hope/Multi1/02-02-Linear-systems/Substitution_01.pg" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" password="anonymous" language="en-US"/>
-    <pg source="Contrib/Hope/Multi1/02-02-Linear-systems/Substitution_01.pg"/>
+    <server-data sourceFilePath="Library/Rochester/setLinearAlgebra9Dependence/ur_la_9_10.pg" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" password="anonymous" language="en-US"/>
+    <pg source="Library/Rochester/setLinearAlgebra9Dependence/ur_la_9_10.pg"/>
+  </webwork-reps>
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-50" ww-id="webwork-50">
+    <static seed="50" source="Library/Hope/Multi1/03-03-Linear-combinations/Lin_combi_01a.pg">
+      <statement><p>Given that
+<me>\left[\begin{array}{cccc}
+0 \amp 0 \amp 1 \amp 3\cr
+1 \amp 0 \amp 0 \amp -4\cr
+1 \amp 1 \amp -1 \amp -6
+\end{array}\right] \sim \left[\begin{array}{cccc}
+1 \amp 0 \amp 0 \amp -4\cr
+0 \amp 1 \amp 0 \amp 1\cr
+0 \amp 0 \amp 1 \amp 3
+\end{array}\right],</me>
+write <m>\left[\begin{array}{c}
+3\cr
+-4\cr
+-6
+\end{array}\right]</m> as a linear combination of the vectors <m>\left[\begin{array}{c}
+0\cr
+1\cr
+1
+\end{array}\right], \left[\begin{array}{c}
+0\cr
+0\cr
+1
+\end{array}\right], \left[\begin{array}{c}
+1\cr
+0\cr
+-1
+\end{array}\right].</m></p>
+<p><m>\left[\begin{array}{c}
+3\cr
+-4\cr
+-6
+\end{array}\right] =</m> 
+<fillin characters="10" name="AnSwEr0001"/> <m>\left[\begin{array}{c}
+0\cr
+1\cr
+1
+\end{array}\right] +</m>
+<fillin characters="10" name="MuLtIaNsWeR_AnSwEr0001_1"/> <m>\left[\begin{array}{c}
+0\cr
+0\cr
+1
+\end{array}\right] +</m>
+<fillin characters="10" name="MuLtIaNsWeR_AnSwEr0001_2"/> <m>\left[\begin{array}{c}
+1\cr
+0\cr
+-1
+\end{array}\right].</m></p>
+</statement>
+      <answer>
+        <p>
+          <m>-4;\,1;\,3</m>
+        </p>
+      </answer>
+    </static>
+    <server-data sourceFilePath="Library/Hope/Multi1/03-03-Linear-combinations/Lin_combi_01a.pg" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" password="anonymous" language="en-US"/>
+    <pg source="Library/Hope/Multi1/03-03-Linear-combinations/Lin_combi_01a.pg"/>
+  </webwork-reps>
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-51" ww-id="webwork-51">
+    <static seed="51" source="Library/Hope/Multi1/03-03-Linear-combinations/Lin_combi_02a.pg">
+      <statement><p>Given that
+<me>\left[\begin{array}{cccc}
+2 \amp -1 \amp -5 \amp -2\cr
+-5 \amp -3 \amp -3 \amp 3\cr
+5 \amp -3 \amp -1 \amp -4
+\end{array}\right] \sim \left[\begin{array}{cccc}
+1 \amp 0 \amp 0 \amp -{\frac{51}{71}}\cr
+0 \amp 1 \amp 0 \amp {\frac{15}{142}}\cr
+0 \amp 0 \amp 1 \amp {\frac{13}{142}}
+\end{array}\right],</me>
+write <m>\left[\begin{array}{c}
+-2\cr
+3\cr
+-4
+\end{array}\right]</m> as a linear combination of the vectors <m>\left[\begin{array}{c}
+2\cr
+-5\cr
+5
+\end{array}\right], \left[\begin{array}{c}
+-1\cr
+-3\cr
+-3
+\end{array}\right], \left[\begin{array}{c}
+-5\cr
+-3\cr
+-1
+\end{array}\right].</m></p>
+<p><m>\left[\begin{array}{c}
+-2\cr
+3\cr
+-4
+\end{array}\right] =</m> 
+<fillin characters="10" name="AnSwEr0001"/> <m>\left[\begin{array}{c}
+2\cr
+-5\cr
+5
+\end{array}\right] +</m>
+<fillin characters="10" name="MuLtIaNsWeR_AnSwEr0001_1"/> <m>\left[\begin{array}{c}
+-1\cr
+-3\cr
+-3
+\end{array}\right] +</m>
+<fillin characters="10" name="MuLtIaNsWeR_AnSwEr0001_2"/> <m>\left[\begin{array}{c}
+-5\cr
+-3\cr
+-1
+\end{array}\right].</m></p>
+</statement>
+      <answer>
+        <p>
+          <m>-{\frac{51}{71}};\,{\frac{15}{142}};\,{\frac{13}{142}}</m>
+        </p>
+      </answer>
+    </static>
+    <server-data sourceFilePath="Library/Hope/Multi1/03-03-Linear-combinations/Lin_combi_02a.pg" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" password="anonymous" language="en-US"/>
+    <pg source="Library/Hope/Multi1/03-03-Linear-combinations/Lin_combi_02a.pg"/>
+  </webwork-reps>
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-52" ww-id="webwork-52">
+    <static seed="52" source="Library/Hope/Multi1/03-03-Linear-combinations/Lin_combi_07a.pg">
+      <statement><p>Let <me>\vec{w} = \left[\begin{array}{c}
+-1\cr
+3\cr
+2
+\end{array}\right], \ \vec{v}_1 = \left[\begin{array}{c}
+3\cr
+3\cr
+-5
+\end{array}\right], \ \vec{v}_2 = \left[\begin{array}{c}
+-5\cr
+-3\cr
+1
+\end{array}\right].</me>
+If possible, express <m>\vec{w}</m> as a linear combination of the vectors <m>\vec{v}_1</m> and <m>\vec{v}_2</m>.
+Otherwise, enter <em>DNE</em>.
+For example, the answer <m>\vec{w} = 4 \vec{v}_1 + 5 \vec{v}_2</m> would
+be entered <m>\verb!4v1 + 5v2!</m>.</p>
+<p><m>\vec{w} =</m> <fillin characters="30" name="AnSwEr0001"/></p>
+</statement>
+      <answer>
+        <p>
+          <m>\text{DNE}</m>
+        </p>
+      </answer>
+    </static>
+    <server-data sourceFilePath="Library/Hope/Multi1/03-03-Linear-combinations/Lin_combi_07a.pg" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" password="anonymous" language="en-US"/>
+    <pg source="Library/Hope/Multi1/03-03-Linear-combinations/Lin_combi_07a.pg"/>
+  </webwork-reps>
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-53" ww-id="webwork-53">
+    <static seed="53" source="Library/TCNJ/TCNJ_VectorEquations/problem4.pg">
+      <statement><p>Let <m>u = \left[\begin{array}{c}4\\2\\4\\\end{array}\right]</m> and <m>v = \left[\begin{array}{c}-4\\-4\\-7\\\end{array}\right]</m>.</p>
+<p>Find two different vectors in span<m>({ u, v })</m> 
+that are not multiples of <m>u</m> or <m>v</m> and show the weights on <m>u</m> and 
+<m>v</m> used to generate them.</p>
+<p><fillin characters="5" name="AnSwEr0001"/> <m>u+</m> <fillin characters="5" name="AnSwEr0002"/> <m>v</m>
+<m>=</m> <fillin characters="15" name="AnSwEr0003"/></p>
+<p><fillin characters="5" name="AnSwEr0004"/> <m>u+</m> <fillin characters="5" name="AnSwEr0005"/> <m>v</m>
+<m>=</m> <fillin characters="15" name="AnSwEr0006"/></p>
+<p><alert> Note:</alert> enter vectors using WeBWorK's 
+ notation.</p>
+</statement>
+      <answer>
+        <p>
+          <m>1</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>1</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>\left[\begin{array}{c}0\\-2\\-3\\\end{array}\right]</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>1</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>-1</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>\left[\begin{array}{c}8\\6\\11\\\end{array}\right]</m>
+        </p>
+      </answer>
+    </static>
+    <server-data sourceFilePath="Library/TCNJ/TCNJ_VectorEquations/problem4.pg" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" password="anonymous" language="en-US"/>
+    <pg source="Library/TCNJ/TCNJ_VectorEquations/problem4.pg"/>
+  </webwork-reps>
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-54" ww-id="webwork-54">
+    <static seed="54" source="Library/Hope/Multi1/03-03-Linear-combinations/Lin_combi_02b.pg">
+      <statement><p>Write <m>\left[\begin{array}{c}
+2\cr
+2\cr
+-5
+\end{array}\right]</m> as a linear combination of the vectors <m>\left[\begin{array}{c}
+5\cr
+-3\cr
+-3
+\end{array}\right], \left[\begin{array}{c}
+-2\cr
+-3\cr
+-1
+\end{array}\right], \left[\begin{array}{c}
+-2\cr
+3\cr
+-2
+\end{array}\right].</m></p>
+<p><m>\left[\begin{array}{c}
+2\cr
+2\cr
+-5
+\end{array}\right] =</m> 
+<fillin characters="10" name="AnSwEr0001"/> <m>\left[\begin{array}{c}
+5\cr
+-3\cr
+-3
+\end{array}\right] +</m>
+<fillin characters="10" name="MuLtIaNsWeR_AnSwEr0001_1"/> <m>\left[\begin{array}{c}
+-2\cr
+-3\cr
+-1
+\end{array}\right] +</m>
+<fillin characters="10" name="MuLtIaNsWeR_AnSwEr0001_2"/> <m>\left[\begin{array}{c}
+-2\cr
+3\cr
+-2
+\end{array}\right].</m></p>
+</statement>
+      <answer>
+        <p>
+          <m>{\frac{74}{87}};\,-{\frac{17}{87}};\,{\frac{115}{87}}</m>
+        </p>
+      </answer>
+    </static>
+    <server-data sourceFilePath="Library/Hope/Multi1/03-03-Linear-combinations/Lin_combi_02b.pg" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" password="anonymous" language="en-US"/>
+    <pg source="Library/Hope/Multi1/03-03-Linear-combinations/Lin_combi_02b.pg"/>
+  </webwork-reps>
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-55" ww-id="webwork-55">
+    <static seed="55" source="Library/Hope/Multi1/03-03-Linear-combinations/Lin_combi_06a.pg">
+      <statement><p>Let <me>\vec{w} = \left[\begin{array}{c}
+-10\cr
+-15\cr
+10
+\end{array}\right], \ \vec{v}_1 = \left[\begin{array}{c}
+1\cr
+1\cr
+-1
+\end{array}\right], \ \vec{v}_2 = \left[\begin{array}{c}
+-1\cr
+-2\cr
+1
+\end{array}\right].</me>
+If possible, express <m>\vec{w}</m> as a linear combination of the vectors <m>\vec{v}_1</m> and <m>\vec{v}_2</m>.
+Otherwise, enter <em>DNE</em>.
+For example, the answer <m>\vec{w} = 4 \vec{v}_1 + 5 \vec{v}_2</m> would
+be entered <m>\verb!4v1 + 5v2!</m>.</p>
+<p><m>\vec{w} =</m> <fillin characters="30" name="AnSwEr0001"/></p>
+</statement>
+      <answer>
+        <p>
+          <m>-5\vec{v}_1+5\vec{v}_2</m>
+        </p>
+      </answer>
+    </static>
+    <server-data sourceFilePath="Library/Hope/Multi1/03-03-Linear-combinations/Lin_combi_06a.pg" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" password="anonymous" language="en-US"/>
+    <pg source="Library/Hope/Multi1/03-03-Linear-combinations/Lin_combi_06a.pg"/>
+  </webwork-reps>
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-56" ww-id="webwork-56">
+    <static seed="56" source="Library/WHFreeman/Holt_linear_algebra/Chaps_1-4/2.1.27.pg">
+      <statement><p>Let 
+<m>{\bf a}_1 = 
+\left[{\begin{matrix}2 \cr 3 \cr \end{matrix}}\right]</m>,  
+<m>{\bf a}_2 = 
+\left[{\begin{matrix}-8 \cr -16 \cr \end{matrix}}\right]</m>,  
+and <m>{\bf b} = 
+\left[{\begin{matrix}36 \cr 70 \cr \end{matrix}}\right]</m>.</p>
+<p>Is <m>{\bf b}</m> a linear combination of <m>{\bf a}_1</m> and <m>{\bf a}_2</m>?
+<var form="buttons">
+<li>
+<p>Yes <m>{\bf b}</m> is a linear combination.</p>
+</li>
+<li>
+<p><m>{\bf b}</m> is not a linear combination.</p>
+</li>
+<li>
+<p>We cannot tell if <m>{\bf b}</m> is a linear combination.</p>
+</li>
+</var></p>
+<p>Either fill in the coefficients of the vector equation, or enter "NONE" if no solution is possible.</p>
+<p><m>{\bf b}=</m><fillin characters="5" name="AnSwEr0001"/> <m>{\bf a}_1+</m> <fillin characters="5" name="AnSwEr0002"/><m>{\bf a}_2</m></p>
+</statement>
+      <answer>
+        <p>A</p>
+      </answer>
+      <answer>
+        <p>
+          <m>2</m>
+        </p>
+      </answer>
+      <solution><m>{\bf b}</m> is a linear combination of <m>{\bf a}_1</m> and <m>{\bf a}_2</m>.
+
+
+
+Using row reduction, we see
+
+<me>\left[\begin{matrix} 2 \amp  -8 \amp  36 \cr
+3 \amp  -16 \amp  70 \cr \end{matrix}\right] 
+\sim \left[\begin{matrix} 1 \amp  -4 \amp  18 \cr
+0 \amp  -4 \amp  16 \cr \end{matrix}\right] \sim
+\left[\begin{matrix} 1 \amp  0 \amp  2 \cr
+0 \amp  1 \amp  -4 \cr \end{matrix}\right]</me>
+
+so
+
+<me>{\bf b}=2 {\bf a}_1 - 4 {\bf a}_2</me>
+
+
+
+</solution>
+    </static>
+    <server-data sourceFilePath="Library/WHFreeman/Holt_linear_algebra/Chaps_1-4/2.1.27.pg" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" password="anonymous" language="en-US"/>
+    <pg source="Library/WHFreeman/Holt_linear_algebra/Chaps_1-4/2.1.27.pg"/>
+  </webwork-reps>
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-57" ww-id="webwork-57">
+    <static seed="57" source="Library/WHFreeman/Holt_linear_algebra/Chaps_1-4/2.1.28.pg">
+      <statement><p>Let 
+<m>{\bf a}_1 = 
+\left[{\begin{matrix}1 \cr 5 \cr -5 \cr\end{matrix}}\right]</m>,  
+<m>{\bf a}_2 = 
+\left[{\begin{matrix}-2 \cr -12 \cr 6 \cr\end{matrix}}\right]</m>,  
+and <m>{\bf b} = 
+\left[{\begin{matrix}-2 \cr -14 \cr 3 \cr\end{matrix}}\right]</m>.</p>
+<p>Is <m>{\bf b}</m> a linear combination of <m>{\bf a}_1</m> and <m>{\bf a}_2</m>?
+<var form="buttons">
+<li>
+<p>Yes, <m>{\bf b}</m> is a linear combination.</p>
+</li>
+<li>
+<p>No, <m>{\bf b}</m> is not a linear combination.</p>
+</li>
+<li>
+<p>We cannot tell if <m>{\bf b}</m> is a linear combination.</p>
+</li>
+</var></p>
+<p>Either fill in the coefficients of the vector equation, or enter "NONE" if no solution is possible.</p>
+<p><m>{\bf b}=</m><fillin characters="5" name="AnSwEr0001"/> <m>{\bf a}_1+</m> <fillin characters="5" name="AnSwEr0002"/><m>{\bf a}_2</m></p>
+</statement>
+      <answer>
+        <p>B</p>
+      </answer>
+      <answer>
+        <p>NONE</p>
+      </answer>
+      <solution><me>\left[\begin{matrix} 1 \amp  -2 \amp  -2 \cr
+5 \amp  -12 \amp  -14 \cr -5 \amp  6 \amp  3 \cr \end{matrix}\right] 
+\sim \left[\begin{matrix} 1 \amp  -2 \amp  -2 \cr
+0 \amp  -2 \amp  -4 \cr 0 \amp  -4 \amp  -7 \cr \end{matrix}\right] \sim
+\left[\begin{matrix} 1 \amp  0 \amp  2 \cr
+0 \amp  1 \amp  2 \cr 0 \amp  0 \amp  1 \cr \end{matrix}\right]</me>
+
+
+
+
+We get a last row  of (0 0 1).
+
+
+
+
+<m>{\bf b}</m> is not a linear combination of  <m>{\bf a}_1</m> and <m>{\bf a}_2</m>.
+
+
+
+</solution>
+    </static>
+    <server-data sourceFilePath="Library/WHFreeman/Holt_linear_algebra/Chaps_1-4/2.1.28.pg" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" password="anonymous" language="en-US"/>
+    <pg source="Library/WHFreeman/Holt_linear_algebra/Chaps_1-4/2.1.28.pg"/>
+  </webwork-reps>
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-58" ww-id="webwork-58">
+    <static seed="58" source="Library/WHFreeman/Holt_linear_algebra/Chaps_1-4/2.1.19.pg">
+      <statement><p>Let 
+<m>{\bf u} = \left[{\begin{matrix}-6 \cr 1 \cr \end{matrix}}\right]</m>, and
+<m>{\bf v} = \left[{\begin{matrix}-18 \cr 0 \cr \end{matrix}}\right]</m>.</p>
+<p>Select all  of the vectors that are in the linear combinations of  
+<m>\lbrace {\bf u}, {\bf v} \rbrace</m>. (Check every statement that is correct.)</p>
+<p><var form="checkboxes">
+<li>
+<p>The vector <m>\left[{\begin{matrix}-6 \cr 1 \cr \end{matrix}}\right]</m> is a linear combination of  
+<m>\lbrace {\bf u}, {\bf v} \rbrace</m>.</p>
+</li>
+<li>
+<p>The vector <m>3\left[{\begin{matrix}-6 \cr 1 \cr \end{matrix}}\right]</m> is a linear combination of  
+<m>\lbrace {\bf u}, {\bf v} \rbrace</m>.</p>
+</li>
+<li>
+<p>The vector <m>\left[{\begin{matrix}0 \cr 0 \cr \end{matrix}}\right]</m> is a linear combination of  
+<m>\lbrace {\bf u}, {\bf v} \rbrace</m>.</p>
+</li>
+<li>
+<p>The vector <m>-5 \left[{\begin{matrix}-18 \cr 0 \cr \end{matrix}}\right]+
+3 \left[{\begin{matrix}-6 \cr 1 \cr \end{matrix}}\right]\ </m> is a linear combination of  
+<m>\lbrace {\bf u}, {\bf v} \rbrace</m>.</p>
+</li>
+<li>
+<p>All vectors in <m>{\mathbb R}^2</m> are linear combinations of the given vectors.</p>
+</li>
+<li>
+<p>The vector <m>\left[{\begin{matrix}-18 \cr 0 \cr \end{matrix}}\right]</m> is a linear combination of  
+<m>\lbrace {\bf u}, {\bf v} \rbrace</m>.</p>
+</li>
+<li>
+<p>We cannot tell which linear combinations of the given vectors.</p>
+</li>
+</var></p>
+</statement>
+      <solution><m>{\mathbb R}^2</m> are in the span.
+
+
+
+This includes all the other choices.
+
+
+</solution>
+    </static>
+    <server-data sourceFilePath="Library/WHFreeman/Holt_linear_algebra/Chaps_1-4/2.1.19.pg" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" password="anonymous" language="en-US"/>
+    <pg source="Library/WHFreeman/Holt_linear_algebra/Chaps_1-4/2.1.19.pg"/>
   </webwork-reps>
 </webwork-representations>
