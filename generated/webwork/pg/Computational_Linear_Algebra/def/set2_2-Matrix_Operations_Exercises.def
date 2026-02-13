@@ -1,0 +1,79 @@
+openDate          = 02/13/2026 at 12:00am
+dueDate           = 08/13/2026 at 10:00pm
+answerDate        = 08/13/2026 at 10:00pm
+paperHeaderFile   = Computational_Linear_Algebra/header/2_2-Matrix_Operations_Exercises.pg
+screenHeaderFile  = Computational_Linear_Algebra/header/2_2-Matrix_Operations_Exercises.pg
+description       = Matrix Operations
+problemListV2
+problem_start
+source_file = Contrib/Hope/Multi1/02-01-Matrix-operations/Matrix_mult_10.pg
+problem_id = 1
+problem_end
+problem_start
+source_file = Contrib/Hope/Multi1/02-01-Matrix-operations/Matrix_mult_12.pg
+problem_id = 2
+problem_end
+problem_start
+source_file = Contrib/METU-NCC/Linear_Algebra/Week8/Matrix_sqrt.pg
+problem_id = 3
+problem_end
+problem_start
+source_file = Contrib/METU-NCC/Linear_Algebra/Week8/Matrix_sum.pg
+problem_id = 4
+problem_end
+problem_start
+source_file = Contrib/Michigan/linalg/Library/TCNJ/TCNJ_MatrixOperations/problem4.pg
+problem_id = 5
+problem_end
+problem_start
+source_file = Contrib/MountAllison/1-3_Matrices_and_Matrix_Operations/2x3_3x2_product.pg
+problem_id = 6
+problem_end
+problem_start
+source_file = Contrib/MountAllison/1-3_Matrices_and_Matrix_Operations/3x3_3x3_product.pg
+problem_id = 7
+problem_end
+problem_start
+source_file = Contrib/MountAllison/1-3_Matrices_and_Matrix_Operations/makes_sense.pg
+problem_id = 8
+problem_end
+problem_start
+source_file = Contrib/MountAllison/1-3_Matrices_and_Matrix_Operations/matrix_multiplication.pg
+problem_id = 9
+problem_end
+problem_start
+source_file = Contrib/MountAllison/1-3_Matrices_and_Matrix_Operations/powers_of_2x2_pattern.pg
+problem_id = 10
+problem_end
+problem_start
+source_file = Contrib/MountAllison/1-3_Matrices_and_Matrix_Operations/true_false.pg
+problem_id = 11
+problem_end
+problem_start
+source_file = Library/ASU-topics/set119MatrixAlgebra/p1.pg
+problem_id = 12
+problem_end
+problem_start
+source_file = Library/ASU-topics/set119MatrixAlgebra/p14.pg
+problem_id = 13
+problem_end
+problem_start
+source_file = Library/ASU-topics/set119MatrixAlgebra/p16.pg
+problem_id = 14
+problem_end
+problem_start
+source_file = Library/ASU-topics/set119MatrixAlgebra/p16ez.pg
+problem_id = 15
+problem_end
+problem_start
+source_file = Library/Rochester/setLinearAlgebra3Matrices/ur_la_3_25.pg
+problem_id = 16
+problem_end
+problem_start
+source_file = Library/TCNJ/TCNJ_MatrixEquations/problem6.pg
+problem_id = 17
+problem_end
+problem_start
+source_file = Library/TCNJ/TCNJ_MatrixEquations/problem5.pg
+problem_id = 18
+problem_end

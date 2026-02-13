@@ -2073,13 +2073,13 @@ and inconsistent.</p>
 <row halign="center" valign="middle">
 <cell>A. <var form="popup">
 <li>
+consistent
+</li>
+<li>
 inconsistent
 </li>
 <li>
 choose
-</li>
-<li>
-consistent
 </li>
 </var></cell>
 <cell>B. <var form="popup">
@@ -2095,13 +2095,13 @@ consistent
 </var></cell>
 <cell>C. <var form="popup">
 <li>
-consistent
+inconsistent
 </li>
 <li>
 choose
 </li>
 <li>
-inconsistent
+consistent
 </li>
 </var></cell>
 </row>
@@ -2119,35 +2119,35 @@ inconsistent
 <row halign="center" valign="middle">
 <cell>D. <var form="popup">
 <li>
-consistent
+inconsistent
 </li>
 <li>
 choose
 </li>
 <li>
-inconsistent
+consistent
 </li>
 </var></cell>
 <cell>E. <var form="popup">
 <li>
-inconsistent
+consistent
 </li>
 <li>
 choose
 </li>
 <li>
-consistent
+inconsistent
 </li>
 </var></cell>
 <cell>F. <var form="popup">
 <li>
-consistent
+inconsistent
 </li>
 <li>
 choose
 </li>
 <li>
-inconsistent
+consistent
 </li>
 </var></cell>
 </row>
@@ -2165,13 +2165,13 @@ inconsistent
 <row halign="center" valign="middle">
 <cell>G. <var form="popup">
 <li>
-consistent
+inconsistent
 </li>
 <li>
 choose
 </li>
 <li>
-inconsistent
+consistent
 </li>
 </var></cell>
 <cell>H. <var form="popup">
@@ -3607,5 +3607,523 @@ This includes all the other choices.
     </static>
     <rendering-data sourceFilePath="Library/WHFreeman/Holt_linear_algebra/Chaps_1-4/2.1.19.pg" origin="webwork2" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" passwd="anonymous" language="en-US"/>
     <pg source="Library/WHFreeman/Holt_linear_algebra/Chaps_1-4/2.1.19.pg"/>
+  </webwork-reps>
+  <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-webwork-59" ww-id="webwork-59">
+    <static seed="59" source="Contrib/Hope/Multi1/02-01-Matrix-operations/Matrix_mult_10.pg">
+      <statement><p>Give an example of two <m>2 \times 2</m> matrices <m>A</m> and <m>B</m>
+such that <m>AB \ne BA</m>.</p>
+<p><m>A =</m>
+<fillin cols="2" rows="2"/></p>
+<p><m>B =</m>
+<fillin cols="2" rows="2"/></p>
+</statement>
+    </static>
+    <rendering-data sourceFilePath="Contrib/Hope/Multi1/02-01-Matrix-operations/Matrix_mult_10.pg" origin="webwork2" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" passwd="anonymous" language="en-US"/>
+    <pg source="Contrib/Hope/Multi1/02-01-Matrix-operations/Matrix_mult_10.pg"/>
+  </webwork-reps>
+  <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-webwork-60" ww-id="webwork-60">
+    <static seed="60" source="Contrib/Hope/Multi1/02-01-Matrix-operations/Matrix_mult_12.pg">
+      <statement><p>Give an example of two <m>2 \times 2</m> matrices <m>A</m> and <m>B</m>,
+neither of which is the zero matrix <m>\mathbf{0}</m>,
+such that <m>AB = \mathbf{0}</m>.</p>
+<p><m>A =</m>
+<fillin cols="2" rows="2"/></p>
+<p><m>B =</m>
+<fillin cols="2" rows="2"/></p>
+</statement>
+    </static>
+    <rendering-data sourceFilePath="Contrib/Hope/Multi1/02-01-Matrix-operations/Matrix_mult_12.pg" origin="webwork2" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" passwd="anonymous" language="en-US"/>
+    <pg source="Contrib/Hope/Multi1/02-01-Matrix-operations/Matrix_mult_12.pg"/>
+  </webwork-reps>
+  <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-webwork-61" ww-id="webwork-61">
+    <static seed="61" source="Contrib/METU-NCC/Linear_Algebra/Week8/Matrix_sqrt.pg">
+      <statement><p>Find a <alert> non-diagonal </alert> matrix <m>A</m> so that 
+<m>A^2 = \left[\begin{array}{cc}
+64 \amp 0\cr
+0 \amp 64
+\end{array}\right]</m></p>
+<p><m>\quad A =</m> <fillin cols="2" rows="2"/></p>
+</statement>
+    </static>
+    <rendering-data sourceFilePath="Contrib/METU-NCC/Linear_Algebra/Week8/Matrix_sqrt.pg" origin="webwork2" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" passwd="anonymous" language="en-US"/>
+    <pg source="Contrib/METU-NCC/Linear_Algebra/Week8/Matrix_sqrt.pg"/>
+  </webwork-reps>
+  <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-webwork-62" ww-id="webwork-62">
+    <static seed="62" source="Contrib/METU-NCC/Linear_Algebra/Week8/Matrix_sum.pg">
+      <statement><p>Compute the following matrix sums / differences:</p>
+<p><m>\left[\begin{array}{cccc}
+4 \amp 1 \amp 1 \amp 5\cr
+-4 \amp 2 \amp 4 \amp 2
+\end{array}\right] + \left[\begin{array}{cccc}
+2 \amp -2 \amp 2 \amp 4\cr
+-1 \amp -5 \amp 0 \amp 1
+\end{array}\right] =</m><fillin cols="4" rows="2"/></p>
+<p><m>\left[\begin{array}{ccc}
+1 \amp -2 \amp 2
+\end{array}\right] + \left[\begin{array}{ccc}
+0 \amp -4 \amp -5
+\end{array}\right] =</m><fillin cols="3"/></p>
+<p><m>\left[\begin{array}{cc}
+-2 \amp 3\cr
+-3 \amp 2
+\end{array}\right] - \left[\begin{array}{cc}
+3 \amp 5\cr
+-4 \amp 0
+\end{array}\right] =</m><fillin cols="2" rows="2"/></p>
+<p><m>\left[\begin{array}{ccccc}
+3 \amp -3 \amp -3 \amp -1 \amp -3\cr
+0 \amp -5 \amp -2 \amp 2 \amp -3\cr
+3 \amp 0 \amp -1 \amp 0 \amp -2
+\end{array}\right] - \left[\begin{array}{ccccc}
+4 \amp 3 \amp 2 \amp -1 \amp -2\cr
+-1 \amp -5 \amp 1 \amp -2 \amp 2\cr
+-2 \amp 3 \amp 3 \amp 0 \amp -4
+\end{array}\right] =</m><fillin cols="5" rows="3"/></p>
+</statement>
+    </static>
+    <rendering-data sourceFilePath="Contrib/METU-NCC/Linear_Algebra/Week8/Matrix_sum.pg" origin="webwork2" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" passwd="anonymous" language="en-US"/>
+    <pg source="Contrib/METU-NCC/Linear_Algebra/Week8/Matrix_sum.pg"/>
+  </webwork-reps>
+  <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-webwork-63" ww-id="webwork-63">
+    <static seed="63" source="Contrib/Michigan/linalg/Library/TCNJ/TCNJ_MatrixOperations/problem4.pg">
+      <statement><p>Solve for <m>X</m>.</p>
+<p><me>\left[\begin{array}{cc}
+9 \amp -6\cr
+-9 \amp 4
+\end{array}\right] + 2 X = \left[\begin{array}{cc}
+-8 \amp -5\cr
+9 \amp -8
+\end{array}\right].</me></p>
+<p><m>X=</m> <fillin cols="2" rows="2"/></p>
+</statement>
+    </static>
+    <rendering-data sourceFilePath="Contrib/Michigan/linalg/Library/TCNJ/TCNJ_MatrixOperations/problem4.pg" origin="webwork2" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" passwd="anonymous" language="en-US"/>
+    <pg source="Contrib/Michigan/linalg/Library/TCNJ/TCNJ_MatrixOperations/problem4.pg"/>
+  </webwork-reps>
+  <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-webwork-64" ww-id="webwork-64">
+    <static seed="64" source="Contrib/MountAllison/1-3_Matrices_and_Matrix_Operations/2x3_3x2_product.pg">
+      <statement><p>Compute <m>\displaystyle AB</m> if <m>\displaystyle A = \left[\begin{array}{ccc}
+-2 \amp 4 \amp 1\cr
+1 \amp -2 \amp 2
+\end{array}\right]</m> and <m>\displaystyle B = \left[\begin{array}{cc}
+-2 \amp 1\cr
+0 \amp -1\cr
+4 \amp 3
+\end{array}\right]</m>.</p>
+<p><m>\displaystyle AB</m> = <fillin cols="2" rows="2"/></p>
+</statement>
+    </static>
+    <rendering-data sourceFilePath="Contrib/MountAllison/1-3_Matrices_and_Matrix_Operations/2x3_3x2_product.pg" origin="webwork2" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" passwd="anonymous" language="en-US"/>
+    <pg source="Contrib/MountAllison/1-3_Matrices_and_Matrix_Operations/2x3_3x2_product.pg"/>
+  </webwork-reps>
+  <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-webwork-65" ww-id="webwork-65">
+    <static seed="65" source="Contrib/MountAllison/1-3_Matrices_and_Matrix_Operations/3x3_3x3_product.pg">
+      <statement><p>Compute <m>\displaystyle AB</m> if <m>\displaystyle A = \left[\begin{array}{ccc}
+-1 \amp 1 \amp 4\cr
+-1 \amp -2 \amp -1\cr
+-1 \amp 4 \amp 2
+\end{array}\right]</m> and <m>\displaystyle B = \left[\begin{array}{ccc}
+2 \amp 2 \amp 3\cr
+-2 \amp -1 \amp -1\cr
+0 \amp 0 \amp 0
+\end{array}\right]</m>.</p>
+<p><m>\displaystyle AB</m> = <fillin cols="3" rows="3"/></p>
+</statement>
+    </static>
+    <rendering-data sourceFilePath="Contrib/MountAllison/1-3_Matrices_and_Matrix_Operations/3x3_3x3_product.pg" origin="webwork2" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" passwd="anonymous" language="en-US"/>
+    <pg source="Contrib/MountAllison/1-3_Matrices_and_Matrix_Operations/3x3_3x3_product.pg"/>
+  </webwork-reps>
+  <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-webwork-66" ww-id="webwork-66">
+    <static seed="66" source="Contrib/MountAllison/1-3_Matrices_and_Matrix_Operations/makes_sense.pg">
+      <statement><p>Suppose <m>\displaystyle A \in \mathcal{M}_{4,4}</m>, <m>\displaystyle B \in \mathcal{M}_{4,3}</m>, and <m>\displaystyle C \in \mathcal{M}_{3,4}</m> are matrices. Determine which of the following expressions do and do not make sense.</p>
+<p><ol>
+<li>
+<p><m>\displaystyle B-C</m></p>
+</li>
+<li>
+<p><m>\displaystyle ABA</m></p>
+</li>
+<li>
+<p><m>\displaystyle BB^T</m></p>
+</li>
+<li>
+<p><m>\displaystyle B^TB + C^TC</m></p>
+</li>
+<li>
+<p><m>\displaystyle CA</m></p>
+</li>
+</ol></p>
+</statement>
+    </static>
+    <rendering-data sourceFilePath="Contrib/MountAllison/1-3_Matrices_and_Matrix_Operations/makes_sense.pg" origin="webwork2" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" passwd="anonymous" language="en-US"/>
+    <pg source="Contrib/MountAllison/1-3_Matrices_and_Matrix_Operations/makes_sense.pg"/>
+  </webwork-reps>
+  <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-webwork-67" ww-id="webwork-67">
+    <static seed="67" source="Contrib/MountAllison/1-3_Matrices_and_Matrix_Operations/matrix_multiplication.pg">
+      <statement><p>Suppose <m>\displaystyle A = \left[\begin{array}{cc}
+0 \amp 4\cr
+3 \amp 2
+\end{array}\right]</m> and <m>\displaystyle B = \left[\begin{array}{cc}
+-3 \amp -2\cr
+0 \amp 3
+\end{array}\right]</m>. Compute the following matrices:</p>
+<p><m>\displaystyle AB</m> = <fillin cols="2" rows="2"/></p>
+<p><m>\displaystyle AB^T</m> = <fillin cols="2" rows="2"/></p>
+<p><m>\displaystyle A^2</m> = <fillin cols="2" rows="2"/></p>
+<p><m>\displaystyle (A-B)(A+B)</m> = <fillin cols="2" rows="2"/></p>
+</statement>
+    </static>
+    <rendering-data sourceFilePath="Contrib/MountAllison/1-3_Matrices_and_Matrix_Operations/matrix_multiplication.pg" origin="webwork2" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" passwd="anonymous" language="en-US"/>
+    <pg source="Contrib/MountAllison/1-3_Matrices_and_Matrix_Operations/matrix_multiplication.pg"/>
+  </webwork-reps>
+  <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-webwork-68" ww-id="webwork-68">
+    <static seed="68" source="Contrib/MountAllison/1-3_Matrices_and_Matrix_Operations/powers_of_2x2_pattern.pg">
+      <statement><p>Sometimes matrix powers exhibit simple patters. Compute the following powers of the matrix <m>\displaystyle A = \left[\begin{array}{cc}
+1 \amp 1\cr
+0 \amp 1
+\end{array}\right]</m>.</p>
+<p><m>\displaystyle A^2</m> = <fillin cols="2" rows="2"/></p>
+<p><m>\displaystyle A^3</m> = <fillin cols="2" rows="2"/></p>
+<p><m>\displaystyle A^n</m> = <fillin cols="2" rows="2"/> (your answer should be a formula depending on <m>\displaystyle n</m>)</p>
+</statement>
+    </static>
+    <rendering-data sourceFilePath="Contrib/MountAllison/1-3_Matrices_and_Matrix_Operations/powers_of_2x2_pattern.pg" origin="webwork2" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" passwd="anonymous" language="en-US"/>
+    <pg source="Contrib/MountAllison/1-3_Matrices_and_Matrix_Operations/powers_of_2x2_pattern.pg"/>
+  </webwork-reps>
+  <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-webwork-69" ww-id="webwork-69">
+    <static seed="69" source="Contrib/MountAllison/1-3_Matrices_and_Matrix_Operations/true_false.pg">
+      <statement><p>Determine which of the following statements are true and which are false.</p>
+<p><ol>
+<li>
+<p>If <m>\displaystyle A</m> and <m>\displaystyle B</m> are matrices such that <m>\displaystyle AB = O</m> and <m>\displaystyle A \neq O</m>, then <m>\displaystyle B = O</m>.</p>
+</li>
+<li>
+<p>The matrices <m>\displaystyle A^TA</m> and <m>\displaystyle AA^T</m> are always defined, regardless of the size of <m>\displaystyle A</m>.</p>
+</li>
+<li>
+<p>If <m>\displaystyle A</m> and <m>\displaystyle B</m> are square matrices of the same size, then <m>\displaystyle (A+B)(A-B) = A^2 - B^2</m>.</p>
+</li>
+<li>
+<p>If <m>\displaystyle A</m> and <m>\displaystyle B</m> are square matrices of the same size, then <m>\displaystyle (AB)^T = B^TA^T</m>.</p>
+</li>
+<li>
+<p>If <m>\displaystyle A</m> and <m>\displaystyle B</m> are matrices with sizes such that <m>\displaystyle AB</m> is square, then <m>\displaystyle BA</m> exists.</p>
+</li>
+</ol></p>
+</statement>
+    </static>
+    <rendering-data sourceFilePath="Contrib/MountAllison/1-3_Matrices_and_Matrix_Operations/true_false.pg" origin="webwork2" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" passwd="anonymous" language="en-US"/>
+    <pg source="Contrib/MountAllison/1-3_Matrices_and_Matrix_Operations/true_false.pg"/>
+  </webwork-reps>
+  <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-webwork-70" ww-id="webwork-70">
+    <static seed="70" source="Library/ASU-topics/set119MatrixAlgebra/p1.pg">
+      <statement><p>If <m>A</m> and <m>B</m> are <m>8 \times 9</m> matrices, and <m>C</m> is a <m>7 \times 8</m> matrix, 
+            which of the following are defined?</p>
+<p><var form="checkboxes">
+<li>
+<p><m>CB</m></p>
+</li>
+<li>
+<p><m>CA+2B</m></p>
+</li>
+<li>
+<p><m>BC</m></p>
+</li>
+<li>
+<p><m>C-B</m></p>
+</li>
+<li>
+<p><m>B+A</m></p>
+</li>
+</var></p>
+</statement>
+    </static>
+    <rendering-data sourceFilePath="Library/ASU-topics/set119MatrixAlgebra/p1.pg" origin="webwork2" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" passwd="anonymous" language="en-US"/>
+    <pg source="Library/ASU-topics/set119MatrixAlgebra/p1.pg"/>
+  </webwork-reps>
+  <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-webwork-71" ww-id="webwork-71">
+    <static seed="71" source="Library/ASU-topics/set119MatrixAlgebra/p14.pg">
+      <statement><p>Determine the value(s) of  <m>x</m>  such that</p>
+<p><m>\left[\begin{array}{ccc}
+x \amp 2 \amp 1\cr
+\end{array}\right] \left[\begin{array}{ccc}
+-1 \amp 2 \amp 1\cr
+2 \amp 0 \amp 3\cr
+1 \amp 26 \amp -2
+\end{array}\right] \left[\begin{array}{c}
+x\cr
+-1\cr
+4\cr
+\end{array}\right] = [0]</m></p>
+<p><m>x</m> = <fillin characters="30" name="AnSwEr0001"/></p>
+<p><alert> Note: </alert>
+If there is more than one value separate them by commas.</p>
+</statement>
+      <answer>
+        <p>
+          <m>2, 5</m>
+        </p>
+      </answer>
+    </static>
+    <rendering-data sourceFilePath="Library/ASU-topics/set119MatrixAlgebra/p14.pg" origin="webwork2" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" passwd="anonymous" language="en-US"/>
+    <pg source="Library/ASU-topics/set119MatrixAlgebra/p14.pg"/>
+  </webwork-reps>
+  <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-webwork-72" ww-id="webwork-72">
+    <static seed="72" source="Library/ASU-topics/set119MatrixAlgebra/p16.pg">
+      <statement><p>Enter T or F depending on whether the statement is true or false.
+(You must enter T or F -- True and False will not work.)</p>
+<p><ol>
+<li>
+<p>The <m>i</m>th row, <m>j</m>th column entry of a square matrix, where <m>i &gt; j</m>, is called a diagonal entry.</p>
+</li>
+<li>
+<p>For any matrix <m>A</m>, there exists a matrix <m>B</m> so that <m>A + B = 0</m>.</p>
+</li>
+<li>
+<p>If matrices <m>A</m> and <m>B</m> have the same dimension, then <m>A + B = B + A</m> is known as the Associative Property for Addition of Matrices.</p>
+</li>
+</ol></p>
+</statement>
+    </static>
+    <rendering-data sourceFilePath="Library/ASU-topics/set119MatrixAlgebra/p16.pg" origin="webwork2" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" passwd="anonymous" language="en-US"/>
+    <pg source="Library/ASU-topics/set119MatrixAlgebra/p16.pg"/>
+  </webwork-reps>
+  <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-webwork-73" ww-id="webwork-73">
+    <static seed="73" source="Library/ASU-topics/set119MatrixAlgebra/p16ez.pg">
+      <statement><p>Enter T or F depending on whether the statement is true or false.
+(You must enter T or F -- True and False will not work.)</p>
+<p><ol>
+<li>
+<p>A matrix with dimensions <m>m</m> by <m>n</m>, where <m>m &gt; n</m>, has fewer rows than columns.</p>
+</li>
+<li>
+<p>If the corresponding entries of two matrices <m>A</m> and <m>B</m> are equal, then <m>A = B</m>.</p>
+</li>
+</ol></p>
+</statement>
+    </static>
+    <rendering-data sourceFilePath="Library/ASU-topics/set119MatrixAlgebra/p16ez.pg" origin="webwork2" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" passwd="anonymous" language="en-US"/>
+    <pg source="Library/ASU-topics/set119MatrixAlgebra/p16ez.pg"/>
+  </webwork-reps>
+  <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-webwork-74" ww-id="webwork-74">
+    <static seed="74" source="Library/Rochester/setLinearAlgebra3Matrices/ur_la_3_25.pg">
+      <statement><p>If <me>A = \left[\begin{array}{cc}
+x \amp -6\cr
+y \amp -2\cr
+\end{array}\right].</me>
+determine the values of <m>x</m> and <m>y</m> for which <m>A^2=A</m>.</p>
+<p><m>x=</m> <fillin characters="10" name="AnSwEr0001"/>,</p>
+<p><m>y=</m> <fillin characters="10" name="AnSwEr0002"/>.</p>
+</statement>
+      <answer>
+        <p>
+          <m>1--2</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>\frac{-2\cdot \left(1--2\right)}{-6}</m>
+        </p>
+      </answer>
+    </static>
+    <rendering-data sourceFilePath="Library/Rochester/setLinearAlgebra3Matrices/ur_la_3_25.pg" origin="webwork2" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" passwd="anonymous" language="en-US"/>
+    <pg source="Library/Rochester/setLinearAlgebra3Matrices/ur_la_3_25.pg"/>
+  </webwork-reps>
+  <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-webwork-75" ww-id="webwork-75">
+    <static seed="75" source="Library/TCNJ/TCNJ_MatrixEquations/problem6.pg">
+      <statement><p>Determine whether the product <m>Ax</m> is defined or undefined.</p>
+<p><ol>
+<li>
+<p><table><tr valign="middle"><td align="center" nowrap="nowrap"><m>A=</m></td><td align="center" nowrap="nowrap"/></tr></table></p>
+<tabular>
+<row>
+<cell>-2</cell>
+<cell>3</cell>
+<cell>6</cell>
+<cell>0</cell>
+<cell>-5</cell>
+</row>
+</tabular>
+<p><td align="center" nowrap="nowrap">,</td><td align="center" nowrap="nowrap"><m>x=</m></td><td align="center" nowrap="nowrap"/></p>
+<tabular>
+<row>
+<cell>10</cell>
+</row>
+<row>
+<cell>3</cell>
+</row>
+<row>
+<cell>1</cell>
+</row>
+<row>
+<cell>-4</cell>
+</row>
+<row>
+<cell>-5</cell>
+</row>
+</tabular>
+<p/>
+</li>
+<li>
+<p><table><tr valign="middle"><td align="center" nowrap="nowrap"><m>A=</m></td><td align="center" nowrap="nowrap"/></tr></table></p>
+<tabular>
+<row>
+<cell>-10</cell>
+<cell>2</cell>
+</row>
+<row>
+<cell>0</cell>
+<cell>5</cell>
+</row>
+<row>
+<cell>9</cell>
+<cell>-10</cell>
+</row>
+</tabular>
+<p><td align="center" nowrap="nowrap">,</td><td align="center" nowrap="nowrap"><m>x=</m></td><td align="center" nowrap="nowrap"/></p>
+<tabular>
+<row>
+<cell>6</cell>
+</row>
+<row>
+<cell>-1</cell>
+</row>
+<row>
+<cell>-7</cell>
+</row>
+</tabular>
+<p/>
+</li>
+<li>
+<p><table><tr valign="middle"><td align="center" nowrap="nowrap"><m>A=</m></td><td align="center" nowrap="nowrap"/></tr></table></p>
+<tabular>
+<row>
+<cell>-4</cell>
+<cell>9</cell>
+<cell>0</cell>
+</row>
+<row>
+<cell>-9</cell>
+<cell>-3</cell>
+<cell>-2</cell>
+</row>
+</tabular>
+<p><td align="center" nowrap="nowrap">,</td><td align="center" nowrap="nowrap"><m>x=</m></td><td align="center" nowrap="nowrap"/></p>
+<tabular>
+<row>
+<cell>5</cell>
+</row>
+<row>
+<cell>4</cell>
+</row>
+<row>
+<cell>-10</cell>
+</row>
+<row>
+<cell>-9</cell>
+</row>
+</tabular>
+<p/>
+</li>
+<li>
+<p><table><tr valign="middle"><td align="center" nowrap="nowrap"><m>A=</m></td><td align="center" nowrap="nowrap"/></tr></table></p>
+<tabular>
+<row>
+<cell>9</cell>
+<cell>-4</cell>
+<cell>3</cell>
+<cell>-1</cell>
+</row>
+<row>
+<cell>-3</cell>
+<cell>-3</cell>
+<cell>-9</cell>
+<cell>8</cell>
+</row>
+<row>
+<cell>5</cell>
+<cell>-8</cell>
+<cell>-9</cell>
+<cell>1</cell>
+</row>
+</tabular>
+<p><td align="center" nowrap="nowrap">,</td><td align="center" nowrap="nowrap"><m>x=</m></td><td align="center" nowrap="nowrap"/></p>
+<tabular>
+<row>
+<cell>-6</cell>
+</row>
+<row>
+<cell>2</cell>
+</row>
+<row>
+<cell>-6</cell>
+</row>
+<row>
+<cell>-2</cell>
+</row>
+</tabular>
+<p/>
+</li>
+<li>
+<p><table><tr valign="middle"><td align="center" nowrap="nowrap"><m>A=</m></td><td align="center" nowrap="nowrap"/></tr></table></p>
+<tabular>
+<row>
+<cell>-10</cell>
+<cell>10</cell>
+<cell>2</cell>
+</row>
+<row>
+<cell>7</cell>
+<cell>4</cell>
+<cell>-3</cell>
+</row>
+<row>
+<cell>9</cell>
+<cell>9</cell>
+<cell>-10</cell>
+</row>
+<row>
+<cell>6</cell>
+<cell>-3</cell>
+<cell>-8</cell>
+</row>
+</tabular>
+<p><td align="center" nowrap="nowrap">,</td><td align="center" nowrap="nowrap"><m>x=</m></td><td align="center" nowrap="nowrap"/></p>
+<tabular>
+<row>
+<cell>6</cell>
+</row>
+<row>
+<cell>-5</cell>
+</row>
+<row>
+<cell>-10</cell>
+</row>
+</tabular>
+<p/>
+</li>
+</ol></p>
+</statement>
+    </static>
+    <rendering-data sourceFilePath="Library/TCNJ/TCNJ_MatrixEquations/problem6.pg" origin="webwork2" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" passwd="anonymous" language="en-US"/>
+    <pg source="Library/TCNJ/TCNJ_MatrixEquations/problem6.pg"/>
+  </webwork-reps>
+  <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-webwork-76" ww-id="webwork-76">
+    <static seed="76" source="Library/TCNJ/TCNJ_MatrixEquations/problem5.pg">
+      <statement><p>If <me>A\vec{u} = \left[\begin{array}{c}
+-1\cr
+-1\cr
+5
+\end{array}\right]  \ \mbox{ and  } \  A\vec{v} = \left[\begin{array}{c}
+2\cr
+-4\cr
+2
+\end{array}\right]</me>
+then</p>
+<p><m>A(3 \vec{u}+3 \vec{v}) =</m> <fillin rows="3"/></p>
+</statement>
+    </static>
+    <rendering-data sourceFilePath="Library/TCNJ/TCNJ_MatrixEquations/problem5.pg" origin="webwork2" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" passwd="anonymous" language="en-US"/>
+    <pg source="Library/TCNJ/TCNJ_MatrixEquations/problem5.pg"/>
   </webwork-reps>
 </webwork-representations>
