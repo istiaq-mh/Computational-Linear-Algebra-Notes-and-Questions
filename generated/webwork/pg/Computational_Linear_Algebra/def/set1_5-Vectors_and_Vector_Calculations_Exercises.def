@@ -1,0 +1,55 @@
+openDate          = 02/13/2026 at 12:00am
+dueDate           = 08/13/2026 at 10:00pm
+answerDate        = 08/13/2026 at 10:00pm
+paperHeaderFile   = Computational_Linear_Algebra/header/1_5-Vectors_and_Vector_Calculations_Exercises.pg
+screenHeaderFile  = Computational_Linear_Algebra/header/1_5-Vectors_and_Vector_Calculations_Exercises.pg
+description       = Vectors and Vector Calculations
+problemListV2
+problem_start
+source_file = Library/WHFreeman/Holt_linear_algebra/Chaps_1-4/2.1.66.pg
+problem_id = 1
+problem_end
+problem_start
+source_file = Library/Michigan/Chap13Sec1/Q29.pg
+problem_id = 2
+problem_end
+problem_start
+source_file = Library/Union/setMVvectors/an12_2_27.pg
+problem_id = 3
+problem_end
+problem_start
+source_file = Library/Hope/Multi1/01-01-Vectors-in-Rn/Vectors-02.pg
+problem_id = 4
+problem_end
+problem_start
+source_file = Library/WHFreeman/Rogawski_Calculus_Early_Transcendentals_Second_Edition/12_Vector_Geometry/12.1_Vectors_in_the_Plane/12.1.29.pg
+problem_id = 5
+problem_end
+problem_start
+source_file = Library/FortLewis/Calc3/13-3-Dot-product/geometric-dot-product/geometric-dot-product.pg
+problem_id = 6
+problem_end
+problem_start
+source_file = Library/Michigan/Chap13Sec1/Q39.pg
+problem_id = 7
+problem_end
+problem_start
+source_file = Library/UMN/calculusStewartET/s_12_2_26.pg
+problem_id = 8
+problem_end
+problem_start
+source_file = Library/Union/setMVvectors/an12_2_17.pg
+problem_id = 9
+problem_end
+problem_start
+source_file = Library/WHFreeman/Rogawski_Calculus_Early_Transcendentals_Second_Edition/12_Vector_Geometry/12.3_Dot_Product_and_the_Angle_Between_Two_Vectors/12.3.19.pg
+problem_id = 10
+problem_end
+problem_start
+source_file = Library/272/setStewart12_1/problem_1.pg
+problem_id = 11
+problem_end
+problem_start
+source_file = Library/272/setStewart12_1/problem_1.pg
+problem_id = 12
+problem_end

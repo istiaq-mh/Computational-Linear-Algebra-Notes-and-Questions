@@ -1,0 +1,91 @@
+openDate          = 02/13/2026 at 12:00am
+dueDate           = 08/13/2026 at 10:00pm
+answerDate        = 08/13/2026 at 10:00pm
+paperHeaderFile   = Computational_Linear_Algebra/header/1_2-Solving_Linear_Systems_Exercises.pg
+screenHeaderFile  = Computational_Linear_Algebra/header/1_2-Solving_Linear_Systems_Exercises.pg
+description       = Solving Linear Systems
+problemListV2
+problem_start
+source_file = Library/ASU-topics/set119LinearSystems/p21.pg
+problem_id = 1
+problem_end
+problem_start
+source_file = Library/Hope/Multi1/02-03-Row-operations/Row_ops_05.pg
+problem_id = 2
+problem_end
+problem_start
+source_file = Library/Hope/Multi1/02-03-Row-operations/Row_ops_02.pg
+problem_id = 3
+problem_end
+problem_start
+source_file = Library/Hope/Multi1/02-03-Row-operations/Row_ops_01.pg
+problem_id = 4
+problem_end
+problem_start
+source_file = Library/WHFreeman/Holt_linear_algebra/Chaps_1-4/holt_01_02_011.pg
+problem_id = 5
+problem_end
+problem_start
+source_file = Library/WHFreeman/Holt_linear_algebra/Chaps_1-4/holt_01_02_013.pg
+problem_id = 6
+problem_end
+problem_start
+source_file = Library/Rochester/setAlgebra35SystemMatrices/ID_row_ops_2.pg
+problem_id = 7
+problem_end
+problem_start
+source_file = Library/Rochester/setLinearAlgebra3Matrices/ur_la_3_5.pg
+problem_id = 8
+problem_end
+problem_start
+source_file = Library/ASU-topics/set119LinearSystems/p33.pg
+problem_id = 9
+problem_end
+problem_start
+source_file = Library/TCNJ/TCNJ_RowReduction/problem1.pg
+problem_id = 10
+problem_end
+problem_start
+source_file = Library/NAU/setLinearSys/linearsys_3var_4.pg
+problem_id = 11
+problem_end
+problem_start
+source_file = Library/Rochester/setAlgebra35SystemMatrices/augmentedmatrix.pg
+problem_id = 12
+problem_end
+problem_start
+source_file = Library/Mizzou/Finite_Math/Augmented_Matrices/GJ1.pg
+problem_id = 13
+problem_end
+problem_start
+source_file = Library/Mizzou/Finite_Math/Gauss-Jordan_Elimination/3by3a.pg
+problem_id = 14
+problem_end
+problem_start
+source_file = Library/TCNJ/TCNJ_RowReduction/problem14.pg
+problem_id = 15
+problem_end
+problem_start
+source_file = Library/TCNJ/TCNJ_RowReduction/problem15.pg
+problem_id = 16
+problem_end
+problem_start
+source_file = Contrib/Michigan/linalg/Library/TCNJ/TCNJ_RowReduction/problem13.pg
+problem_id = 17
+problem_end
+problem_start
+source_file = Library/ASU-topics/set119LinearSystems/p22.pg
+problem_id = 18
+problem_end
+problem_start
+source_file = Library/Rochester/setLinearAlgebra1Systems/ur_la_1_8.pg
+problem_id = 19
+problem_end
+problem_start
+source_file = Library/Mizzou/Matrix_Theory/HW_1/prob_2.pg
+problem_id = 20
+problem_end
+problem_start
+source_file = Library/Mizzou/Finite_Math/Gauss-Jordan_Elimination/3by3a.pg
+problem_id = 21
+problem_end
