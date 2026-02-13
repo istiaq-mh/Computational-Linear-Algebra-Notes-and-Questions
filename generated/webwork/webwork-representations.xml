@@ -2084,24 +2084,24 @@ consistent
 </var></cell>
 <cell>B. <var form="popup">
 <li>
-consistent
+inconsistent
 </li>
 <li>
 choose
 </li>
 <li>
-inconsistent
+consistent
 </li>
 </var></cell>
 <cell>C. <var form="popup">
 <li>
-inconsistent
+consistent
 </li>
 <li>
 choose
 </li>
 <li>
-consistent
+inconsistent
 </li>
 </var></cell>
 </row>
@@ -2130,24 +2130,24 @@ inconsistent
 </var></cell>
 <cell>E. <var form="popup">
 <li>
-consistent
+inconsistent
 </li>
 <li>
 choose
 </li>
 <li>
-inconsistent
+consistent
 </li>
 </var></cell>
 <cell>F. <var form="popup">
 <li>
-inconsistent
+consistent
 </li>
 <li>
 choose
 </li>
 <li>
-consistent
+inconsistent
 </li>
 </var></cell>
 </row>
@@ -2165,13 +2165,13 @@ consistent
 <row halign="center" valign="middle">
 <cell>G. <var form="popup">
 <li>
-inconsistent
+consistent
 </li>
 <li>
 choose
 </li>
 <li>
-consistent
+inconsistent
 </li>
 </var></cell>
 <cell>H. <var form="popup">
@@ -2187,13 +2187,13 @@ consistent
 </var></cell>
 <cell>I. <var form="popup">
 <li>
-consistent
+inconsistent
 </li>
 <li>
 choose
 </li>
 <li>
-<p>inconsistent
+<p>consistent
 </p></li>
 </var></cell>
 </row>
