@@ -1,0 +1,59 @@
+openDate          = 02/16/2026 at 12:00am
+dueDate           = 08/16/2026 at 10:00pm
+answerDate        = 08/16/2026 at 10:00pm
+paperHeaderFile   = Computational_Linear_Algebra/header/2_3-Inverse_Matrices_Exercises.pg
+screenHeaderFile  = Computational_Linear_Algebra/header/2_3-Inverse_Matrices_Exercises.pg
+description       = Inverse Matrices
+problemListV2
+problem_start
+source_file = Contrib/MountAllison/2-2_Elementary_Matrices_and_Matrix_Inverses/true_false.pg
+problem_id = 1
+problem_end
+problem_start
+source_file = Library/ASU-topics/set119MatrixAlgebra/p18.pg
+problem_id = 2
+problem_end
+problem_start
+source_file = Library/Rochester/setLinearAlgebra4InverseMatrix/ur_la_4_8.pg
+problem_id = 3
+problem_end
+problem_start
+source_file = Contrib/UBC/MECH/MECH2/set220SelfTest-Matrices/Matrices4.pg
+problem_id = 4
+problem_end
+problem_start
+source_file = Library/TCNJ/TCNJ_MatrixInverse/problem5.pg
+problem_id = 5
+problem_end
+problem_start
+source_file = Library/TCNJ/TCNJ_MatrixInverse/problem6.pg
+problem_id = 6
+problem_end
+problem_start
+source_file = Library/ASU-topics/set119MatrixAlgebra/p13.pg
+problem_id = 7
+problem_end
+problem_start
+source_file = Library/Rochester/setLinearAlgebra4InverseMatrix/ur_la_4_2.pg
+problem_id = 8
+problem_end
+problem_start
+source_file = Library/WHFreeman/Holt_linear_algebra/Chaps_1-4/3.3.59.pg
+problem_id = 9
+problem_end
+problem_start
+source_file = Library/ma112DB/set12/sw7_5_11.pg
+problem_id = 10
+problem_end
+problem_start
+source_file = Library/TCNJ/TCNJ_MatrixInverse/problem2.pg
+problem_id = 11
+problem_end
+problem_start
+source_file = Library/NAU/setLinearAlgebra/m1.pg
+problem_id = 12
+problem_end
+problem_start
+source_file = Library/Rochester/setLinearAlgebra4InverseMatrix/ur_Ch2_1_4.pg
+problem_id = 13
+problem_end

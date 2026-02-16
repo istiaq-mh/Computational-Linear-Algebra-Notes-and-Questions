@@ -2130,13 +2130,13 @@ consistent
 </var></cell>
 <cell>E. <var form="popup">
 <li>
-consistent
+inconsistent
 </li>
 <li>
 choose
 </li>
 <li>
-inconsistent
+consistent
 </li>
 </var></cell>
 <cell>F. <var form="popup">
@@ -2165,13 +2165,13 @@ consistent
 <row halign="center" valign="middle">
 <cell>G. <var form="popup">
 <li>
-inconsistent
+consistent
 </li>
 <li>
 choose
 </li>
 <li>
-consistent
+inconsistent
 </li>
 </var></cell>
 <cell>H. <var form="popup">
@@ -2187,13 +2187,13 @@ consistent
 </var></cell>
 <cell>I. <var form="popup">
 <li>
-inconsistent
+consistent
 </li>
 <li>
 choose
 </li>
 <li>
-<p>consistent
+<p>inconsistent
 </p></li>
 </var></cell>
 </row>
@@ -4125,5 +4125,403 @@ then</p>
     </static>
     <rendering-data sourceFilePath="Library/TCNJ/TCNJ_MatrixEquations/problem5.pg" origin="webwork2" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" passwd="anonymous" language="en-US"/>
     <pg source="Library/TCNJ/TCNJ_MatrixEquations/problem5.pg"/>
+  </webwork-reps>
+  <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-webwork-77" ww-id="webwork-77">
+    <static seed="77" source="Contrib/MountAllison/2-2_Elementary_Matrices_and_Matrix_Inverses/true_false.pg">
+      <statement><p>Determine which of the following statements are true and which are false.</p>
+<p><ol>
+<li>
+<p>If <m>\displaystyle A</m> and <m>\displaystyle B</m> are square matrices such that <m>\displaystyle AB = O</m> and <m>\displaystyle A</m> is invertible, then <m>\displaystyle B = O</m> .</p>
+</li>
+<li>
+<p>If <m>\displaystyle A</m> and <m>\displaystyle B</m> are invertible matrices, then so is <m>\displaystyle A+B</m> .</p>
+</li>
+<li>
+<p>If <m>\displaystyle A</m> and <m>\displaystyle B</m> are invertible matrices, then so is <m>\displaystyle AB</m> .</p>
+</li>
+<li>
+<p>The transpose of an elementary matrix is an elementary matrix.</p>
+</li>
+<li>
+<p>The inverse of an elementary matrix is an elementary matrix.</p>
+</li>
+</ol></p>
+</statement>
+    </static>
+    <rendering-data sourceFilePath="Contrib/MountAllison/2-2_Elementary_Matrices_and_Matrix_Inverses/true_false.pg" origin="webwork2" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" passwd="anonymous" language="en-US"/>
+    <pg source="Contrib/MountAllison/2-2_Elementary_Matrices_and_Matrix_Inverses/true_false.pg"/>
+  </webwork-reps>
+  <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-webwork-78" ww-id="webwork-78">
+    <static seed="78" source="Library/ASU-topics/set119MatrixAlgebra/p18.pg">
+      <statement><p>Enter T or F depending on whether the statement is true or false.
+(You must enter T or F -- True and False will not work.)</p>
+<p><ol>
+<li>
+<p>If A is a square matrix, then there exists a matrix B such that AB equals the identity matrix.</p>
+</li>
+<li>
+<p>If A and B are both square matrices such that AB equals BA equals the identity matrix, then B is the inverse matrix of A.</p>
+</li>
+</ol></p>
+</statement>
+    </static>
+    <rendering-data sourceFilePath="Library/ASU-topics/set119MatrixAlgebra/p18.pg" origin="webwork2" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" passwd="anonymous" language="en-US"/>
+    <pg source="Library/ASU-topics/set119MatrixAlgebra/p18.pg"/>
+  </webwork-reps>
+  <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-webwork-79" ww-id="webwork-79">
+    <static seed="79" source="Library/Rochester/setLinearAlgebra4InverseMatrix/ur_la_4_8.pg">
+      <statement><p>Select all statements below which are true for all invertible <m>n\times n</m> matrices <m>A</m> and <m>B</m></p>
+<p><var form="checkboxes">
+<li>
+<p><m>A+A^{-1}</m> is invertible</p>
+</li>
+<li>
+<p><m>ABA^{-1}=B</m></p>
+</li>
+<li>
+<p><m>A^6 B^8</m> is invertible</p>
+</li>
+<li>
+<p><m>(AB)^{-1} = A^{-1}B^{-1}</m></p>
+</li>
+<li>
+<p><m>(I_n+A)(I_n+A^{-1})=2I_n+A+A^{-1}</m></p>
+</li>
+<li>
+<p><m>(A+B)(A-B) = A^2-B^2</m></p>
+</li>
+</var></p>
+</statement>
+    </static>
+    <rendering-data sourceFilePath="Library/Rochester/setLinearAlgebra4InverseMatrix/ur_la_4_8.pg" origin="webwork2" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" passwd="anonymous" language="en-US"/>
+    <pg source="Library/Rochester/setLinearAlgebra4InverseMatrix/ur_la_4_8.pg"/>
+  </webwork-reps>
+  <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-webwork-80" ww-id="webwork-80">
+    <static seed="80" source="Contrib/UBC/MECH/MECH2/set220SelfTest-Matrices/Matrices4.pg">
+      <statement><p>What is the inverse of the matrix <m>\left[\begin{array}{cc}
+2 \amp 1\cr
+1 \amp 3
+\end{array}\right]</m>?</p>
+<p><ol form="buttons" marker="A" name="AnSwEr0001">
+<li>
+<p><m> \left[\begin{array}{cc}
+3 &amp;-1\cr
+-1 &amp;2
+\end{array}\right] </m></p>
+</li>
+<li>
+<p><m> \frac{1}{5}\left[\begin{array}{cc}
+3 &amp;-1\cr
+-1 &amp;2
+\end{array}\right] </m></p>
+</li>
+<li>
+<p><m> \left[\begin{array}{cc}
+2 &amp;1\cr
+1 &amp;3
+\end{array}\right] </m></p>
+</li>
+<li>
+<p><m> \frac{1}{5}\left[\begin{array}{cc}
+2 &amp;1\cr
+1 &amp;3
+\end{array}\right] </m></p>
+</li>
+<li>
+<p>does not exist</p>
+</li>
+<li>
+<p>none of the above</p>
+</li>
+</ol></p>
+</statement>
+      <answer>
+        <p>
+          <m>\text{B}</m>
+        </p>
+      </answer>
+    </static>
+    <rendering-data sourceFilePath="Contrib/UBC/MECH/MECH2/set220SelfTest-Matrices/Matrices4.pg" origin="webwork2" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" passwd="anonymous" language="en-US"/>
+    <pg source="Contrib/UBC/MECH/MECH2/set220SelfTest-Matrices/Matrices4.pg"/>
+  </webwork-reps>
+  <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-webwork-81" ww-id="webwork-81">
+    <static seed="81" source="Library/TCNJ/TCNJ_MatrixInverse/problem5.pg">
+      <statement><p>If <me>A = \left[\begin{array}{cc}
+9 \amp 0\cr
+0 \amp 7
+\end{array}\right],</me> 
+then</p>
+<p><m>A^{-1} =</m> <fillin cols="2" rows="2"/>.</p>
+</statement>
+    </static>
+    <rendering-data sourceFilePath="Library/TCNJ/TCNJ_MatrixInverse/problem5.pg" origin="webwork2" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" passwd="anonymous" language="en-US"/>
+    <pg source="Library/TCNJ/TCNJ_MatrixInverse/problem5.pg"/>
+  </webwork-reps>
+  <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-webwork-82" ww-id="webwork-82">
+    <static seed="82" source="Library/TCNJ/TCNJ_MatrixInverse/problem6.pg">
+      <statement><p>If <me>A = \left[\begin{array}{ccc}
+-6 \amp 0 \amp 0\cr
+0 \amp 5 \amp 0\cr
+0 \amp 0 \amp 7
+\end{array}\right],</me> 
+then</p>
+<p><m>A^{-1} =</m> <fillin cols="3" rows="3"/>.</p>
+</statement>
+    </static>
+    <rendering-data sourceFilePath="Library/TCNJ/TCNJ_MatrixInverse/problem6.pg" origin="webwork2" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" passwd="anonymous" language="en-US"/>
+    <pg source="Library/TCNJ/TCNJ_MatrixInverse/problem6.pg"/>
+  </webwork-reps>
+  <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-webwork-83" ww-id="webwork-83">
+    <static seed="83" source="Library/ASU-topics/set119MatrixAlgebra/p13.pg">
+      <statement><p>Consider the following two systems.</p>
+<p>(a) 
+<me>\left\{ \begin{array}{ccc}
+-4 x - 3 y \amp =\amp  2 \\
+- x - 7 y \amp =\amp  -2
+\end{array} \right.</me></p>
+<p>(b)
+<me>\left\{ \begin{array}{ccc}
+-4 x - 3 y \amp =\amp  -2 \\
+- x - 7 y \amp =\amp  -4
+\end{array} \right.</me></p>
+<p>(i) Find the inverse of the (common) coefficient matrix of the two systems.</p>
+<p><table><tr valign="middle"><td align="center" nowrap="nowrap"><m>A^{-1} =</m></td><td align="center" nowrap="nowrap"/></tr></table></p>
+<tabular>
+<row>
+<cell><fillin characters="10" name="AnSwEr0001"/></cell>
+<cell><fillin characters="10" name="AnSwEr0002"/></cell>
+</row>
+<row>
+<cell><fillin characters="10" name="AnSwEr0003"/></cell>
+<cell><fillin characters="10" name="AnSwEr0004"/></cell>
+</row>
+</tabular>
+<p/>
+<p>(ii) Find the solutions to the two systems by using the inverse, i.e. by evaluating
+<m>A^{-1} B</m> where <m>B</m> represents the right hand side (i.e. 
+<m>B = \left[ \begin{array}{c} 2 \\ -2 \end{array} \right]</m> for  system (a) and
+<m>B = \left[ \begin{array}{c} -2 \\ -4 \end{array} \right]</m> for  system (b)).</p>
+<p>Solution to  system (a):  <m>x  =</m> <fillin characters="10" name="AnSwEr0005"/> , <m>y</m> =<fillin characters="10" name="AnSwEr0006"/></p>
+<p>Solution to system (b):  <m>x  =</m> <fillin characters="10" name="AnSwEr0007"/> , <m>y</m> =<fillin characters="10" name="AnSwEr0008"/></p>
+</statement>
+      <answer>
+        <p>
+          <m>-0.28</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>0.12</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>0.04</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>-0.16</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>-0.8</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>0.4</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>0.0800000000000001</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>0.56</m>
+        </p>
+      </answer>
+    </static>
+    <rendering-data sourceFilePath="Library/ASU-topics/set119MatrixAlgebra/p13.pg" origin="webwork2" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" passwd="anonymous" language="en-US"/>
+    <pg source="Library/ASU-topics/set119MatrixAlgebra/p13.pg"/>
+  </webwork-reps>
+  <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-webwork-84" ww-id="webwork-84">
+    <static seed="84" source="Library/Rochester/setLinearAlgebra4InverseMatrix/ur_la_4_2.pg">
+      <statement><p>The matrix <m>\left[\begin{array}{cc}
+4 \amp 8\cr
+5 \amp k\cr
+\end{array}\right]</m> is invertible if and only if <m>k\ne</m> <fillin characters="5" name="AnSwEr0001"/>.</p>
+</statement>
+      <answer>
+        <p>
+          <m>\frac{8\cdot 5}{4}</m>
+        </p>
+      </answer>
+    </static>
+    <rendering-data sourceFilePath="Library/Rochester/setLinearAlgebra4InverseMatrix/ur_la_4_2.pg" origin="webwork2" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" passwd="anonymous" language="en-US"/>
+    <pg source="Library/Rochester/setLinearAlgebra4InverseMatrix/ur_la_4_2.pg"/>
+  </webwork-reps>
+  <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-webwork-85" ww-id="webwork-85">
+    <static seed="85" source="Library/WHFreeman/Holt_linear_algebra/Chaps_1-4/3.3.59.pg">
+      <statement><p>For what values of <m>c</m> will
+<m>\displaystyle A = \begin{bmatrix} 1 \amp  1 \\ c \amp  c^2 \end{bmatrix}</m> be invertible?</p>
+<p>For all <m>c</m> such that <m>c\neq</m> <fillin characters="6" name="AnSwEr0001"/> and <m>c\neq</m> <fillin characters="6" name="AnSwEr0002"/>.</p>
+</statement>
+      <answer>
+        <p>
+          <m>0</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>1</m>
+        </p>
+      </answer>
+      <solution><p><alert>SOLUTION:</alert> 
+The matrix <m>\displaystyle A = \begin{bmatrix} 1 \amp  1 \\ c \amp  c^2 \end{bmatrix}</m> is invertible provided the columns of <m>A</m> are linearly independent, which will be the case if <m>c \neq c^2</m>. Thus, we require that <m>c\neq 0</m> and <m>c \neq 1</m>.</p>
+</solution>
+    </static>
+    <rendering-data sourceFilePath="Library/WHFreeman/Holt_linear_algebra/Chaps_1-4/3.3.59.pg" origin="webwork2" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" passwd="anonymous" language="en-US"/>
+    <pg source="Library/WHFreeman/Holt_linear_algebra/Chaps_1-4/3.3.59.pg"/>
+  </webwork-reps>
+  <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-webwork-86" ww-id="webwork-86">
+    <static seed="86" source="Library/ma112DB/set12/sw7_5_11.pg">
+      <statement><p>Find the inverse of the matrix <m>\displaystyle{{\left[\begin{array}{ccc}
+-2 \amp -5 \amp 1\cr
+-1 \amp 1 \amp -1\cr
+1 \amp 1 \amp 0
+\end{array}\right]}}</m>.</p>
+<p>Choose the correct option.
+<p><div class="radio-multianswer-container"><li>
+<p><alert>A.</alert>The inverse of the matrix does not exist.</p>
+</li><div style="margin-top:1rem"/><li>
+<p><alert>B.</alert>The inverse of the matrix is <fillin cols="3" rows="3"/>.</p>
+</li></div></p>
+</p></statement>
+    </static>
+    <rendering-data sourceFilePath="Library/ma112DB/set12/sw7_5_11.pg" origin="webwork2" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" passwd="anonymous" language="en-US"/>
+    <pg source="Library/ma112DB/set12/sw7_5_11.pg"/>
+  </webwork-reps>
+  <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-webwork-87" ww-id="webwork-87">
+    <static seed="87" source="Library/TCNJ/TCNJ_MatrixInverse/problem2.pg">
+      <statement><p>If <me>A = \left[\begin{array}{ccc}
+1 \amp -3 \amp 8\cr
+4 \amp -11 \amp 25\cr
+-1 \amp 3 \amp -7
+\end{array}\right],</me> 
+then</p>
+<p><m>A^{-1} =</m> <fillin cols="3" rows="3"/>.</p>
+<p>Given <m>\vec{b} = \left[\begin{array}{c}
+-2\cr
+1\cr
+-2
+\end{array}\right]</m>, solve <m>A\vec{x}=\vec{b}</m>.</p>
+<p><m>\vec{x}=</m> <fillin rows="3"/>.</p>
+</statement>
+    </static>
+    <rendering-data sourceFilePath="Library/TCNJ/TCNJ_MatrixInverse/problem2.pg" origin="webwork2" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" passwd="anonymous" language="en-US"/>
+    <pg source="Library/TCNJ/TCNJ_MatrixInverse/problem2.pg"/>
+  </webwork-reps>
+  <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-webwork-88" ww-id="webwork-88">
+    <static seed="88" source="Library/NAU/setLinearAlgebra/m1.pg">
+      <statement><p>Find the inverse of <m>AB</m> if</p>
+<p><table><tr valign="middle"><td align="center" nowrap="nowrap"><m>A^{-1}=</m></td><td align="center" nowrap="nowrap"/></tr></table></p>
+<tabular>
+<row>
+<cell>3</cell>
+<cell>0</cell>
+</row>
+<row>
+<cell>-1</cell>
+<cell>3</cell>
+</row>
+</tabular>
+<p>
+and
+<table><tr valign="middle"><td align="center" nowrap="nowrap"><m>B^{-1}=</m></td><td align="center" nowrap="nowrap"/></tr></table></p>
+<tabular>
+<row>
+<cell>3</cell>
+<cell>2</cell>
+</row>
+<row>
+<cell>-3</cell>
+<cell>-3</cell>
+</row>
+</tabular>
+<p><td align="center" nowrap="nowrap">.</td></p>
+<p><table><tr valign="middle"><td align="center" nowrap="nowrap"><m>(AB)^{-1}=</m></td><td align="center" nowrap="nowrap"/></tr></table></p>
+<tabular>
+<row>
+<cell><fillin characters="10" name="AnSwEr0001"/></cell>
+<cell><fillin characters="10" name="AnSwEr0002"/></cell>
+</row>
+<row>
+<cell><fillin characters="10" name="AnSwEr0003"/></cell>
+<cell><fillin characters="10" name="AnSwEr0004"/></cell>
+</row>
+</tabular>
+<p/>
+</statement>
+      <answer>
+        <p>
+          <m>7</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>6</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>-6</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>-9</m>
+        </p>
+      </answer>
+    </static>
+    <rendering-data sourceFilePath="Library/NAU/setLinearAlgebra/m1.pg" origin="webwork2" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" passwd="anonymous" language="en-US"/>
+    <pg source="Library/NAU/setLinearAlgebra/m1.pg"/>
+  </webwork-reps>
+  <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-webwork-89" ww-id="webwork-89">
+    <static seed="89" source="Library/Rochester/setLinearAlgebra4InverseMatrix/ur_Ch2_1_4.pg">
+      <statement><p>Are the following matrices invertible?</p>
+<p><ol>
+<li>
+<p><m>\left[\begin{array}{cc}
+8 \amp 0\cr
+-16 \amp 0
+\end{array}\right]</m></p>
+</li>
+<li>
+<p><m>\left[\begin{array}{cc}
+-16 \amp 0\cr
+0 \amp 0
+\end{array}\right]</m></p>
+</li>
+<li>
+<p><m>\left[\begin{array}{cc}
+4 \amp -4\cr
+4 \amp 0
+\end{array}\right]</m></p>
+</li>
+<li>
+<p><m>\left[\begin{array}{cc}
+3 \amp -4\cr
+-2 \amp 1
+\end{array}\right]</m></p>
+</li>
+</ol></p>
+</statement>
+    </static>
+    <rendering-data sourceFilePath="Library/Rochester/setLinearAlgebra4InverseMatrix/ur_Ch2_1_4.pg" origin="webwork2" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" passwd="anonymous" language="en-US"/>
+    <pg source="Library/Rochester/setLinearAlgebra4InverseMatrix/ur_Ch2_1_4.pg"/>
   </webwork-reps>
 </webwork-representations>
