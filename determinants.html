@@ -119,14 +119,14 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '7.11.14';
+eBookConfig.runestone_version = '7.11.15';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script src="_static/prefix-runtime.d892923478694492.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.1d6e4aba17c2c7f2.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
+<script src="_static/prefix-runtime.529fd9398bfbd03e.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.1d6e4aba17c2c7f2.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
 <link rel="stylesheet" type="text/css" href="_static/prefix-runestone.6ec5960970d8b364.css">
 <script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script><script src="_static/pretext/js/pretext-webwork/2.20/pretext-webwork.js"></script><script src="https://webwork-ptx.aimath.org/webwork2_files/node_modules/iframe-resizer/js/iframeResizer.min.js"></script><script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
 </script>
@@ -242,6 +242,7 @@ eBookConfig.enable_chatcodes =  false;
 <ul class="structural toc-item-list active">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="determinants.html#determinants-3" class="internal"><span class="codenumber">2.5.1</span> <span class="title">Computing Determinants</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="determinants.html#determinants-4" class="internal"><span class="codenumber">2.5.2</span> <span class="title">Properties of Determinants</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="determinants.html#determinants-5" class="internal"><span class="codenumber">2.5.3</span> <span class="title">Exercises</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="NatureofaMatrix.html" class="internal"><span class="codenumber">2.6</span> <span class="title">A Motivating Example</span></a></div></li>
@@ -538,7 +539,392 @@ D=\begin{bmatrix} 1\amp 2 \amp 3 \amp 5 \\ 2 \amp 3 \amp 0 \amp 1 \\ 0 \amp 0 \a
 </h4>
 <div class="para" id="ee-1-1">Let <span class="process-math">\(A\)</span> be an <span class="process-math">\(n\times n\)</span> matrix. We have that <span class="process-math">\(\det(A)=0\)</span> iff <span class="process-math">\(A\vec{x}=\vec{0}\)</span> has solutions such that <span class="process-math">\(\vec{x} \neq \vec{0}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ee-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Theorem 2.5.11"><a href="#ee" title="Copy heading and permalink for Theorem 2.5.11" aria-label="Copy heading and permalink for Theorem 2.5.11">🔗</a></div></article><div class="autopermalink" data-description="Subsection 2.5.2: Properties of Determinants"><a href="#determinants-4" title="Copy heading and permalink for Subsection 2.5.2: Properties of Determinants" aria-label="Copy heading and permalink for Subsection 2.5.2: Properties of Determinants">🔗</a></div></section><div class="autopermalink" data-description="Section 2.5: Determinants"><a href="#determinants" title="Copy heading and permalink for Section 2.5: Determinants" aria-label="Copy heading and permalink for Section 2.5: Determinants">🔗</a></div></section></div>
+<div class="autopermalink" data-description="Theorem 2.5.11"><a href="#ee" title="Copy heading and permalink for Theorem 2.5.11" aria-label="Copy heading and permalink for Theorem 2.5.11">🔗</a></div></article><div class="autopermalink" data-description="Subsection 2.5.2: Properties of Determinants"><a href="#determinants-4" title="Copy heading and permalink for Subsection 2.5.2: Properties of Determinants" aria-label="Copy heading and permalink for Subsection 2.5.2: Properties of Determinants">🔗</a></div></section><section class="exercises" id="determinants-5"><h3 class="heading hide-type">
+<span class="type">Exercises</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.5.3</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Exercises</span>
+</h3>
+<article class="exercise exercise-like" id="determinants-5-1"><h4 class="heading"><span class="codenumber">1<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
+<div id="webwork-90" class="exercise-wrapper" data-domain="https://webwork-ptx.aimath.org" data-seed="90" data-localize-correct="Correct" data-localize-incorrect="Incorrect" data-localize-blank="Blank" data-localize-submit="Submit" data-localize-check-responses="Check Responses" data-localize-reveal="Reveal" data-localize-randomize="Randomize" data-localize-reset="Reset" data-localize-hint="Hint" data-localize-solution="Solution" data-origin="webwork2" data-sourceFilePath="Library/Rochester/setLinearAlgebra6Determinants/ur_la_6_3.pg" data-courseID="anonymous" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
+<div class="problem-buttons"><button class="webwork-button" onclick="handleWW('webwork-90')">Activate</button></div>
+<div class="problem-contents">
+<div class="para logical" id="extracted-webwork-90-1-1-1">
+<div class="para">Find the determinant of the matrix</div>
+<div class="displaymath process-math" id="extracted-webwork-90-1-1-1-1">
+\begin{equation*}
+A = \left[\begin{array}{cc}
+9 \amp 6\cr
+-4 \amp -5
+\end{array}\right].
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-90-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="extracted-webwork-90-1-1-2">
+<span class="process-math">\(\det(A)=\)</span> <span class="fillin underline" role="img" aria-label="10-character blank" style="width: 4.545454545454546em;"></span>.<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-90-1-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div>
+</div>
+<div class="autopermalink" data-description="Exercise 2.5.3.1"><a href="#determinants-5-1" title="Copy heading and permalink for Exercise 2.5.3.1" aria-label="Copy heading and permalink for Exercise 2.5.3.1">🔗</a></div></article><article class="exercise exercise-like" id="determinants-5-2"><h4 class="heading"><span class="codenumber">2<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
+<div id="webwork-91" class="exercise-wrapper" data-domain="https://webwork-ptx.aimath.org" data-seed="91" data-localize-correct="Correct" data-localize-incorrect="Incorrect" data-localize-blank="Blank" data-localize-submit="Submit" data-localize-check-responses="Check Responses" data-localize-reveal="Reveal" data-localize-randomize="Randomize" data-localize-reset="Reset" data-localize-hint="Hint" data-localize-solution="Solution" data-origin="webwork2" data-sourceFilePath="Library/UMN/algebraKaufmannSchwitters/ks_11_4_12.pg" data-courseID="anonymous" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
+<div class="problem-buttons"><button class="webwork-button" onclick="handleWW('webwork-91')">Activate</button></div>
+<div class="problem-contents"><div class="para logical" id="extracted-webwork-91-1-1-1">
+<div class="para">Find the determinant of the following <span class="process-math">\(2 \times 2\)</span> matrix.</div>
+<div class="displaymath process-math" id="extracted-webwork-91-1-1-1-2">
+\begin{equation*}
+\begin{bmatrix}
+\displaystyle  \frac{1}{2} \amp  \displaystyle \frac{1}{5}\thinspace \\
+\displaystyle  -\frac{1}{4} \amp  \displaystyle \frac{5}{6}\thinspace 
+\end{bmatrix}
+\end{equation*}
+</div>
+<div class="para">Answer: <span class="fillin underline" role="img" aria-label="20-character blank" style="width: 9.090909090909092em;"></span>
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-91-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></div>
+</div>
+<div class="autopermalink" data-description="Exercise 2.5.3.2"><a href="#determinants-5-2" title="Copy heading and permalink for Exercise 2.5.3.2" aria-label="Copy heading and permalink for Exercise 2.5.3.2">🔗</a></div></article><article class="exercise exercise-like" id="determinants-5-3"><h4 class="heading"><span class="codenumber">3<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
+<div id="webwork-92" class="exercise-wrapper" data-domain="https://webwork-ptx.aimath.org" data-seed="92" data-localize-correct="Correct" data-localize-incorrect="Incorrect" data-localize-blank="Blank" data-localize-submit="Submit" data-localize-check-responses="Check Responses" data-localize-reveal="Reveal" data-localize-randomize="Randomize" data-localize-reset="Reset" data-localize-hint="Hint" data-localize-solution="Solution" data-origin="webwork2" data-sourceFilePath="Library/Rochester/setAlgebra34Matrices/det_inv_3x3.pg" data-courseID="anonymous" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
+<div class="problem-buttons"><button class="webwork-button" onclick="handleWW('webwork-92')">Activate</button></div>
+<div class="problem-contents">
+<div class="para logical" id="extracted-webwork-92-1-1-1">
+<div class="para">Consider the following matrix</div>
+<div class="displaymath process-math" id="extracted-webwork-92-1-1-1-1">
+\begin{equation*}
+\left[\begin{array}{ccc}
+-2 \amp -2 \amp -2\cr
+3 \amp 0 \amp 3\cr
+0 \amp 2 \amp 2
+\end{array}\right].
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-92-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="extracted-webwork-92-1-1-2">(a) Find its determinant. <span class="fillin underline" role="img" aria-label="25-character blank" style="width: 11.3636363636364em;"></span><div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-92-1-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para logical" id="extracted-webwork-92-1-1-3">
+<div class="para">(b) Does the matrix have an inverse?</div>
+<ul class="square" id="extracted-webwork-92-1-1-3-1">
+<li id="extracted-webwork-92-1-1-3-1-1">
+<div class="para" id="extracted-webwork-92-1-1-3-1-1-1">Choose<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-92-1-1-3-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#extracted-webwork-92-1-1-3-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="extracted-webwork-92-1-1-3-1-2">
+<div class="para" id="extracted-webwork-92-1-1-3-1-2-1">Yes<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-92-1-1-3-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#extracted-webwork-92-1-1-3-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="extracted-webwork-92-1-1-3-1-3">
+<div class="para" id="extracted-webwork-92-1-1-3-1-3-1">No<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-92-1-1-3-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#extracted-webwork-92-1-1-3-1-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-92-1-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div>
+</div>
+<div class="autopermalink" data-description="Exercise 2.5.3.3"><a href="#determinants-5-3" title="Copy heading and permalink for Exercise 2.5.3.3" aria-label="Copy heading and permalink for Exercise 2.5.3.3">🔗</a></div></article><article class="exercise exercise-like" id="determinants-5-4"><h4 class="heading"><span class="codenumber">4<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
+<div id="webwork-93" class="exercise-wrapper" data-domain="https://webwork-ptx.aimath.org" data-seed="93" data-localize-correct="Correct" data-localize-incorrect="Incorrect" data-localize-blank="Blank" data-localize-submit="Submit" data-localize-check-responses="Check Responses" data-localize-reveal="Reveal" data-localize-randomize="Randomize" data-localize-reset="Reset" data-localize-hint="Hint" data-localize-solution="Solution" data-origin="webwork2" data-sourceFilePath="Library/Rochester/setAlgebra34Matrices/determinant_3x3.pg" data-courseID="anonymous" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
+<div class="problem-buttons"><button class="webwork-button" onclick="handleWW('webwork-93')">Activate</button></div>
+<div class="problem-contents">
+<div class="para logical" id="extracted-webwork-93-1-1-1">
+<div class="para">Find the determinant of the matrix</div>
+<div class="displaymath process-math" id="extracted-webwork-93-1-1-1-1">
+\begin{equation*}
+\left[\begin{array}{ccc}
+-1 \amp 4 \amp 1\cr
+0 \amp 0 \amp 3\cr
+0 \amp -2 \amp 2
+\end{array}\right].
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-93-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="extracted-webwork-93-1-1-2">determinant = <span class="fillin underline" role="img" aria-label="25-character blank" style="width: 11.3636363636364em;"></span><div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-93-1-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div>
+</div>
+<div class="autopermalink" data-description="Exercise 2.5.3.4"><a href="#determinants-5-4" title="Copy heading and permalink for Exercise 2.5.3.4" aria-label="Copy heading and permalink for Exercise 2.5.3.4">🔗</a></div></article><article class="exercise exercise-like" id="determinants-5-5"><h4 class="heading"><span class="codenumber">5<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
+<div id="webwork-94" class="exercise-wrapper" data-domain="https://webwork-ptx.aimath.org" data-seed="94" data-localize-correct="Correct" data-localize-incorrect="Incorrect" data-localize-blank="Blank" data-localize-submit="Submit" data-localize-check-responses="Check Responses" data-localize-reveal="Reveal" data-localize-randomize="Randomize" data-localize-reset="Reset" data-localize-hint="Hint" data-localize-solution="Solution" data-origin="webwork2" data-sourceFilePath="Library/ma112DB/set12/sw7_6_15.pg" data-courseID="anonymous" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
+<div class="problem-buttons"><button class="webwork-button" onclick="handleWW('webwork-94')">Activate</button></div>
+<div class="problem-contents">
+<div class="para logical" id="extracted-webwork-94-1-1-1">
+<div class="para">Given the matrix</div>
+<div class="displaymath process-math" id="extracted-webwork-94-1-1-1-1">
+\begin{equation*}
+\left[\begin{array}{rrr}
+0 \amp  0 \amp  5 \\
+-2 \amp  0    \amp  3 \\
+0    \amp  2 \amp  3 \\
+\end{array}\right]
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-94-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="extracted-webwork-94-1-1-2">(a) find its determinant;<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-94-1-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="extracted-webwork-94-1-1-3">Your answer is : <span class="fillin underline" role="img" aria-label="25-character blank" style="width: 11.3636363636364em;"></span><div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-94-1-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="extracted-webwork-94-1-1-4">(b) does the matrix have an inverse?<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-94-1-1-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="extracted-webwork-94-1-1-5">Your answer is (input Yes or No) : <span class="fillin underline" role="img" aria-label="25-character blank" style="width: 11.3636363636364em;"></span><div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-94-1-1-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div>
+</div>
+<div class="autopermalink" data-description="Exercise 2.5.3.5"><a href="#determinants-5-5" title="Copy heading and permalink for Exercise 2.5.3.5" aria-label="Copy heading and permalink for Exercise 2.5.3.5">🔗</a></div></article><article class="exercise exercise-like" id="determinants-5-6"><h4 class="heading"><span class="codenumber">6<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
+<div id="webwork-95" class="exercise-wrapper" data-domain="https://webwork-ptx.aimath.org" data-seed="95" data-localize-correct="Correct" data-localize-incorrect="Incorrect" data-localize-blank="Blank" data-localize-submit="Submit" data-localize-check-responses="Check Responses" data-localize-reveal="Reveal" data-localize-randomize="Randomize" data-localize-reset="Reset" data-localize-hint="Hint" data-localize-solution="Solution" data-origin="webwork2" data-sourceFilePath="Contrib/MountAllison/3-2_Determinants/true_false.pg" data-courseID="anonymous" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
+<div class="problem-buttons"><button class="webwork-button" onclick="handleWW('webwork-95')">Activate</button></div>
+<div class="problem-contents">
+<div class="para" id="extracted-webwork-95-1-1-1">Determine which of the following statements are true and which are false.<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-95-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para logical" id="extracted-webwork-95-1-1-2">
+<ol class="lower-alpha lower-alpha-level-1" id="extracted-webwork-95-1-1-2-1">
+<li id="extracted-webwork-95-1-1-2-1-1">
+<div class="para" id="extracted-webwork-95-1-1-2-1-1-1">If <span class="process-math">\(\displaystyle A\)</span> and <span class="process-math">\(\displaystyle B\)</span> are square matrices of the same size, then <span class="process-math">\(\displaystyle \mathrm{det}(A+B) = \mathrm{det}(A) + \mathrm{det}(B)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-95-1-1-2-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 2.5.3.6.a"><a href="#extracted-webwork-95-1-1-2-1-1" title="Copy heading and permalink for Item 2.5.3.6.a" aria-label="Copy heading and permalink for Item 2.5.3.6.a">🔗</a></div>
+</li>
+<li id="extracted-webwork-95-1-1-2-1-2">
+<div class="para" id="extracted-webwork-95-1-1-2-1-2-1">If <span class="process-math">\(\displaystyle A\)</span> is a square matrix whose reduced row echelon form is <span class="process-math">\(\displaystyle I\text{,}\)</span> then <span class="process-math">\(\displaystyle \mathrm{det}(A) = 1\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-95-1-1-2-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 2.5.3.6.b"><a href="#extracted-webwork-95-1-1-2-1-2" title="Copy heading and permalink for Item 2.5.3.6.b" aria-label="Copy heading and permalink for Item 2.5.3.6.b">🔗</a></div>
+</li>
+<li id="extracted-webwork-95-1-1-2-1-3">
+<div class="para" id="extracted-webwork-95-1-1-2-1-3-1">If a matrix <span class="process-math">\(\displaystyle B\)</span> is obtained from <span class="process-math">\(\displaystyle A \in \mathcal{M}_4\)</span> by swapping rows 1 and 2 and also swapping rows 3 and 4, then <span class="process-math">\(\displaystyle \mathrm{det}(A) = \mathrm{det}(B)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-95-1-1-2-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 2.5.3.6.c"><a href="#extracted-webwork-95-1-1-2-1-3" title="Copy heading and permalink for Item 2.5.3.6.c" aria-label="Copy heading and permalink for Item 2.5.3.6.c">🔗</a></div>
+</li>
+<li id="extracted-webwork-95-1-1-2-1-4">
+<div class="para" id="extracted-webwork-95-1-1-2-1-4-1">If <span class="process-math">\(\displaystyle A\)</span> and <span class="process-math">\(\displaystyle B\)</span> are square matrices of the same size, then <span class="process-math">\(\displaystyle \mathrm{det}(AB) = \mathrm{det}(BA)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-95-1-1-2-1-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 2.5.3.6.d"><a href="#extracted-webwork-95-1-1-2-1-4" title="Copy heading and permalink for Item 2.5.3.6.d" aria-label="Copy heading and permalink for Item 2.5.3.6.d">🔗</a></div>
+</li>
+<li id="extracted-webwork-95-1-1-2-1-5">
+<div class="para" id="extracted-webwork-95-1-1-2-1-5-1">If <span class="process-math">\(\displaystyle A\)</span> is a <span class="process-math">\(\displaystyle 3 \times 3\)</span> matrix with <span class="process-math">\(\displaystyle \mathrm{det}(A) = 3\text{,}\)</span> then <span class="process-math">\(\displaystyle \mathrm{rank}(A) = 3\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-95-1-1-2-1-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 2.5.3.6.e"><a href="#extracted-webwork-95-1-1-2-1-5" title="Copy heading and permalink for Item 2.5.3.6.e" aria-label="Copy heading and permalink for Item 2.5.3.6.e">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-95-1-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div>
+</div>
+<div class="autopermalink" data-description="Exercise 2.5.3.6"><a href="#determinants-5-6" title="Copy heading and permalink for Exercise 2.5.3.6" aria-label="Copy heading and permalink for Exercise 2.5.3.6">🔗</a></div></article><article class="exercise exercise-like" id="determinants-5-7"><h4 class="heading"><span class="codenumber">7<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
+<div id="webwork-96" class="exercise-wrapper" data-domain="https://webwork-ptx.aimath.org" data-seed="96" data-localize-correct="Correct" data-localize-incorrect="Incorrect" data-localize-blank="Blank" data-localize-submit="Submit" data-localize-check-responses="Check Responses" data-localize-reveal="Reveal" data-localize-randomize="Randomize" data-localize-reset="Reset" data-localize-hint="Hint" data-localize-solution="Solution" data-origin="webwork2" data-sourceFilePath="Library/maCalcDB/setAlgebra34Matrices/det_inv_3x3a.pg" data-courseID="anonymous" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
+<div class="problem-buttons"><button class="webwork-button" onclick="handleWW('webwork-96')">Activate</button></div>
+<div class="problem-contents">
+<div class="para logical" id="extracted-webwork-96-1-1-1">
+<div class="para">Consider the matrix</div>
+<div class="displaymath process-math" id="extracted-webwork-96-1-1-1-1">
+\begin{equation*}
+\left[\begin{array}{rrr}
+1 \amp  0    \amp  3 \\
+0    \amp  3 \amp  1 \\
+2 \amp  0    \amp  1 \\
+\end{array}\right]
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-96-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="extracted-webwork-96-1-1-2">(a) The determinant of the matrix is: <span class="fillin underline" role="img" aria-label="25-character blank" style="width: 11.3636363636364em;"></span><div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-96-1-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para logical" id="extracted-webwork-96-1-1-3">
+<div class="para">(b) Does the matrix have an inverse?</div>
+<ul class="square" id="extracted-webwork-96-1-1-3-1">
+<li id="extracted-webwork-96-1-1-3-1-1">
+<div class="para" id="extracted-webwork-96-1-1-3-1-1-1">no<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-96-1-1-3-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#extracted-webwork-96-1-1-3-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="extracted-webwork-96-1-1-3-1-2">
+<div class="para" id="extracted-webwork-96-1-1-3-1-2-1">yes<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-96-1-1-3-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#extracted-webwork-96-1-1-3-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-96-1-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div>
+</div>
+<div class="autopermalink" data-description="Exercise 2.5.3.7"><a href="#determinants-5-7" title="Copy heading and permalink for Exercise 2.5.3.7" aria-label="Copy heading and permalink for Exercise 2.5.3.7">🔗</a></div></article><article class="exercise exercise-like" id="determinants-5-8"><h4 class="heading"><span class="codenumber">8<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
+<div id="webwork-97" class="exercise-wrapper" data-domain="https://webwork-ptx.aimath.org" data-seed="97" data-localize-correct="Correct" data-localize-incorrect="Incorrect" data-localize-blank="Blank" data-localize-submit="Submit" data-localize-check-responses="Check Responses" data-localize-reveal="Reveal" data-localize-randomize="Randomize" data-localize-reset="Reset" data-localize-hint="Hint" data-localize-solution="Solution" data-origin="webwork2" data-sourceFilePath="Library/Rochester/setLinearAlgebra6Determinants/ur_la_6_16.pg" data-courseID="anonymous" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
+<div class="problem-buttons"><button class="webwork-button" onclick="handleWW('webwork-97')">Activate</button></div>
+<div class="problem-contents">
+<div class="para" id="extracted-webwork-97-1-1-1">Find the determinant of the <span class="process-math">\(n \times n\)</span> matrix <span class="process-math">\(A\)</span> with <span class="process-math">\(7\)</span>’s on the diagonal, <span class="process-math">\(1\)</span>’s above the diagonal, and <span class="process-math">\(0\)</span>’s below the diagonal.<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-97-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="extracted-webwork-97-1-1-2">
+<span class="process-math">\(\det(A)=\)</span> <span class="fillin underline" role="img" aria-label="15-character blank" style="width: 6.818181818181818em;"></span>.<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-97-1-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div>
+</div>
+<div class="autopermalink" data-description="Exercise 2.5.3.8"><a href="#determinants-5-8" title="Copy heading and permalink for Exercise 2.5.3.8" aria-label="Copy heading and permalink for Exercise 2.5.3.8">🔗</a></div></article><article class="exercise exercise-like" id="determinants-5-9"><h4 class="heading"><span class="codenumber">9<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
+<div id="webwork-98" class="exercise-wrapper" data-domain="https://webwork-ptx.aimath.org" data-seed="98" data-localize-correct="Correct" data-localize-incorrect="Incorrect" data-localize-blank="Blank" data-localize-submit="Submit" data-localize-check-responses="Check Responses" data-localize-reveal="Reveal" data-localize-randomize="Randomize" data-localize-reset="Reset" data-localize-hint="Hint" data-localize-solution="Solution" data-origin="webwork2" data-sourceFilePath="Library/Rochester/setLinearAlgebra6Determinants/ur_la_6_18.pg" data-courseID="anonymous" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
+<div class="problem-buttons"><button class="webwork-button" onclick="handleWW('webwork-98')">Activate</button></div>
+<div class="problem-contents">
+<div class="para" id="extracted-webwork-98-1-1-1">If the determinant of a <span class="process-math">\(5 \times 5\)</span> matrix <span class="process-math">\(A\)</span> is <span class="process-math">\(\det (A)=-10\text{,}\)</span> and the matrix <span class="process-math">\(C\)</span> is obtained from <span class="process-math">\(A\)</span> by swapping the second and third columns, then<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-98-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="extracted-webwork-98-1-1-2">
+<span class="process-math">\(\det(C)=\)</span> <span class="fillin underline" role="img" aria-label="10-character blank" style="width: 4.545454545454546em;"></span>.<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-98-1-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div>
+</div>
+<div class="autopermalink" data-description="Exercise 2.5.3.9"><a href="#determinants-5-9" title="Copy heading and permalink for Exercise 2.5.3.9" aria-label="Copy heading and permalink for Exercise 2.5.3.9">🔗</a></div></article><article class="exercise exercise-like" id="determinants-5-10"><h4 class="heading"><span class="codenumber">10<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
+<div id="webwork-99" class="exercise-wrapper" data-domain="https://webwork-ptx.aimath.org" data-seed="99" data-localize-correct="Correct" data-localize-incorrect="Incorrect" data-localize-blank="Blank" data-localize-submit="Submit" data-localize-check-responses="Check Responses" data-localize-reveal="Reveal" data-localize-randomize="Randomize" data-localize-reset="Reset" data-localize-hint="Hint" data-localize-solution="Solution" data-origin="webwork2" data-sourceFilePath="Library/Rochester/setLinearAlgebra6Determinants/ur_la_6_19.pg" data-courseID="anonymous" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
+<div class="problem-buttons"><button class="webwork-button" onclick="handleWW('webwork-99')">Activate</button></div>
+<div class="problem-contents">
+<div class="para" id="extracted-webwork-99-1-1-1">If the determinant of a <span class="process-math">\(5 \times 5\)</span> matrix <span class="process-math">\(A\)</span> is <span class="process-math">\(\det(A)=8\text{,}\)</span> and the matrix <span class="process-math">\(D\)</span> is obtained from <span class="process-math">\(A\)</span> by adding <span class="process-math">\(2\)</span> times the fourth row to the second, then<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-99-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="extracted-webwork-99-1-1-2">
+<span class="process-math">\(\det(D)=\)</span> <span class="fillin underline" role="img" aria-label="10-character blank" style="width: 4.545454545454546em;"></span>.<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-99-1-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div>
+</div>
+<div class="autopermalink" data-description="Exercise 2.5.3.10"><a href="#determinants-5-10" title="Copy heading and permalink for Exercise 2.5.3.10" aria-label="Copy heading and permalink for Exercise 2.5.3.10">🔗</a></div></article><article class="exercise exercise-like" id="determinants-5-11"><h4 class="heading"><span class="codenumber">11<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
+<div id="webwork-100" class="exercise-wrapper" data-domain="https://webwork-ptx.aimath.org" data-seed="100" data-localize-correct="Correct" data-localize-incorrect="Incorrect" data-localize-blank="Blank" data-localize-submit="Submit" data-localize-check-responses="Check Responses" data-localize-reveal="Reveal" data-localize-randomize="Randomize" data-localize-reset="Reset" data-localize-hint="Hint" data-localize-solution="Solution" data-origin="webwork2" data-sourceFilePath="Library/ma112DB/set12/sw7_6_15.pg" data-courseID="anonymous" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
+<div class="problem-buttons"><button class="webwork-button" onclick="handleWW('webwork-100')">Activate</button></div>
+<div class="problem-contents">
+<div class="para logical" id="extracted-webwork-100-1-1-1">
+<div class="para">Given the matrix</div>
+<div class="displaymath process-math" id="extracted-webwork-100-1-1-1-1">
+\begin{equation*}
+\left[\begin{array}{rrr}
+-3 \amp  0 \amp  1 \\
+1 \amp  0    \amp  2 \\
+0    \amp  2 \amp  -1 \\
+\end{array}\right]
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-100-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="extracted-webwork-100-1-1-2">(a) find its determinant;<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-100-1-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="extracted-webwork-100-1-1-3">Your answer is : <span class="fillin underline" role="img" aria-label="25-character blank" style="width: 11.3636363636364em;"></span><div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-100-1-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="extracted-webwork-100-1-1-4">(b) does the matrix have an inverse?<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-100-1-1-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="extracted-webwork-100-1-1-5">Your answer is (input Yes or No) : <span class="fillin underline" role="img" aria-label="25-character blank" style="width: 11.3636363636364em;"></span><div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-100-1-1-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div>
+</div>
+<div class="autopermalink" data-description="Exercise 2.5.3.11"><a href="#determinants-5-11" title="Copy heading and permalink for Exercise 2.5.3.11" aria-label="Copy heading and permalink for Exercise 2.5.3.11">🔗</a></div></article><article class="exercise exercise-like" id="determinants-5-12"><h4 class="heading"><span class="codenumber">12<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
+<div id="webwork-101" class="exercise-wrapper" data-domain="https://webwork-ptx.aimath.org" data-seed="101" data-localize-correct="Correct" data-localize-incorrect="Incorrect" data-localize-blank="Blank" data-localize-submit="Submit" data-localize-check-responses="Check Responses" data-localize-reveal="Reveal" data-localize-randomize="Randomize" data-localize-reset="Reset" data-localize-hint="Hint" data-localize-solution="Solution" data-origin="webwork2" data-sourceFilePath="Library/Rochester/setLinearAlgebra6Determinants/ur_la_6_20.pg" data-courseID="anonymous" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
+<div class="problem-buttons"><button class="webwork-button" onclick="handleWW('webwork-101')">Activate</button></div>
+<div class="problem-contents">
+<div class="para logical" id="extracted-webwork-101-1-1-1">
+<div class="para">If</div>
+<div class="displaymath process-math" id="extracted-webwork-101-1-1-1-1">
+\begin{equation*}
+\det \left[\begin{array}{ccc}
+a \amp 1 \amp d\cr
+b \amp 1 \amp e\cr
+c \amp 1 \amp f\cr
+\end{array}\right] = -3, \ \ \ \ \mbox{and} \ \ \ \ \det \left[\begin{array}{ccc}
+a \amp 1 \amp d\cr
+b \amp 2 \amp e\cr
+c \amp 3 \amp f\cr
+\end{array}\right] = 5,
+\end{equation*}
+</div>
+<div class="para">then</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-101-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="extracted-webwork-101-1-1-2">
+<span class="process-math">\(\det \left[\begin{array}{ccc}
+a \amp 8 \amp d\cr
+b \amp 8 \amp e\cr
+c \amp 8 \amp f\cr
+\end{array}\right] =\)</span> <span class="fillin underline" role="img" aria-label="5-character blank" style="width: 2.272727272727273em;"></span> and<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-101-1-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="extracted-webwork-101-1-1-3">
+<span class="process-math">\(\det \left[\begin{array}{ccc}
+a \amp -1 \amp d\cr
+b \amp 0 \amp e\cr
+c \amp 1 \amp f\cr
+\end{array}\right] =\)</span> <span class="fillin underline" role="img" aria-label="5-character blank" style="width: 2.272727272727273em;"></span>.<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-101-1-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div>
+</div>
+<div class="autopermalink" data-description="Exercise 2.5.3.12"><a href="#determinants-5-12" title="Copy heading and permalink for Exercise 2.5.3.12" aria-label="Copy heading and permalink for Exercise 2.5.3.12">🔗</a></div></article><article class="exercise exercise-like" id="determinants-5-13"><h4 class="heading"><span class="codenumber">13<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
+<div id="webwork-102" class="exercise-wrapper" data-domain="https://webwork-ptx.aimath.org" data-seed="102" data-localize-correct="Correct" data-localize-incorrect="Incorrect" data-localize-blank="Blank" data-localize-submit="Submit" data-localize-check-responses="Check Responses" data-localize-reveal="Reveal" data-localize-randomize="Randomize" data-localize-reset="Reset" data-localize-hint="Hint" data-localize-solution="Solution" data-origin="webwork2" data-sourceFilePath="Library/TCNJ/TCNJ_PropertiesDeterminants/problem15.pg" data-courseID="anonymous" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
+<div class="problem-buttons"><button class="webwork-button" onclick="handleWW('webwork-102')">Activate</button></div>
+<div class="problem-contents">
+<div class="para" id="extracted-webwork-102-1-1-1">Use determinants to determine if the matrix below is singular.<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-102-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="extracted-webwork-102-1-1-2">
+<figure class="table table-like" id="extracted-webwork-102-1-1-2-1"><figcaption><span class="type">Table</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.5.3.13.12<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><div class="autopermalink" data-description="Table 2.5.3.13.12"><a href="#extracted-webwork-102-1-1-2-1" title="Copy heading and permalink for Table 2.5.3.13.12" aria-label="Copy heading and permalink for Table 2.5.3.13.12">🔗</a></div></figcaption></figure><div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-102-1-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="l m b0 r0 l0 t0 lines">-2</td>
+<td class="l m b0 r0 l0 t0 lines">2</td>
+<td class="l m b0 r0 l0 t0 lines">-2</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">5</td>
+<td class="l m b0 r0 l0 t0 lines">1</td>
+<td class="l m b0 r0 l0 t0 lines">1</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">0</td>
+<td class="l m b0 r0 l0 t0 lines">5</td>
+<td class="l m b0 r0 l0 t0 lines">4</td>
+</tr>
+</table></div> <div class="para" id="extracted-webwork-102-1-1-4"><div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-102-1-1-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div></div> <div class="para" id="extracted-webwork-102-1-1-5">
+<figure class="table table-like" id="extracted-webwork-102-1-1-5-1"><figcaption><span class="type">Table</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.5.3.13.13<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><div class="autopermalink" data-description="Table 2.5.3.13.13"><a href="#extracted-webwork-102-1-1-5-1" title="Copy heading and permalink for Table 2.5.3.13.13" aria-label="Copy heading and permalink for Table 2.5.3.13.13">🔗</a></div></figcaption></figure><div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-102-1-1-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="extracted-webwork-102-1-1-6">
+<figure class="table table-like" id="extracted-webwork-102-1-1-6-1"><figcaption><span class="type">Table</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.5.3.13.14<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><div class="autopermalink" data-description="Table 2.5.3.13.14"><a href="#extracted-webwork-102-1-1-6-1" title="Copy heading and permalink for Table 2.5.3.13.14" aria-label="Copy heading and permalink for Table 2.5.3.13.14">🔗</a></div></figcaption></figure><div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-102-1-1-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div>
+</div>
+<div class="autopermalink" data-description="Exercise 2.5.3.13"><a href="#determinants-5-13" title="Copy heading and permalink for Exercise 2.5.3.13" aria-label="Copy heading and permalink for Exercise 2.5.3.13">🔗</a></div></article><article class="exercise exercise-like" id="determinants-5-14"><h4 class="heading"><span class="codenumber">14<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
+<div id="webwork-103" class="exercise-wrapper" data-domain="https://webwork-ptx.aimath.org" data-seed="103" data-localize-correct="Correct" data-localize-incorrect="Incorrect" data-localize-blank="Blank" data-localize-submit="Submit" data-localize-check-responses="Check Responses" data-localize-reveal="Reveal" data-localize-randomize="Randomize" data-localize-reset="Reset" data-localize-hint="Hint" data-localize-solution="Solution" data-origin="webwork2" data-sourceFilePath="Library/TCNJ/TCNJ_PropertiesDeterminants/problem7.pg" data-courseID="anonymous" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
+<div class="problem-buttons"><button class="webwork-button" onclick="handleWW('webwork-103')">Activate</button></div>
+<div class="problem-contents">
+<div class="para" id="extracted-webwork-103-1-1-1">
+<span class="process-math">\(A\)</span> and <span class="process-math">\(B\)</span> are <span class="process-math">\(n\times n\)</span> matrices.<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-103-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="extracted-webwork-103-1-1-2">Check the true statements below:<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-103-1-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para logical" id="extracted-webwork-103-1-1-3">
+<ul class="square" id="extracted-webwork-103-1-1-3-1">
+<li id="extracted-webwork-103-1-1-3-1-1">
+<div class="para" id="extracted-webwork-103-1-1-3-1-1-1">The determinant of <span class="process-math">\(A\)</span> is the product of the pivots in any echelon form <span class="process-math">\(U\)</span> of <span class="process-math">\(A\text{,}\)</span> multiplied by <span class="process-math">\((-1)^{r}\text{,}\)</span> where <span class="process-math">\(r\)</span> is the number of row interchanges made during row reduction from <span class="process-math">\(A\)</span> to <span class="process-math">\(U\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-103-1-1-3-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#extracted-webwork-103-1-1-3-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="extracted-webwork-103-1-1-3-1-2">
+<div class="para" id="extracted-webwork-103-1-1-3-1-2-1">Adding a multiple of one row to another does not affect the determinant of a matrix.<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-103-1-1-3-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#extracted-webwork-103-1-1-3-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="extracted-webwork-103-1-1-3-1-3">
+<div class="para" id="extracted-webwork-103-1-1-3-1-3-1">If the columns of <span class="process-math">\(A\)</span> are linearly dependent, then <span class="process-math">\(det A = 0\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-103-1-1-3-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#extracted-webwork-103-1-1-3-1-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="extracted-webwork-103-1-1-3-1-4">
+<div class="para" id="extracted-webwork-103-1-1-3-1-4-1">
+<span class="process-math">\(det (A + B) = det A + det B\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-103-1-1-3-1-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#extracted-webwork-103-1-1-3-1-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-103-1-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div>
+</div>
+<div class="autopermalink" data-description="Exercise 2.5.3.14"><a href="#determinants-5-14" title="Copy heading and permalink for Exercise 2.5.3.14" aria-label="Copy heading and permalink for Exercise 2.5.3.14">🔗</a></div></article><article class="exercise exercise-like" id="determinants-5-15"><h4 class="heading"><span class="codenumber">15<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
+<div id="webwork-104" class="exercise-wrapper" data-domain="https://webwork-ptx.aimath.org" data-seed="104" data-localize-correct="Correct" data-localize-incorrect="Incorrect" data-localize-blank="Blank" data-localize-submit="Submit" data-localize-check-responses="Check Responses" data-localize-reveal="Reveal" data-localize-randomize="Randomize" data-localize-reset="Reset" data-localize-hint="Hint" data-localize-solution="Solution" data-origin="webwork2" data-sourceFilePath="Library/TCNJ/TCNJ_PropertiesDeterminants/problem8.pg" data-courseID="anonymous" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
+<div class="problem-buttons"><button class="webwork-button" onclick="handleWW('webwork-104')">Activate</button></div>
+<div class="problem-contents">
+<div class="para" id="extracted-webwork-104-1-1-1">
+<span class="process-math">\(A\)</span> and <span class="process-math">\(B\)</span> are <span class="process-math">\(n\times n\)</span> matrices.<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-104-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="extracted-webwork-104-1-1-2">Check the true statements below:<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-104-1-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para logical" id="extracted-webwork-104-1-1-3">
+<ul class="square" id="extracted-webwork-104-1-1-3-1">
+<li id="extracted-webwork-104-1-1-3-1-1">
+<div class="para" id="extracted-webwork-104-1-1-3-1-1-1">
+<span class="process-math">\(\det A^{T} = (-1)\det A\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-104-1-1-3-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#extracted-webwork-104-1-1-3-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="extracted-webwork-104-1-1-3-1-2">
+<div class="para" id="extracted-webwork-104-1-1-3-1-2-1">The determinant of <span class="process-math">\(A\)</span> is the product of the diagonal entries in <span class="process-math">\(A\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-104-1-1-3-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#extracted-webwork-104-1-1-3-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="extracted-webwork-104-1-1-3-1-3">
+<div class="para" id="extracted-webwork-104-1-1-3-1-3-1">If <span class="process-math">\(\det A\)</span> is zero, then two rows or two columns are the same, or a row or a column is zero.<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-104-1-1-3-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#extracted-webwork-104-1-1-3-1-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="extracted-webwork-104-1-1-3-1-4">
+<div class="para" id="extracted-webwork-104-1-1-3-1-4-1">If two row interchanges are made in succession, then the determinant of the new matrix is equal to the determinant of the original matrix.<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-104-1-1-3-1-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#extracted-webwork-104-1-1-3-1-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-104-1-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div>
+</div>
+<div class="autopermalink" data-description="Exercise 2.5.3.15"><a href="#determinants-5-15" title="Copy heading and permalink for Exercise 2.5.3.15" aria-label="Copy heading and permalink for Exercise 2.5.3.15">🔗</a></div></article><div class="autopermalink" data-description="Exercises 2.5.3"><a href="#determinants-5" title="Copy heading and permalink for Exercises 2.5.3" aria-label="Copy heading and permalink for Exercises 2.5.3">🔗</a></div></section><div class="autopermalink" data-description="Section 2.5: Determinants"><a href="#determinants" title="Copy heading and permalink for Section 2.5: Determinants" aria-label="Copy heading and permalink for Section 2.5: Determinants">🔗</a></div></section></div>
 <div id="ptx-content-footer" class="ptx-content-footer">
 <a class="previous-button button" href="IvertibleMatrixThm.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="NatureofaMatrix.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>

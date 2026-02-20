@@ -2073,13 +2073,13 @@ and inconsistent.</p>
 <row halign="center" valign="middle">
 <cell>A. <var form="popup">
 <li>
-consistent
+choose
 </li>
 <li>
 inconsistent
 </li>
 <li>
-choose
+consistent
 </li>
 </var></cell>
 <cell>B. <var form="popup">
@@ -2095,13 +2095,13 @@ consistent
 </var></cell>
 <cell>C. <var form="popup">
 <li>
-inconsistent
+consistent
 </li>
 <li>
 choose
 </li>
 <li>
-consistent
+inconsistent
 </li>
 </var></cell>
 </row>
@@ -2119,13 +2119,13 @@ consistent
 <row halign="center" valign="middle">
 <cell>D. <var form="popup">
 <li>
-inconsistent
+consistent
 </li>
 <li>
 choose
 </li>
 <li>
-consistent
+inconsistent
 </li>
 </var></cell>
 <cell>E. <var form="popup">
@@ -2165,13 +2165,13 @@ consistent
 <row halign="center" valign="middle">
 <cell>G. <var form="popup">
 <li>
-consistent
+inconsistent
 </li>
 <li>
 choose
 </li>
 <li>
-inconsistent
+consistent
 </li>
 </var></cell>
 <cell>H. <var form="popup">
@@ -4523,5 +4523,359 @@ and
     </static>
     <rendering-data sourceFilePath="Library/Rochester/setLinearAlgebra4InverseMatrix/ur_Ch2_1_4.pg" origin="webwork2" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" passwd="anonymous" language="en-US"/>
     <pg source="Library/Rochester/setLinearAlgebra4InverseMatrix/ur_Ch2_1_4.pg"/>
+  </webwork-reps>
+  <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-webwork-90" ww-id="webwork-90">
+    <static seed="90" source="Library/Rochester/setLinearAlgebra6Determinants/ur_la_6_3.pg">
+      <statement><p>Find the determinant of the matrix <me>A = \left[\begin{array}{cc}
+9 \amp 6\cr
+-4 \amp -5
+\end{array}\right].</me></p>
+<p><m>\det(A)=</m> <fillin characters="10" name="AnSwEr0001"/>.</p>
+</statement>
+      <answer>
+        <p>
+          <m>-21</m>
+        </p>
+      </answer>
+    </static>
+    <rendering-data sourceFilePath="Library/Rochester/setLinearAlgebra6Determinants/ur_la_6_3.pg" origin="webwork2" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" passwd="anonymous" language="en-US"/>
+    <pg source="Library/Rochester/setLinearAlgebra6Determinants/ur_la_6_3.pg"/>
+  </webwork-reps>
+  <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-webwork-91" ww-id="webwork-91">
+    <static seed="91" source="Library/UMN/algebraKaufmannSchwitters/ks_11_4_12.pg">
+      <statement><p>Find the determinant of the following <m>2 \times 2</m> matrix.
+<me>\begin{bmatrix}
+\displaystyle  \frac{1}{2} \amp  \displaystyle \frac{1}{5}\thinspace \\
+\displaystyle  -\frac{1}{4} \amp  \displaystyle \frac{5}{6}\thinspace 
+\end{bmatrix}</me>
+Answer: <fillin characters="20" name="AnSwEr0001"/></p>
+</statement>
+      <answer>
+        <p>
+          <m>\frac{1}{2}\frac{5}{6}+\frac{1}{20}</m>
+        </p>
+      </answer>
+    </static>
+    <rendering-data sourceFilePath="Library/UMN/algebraKaufmannSchwitters/ks_11_4_12.pg" origin="webwork2" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" passwd="anonymous" language="en-US"/>
+    <pg source="Library/UMN/algebraKaufmannSchwitters/ks_11_4_12.pg"/>
+  </webwork-reps>
+  <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-webwork-92" ww-id="webwork-92">
+    <static seed="92" source="Library/Rochester/setAlgebra34Matrices/det_inv_3x3.pg">
+      <statement><p>Consider the following matrix
+<me>\left[\begin{array}{ccc}
+-2 \amp -2 \amp -2\cr
+3 \amp 0 \amp 3\cr
+0 \amp 2 \amp 2
+\end{array}\right].</me></p>
+<p>(a) Find its determinant. <fillin characters="25" name="AnSwEr0001"/></p>
+<p>(b) Does the matrix have an inverse? <ul form="popup" name="AnSwEr0002"><li>
+<p>Choose</p>
+</li><li>
+<p>Yes</p>
+</li><li>
+<p>No</p>
+</li></ul></p>
+</statement>
+      <answer>
+        <p>
+          <m>3\cdot 2\cdot \left(-2\right)-3\cdot \left(-2\right)\cdot 2-2\cdot 3\cdot \left(-2\right)</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>\text{Yes}</m>
+        </p>
+      </answer>
+    </static>
+    <rendering-data sourceFilePath="Library/Rochester/setAlgebra34Matrices/det_inv_3x3.pg" origin="webwork2" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" passwd="anonymous" language="en-US"/>
+    <pg source="Library/Rochester/setAlgebra34Matrices/det_inv_3x3.pg"/>
+  </webwork-reps>
+  <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-webwork-93" ww-id="webwork-93">
+    <static seed="93" source="Library/Rochester/setAlgebra34Matrices/determinant_3x3.pg">
+      <statement><p>Find the determinant of the matrix 
+<me>\left[\begin{array}{ccc}
+-1 \amp 4 \amp 1\cr
+0 \amp 0 \amp 3\cr
+0 \amp -2 \amp 2
+\end{array}\right].</me></p>
+<p>determinant = <fillin characters="25" name="AnSwEr0001"/></p>
+</statement>
+      <answer>
+        <p>
+          <m>-6</m>
+        </p>
+      </answer>
+    </static>
+    <rendering-data sourceFilePath="Library/Rochester/setAlgebra34Matrices/determinant_3x3.pg" origin="webwork2" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" passwd="anonymous" language="en-US"/>
+    <pg source="Library/Rochester/setAlgebra34Matrices/determinant_3x3.pg"/>
+  </webwork-reps>
+  <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-webwork-94" ww-id="webwork-94">
+    <static seed="94" source="Library/ma112DB/set12/sw7_6_15.pg">
+      <statement><p>Given the matrix
+<me>\left[\begin{array}{rrr}
+        0 \amp  0 \amp  5 \\
+        -2 \amp  0    \amp  3 \\
+        0    \amp  2 \amp  3 \\
+\end{array}\right]</me></p>
+<p>(a) find its determinant;</p>
+<p>Your answer is : <fillin characters="25" name="AnSwEr0001"/></p>
+<p>(b) does the matrix have an inverse?</p>
+<p>Your answer is (input Yes or No) : <fillin characters="25" name="AnSwEr0002"/></p>
+</statement>
+      <answer>
+        <p>
+          <m>-20</m>
+        </p>
+      </answer>
+      <answer>
+        <p>Yes</p>
+      </answer>
+    </static>
+    <rendering-data sourceFilePath="Library/ma112DB/set12/sw7_6_15.pg" origin="webwork2" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" passwd="anonymous" language="en-US"/>
+    <pg source="Library/ma112DB/set12/sw7_6_15.pg"/>
+  </webwork-reps>
+  <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-webwork-95" ww-id="webwork-95">
+    <static seed="95" source="Contrib/MountAllison/3-2_Determinants/true_false.pg">
+      <statement><p>Determine which of the following statements are true and which are false.</p>
+<p><ol>
+<li>
+<p>If <m>\displaystyle A</m> and <m>\displaystyle B</m> are square matrices of the same size, then <m>\displaystyle \mathrm{det}(A+B) = \mathrm{det}(A) + \mathrm{det}(B)</m>.</p>
+</li>
+<li>
+<p>If <m>\displaystyle A</m> is a square matrix whose reduced row echelon form is <m>\displaystyle I</m>, then <m>\displaystyle \mathrm{det}(A) = 1</m>.</p>
+</li>
+<li>
+<p>If a matrix <m>\displaystyle B</m> is obtained from <m>\displaystyle A \in \mathcal{M}_4</m> by swapping rows 1 and 2 and also swapping rows 3 and 4, then <m>\displaystyle \mathrm{det}(A) = \mathrm{det}(B)</m>.</p>
+</li>
+<li>
+<p>If <m>\displaystyle A</m> and <m>\displaystyle B</m> are square matrices of the same size, then <m>\displaystyle \mathrm{det}(AB) = \mathrm{det}(BA)</m>.</p>
+</li>
+<li>
+<p>If <m>\displaystyle A</m> is a <m>\displaystyle 3 \times 3</m> matrix with <m>\displaystyle \mathrm{det}(A) = 3</m>, then <m>\displaystyle \mathrm{rank}(A) = 3</m>.</p>
+</li>
+</ol></p>
+</statement>
+    </static>
+    <rendering-data sourceFilePath="Contrib/MountAllison/3-2_Determinants/true_false.pg" origin="webwork2" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" passwd="anonymous" language="en-US"/>
+    <pg source="Contrib/MountAllison/3-2_Determinants/true_false.pg"/>
+  </webwork-reps>
+  <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-webwork-96" ww-id="webwork-96">
+    <static seed="96" source="Library/maCalcDB/setAlgebra34Matrices/det_inv_3x3a.pg">
+      <statement><p>Consider the matrix
+<me>\left[\begin{array}{rrr}
+        1 \amp  0    \amp  3 \\
+        0    \amp  3 \amp  1 \\
+        2 \amp  0    \amp  1 \\
+\end{array}\right]</me></p>
+<p>(a) The determinant of the matrix is: <fillin characters="25" name="AnSwEr0001"/></p>
+<p>(b) Does the matrix have an inverse?  <var form="popup">
+<li>
+<p>?</p>
+</li>
+<li>
+<p>no</p>
+</li>
+<li>
+<p>yes</p>
+</li>
+</var></p>
+</statement>
+      <answer>
+        <p>
+          <m>-15</m>
+        </p>
+      </answer>
+    </static>
+    <rendering-data sourceFilePath="Library/maCalcDB/setAlgebra34Matrices/det_inv_3x3a.pg" origin="webwork2" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" passwd="anonymous" language="en-US"/>
+    <pg source="Library/maCalcDB/setAlgebra34Matrices/det_inv_3x3a.pg"/>
+  </webwork-reps>
+  <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-webwork-97" ww-id="webwork-97">
+    <static seed="97" source="Library/Rochester/setLinearAlgebra6Determinants/ur_la_6_16.pg">
+      <statement><p>Find the determinant of the <m>n \times n</m> matrix <m>A</m> with <m>7</m>'s on the diagonal, <m>1</m>'s above the diagonal, and
+<m>0</m>'s below the diagonal.</p>
+<p><m>\det(A)=</m> <fillin characters="15" name="AnSwEr0001"/>.</p>
+</statement>
+      <answer>
+        <p>
+          <m>7^{n}</m>
+        </p>
+      </answer>
+    </static>
+    <rendering-data sourceFilePath="Library/Rochester/setLinearAlgebra6Determinants/ur_la_6_16.pg" origin="webwork2" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" passwd="anonymous" language="en-US"/>
+    <pg source="Library/Rochester/setLinearAlgebra6Determinants/ur_la_6_16.pg"/>
+  </webwork-reps>
+  <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-webwork-98" ww-id="webwork-98">
+    <static seed="98" source="Library/Rochester/setLinearAlgebra6Determinants/ur_la_6_18.pg">
+      <statement><p>If the determinant of a <m>5 \times 5</m> matrix <m>A</m> is <m>\det (A)=-10</m>, and the matrix <m>C</m> is obtained from <m>A</m> by
+swapping the second and third columns, then</p>
+<p><m>\det(C)=</m> <fillin characters="10" name="AnSwEr0001"/>.</p>
+</statement>
+      <answer>
+        <p>
+          <m>10</m>
+        </p>
+      </answer>
+    </static>
+    <rendering-data sourceFilePath="Library/Rochester/setLinearAlgebra6Determinants/ur_la_6_18.pg" origin="webwork2" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" passwd="anonymous" language="en-US"/>
+    <pg source="Library/Rochester/setLinearAlgebra6Determinants/ur_la_6_18.pg"/>
+  </webwork-reps>
+  <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-webwork-99" ww-id="webwork-99">
+    <static seed="99" source="Library/Rochester/setLinearAlgebra6Determinants/ur_la_6_19.pg">
+      <statement><p>If the determinant of a <m>5 \times 5</m> matrix <m>A</m> is <m>\det(A)=8</m>, and the matrix <m>D</m> is obtained from <m>A</m> by
+adding <m>2</m> times the fourth row to the second, then</p>
+<p><m>\det(D)=</m> <fillin characters="10" name="AnSwEr0001"/>.</p>
+</statement>
+      <answer>
+        <p>
+          <m>8</m>
+        </p>
+      </answer>
+    </static>
+    <rendering-data sourceFilePath="Library/Rochester/setLinearAlgebra6Determinants/ur_la_6_19.pg" origin="webwork2" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" passwd="anonymous" language="en-US"/>
+    <pg source="Library/Rochester/setLinearAlgebra6Determinants/ur_la_6_19.pg"/>
+  </webwork-reps>
+  <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-webwork-100" ww-id="webwork-100">
+    <static seed="100" source="Library/ma112DB/set12/sw7_6_15.pg">
+      <statement><p>Given the matrix
+<me>\left[\begin{array}{rrr}
+        -3 \amp  0 \amp  1 \\
+        1 \amp  0    \amp  2 \\
+        0    \amp  2 \amp  -1 \\
+\end{array}\right]</me></p>
+<p>(a) find its determinant;</p>
+<p>Your answer is : <fillin characters="25" name="AnSwEr0001"/></p>
+<p>(b) does the matrix have an inverse?</p>
+<p>Your answer is (input Yes or No) : <fillin characters="25" name="AnSwEr0002"/></p>
+</statement>
+      <answer>
+        <p>
+          <m>14</m>
+        </p>
+      </answer>
+      <answer>
+        <p>Yes</p>
+      </answer>
+    </static>
+    <rendering-data sourceFilePath="Library/ma112DB/set12/sw7_6_15.pg" origin="webwork2" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" passwd="anonymous" language="en-US"/>
+    <pg source="Library/ma112DB/set12/sw7_6_15.pg"/>
+  </webwork-reps>
+  <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-webwork-101" ww-id="webwork-101">
+    <static seed="101" source="Library/Rochester/setLinearAlgebra6Determinants/ur_la_6_20.pg">
+      <statement><p>If <me>\det \left[\begin{array}{ccc}
+a \amp 1 \amp d\cr
+b \amp 1 \amp e\cr
+c \amp 1 \amp f\cr
+\end{array}\right] = -3, \ \ \ \ \mbox{and} \ \ \ \ \det \left[\begin{array}{ccc}
+a \amp 1 \amp d\cr
+b \amp 2 \amp e\cr
+c \amp 3 \amp f\cr
+\end{array}\right] = 5,</me> then</p>
+<p><m>\det \left[\begin{array}{ccc}
+a \amp 8 \amp d\cr
+b \amp 8 \amp e\cr
+c \amp 8 \amp f\cr
+\end{array}\right] =</m> <fillin characters="5" name="AnSwEr0001"/> and</p>
+<p><m>\det \left[\begin{array}{ccc}
+a \amp -1 \amp d\cr
+b \amp 0 \amp e\cr
+c \amp 1 \amp f\cr
+\end{array}\right] =</m> <fillin characters="5" name="AnSwEr0002"/>.</p>
+</statement>
+      <answer>
+        <p>
+          <m>-24</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>11</m>
+        </p>
+      </answer>
+    </static>
+    <rendering-data sourceFilePath="Library/Rochester/setLinearAlgebra6Determinants/ur_la_6_20.pg" origin="webwork2" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" passwd="anonymous" language="en-US"/>
+    <pg source="Library/Rochester/setLinearAlgebra6Determinants/ur_la_6_20.pg"/>
+  </webwork-reps>
+  <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-webwork-102" ww-id="webwork-102">
+    <static seed="102" source="Library/TCNJ/TCNJ_PropertiesDeterminants/problem15.pg">
+      <statement><p>Use determinants to determine if the matrix below is singular.</p>
+<p><table><tr valign="middle"><td align="center" nowrap="nowrap"><m>A=</m></td><td align="center" nowrap="nowrap"/></tr></table></p>
+<tabular>
+<row>
+<cell>-2</cell>
+<cell>2</cell>
+<cell>-2</cell>
+</row>
+<row>
+<cell>5</cell>
+<cell>1</cell>
+<cell>1</cell>
+</row>
+<row>
+<cell>0</cell>
+<cell>5</cell>
+<cell>4</cell>
+</row>
+</tabular>
+<p/>
+<p><table><tr valign="middle"><td align="center" nowrap="nowrap"><m>\det\,(A)= \ </m></td><td align="center" nowrap="nowrap"><fillin characters="10" name="AnSwEr0001"/></td></tr></table></p>
+<p><table><tr valign="middle"><td align="center" nowrap="nowrap">Is <m>A</m> singular? Type "yes" or "no":</td><td align="center" nowrap="nowrap"><fillin characters="20" name="AnSwEr0002"/></td></tr></table></p>
+</statement>
+      <answer>
+        <p>
+          <m>-88</m>
+        </p>
+      </answer>
+      <answer>
+        <p>no</p>
+      </answer>
+    </static>
+    <rendering-data sourceFilePath="Library/TCNJ/TCNJ_PropertiesDeterminants/problem15.pg" origin="webwork2" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" passwd="anonymous" language="en-US"/>
+    <pg source="Library/TCNJ/TCNJ_PropertiesDeterminants/problem15.pg"/>
+  </webwork-reps>
+  <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-webwork-103" ww-id="webwork-103">
+    <static seed="103" source="Library/TCNJ/TCNJ_PropertiesDeterminants/problem7.pg">
+      <statement><p><m>A</m> and <m>B</m> are <m>n\times n</m> matrices.</p>
+<p>Check the true statements below:</p>
+<p><var form="checkboxes">
+<li>
+<p>The determinant of <m>A</m> is the product of the pivots in any echelon form <m>U</m> of <m>A</m>, multiplied by <m>(-1)^{r}</m>, where <m>r</m> is the number of row interchanges made during row reduction from <m>A</m> to <m>U</m>.</p>
+</li>
+<li>
+<p>Adding a multiple of one row to another does not affect the determinant of a matrix.</p>
+</li>
+<li>
+<p>If the columns of <m>A</m> are linearly dependent, then <m>det A = 0</m>.</p>
+</li>
+<li>
+<p><m>det (A + B) = det A + det B</m>.</p>
+</li>
+</var></p>
+</statement>
+    </static>
+    <rendering-data sourceFilePath="Library/TCNJ/TCNJ_PropertiesDeterminants/problem7.pg" origin="webwork2" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" passwd="anonymous" language="en-US"/>
+    <pg source="Library/TCNJ/TCNJ_PropertiesDeterminants/problem7.pg"/>
+  </webwork-reps>
+  <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-webwork-104" ww-id="webwork-104">
+    <static seed="104" source="Library/TCNJ/TCNJ_PropertiesDeterminants/problem8.pg">
+      <statement><p><m>A</m> and <m>B</m> are <m>n\times n</m> matrices.</p>
+<p>Check the true statements below:</p>
+<p><var form="checkboxes">
+<li>
+<p><m>\det A^{T} = (-1)\det A</m>.</p>
+</li>
+<li>
+<p>The determinant of <m>A</m> is the product of the diagonal entries in <m>A</m>.</p>
+</li>
+<li>
+<p>If <m>\det A</m> is zero, then two rows or two columns are the same, or a row or a column is zero.</p>
+</li>
+<li>
+<p>If two row interchanges are made in succession, then the determinant of the new matrix is equal to the determinant of the original matrix.</p>
+</li>
+</var></p>
+</statement>
+    </static>
+    <rendering-data sourceFilePath="Library/TCNJ/TCNJ_PropertiesDeterminants/problem8.pg" origin="webwork2" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" passwd="anonymous" language="en-US"/>
+    <pg source="Library/TCNJ/TCNJ_PropertiesDeterminants/problem8.pg"/>
   </webwork-reps>
 </webwork-representations>
